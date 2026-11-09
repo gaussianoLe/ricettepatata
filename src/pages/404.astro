@@ -1,0 +1,5 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {href} from '../lib/urls';
+---
+<Layout title="Pagina non trovata" description="Questa patata è rotolata altrove. Torna al ricettario." noindex><section class="section wrap"><p class="eyebrow">404 · Fuori dal sacco</p><h1>Questa patata<br/>è rotolata altrove.</h1><p>Il link potrebbe essere cambiato. Ci sono altre ricette da scoprire.</p><a class="button" href={href('ricette/')}>Torna al ricettario ↗</a></section></Layout>

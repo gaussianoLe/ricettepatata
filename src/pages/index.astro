@@ -1,0 +1,18 @@
+---
+import {getCollection} from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import RecipeExplorer from '../components/RecipeExplorer.astro';
+import PotatoArt from '../components/PotatoArt.astro';
+import {href} from '../lib/urls';
+const recipes = (await getCollection('ricette')).sort((a,b)=>a.id==='pitta-di-patate'?-1:b.id==='pitta-di-patate'?1:a.data.title.localeCompare(b.data.title,'it'));
+const facts = await getCollection('curiosita'); const guides = await getCollection('guide');
+---
+<Layout title="Una patata, infinite possibilità" description="Ricette con patate da tutto il mondo, curiosità e piccole lezioni di cucina. Esplora il magazine RicettePatata.it.">
+<div class="edition wrap"><span>IL MAGAZINE PIÙ TUBEROSO DEL WEB</span><span>BUONE IDEE, DA TUTTO IL MONDO</span></div>
+<section class="hero-section"><div class="wrap hero-grid"><div class="hero-copy"><p class="eyebrow">Semplice ingrediente. Storie straordinarie.</p><h1>Una patata,<br/>infinite <em>possibilità.</em></h1><p>Da un pranzo della domenica a una strada di Mumbai. Il giro del mondo comincia dalla tua cucina.</p><a class="button" href="#ricettario">Trova la tua prossima ricetta <span aria-hidden="true">↗</span></a><div class="hero-footnote"><span aria-hidden="true">✳</span> Con le mani in pasta e la testa in viaggio.</div></div><a class="hero-visual" href={href('ricette/hasselback/')} aria-label="Scopri le patate Hasselback"><div class="round-label">UMILI PATATE.<br/>GRANDI COSE.</div><PotatoArt hero/><div class="hero-caption"><span><small>LA VOGLIA DI OGGI</small><strong>Patate Hasselback</strong></span><span class="circle-arrow" aria-hidden="true">↗</span></div></a></div></section>
+<div class="ticker" aria-hidden="true"><span>AL FORNO ✳ IN PADELLA ✳ DAL MONDO ✳ FATTE IN CASA ✳ SEMPRE UNA BUONA IDEA ✳</span></div>
+<RecipeExplorer recipes={recipes}/>
+<section class="world-section" id="mondo"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">Passaporto alla mano</p><h2>Stesso tubero.<br/>Un mondo di sapori.</h2></div><p>Ogni cucina ha la sua patata del cuore.<br/>Da dove partiamo oggi?</p></div><div class="world-grid">{[{country:'Italia',label:'Le cose buone di casa',region:'Italia',symbol:'01'},{country:'Europa',label:'Tradizioni da riscoprire',region:'Europa',symbol:'02'},{country:'Resto del mondo',label:'Un biglietto per nuovi sapori',region:'Mondo',symbol:'03'}].map(place=><a href={href(`ricette/?regione=${place.region}`)}><span class="world-number">{place.symbol} /</span><h3>{place.country} <span aria-hidden="true">↗</span></h3><p>{place.label}</p></a>)}</div></div></section>
+<section class="section wrap"><div class="section-heading"><div><p class="eyebrow">Non solo ricette</p><h2>Pane per la tua curiosità.</h2></div><a class="text-link" href={href('curiosita/')}>Tutte le curiosità ↗</a></div><div class="editorial-grid">{facts.map((fact,i)=><a class:list={['editorial',i===0?'pink':'green']} href={href(`curiosita/${fact.id}/`)}><span class="editorial-symbol" aria-hidden="true">{i===0?'✳':'◉'}</span><p class="eyebrow">Lo sapevi che?</p><h3>{fact.data.title} ↗</h3><p>{fact.data.description}</p></a>)}</div></section>
+<section class="school-section"><div class="wrap school-grid"><div><p class="eyebrow">Patatopedia</p><h2>Piccole lezioni.<br/>Grandi soddisfazioni.</h2><p>La varietà giusta, il taglio furbo, una tecnica da imparare.<br/>Si comincia dalle basi, si finisce col bis.</p></div><div class="guide-list">{guides.map((guide,i)=><a href={href(`guide/${guide.id}/`)}><span>0{i+1}</span><strong>{guide.data.title}</strong><span aria-hidden="true">↗</span></a>)}</div></div></section>
+</Layout>

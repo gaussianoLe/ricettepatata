@@ -1,0 +1,16 @@
+---
+interface Props { color?: string; hero?: boolean }
+const { color = 'gold', hero = false } = Astro.props;
+---
+<svg class:list={['potato-art',color,{hero}]} viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <ellipse cx="300" cy="352" rx="205" ry="22" fill="#49301f" opacity=".12"/>
+ <ellipse cx="300" cy="228" rx="224" ry="152" fill="#fffdf4"/>
+ <ellipse cx="300" cy="228" rx="191" ry="124" fill="none" stroke="#d8d2bb" stroke-width="2"/>
+ <g stroke="#9c572b" stroke-width="3" fill="#e6a044">
+ <path d="M155 228q-35-54 15-90t89 22q25 47-9 84t-95-16Z"/><path d="M274 188q-20-67 46-77t85 58q3 52-53 62t-78-43Z"/>
+ <path d="M373 247q-19-64 35-77t70 41q16 54-37 74t-68-38Z"/><path d="M215 286q-20-61 29-80t81 29q26 48-21 78t-89-27Z"/><path d="M321 298q-6-43 36-56t62 30q16 44-33 58t-65-32Z"/>
+ </g>
+ <g stroke="#79401c" stroke-width="5" stroke-linecap="round" opacity=".65"><path d="m172 171 32 61m-14-76 32 67m83-80 16 65m9-66 17 58m59 1 19 59m-186-27 27 60m83-19 21 34"/></g>
+ <g fill="#527047"><path d="m253 164-29-39q33 1 29 39m0 0 33-29q-1 32-33 29M348 272l-29-39q33 1 29 39m0 0 33-29q-1 32-33 29M439 230l-24-29q27 1 24 29"/></g>
+ <g fill="#fff7db"><circle cx="225" cy="193" r="3"/><circle cx="305" cy="179" r="3"/><circle cx="275" cy="270" r="3"/><circle cx="401" cy="241" r="3"/></g>
+</svg>

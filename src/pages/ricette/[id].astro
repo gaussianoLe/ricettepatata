@@ -1,0 +1,10 @@
+---
+import {getCollection, render} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PotatoArt from '../../components/PotatoArt.astro';
+import {href} from '../../lib/urls';
+export async function getStaticPaths(){return (await getCollection('ricette')).map(recipe=>({params:{id:recipe.id},props:{recipe}}));}
+const {recipe} = Astro.props; const d=recipe.data; const {Content}=await render(recipe);
+const schema={'@context':'https://schema.org','@type':'Recipe',name:d.title,description:d.description,datePublished:d.date.toISOString(),author:{'@type':'Organization',name:'RicettePatata.it'},recipeCuisine:d.country,recipeCategory:d.category,prepTime:`PT${d.prep}M`,cookTime:`PT${d.cook}M`,totalTime:`PT${d.prep+d.cook}M`,recipeYield:`${d.servings} porzioni`,recipeIngredient:d.ingredients,recipeInstructions:d.steps.map(text=>({'@type':'HowToStep',text})),url:new URL(href(`ricette/${recipe.id}/`),Astro.site).href,inLanguage:'it-IT'};
+---
+<Layout title={d.title} description={d.description} schema={schema}><article class="wrap recipe-detail section"><a class="text-link" href={href('ricette/')}>← Tutte le ricette</a><div class="detail-header"><div><p class="eyebrow">{d.country} · Il ricettario</p><h1>{d.title}</h1><p class="lead">{d.description}</p><p>Preparazione {d.prep} min · Cottura {d.cook} min · {d.servings} porzioni</p><p class="demo-label">Ricetta dimostrativa · Da revisionare dalla redazione</p></div><div class:list={['card-art',d.color]}><PotatoArt/></div></div><div class="recipe-body"><section><h2>Ingredienti</h2><ul>{d.ingredients.map(item=><li>{item}</li>)}</ul></section><section><h2>Mettiamoci ai fornelli</h2><ol>{d.steps.map(step=><li>{step}</li>)}</ol><div class="prose"><Content/></div></section></div></article></Layout>

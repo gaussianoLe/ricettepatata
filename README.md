@@ -1,4 +1,4 @@
-# RicettePatata.it — P0 Foundation
+# RicettePatata.it — Foundation e P1.1 Catalog Data Model
 
 Magazine gastronomico statico in italiano dedicato alle patate nel mondo. Astro 7, TypeScript strict e Tailwind CSS 4; nessun server applicativo richiesto sull’hosting.
 
@@ -29,7 +29,7 @@ TEST_TARGET=preview npm run test:e2e
 
 Le assegnazioni inline sono per shell POSIX; in PowerShell usare `$env:TEST_TARGET="preview"`. `npm test` esamina anche `dist/`: eseguire prima il build del target corrispondente. I test browser avviano e fermano un server Astro sulla porta 4321; la porta deve essere libera. `TEST_TARGET` seleziona le attese dei test, non cambia il build.
 
-CI GitHub Actions esegue `npm ci`, type checking, test unitari, build, controlli HTML e test Chromium desktop/mobile in quattro configurazioni: produzione `/`, anteprima `/anteprima/`, produzione personalizzata `/magazine/` e anteprima HTTP sotto `/`. Il caso produzione personalizzata aggiunge temporaneamente una voce per ogni raccolta, per verificare la crescita del catalogo senza vincoli numerici fissi. Nessun workflow esegue deploy. Risultati e limiti in [docs/validation.md](docs/validation.md).
+CI GitHub Actions esegue `npm ci`, type checking, test unitari, build, controlli HTML e test Chromium desktop/mobile in quattro configurazioni: produzione `/`, anteprima `/anteprima/`, produzione personalizzata `/magazine/` e anteprima HTTP sotto `/`. Il caso produzione personalizzata aggiunge fixture sintetiche per stati editoriali, varianti e duplicati nelle tre raccolte, verificando crescita del catalogo e assenza di contenuti non pubblicabili. Nessun workflow esegue deploy. Risultati P1.1 e limiti in [docs/catalog-validation.md](docs/catalog-validation.md); storico P0 in [docs/validation.md](docs/validation.md).
 
 ## Struttura
 
@@ -44,7 +44,21 @@ La ricerca filtra titolo, Paese e ingredienti, ignora maiuscole e accenti e comb
 
 ## Contenuti e SEO
 
-Sei ricette, due curiosità e due guide dimostrative; quindici pagine HTML. Per aggiungere una ricetta, copiare un Markdown esistente e compilare tutti i campi: slug dal nome del file, date, provenienza, tempi, porzioni, ingredienti e passaggi. L’editor deve mantenere gli slug stabili. Gli schemi impediscono contenuti incompleti. `demo: true` e gli avvisi visibili sono intenzionali: la P0 richiede revisione editoriale prima del lancio. La rimozione di questa limitazione richiederà aggiornamento esplicito dello schema e degli avvisi.
+Il modello P1.1 usa UUID immutabili e slug registrati, nomi multilingua, provenienza strutturata, tassonomie, ingredienti/quantità e procedimento strutturati, fonti, note culturali, relazioni e stati editoriali. I contenuti sono validati individualmente con Zod e globalmente per identità e riferimenti prima dell’avvio Astro.
+
+I dieci contenuti dimostrativi P0 sono migrati a `draft`, con fonti interne esplicitamente non verificate. Mantengono gli stessi URL in anteprima. **In produzione non generano pagine o link finché non diventano published dopo verifica:** il catalogo iniziale di produzione è quindi vuoto. Nessun demo è stato promosso per conservare artificialmente i conteggi della P0.
+
+```sh
+npm run catalog:check
+npm run catalog:import -- docs/import/candidates.json
+npm run catalog:import -- docs/import/candidates.csv
+```
+
+L’importatore esegue solo validazione per default. Può produrre una proposta in una directory nuova ed esterna al checkout, senza modificare i sorgenti o pubblicare. Importazioni di stati verified/published sono rifiutate. Per aggiungere contenuti occorre aggiornare anche il registro delle identità; non usare più lo schema P0. Non cambiare UUID o slug esistenti.
+
+- [Modello e politica editoriale](docs/catalog-model.md)
+- [Contratto JSON/CSV ed esempi completi](docs/catalog-import.md)
+- [Verifiche P1.1 e limiti](docs/catalog-validation.md)
 
 Dati strutturati WebSite, Recipe e Article, descrizioni, Open Graph testuale, canonical per pagina e sitemap di produzione. Nessuna valutazione, nutrizione o fotografia inventata nei dati Recipe. L’illustrazione decorativa non rappresenta il piatto reale e non è usata come fotografia nei dati strutturati. Non è garantita l’idoneità ai rich result Google: manca, tra l’altro, una fotografia editoriale per ricetta. Implementazione delle raccolte basata sulla [documentazione Astro](https://docs.astro.build/en/guides/content-collections/).
 
@@ -74,7 +88,7 @@ TEST_TARGET=production SITE_URL=https://cucina.example BASE_PATH=/magazine/ npm 
 TEST_TARGET=production SITE_URL=https://cucina.example BASE_PATH=/magazine/ npm run test:e2e
 ```
 
-Le verifiche confrontano pagine e link con le voci effettive delle raccolte, e i risultati dei filtri con il catalogo presente: l’aggiunta di ricette, curiosità o guide non richiede aggiornamenti di conteggi nei test. Le ricette usate per i percorsi di navigazione (Rösti e Gnocchi) rimangono esempi di regressione nominativi.
+Le verifiche confrontano pagine e link con le voci effettive delle raccolte, e i risultati dei filtri con il catalogo presente: l’aggiunta di ricette, curiosità o guide non richiede aggiornamenti di conteggi nei test. Le ricette usate per i percorsi di navigazione (Rösti e Gnocchi) rimangono esempi di regressione nominativi in anteprima; in produzione sono esclusi tutti i record che non soddisfano la politica editoriale.
 
 Attività successive e criteri di completamento: [docs/follow-up.md](docs/follow-up.md).
 

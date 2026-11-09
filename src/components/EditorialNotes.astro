@@ -1,0 +1,6 @@
+---
+interface Props {notes:{id:string; kind:string; text:string; sourceIds:string[]}[]}
+const {notes}=Astro.props;
+const labels:Record<string,string>={curiosity:'Curiosità',history:'Storia',culture:'Cultura'};
+---
+{notes.length>0 && <section class="prose"><h2>Storia e cultura</h2>{notes.map(note=><p><strong>{labels[note.kind]}.</strong> {note.text} {note.sourceIds.map(sourceId=><a class="text-link" href={`#fonte-${sourceId}`}>[fonte]</a>)}</p>)}</section>}

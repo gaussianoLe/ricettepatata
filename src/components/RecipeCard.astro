@@ -2,8 +2,9 @@
 import type {CollectionEntry} from 'astro:content';
 import PotatoArt from './PotatoArt.astro';
 import {href} from '../lib/urls';
+import {recipeView,recipeSearchText} from '../catalog/view.mjs';
 interface Props {recipe: CollectionEntry<'ricette'>}
-const {recipe} = Astro.props; const d = recipe.data;
+const {recipe} = Astro.props; const d = recipeView(recipe.data);
 ---
-<article class="recipe-card" data-recipe data-region={d.region} data-search={`${d.title} ${d.country} ${d.ingredients.join(' ')}`}>
-<a href={href(`ricette/${recipe.id}/`)}><div class:list={['card-art',d.color]}><PotatoArt color={d.color}/><span class="time">◷ {d.prep+d.cook} min</span></div><div class="card-copy"><p class="eyebrow">{d.country}</p><h3>{d.title} <span aria-hidden="true">↗</span></h3><p>{d.description}</p><span class="card-bottom">In cucina con noi <span aria-hidden="true">→</span></span></div></a></article>
+<article class="recipe-card" data-recipe data-region={d.region} data-search={recipeSearchText(recipe.data)}>
+<a href={href(`ricette/${recipe.id}/`)}><div class:list={['card-art',d.color]}><PotatoArt color={d.color}/><span class="time">◷ {d.total} min</span></div><div class="card-copy"><p class="eyebrow">{d.country}</p><h3>{d.title} <span aria-hidden="true">↗</span></h3><p>{d.description}</p><span class="card-bottom">In cucina con noi <span aria-hidden="true">→</span></span></div></a></article>

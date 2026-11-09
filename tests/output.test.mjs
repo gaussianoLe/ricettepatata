@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import {readFile,readdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {deployment} from '../src/lib/config.mjs';
-import {contentIds} from './helpers/catalog.mjs';
+import {contentIds,catalog} from './helpers/catalog.mjs';
+import {isVisible} from '../src/catalog/policy.mjs';
 const {site,base,target}=deployment(process.env.TEST_TARGET || 'production',process.env);
 const preview=target==='preview';
 const root=path.resolve('dist');
@@ -15,11 +16,14 @@ test('the local preview settings preserve the resolved build configuration',asyn
  assert.deepEqual(saved,{target,site,base});
 });
 
-test('every source entry has a page and is linked from its collection index',async()=>{
+test('eligible entries keep their slugs and are linked; non-public entries never generate pages',async()=>{
  const generated=new Set((await files(root)).map(file=>path.relative(root,file).replaceAll(path.sep,'/')));
  for(const fixed of ['index.html','404.html','ricette/index.html','curiosita/index.html','guide/index.html']) assert.ok(generated.has(fixed),`missing ${fixed}`);
+ for(const entry of catalog) {
+  if(!isVisible(entry.data,target)) assert.ok(!generated.has(`${entry.collection}/${entry.data.slug}/index.html`),`unpublished entry leaked: ${entry.data.catalogId}`);
+ }
  for(const collection of ['ricette','curiosita','guide']) {
-  const ids=contentIds(collection);assert.ok(ids.length>0,`${collection} must not be empty`);
+  const ids=contentIds(collection);
   const index=await readFile(path.join(root,collection,'index.html'),'utf8');
   for(const id of ids) {
    assert.ok(generated.has(`${collection}/${id}/index.html`),`missing content page ${collection}/${id}`);

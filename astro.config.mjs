@@ -3,6 +3,8 @@ import { loadEnv } from 'vite';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import { deployment } from './src/lib/config.mjs';
+import {readCatalog} from './src/catalog/io.mjs';
+readCatalog();
 const mode = process.env.BUILD_TARGET || 'production';
 const config = deployment(mode, {...loadEnv(mode, process.cwd(), ''), ...process.env});
 export default defineConfig({

@@ -1,8 +1,41 @@
 ---
-title: "A ogni piatto la sua patata"
-description: "Una bussola semplice tra patate farinose e a pasta soda."
-date: "2026-11-09"
-demo: true
+{
+  "schemaVersion": 1,
+  "catalogId": "d4f86f7e-cb78-5929-b7b6-63b9102547b7",
+  "slug": "scegliere-le-patate",
+  "names": {
+    "italian": "A ogni piatto la sua patata",
+    "original": {
+      "text": "A ogni piatto la sua patata",
+      "language": "it"
+    },
+    "alternatives": []
+  },
+  "description": "Una bussola semplice tra patate farinose e a pasta soda.",
+  "date": "2026-11-09",
+  "demo": true,
+  "editorial": {
+    "status": "draft",
+    "author": "RicettePatata.it"
+  },
+  "sources": [
+    {
+      "id": "prototipo-p0",
+      "kind": "internal",
+      "title": "Prototipo P0 — contenuto non verificato",
+      "url": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/guide/scegliere-le-patate.md",
+      "author": "RicettePatata.it",
+      "accessedAt": "2026-11-09"
+    }
+  ],
+  "notes": [],
+  "externalIds": [],
+  "topics": [
+    "tecnica",
+    "patate"
+  ],
+  "relatedRecipeIds": []
+}
 ---
 ## Per gnocchi e purè
 

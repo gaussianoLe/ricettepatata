@@ -1,0 +1,11 @@
+import {readFileSync} from 'node:fs';
+import path from 'node:path';
+import {readCatalog} from '../src/catalog/io.mjs';
+import {parseImport,planImport,stageImport} from '../src/catalog/import.mjs';
+const [input,output,...extra]=process.argv.slice(2);
+if(!input || extra.length) throw new Error('Uso: npm run catalog:import -- file.json|file.csv [directory-staging-esterna]');
+const format=path.extname(input).slice(1).toLowerCase();
+const plan=planImport(parseImport(readFileSync(input,'utf8'),format),readCatalog(),JSON.parse(readFileSync('src/catalog/registry.json','utf8')));
+console.log(`Validazione: ${plan.additions.length} nuovi record, ${plan.skipped} duplicati identici ignorati.`);
+if(output)console.log(`Staging creato in ${stageImport(plan,output)}. Nessun file del catalogo sorgente modificato.`);
+else console.log('Solo validazione: nessun file scritto.');

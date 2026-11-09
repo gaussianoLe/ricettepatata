@@ -2,7 +2,7 @@ name: Foundation CI
 on:
   pull_request:
   push:
-    branches: [main, feat/p0-foundation]
+    branches: [main, feat/p1-catalog-model]
 permissions:
   contents: read
 concurrency:
@@ -46,19 +46,20 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
-      - name: Exercise catalog growth in every collection
+      - name: Exercise editorial states, variants and catalog growth
         if: matrix.growth
-        run: |
-          cp src/content/ricette/rosti.md src/content/ricette/rosti-ci-growth.md
-          cp src/content/curiosita/un-mondo-di-colori.md src/content/curiosita/colori-ci-growth.md
-          cp src/content/guide/taglio-hasselback.md src/content/guide/taglio-ci-growth.md
+        run: node tests/helpers/catalog-fixtures.mjs add
       - run: npm run check
-      - run: node --test tests/core.test.mjs
+      - run: npm run catalog:check
+      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs
       - name: Build static magazine
         run: node scripts/build.mjs ${{ matrix.target }}
       - run: node --test tests/output.test.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - name: Remove synthetic catalog fixtures
+        if: always() && matrix.growth
+        run: node tests/helpers/catalog-fixtures.mjs remove
       - uses: actions/upload-artifact@v4
         if: failure()
         with:

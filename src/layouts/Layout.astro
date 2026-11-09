@@ -3,7 +3,7 @@ import '../styles/global.css';
 import {href} from '../lib/urls';
 interface Props {title: string; description: string; schema?: Record<string, unknown>; noindex?: boolean}
 const {title, description, schema, noindex = false} = Astro.props;
-const preview = import.meta.env.BASE_URL !== '/';
+const preview = import.meta.env.BUILD_TARGET === 'preview';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const website = {'@context':'https://schema.org','@type':'WebSite', name:'RicettePatata.it',url:new URL(href(),Astro.site).href,inLanguage:'it-IT'};
 ---

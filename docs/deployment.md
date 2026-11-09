@@ -11,7 +11,7 @@ Il build è statico: si trasferiscono HTML, CSS, JavaScript e SVG; Node serve so
 5. Trasferire **il contenuto** di `dist/` esclusivamente nella sottocartella verificata `anteprima/` della document root. Non copiare sorgenti, `node_modules`, `.env` o `.git`; non modificare file della root, `.htaccess`, `wp-config.php`, `wp-content`, `wp-admin` o `wp-includes`.
 6. Verificare `/anteprima/`, `/anteprima/ricette/`, una ricetta, menu mobile, filtri, CSS e link profondi. WordPress e le sue regole possono intercettare le richieste: controllare la risposta reale prima di proporre qualsiasi cambiamento delle regole.
 
-I meta robots sono presenti su ogni pagina di anteprima. Il `robots.txt` dentro `/anteprima/` non governa il dominio: i crawler leggono solo quello della root. Il robots di produzione proposto disabilita `/anteprima/`, ma non va caricato al posto di quello WordPress senza revisione e autorizzazione. `noindex` non è controllo d’accesso: un’anteprima riservata richiede una protezione dell’hosting da configurare separatamente.
+I meta robots sono presenti su ogni pagina di anteprima. Il `robots.txt` dentro `/anteprima/` non governa il dominio: i crawler leggono solo quello della root. Il robots di produzione genera `Allow` e `Sitemap` in base a `BASE_PATH`, senza dedurre dove sia ospitata l’anteprima. Un eventuale `Disallow` dell’anteprima nel robots della root va concordato sulla topologia reale e non aggiunto automaticamente (la produzione potrebbe essere ospitata proprio sotto quel prefisso). Non sostituire il robots WordPress senza revisione e autorizzazione. `noindex` non è controllo d’accesso: un’anteprima riservata richiede una protezione dell’hosting da configurare separatamente.
 
 ## Produzione, solo dopo approvazione esplicita
 
@@ -23,3 +23,9 @@ I meta robots sono presenti su ogni pagina di anteprima. Il `robots.txt` dentro 
 6. In caso di problemi, ripristinare esclusivamente i file dell’intervento secondo l’inventario e il backup approvati, senza cancellazioni generiche. Non usare sincronizzazioni con opzioni delete.
 
 Non esistono workflow di pubblicazione, chiavi SSH, password FTP, deploy token o istruzioni di caricamento automatico nel repository.
+
+## Target e origine personalizzati
+
+Il percorso non determina la modalità. `npm run build` produce sempre il target `production` e richiede un `SITE_URL` HTTPS; `npm run build:preview` produce sempre `preview`, anche con `BASE_PATH=/`. Solo per sviluppo locale il target `preview` ammette HTTP. Nessuna eccezione HTTP è prevista per un build di produzione. Banner, robots e sitemap seguono il target esplicito, mentre canonical e asset seguono origine/base risolti. Il comando locale `npm run preview` recupera tutte e tre le impostazioni dall’ultimo build.
+
+Le prove su hosting Aruba e Safari/WebKit rimangono attività successive, tracciate con criteri di completamento in [follow-up.md](follow-up.md); non sono state eseguite durante il rework.

@@ -29,7 +29,7 @@ TEST_TARGET=preview npm run test:e2e
 
 Le assegnazioni inline sono per shell POSIX; in PowerShell usare `$env:TEST_TARGET="preview"`. `npm test` esamina anche `dist/`: eseguire prima il build del target corrispondente. I test browser avviano e fermano un server Astro sulla porta 4321; la porta deve essere libera. `TEST_TARGET` seleziona le attese dei test, non cambia il build.
 
-CI GitHub Actions esegue `npm ci`, type checking, test unitari, build, controlli HTML e test Chromium desktop/mobile per entrambi i target. Nessun workflow esegue deploy. Risultati e limiti in [docs/validation.md](docs/validation.md).
+CI GitHub Actions esegue `npm ci`, type checking, test unitari, build, controlli HTML e test Chromium desktop/mobile in quattro configurazioni: produzione `/`, anteprima `/anteprima/`, produzione personalizzata `/magazine/` e anteprima HTTP sotto `/`. Il caso produzione personalizzata aggiunge temporaneamente una voce per ogni raccolta, per verificare la crescita del catalogo senza vincoli numerici fissi. Nessun workflow esegue deploy. Risultati e limiti in [docs/validation.md](docs/validation.md).
 
 ## Struttura
 
@@ -55,6 +55,27 @@ Dati strutturati WebSite, Recipe e Article, descrizioni, Open Graph testuale, ca
 | Produzione | `npm run build` | `/` | Sitemap e canonical assoluti |
 | Anteprima | `npm run build:preview` | `/anteprima/` | `noindex, nofollow`, senza sitemap |
 
-`SITE_URL` accetta solo un’origine HTTP(S), senza percorso; `BASE_PATH` deve iniziare e terminare con `/`. Entrambi possono essere impostati nell’ambiente per il proprio dominio. Ogni build ricrea `dist/`: non mescolare gli output. `npm run preview` serve il build esistente: non crea il target anteprima. Il wrapper di preview legge il target salvato in `.astro/ricettepatata-build.json` dall’ultimo build e avvia Astro in primo piano con quel target. Per configurazioni personalizzate, mantenere le stesse variabili ambiente durante build e preview.
+Il target è esplicito (`production` oppure `preview`) e indipendente da `BASE_PATH`: una produzione sotto `/magazine/` mantiene sitemap e indicizzazione, mentre un’anteprima sotto `/` mantiene banner, `noindex, nofollow` e nessuna sitemap. I comandi di build impostano il target; per `npm run dev` il default è `production`, modificabile con `BUILD_TARGET=preview`. Target sconosciuti causano errore.
+
+`SITE_URL` accetta solo un’origine senza percorso, query o credenziali e richiede **HTTPS in produzione**, anche con base personalizzata. Non esiste un bypass HTTP per la produzione. HTTP è ammesso esclusivamente con target `preview`, per sviluppo locale, ad esempio:
+
+```sh
+BUILD_TARGET=preview BASE_PATH=/ SITE_URL=http://localhost:4321 npm run dev
+```
+
+`BASE_PATH` deve iniziare e terminare con `/`. Ogni build ricrea `dist/`: non mescolare gli output. `npm run preview` serve il build esistente: non crea il target anteprima. Il wrapper legge **target, origine e base risolti** salvati dall’ultimo build in `.astro/ricettepatata-build.json`, così la successiva anteprima locale non dipende dalle variabili ambiente rimaste nella shell. Ricostruire il sito dopo aver cambiato queste impostazioni.
+
+Per riprodurre una configurazione personalizzata, passare le stesse `SITE_URL`, `BASE_PATH` e `TEST_TARGET` ai controlli del build e browser; `BUILD_TARGET` serve anche al type checking Astro. Esempio:
+
+```sh
+BUILD_TARGET=production SITE_URL=https://cucina.example BASE_PATH=/magazine/ npm run check
+SITE_URL=https://cucina.example BASE_PATH=/magazine/ npm run build
+TEST_TARGET=production SITE_URL=https://cucina.example BASE_PATH=/magazine/ npm test
+TEST_TARGET=production SITE_URL=https://cucina.example BASE_PATH=/magazine/ npm run test:e2e
+```
+
+Le verifiche confrontano pagine e link con le voci effettive delle raccolte, e i risultati dei filtri con il catalogo presente: l’aggiunta di ricette, curiosità o guide non richiede aggiornamenti di conteggi nei test. Le ricette usate per i percorsi di navigazione (Rösti e Gnocchi) rimangono esempi di regressione nominativi.
+
+Attività successive e criteri di completamento: [docs/follow-up.md](docs/follow-up.md).
 
 [Deployment manuale Aruba e protezione WordPress](docs/deployment.md). **Nessun deploy, accesso remoto Aruba o merge è stato eseguito da questo progetto.**

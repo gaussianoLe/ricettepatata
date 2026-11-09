@@ -40,3 +40,26 @@ Il workflow `Foundation CI` esegue verifiche separate per produzione e anteprima
 - JSON-LD non verificato con Rich Results Test esterno; nessuna garanzia di risultato avanzato Google.
 - Nessun accesso o deploy Aruba. Convivenza con WordPress, precedenza degli indici e gestione HTTP 404 dipendono dalla configurazione remota e sono documentate in `deployment.md`.
 - Ricerca locale sul catalogo statico; nessun CMS, account, backend o raccolta dati.
+
+## Rework della review indipendente
+
+Il target è ora esplicito e indipendente dal percorso in configurazione, layout, robots e sitemap. HTTPS è obbligatorio per produzione; solo `preview` consente HTTP per lo sviluppo. Il wrapper locale conserva target, origine e base del build.
+
+La suite verifica le pagine attese a partire dalle tre raccolte e ogni link nei relativi indici, senza imporre dimensioni fisse al catalogo. I test browser derivano il totale dalle ricette sorgenti e i risultati dei filtri dai dati del catalogo presente; i percorsi Rösti e Gnocchi restano casi nominativi di navigazione. La matrice CI aggiunge i casi produzione `/magazine/` e anteprima HTTP `/`; il caso produzione personalizzata crea temporaneamente una voce in ciascuna raccolta per esercitare la crescita.
+
+Le verifiche storiche nella tabella sopra descrivono la P0 iniziale. I risultati del rework vengono riportati nella PR #1 sul commit finale. Il backlog di schemi editoriali, WebKit/Safari e Aruba è in [follow-up.md](follow-up.md).
+
+### Risultati locali del rework
+
+Installazione pulita `npm ci` riuscita (zero vulnerabilità riportate). Eseguiti di nuovo type checking, build, `npm test` e Playwright in ciascuna configurazione:
+
+| Configurazione | Target | Base | Origine | Esito |
+| --- | --- | --- | --- | --- |
+| Produzione standard | production | `/` | `https://ricettepatata.it` | check e build passati; 9 test Node e 8 browser passati |
+| Anteprima standard | preview | `/anteprima/` | `https://ricettepatata.it` | check e build passati; 9 test Node e 8 browser passati |
+| Produzione personalizzata con crescita | production | `/magazine/` | `https://cucina.example` | check e build passati; 9 test Node e 8 browser passati |
+| Anteprima HTTP alla root | preview | `/` | `http://localhost:4321` | check e build passati; 9 test Node e 8 browser passati |
+
+Totale: 36 test Node e 32 casi browser passati. Type checking senza errori, warning o hint in tutte e quattro le configurazioni. Le tre fixture temporanee di crescita sono state rimosse dopo la verifica: non fanno parte dei contenuti consegnati. La suite browser avvia il wrapper con un target, origine e base volutamente errati nella shell, verificando che il server usi comunque la configurazione salvata del build.
+
+I test unitari verificano anche il rifiuto di HTTP in produzione a ogni base e il rifiuto dei target sconosciuti. `git diff --check` passato. Non eseguiti controlli WebKit/Safari o Aruba: rimangono nel backlog. Gli esiti GitHub Actions sul nuovo commit saranno registrati nella descrizione della PR, senza confonderli con questi risultati locali.

@@ -1,0 +1,7 @@
+---
+import {getCollection} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import RecipeExplorer from '../../components/RecipeExplorer.astro';
+const recipes=(await getCollection('ricette')).sort((a,b)=>a.data.title.localeCompare(b.data.title,'it'));
+---
+<Layout title="Tutte le ricette" description="Cerca ricette con patate per ingrediente e provenienza, dall’Italia al resto del mondo."><RecipeExplorer recipes={recipes}/></Layout>

@@ -1,0 +1,33 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import RecipeCard from './RecipeCard.astro';
+interface Props {recipes: CollectionEntry<'ricette'>[]}
+const {recipes} = Astro.props;
+---
+<section class="section wrap" id="ricettario" data-explorer><div class="section-heading"><div><p class="eyebrow">Il ricettario</p><h2>Oggi cosa cuciniamo?</h2></div><p>Grandi idee. Ingredienti semplici.</p></div>
+<form class="search-form" id="cerca" role="search"><label class="sr-only" for="query">Cerca ricette</label><input id="query" name="q" type="search" placeholder="Una ricetta, un Paese, un ingrediente…"/><button class="button" type="submit">Cerca <span aria-hidden="true">↗</span></button></form>
+<div class="filter-row"><div class="filters" role="group" aria-label="Filtra per provenienza">{['Tutte','Italia','Europa','Mondo'].map((region)=><button type="button" data-filter={region} aria-pressed={region==='Tutte'}>{region==='Mondo'?'Resto del mondo':region}</button>)}</div><button class="reset" type="button" data-reset>Azzera filtri</button></div>
+<p class="result-count" aria-live="polite" aria-atomic="true" data-count>{recipes.length} ricette da scoprire</p>
+<div class="recipe-grid">{recipes.map(recipe=><RecipeCard recipe={recipe}/>)}</div><p class="empty" data-empty hidden>Nessuna ricetta trovata. Prova un altro ingrediente o azzera i filtri.</p>
+<noscript><p>Puoi leggere tutte le ricette qui sotto. Per usare ricerca e filtri, abilita JavaScript.</p></noscript></section>
+<script>
+import {normalize, matchesRecipe} from '../lib/search.mjs';
+const explorer = document.querySelector<HTMLElement>('[data-explorer]');
+if(explorer){
+const input = explorer.querySelector<HTMLInputElement>('#query')!;
+const cards = [...explorer.querySelectorAll<HTMLElement>('[data-recipe]')];
+const buttons = [...explorer.querySelectorAll<HTMLButtonElement>('[data-filter]')];
+let region = 'Tutte';
+const params = new URLSearchParams(location.search); input.value = params.get('q') ?? '';
+if(buttons.some(b=>b.dataset.filter===params.get('regione'))) region=params.get('regione')!;
+function update(){let count=0;for(const card of cards){const show=matchesRecipe({text:card.dataset.search ?? '',region:card.dataset.region ?? ''},input.value,region);card.hidden=!show;if(show)count++;}
+buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===region)));
+explorer!.querySelector('[data-count]')!.textContent=`${count} ${count===1?'ricetta da scoprire':'ricette da scoprire'}`;
+(explorer!.querySelector('[data-empty]') as HTMLElement).hidden=count!==0;
+const url=new URL(location.href); normalize(input.value)?url.searchParams.set('q',input.value):url.searchParams.delete('q');region==='Tutte'?url.searchParams.delete('regione'):url.searchParams.set('regione',region);history.replaceState(null,'',url);
+}
+explorer.querySelector('form')?.addEventListener('submit',e=>{e.preventDefault();update();});
+input.addEventListener('input',update); buttons.forEach(b=>b.addEventListener('click',()=>{region=b.dataset.filter!;update();}));
+explorer.querySelector('[data-reset]')?.addEventListener('click',()=>{input.value='';region='Tutte';update();input.focus();});update();
+}
+</script>

@@ -1,0 +1,41 @@
+name: Foundation CI
+on:
+  pull_request:
+  push:
+    branches: [main, feat/p0-foundation]
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    name: Check, build and browser (${{ matrix.target }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        target: [production, preview]
+    env:
+      TEST_TARGET: ${{ matrix.target }}
+      ASTRO_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: node --test tests/core.test.mjs
+      - name: Build static magazine
+        run: node scripts/build.mjs ${{ matrix.target }}
+      - run: node --test tests/output.test.mjs
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-failure-${{ matrix.target }}
+          path: test-results/
+          retention-days: 7

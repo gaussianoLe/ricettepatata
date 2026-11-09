@@ -1,0 +1,7 @@
+---
+import {getCollection} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import {href} from '../../lib/urls';
+const entries=await getCollection('curiosita');
+---
+<Layout title="Curiosità" description="Storie e idee per conoscere meglio le patate e cucinarle con fantasia."><section class="section wrap"><p class="eyebrow">Il magazine</p><h1>Curiosità</h1><div class="editorial-grid">{entries.map(entry=><a class="editorial green" href={href(`curiosita/${entry.id}/`)}><p class="eyebrow">Letture dalla cucina</p><h2>{entry.data.title} ↗</h2><p>{entry.data.description}</p></a>)}</div></section></Layout>

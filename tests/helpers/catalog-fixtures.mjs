@@ -1,4 +1,4 @@
-import {readFileSync,writeFileSync,existsSync,unlinkSync} from 'node:fs';
+import {readFileSync,writeFileSync,existsSync,unlinkSync,mkdirSync} from 'node:fs';
 import {randomUUID} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 import {readEntries,readCatalog} from '../../src/catalog/io.mjs';
@@ -6,6 +6,7 @@ import {readEntries,readCatalog} from '../../src/catalog/io.mjs';
 const manifest='.astro/p1-catalog-fixtures.json', registryPath='src/catalog/registry.json';
 export function addFixtures() {
   if(existsSync(manifest)) throw new Error('Fixture già presenti');
+  mkdirSync('.astro',{recursive:true});
   const registryText=readFileSync(registryPath,'utf8'), registry=JSON.parse(registryText), files=[];
   const original=readEntries();
   const add=(collection,data)=>{

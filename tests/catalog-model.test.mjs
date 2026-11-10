@@ -1,7 +1,10 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {randomUUID} from 'node:crypto';
-import {readFileSync} from 'node:fs';
+import {readFileSync,writeFileSync,mkdtempSync,mkdirSync,copyFileSync,existsSync,rmSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {tmpdir} from 'node:os';
+import path from 'node:path';
 import {readCatalog} from '../src/catalog/io.mjs';
 import {recipeSchema,articleSchema} from '../src/catalog/schema.mjs';
 import {validateCatalog} from '../src/catalog/validate.mjs';
@@ -96,4 +99,27 @@ test('global validation handles 5,000 independent candidate records without name
  const data=clone();data.editorial.status='candidate';data.ingredients=[];data.steps=[];data.timing=null;data.servings=null;
  const many=Array.from({length:5000},(_,index)=>wrap({...structuredClone(data),catalogId:randomUUID(),slug:`scale-${index}`}));
  assert.equal(validateCatalog(many,registryFor(many)).length,many.length);
+});
+
+test('CI fixtures work on a fresh checkout without .astro and restore the original catalog',()=>{
+ const root=mkdtempSync(path.join(tmpdir(),'ricettepatata-fresh-ci-'));
+ try {
+  const legacy=JSON.parse(readFileSync('src/catalog/legacy-routes.json','utf8'));
+  const registry={};mkdirSync(path.join(root,'src/catalog'),{recursive:true});
+  for(const [route,catalogId] of Object.entries(legacy)) {
+   const [collection,slug]=route.split('/');mkdirSync(path.join(root,'src/content',collection),{recursive:true});
+   copyFileSync(path.resolve(`src/content/${route}.md`),path.join(root,`src/content/${route}.md`));
+   registry[catalogId]={collection,slug};
+  }
+  const registryPath=path.join(root,'src/catalog/registry.json');
+  writeFileSync(registryPath,JSON.stringify(registry));
+  const script=path.resolve('tests/helpers/catalog-fixtures.mjs');
+  assert.equal(existsSync(path.join(root,'.astro')),false);
+  execFileSync(process.execPath,[script,'add'],{cwd:root});
+  const manifest=path.join(root,'.astro/p1-catalog-fixtures.json');assert.ok(existsSync(manifest));
+  const {files}=JSON.parse(readFileSync(manifest,'utf8'));assert.ok(files.length>0);
+  execFileSync(process.execPath,[script,'remove'],{cwd:root});
+  assert.equal(existsSync(manifest),false);for(const file of files)assert.equal(existsSync(path.join(root,file)),false);
+  assert.deepEqual(JSON.parse(readFileSync(registryPath,'utf8')),registry);
+ } finally {rmSync(root,{recursive:true,force:true});}
 });

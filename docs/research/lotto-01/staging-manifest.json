@@ -1,0 +1,19 @@
+{
+  "formatVersion": 1,
+  "sourceJsonSha256": "65ba0af4214b56604d9f2ce05854ff555dd309dedde45de41e59bb2414e4486f",
+  "sourceCsvSha256": "98bbb2fe8ffd8317cb8fc87d1cd8931f823fc8d565cfc60b5a37b31166a976ac",
+  "methodologySha256": "4eec7ba141cb3ace7dc762092f35b8d037439dc35d923c01f6ea6e134e366b43",
+  "stagingKind": "research_quarantine",
+  "editorialState": "candidate",
+  "researchCandidates": 50,
+  "p11EntriesCreated": 0,
+  "registryChanged": false,
+  "importExecuted": false,
+  "files": [
+    "lot-report.json",
+    "research-quarantine.json",
+    "source-inputs.json",
+    "registry.json"
+  ],
+  "externalPathFromWorkspace": "tmp/p12-lotto01-quarantena-65ba0af4214b"
+}

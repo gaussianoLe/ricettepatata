@@ -94,8 +94,10 @@ Attività successive e criteri di completamento: [docs/follow-up.md](docs/follow
 
 [Deployment manuale Aruba e protezione WordPress](docs/deployment.md). **Nessun deploy, accesso remoto Aruba o merge è stato eseguito da questo progetto.**
 
-## P1.2 — Primo lotto, dataset non ancora fornito
+## P1.2 — Lotto 01 ricevuto e analizzato
 
-La predisposizione del lotto da 50 candidate non aggiunge nuove ricette al sito. `npm run catalog:batch` senza input mostra soltanto il [report di attesa](docs/research/readiness-report.json): nessuna importazione eseguita. Quando sarà disponibile il dataset, un profilo esplicito mapperà CSV/JSON alla P1.1, con report di accettati/esclusi/da revisionare e staging esterno dei soli candidate.
+JSON e CSV del lotto fornito rappresentano gli stessi 50 candidati; il JSON è la fonte principale e il CSV è usato soltanto per controllare la coerenza, senza una seconda importazione. Il risultato è **0 record P1.1 accettati, 0 esclusi definitivamente, 50 da revisionare**, tutti ancora candidate nel formato di ricerca: mancano fatti richiesti dal modello, che non vengono inventati.
 
-Procedura, formato del profilo, limiti e comandi futuri: [docs/first-catalog-batch.md](docs/first-catalog-batch.md). Il [template del profilo](docs/research/profile.template.json) è intenzionalmente incompleto finché non sono noti i dati e il responsabile della preparazione. Non vengono inventate fonti, titoli tradotti, ingredienti o procedimenti mancanti. Nessun contenuto pubblicato o registro sorgente è modificato dalla preparazione.
+[Report e riepilogo del lotto](docs/research/lotto-01/README.md), [report JSON](docs/research/lotto-01/report.json) e [manifest dello staging esterno](docs/research/lotto-01/staging-manifest.json). Il pacchetto esterno è una quarantena di ricerca, non contenuto Astro: nessun file di `src/content` o registro sorgente è stato modificato.
+
+`npm run catalog:survey` gestisce il formato ricevuto `research-candidates-v1`. Il comando generale `catalog:batch` senza input continua a mostrare il report di attesa per quell’invocazione; non descrive più lo stato del lotto 01 già ricevuto. Procedura generale: [docs/first-catalog-batch.md](docs/first-catalog-batch.md).

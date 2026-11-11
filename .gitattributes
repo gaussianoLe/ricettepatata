@@ -1,0 +1,4 @@
+# Preserve immutable research source bytes, including CSV CRLF.
+docs/research/lotto-01/dataset.json -text whitespace=cr-at-eol
+docs/research/lotto-01/dataset.csv -text whitespace=cr-at-eol
+docs/research/lotto-01/methodology.md -text whitespace=cr-at-eol

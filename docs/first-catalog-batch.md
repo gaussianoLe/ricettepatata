@@ -1,6 +1,6 @@
 # P1.2 — Preparazione controllata del primo lotto
 
-**Dataset reale non disponibile: nessuna importazione effettiva eseguita.** Questa milestone consegna adattatore, classificazione, report e staging per un lotto di massimo 50 candidate. Non contiene 50 ricette inventate o un dataset di ricerca sostitutivo. I dati sintetici sono confinati ai test.
+**Aggiornamento: il lotto 01 è stato ricevuto e analizzato** come formato di ricerca non importabile, con esito 50 da revisionare e nessun record Astro creato. Vedere [il report reale del lotto](research/lotto-01/README.md). La predisposizione iniziale descritta qui era stata realizzata senza dataset; il comando generico sotto resta valido per dati già mappabili nel modello P1.1. Questa milestone consegna adattatore, classificazione, report e staging per un lotto di massimo 50 candidate. Non contiene 50 ricette inventate o un dataset di ricerca sostitutivo. I dati sintetici sono confinati ai test.
 
 Base: ultimo `main` al commit `b0c0368`, comprensivo del modello P1.1 e del rework della PR #2. Branch: `feat/p1.2-first-catalog-batch`.
 
@@ -114,7 +114,7 @@ primo-lotto-proposta/
 
 Test sintetici: assenza dataset e blocco CLI senza input, mapping obbligatorio, CSV/JSON, 50 e 51 righe, stato candidate, dati mancanti, fonti parziali, nomi/alias, collisioni, deduplicazione, relazioni in ordine arbitrario, report, staging parziale e protezioni filesystem. Nessuna ricetta sintetica dei test viene aggiunta al catalogo.
 
-Restano da fare quando il dataset arriverà: ispezione delle colonne reali, completamento/revisione del profilo, analisi delle vere 50 righe, verifica delle fonti e risoluzione di duplicati/varianti; soltanto dopo questi passaggi si produrrà un report reale e un eventuale staging. Le euristiche non sostituiscono una revisione linguistica/editoriale. Il parsing è sincrono, senza scraping o risoluzione di URL, e non è una pipeline illimitata di ingestione.
+Per nuovi dataset restano necessari ispezione delle colonne reali e revisione del profilo. Per il lotto 01 sono state esaminate le 50 righe e la coerenza delle rappresentazioni; restano verifica delle fonti, completamento dei fatti mancanti e risoluzione di duplicati/varianti; soltanto dopo questi passaggi si produrrà un report reale e un eventuale staging. Le euristiche non sostituiscono una revisione linguistica/editoriale. Il parsing è sincrono, senza scraping o risoluzione di URL, e non è una pipeline illimitata di ingestione.
 
 Gli esiti locali e CI effettivamente eseguiti, lo SHA finale e il link alla PR sono riportati nella descrizione della PR P1.2.
 
@@ -127,3 +127,17 @@ I 20 test nuovi P1.2 usano esclusivamente fixture sintetiche, incluse le prove c
 ### Ambiente CI esplicito
 
 Il primo push su Ubuntu 26.04 è passato, ma il run PR e il retry dei soli job falliti si sono fermati nell’installazione delle dipendenze Playwright per errori DNS dei mirror Ubuntu. I controlli di catalogo, schemi e build precedenti erano passati. La matrice usa ora `ubuntu-24.04` esplicito per rendere l’ambiente indipendente dalla migrazione di `ubuntu-latest`; Ubuntu 24.04 è supportato da [Playwright](https://playwright.dev/docs/release-notes). Restano obbligatori `npm ci`, tutti i test e `playwright install --with-deps chromium`: nessun controllo o errore viene ignorato. L’esito del nuovo SHA è riportato nella PR, senza dedurlo dai test locali.
+
+## Formato effettivamente ricevuto: research-candidates-v1
+
+L’involucro `{formatVersion: "research-candidates-v1", importable: false, entries: [...]}` è trattato dal comando separato `catalog:survey`. Non viene spacciato per `formatVersion: 1` P1.1 e non viene passato due volte all’importatore.
+
+```sh
+npm run catalog:survey -- --json docs/research/lotto-01/dataset.json --csv docs/research/lotto-01/dataset.csv --methodology docs/research/lotto-01/methodology.md
+```
+
+Il comando confronta prima campi e valori per ID, segnala anche l’eventuale ordine diverso, poi analizza **soltanto** i record JSON. Se le due rappresentazioni differiscono, lo staging è bloccato. L’esito `needs_review` produce codice di uscita 2: è una classificazione editoriale, non un errore di test o un’importazione riuscita.
+
+Con `--stage /percorso/esterno/nuovo` produce una quarantena non importabile che conserva dataset e testi originali, report e registro invariato; nessuna directory `content` e nessun pacchetto di ricette P1.1 viene creato. I record restano candidate nel formato di ricerca. Il README fornito è conservato come documentazione metodologica, non eseguito come istruzione e non usato come fonte individuale delle ricette.
+
+I controlli di slug, identità e nomi funzionano anche sui dati parziali non validabili come ricette P1.1. Le proposte UUID sono solo tecniche, non registrate. Le corrispondenze di nomi non determinano esclusioni, fusioni o varianti automaticamente. Per produrre record P1.1 è necessario completare e verificare i dati mancanti; non si allenta lo schema né si fanno assunzioni di lingua, provenienza o ruolo della patata.

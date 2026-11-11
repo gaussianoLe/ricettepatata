@@ -4,8 +4,8 @@ export function nameSignatures(record) {
   return [...new Set([record.names.italian,record.names.original.text,...record.names.alternatives.map(name=>name.text)].map(normalizeName).filter(Boolean))];
 }
 export function relatedNames(one,two) {
+  if(one.some(name=>two.includes(name)))return 'EXACT_NORMALIZED_NAME';
   for(const a of one)for(const b of two) {
-    if(a===b)return 'EXACT_NORMALIZED_NAME';
     const x=new Set(a.split(' ').filter(word=>word.length>=4 && !generic.has(word)));
     const y=new Set(b.split(' ').filter(word=>word.length>=4 && !generic.has(word)));
     const overlap=[...x].filter(word=>y.has(word)).length;

@@ -1,12 +1,16 @@
 import {parse} from 'csv-parse/sync';
 import {z} from 'astro/zod';
-import {mkdirSync,writeFileSync,rmSync} from 'node:fs';
+import {mkdirSync,writeFileSync,realpathSync,lstatSync} from 'node:fs';
 import path from 'node:path';
 import {schemas} from './schema.mjs';
 import {validateCatalog} from './validate.mjs';
 
 export const csvColumns=['collection','schemaVersion','catalogId','slug','names','description','date','demo','editorial','sources','notes','externalIds','provenance','taxonomy','potatoRole','relation','duplicateOf','timing','servings','ingredients','steps','color','topics','relatedRecipeIds','body'];
-const jsonColumns=new Set(['schemaVersion','names','demo','editorial','sources','notes','externalIds','provenance','taxonomy','relation','timing','servings','ingredients','steps','topics','relatedRecipeIds']);
+const jsonColumns=new Set([
+  'schemaVersion','demo','servings', // JSON scalars must retain their numeric/boolean/null types.
+  'names','editorial','sources','notes','externalIds','provenance','taxonomy',
+  'relation','timing','ingredients','steps','topics','relatedRecipeIds',
+]);
 const envelope=z.strictObject({formatVersion:z.literal(1),entries:z.array(z.strictObject({collection:z.enum(['ricette','curiosita','guide']),data:z.unknown(),body:z.string().default('')}))});
 export function parseImport(source,format) {
   if(format==='json') return envelope.parse(JSON.parse(source)).entries;
@@ -47,15 +51,46 @@ export function planImport(incoming,existing,registry) {
 }
 
 export function stageImport(plan,directory,checkout=process.cwd()) {
-  const output=path.resolve(directory),root=path.resolve(checkout);
-  if(output===root || output.startsWith(root+path.sep)) throw new Error('Lo staging deve essere esterno al checkout');
-  mkdirSync(output); // Exclusive: never overwrite an existing directory.
-  try {
-    for(const entry of plan.additions) {
-      const folder=path.join(output,'content',entry.collection);mkdirSync(folder,{recursive:true});
-      writeFileSync(path.join(folder,`${entry.data.slug}.md`),`---\n${JSON.stringify(entry.data,null,2)}\n---\n${entry.body}`,{flag:'wx'});
+  const within=(parent,child)=>{
+    const relative=path.relative(parent,child);
+    return relative==='' || (!path.isAbsolute(relative) && relative!=='..' && !relative.startsWith('..'+path.sep));
+  };
+  const requested=path.resolve(directory),logicalRoot=path.resolve(checkout);
+  const root=realpathSync(logicalRoot);
+  // realpath resolves every existing ancestor, including symlinks outside the checkout.
+  // The parent must already exist; never create intermediate paths through aliases.
+  const output=path.join(realpathSync(path.dirname(requested)),path.basename(requested));
+  if(within(logicalRoot,requested) || within(root,output)) throw new Error('Lo staging deve essere esterno al checkout anche nel percorso fisico');
+  const additions=plan.additions.map(entry=>{
+    if(!schemas[entry.collection]) throw new Error('Raccolta di staging sconosciuta');
+    return {...entry,data:schemas[entry.collection].parse(entry.data)};
+  });
+  const owned=new Map();
+  const checkOwned=()=>{
+    for(const [folder,identity] of owned) {
+      const current=lstatSync(folder,{bigint:true});
+      if(!current.isDirectory() || current.dev!==identity.dev || current.ino!==identity.ino || realpathSync(folder)!==folder) throw new Error('Directory di staging sostituita o collegata tramite symlink');
     }
-    writeFileSync(path.join(output,'registry.json'),JSON.stringify(plan.registry,null,2)+'\n',{flag:'wx'});
-  } catch(error) {rmSync(output,{recursive:true});throw error;}
+  };
+  const createDirectory=folder=>{
+    checkOwned();
+    mkdirSync(folder,{mode:0o700}); // Exclusive, including each child directory.
+    owned.set(folder,lstatSync(folder,{bigint:true}));
+    checkOwned();
+  };
+  createDirectory(output);
+  // No recursive cleanup on failure: a replaced path must never delete someone else's data.
+  // Partial staging is deliberately left for inspection, and every file uses exclusive creation.
+  if(additions.length) createDirectory(path.join(output,'content'));
+  for(const entry of additions) {
+    const folder=path.join(output,'content',entry.collection);
+    if(!owned.has(folder)) createDirectory(folder);
+    const markdown=`---\n${JSON.stringify(entry.data,null,2)}\n---\n${entry.body}`;
+    checkOwned();
+    writeFileSync(path.join(folder,`${entry.data.slug}.md`),markdown,{flag:'wx',mode:0o600});
+  }
+  const registry=JSON.stringify(plan.registry,null,2)+'\n';
+  checkOwned();
+  writeFileSync(path.join(output,'registry.json'),registry,{flag:'wx',mode:0o600});
   return output;
 }

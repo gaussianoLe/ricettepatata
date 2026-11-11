@@ -32,7 +32,7 @@ Importazione sincrona a lotti e ricerca DOM della P0: non sono un’infrastruttu
 
 WebKit/Safari, dispositivi reali e hosting Aruba/convivenza WordPress non sono stati verificati. Attività aperte in [follow-up.md](follow-up.md). Nessuna garanzia aggiuntiva sui rich result Google.
 
-## Risultati locali eseguiti
+## Risultati locali P1.1 prima del rework
 
 Verifiche locali il 9–10 novembre 2026, macOS ARM64, Node 26.9.0/npm 11.19.1:
 
@@ -50,3 +50,17 @@ Questi sono risultati locali realmente eseguiti. Lo stato CI remoto sullo SHA fi
 ### Portabilità su checkout CI pulito
 
 Il primo run remoto ha rilevato che lo script delle fixture presupponeva una directory `.astro` già creata dai build locali. Lo script ora la crea esplicitamente. Un test di regressione prepara un catalogo temporaneo senza `.astro`, esegue aggiunta e rimozione delle fixture e verifica il ripristino esatto del registro e l’assenza dei file temporanei. Dopo la correzione, l’intera matrice locale è stata rieseguita con 28 test Node e 10 browser per configurazione. L’esito CI remoto finale resta documentato nella PR sul relativo SHA.
+
+## Rework della review sullo SHA f7b69f3
+
+Sul commit revisionato `servings` era già incluso nelle colonne deserializzate JSON. La classificazione degli scalari è ora esplicita e un nuovo test usa una ricetta draft completa con porzioni numeriche e tempi non nulli, confrontando dati e piano di importazione dopo il round-trip JSON/CSV.
+
+`stageImport` risolve i percorsi fisici del checkout e del genitore della destinazione (inclusi tutti gli antenati) prima della creazione esclusiva; rifiuta alias che portano nel checkout, valida i percorsi dei record e ricontrolla percorso e identità delle directory create. Non effettua più cancellazioni ricorsive in caso di errore: uno staging parziale resta disponibile per l’ispezione.
+
+Tre nuovi test filesystem coprono symlink esterni verso checkout/figli, checkout stesso raggiunto tramite alias, alias esterni validi, symlink preesistenti e sostituzione della directory durante un errore. Nessuna directory estranea deve essere cancellata. I risultati della nuova matrice e lo SHA finale sono registrati nella PR #2; i risultati precedenti sopra restano lo storico della P1.1 iniziale.
+
+### Risultati locali del rework
+
+Il 10 novembre 2026 sono stati rieseguiti `npm ci` (riuscito, zero vulnerabilità riportate), controllo del catalogo, type checking, build, test Node e browser nelle quattro configurazioni della matrice. Ogni configurazione supera 32 test Node e 10 casi Chromium desktop/mobile: 128 e 40 complessivi. Il type checking finale non riporta errori, warning o hint. Fixture temporanee rimosse e registro ripristinato; `git diff --check` passato.
+
+La suite include anche la root del filesystem come limite del checkout, alias esterni legittimi risolti al percorso fisico e directory sostituite sia con errore di serializzazione sia con serializzazione riuscita (il controllo di identità deve bloccare la scrittura). Non sono state aggiunte dipendenze. La nuova scelta operativa è lasciare lo staging parziale in caso di errore, senza cleanup distruttivo. SHA finale e CI remota sono riportati nella PR #2 per la nuova review indipendente.

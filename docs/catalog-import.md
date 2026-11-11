@@ -53,7 +53,7 @@ Senza secondo argomento viene effettuata solo validazione: nessun file scritto. 
 npm run catalog:import -- docs/import/candidates.json /private/tmp/ricettepatata-import-proposta
 ```
 
-La destinazione deve essere **nuova ed esterna al checkout**. L’importatore rifiuta directory esistenti e non sovrascrive file. Dopo la validazione dell’intero lotto insieme al catalogo esistente, scrive:
+La destinazione deve essere **nuova ed esterna al checkout anche nel percorso fisico**. Il genitore deve già esistere: `realpathSync` risolve il checkout e tutti gli antenati della destinazione prima di creare directory, così un symlink esterno diretto nel checkout viene rifiutato. Un alias verso una directory davvero esterna è ammesso e il comando restituisce il percorso fisico dello staging. L’importatore rifiuta directory esistenti e non sovrascrive file. Dopo la validazione dell’intero lotto insieme al catalogo esistente, scrive:
 
 ```text
 ricettepatata-import-proposta/
@@ -61,7 +61,7 @@ ricettepatata-import-proposta/
   registry.json
 ```
 
-Il Markdown usa frontmatter JSON (sottoinsieme di YAML) e conserva il corpo. `registry.json` contiene il registro completo proposto, comprese identità già esistenti/ritirate. Un errore durante la scrittura rimuove esclusivamente la directory di staging appena creata. Nessun contenuto viene copiato automaticamente in `src/content`.
+Il Markdown usa frontmatter JSON (sottoinsieme di YAML) e conserva il corpo. `registry.json` contiene il registro completo proposto, comprese identità già esistenti/ritirate. Le directory dello staging sono create esclusivamente con permessi `0700`, i file con `0600` e flag `wx`. Prima di scrivere vengono ricontrollati percorso fisico e identità filesystem (`dev`/`ino`) delle directory create. **In caso di errore non avviene alcuna cancellazione automatica:** lo staging parziale rimane per ispezione. Questo evita che il recupero errori possa eliminare una directory estranea sostituita allo staging. Per un nuovo tentativo scegliere una destinazione nuova; non riutilizzare automaticamente quella parziale. Nessun contenuto viene copiato automaticamente in `src/content`.
 
 ## Conflitti e riconciliazione
 
@@ -73,3 +73,9 @@ Il Markdown usa frontmatter JSON (sottoinsieme di YAML) e conserva il corpo. `re
 - Il lotto può contenere solo candidate, draft o review. Verified/published sono rifiutati anche se i relativi campi appaiono completi.
 
 Dopo l’ispezione della proposta, un intervento Git separato sul branch di import può aggiungere i nuovi Markdown e aggiornare il registro. Rieseguire `catalog:check`, type checking, build, test e CI. I candidate non generano pagine nemmeno in anteprima. Una volta completata la ricetta, lo stato draft la rende ispezionabile nell’anteprima; la produzione resta esclusa fino alla verifica e alla pubblicazione esplicite.
+
+## Copertura della review: porzioni numeriche e symlink
+
+`servings` è deserializzato come scalare JSON, mantenendo numero o null anziché una stringa CSV. Un round-trip di una ricetta draft completa verifica l’equivalenza JSON/CSV, porzioni numeriche, tempi non nulli e validazione del piano di importazione.
+
+I test di staging coprono alias esterni che puntano al checkout o a suoi discendenti, anche con un alias del checkout stesso; alias innocui verso directory esterne; destinazioni esistenti e sostituzione della directory in coincidenza con un errore di serializzazione. In quest’ultimo caso i dati della directory estranea rimangono intatti, senza cleanup ricorsivo.

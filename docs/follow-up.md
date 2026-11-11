@@ -2,14 +2,14 @@
 
 Backlog registrato dalla review indipendente della PR #1. Queste attività sono aperte e non costituiscono verifiche già eseguite o autorizzazione a modificare l’hosting.
 
-## Estensione degli schemi editoriali
+## Estensione degli schemi editoriali — implementata in P1.1
 
-- [ ] Strutturare la provenienza: Paese/area geografica, cucina o tradizione, varianti e attribuzioni; migrare l’attuale `country` testuale senza perdere informazioni o cambiare gli URL.
-- [ ] Aggiungere fonti: riferimenti bibliografici/URL, titolo, autore quando disponibile e data di consultazione; collegare i riferimenti alle ricette e alle affermazioni di curiosità/guide.
-- [ ] Introdurre stato editoriale esplicito (demo, bozza, in revisione, pubblicato), autore, revisore e date di revisione; definire i requisiti per la transizione a pubblicato e la relativa visibilità nel build.
-- [ ] Migrare il catalogo, sostituire il vincolo `demo: true` con le nuove regole, aggiornare avvisi e JSON-LD e aggiungere test per campi obbligatori, transizioni e contenuti esclusi dalla pubblicazione.
+- [x] Identità/slug stabili e provenienza geografica strutturata, titoli multilingua, tassonomie, principali/varianti e ruolo patata.
+- [x] Fonti strutturate con URL, autore e data di consultazione; riferimenti per note di storia, cultura e curiosità.
+- [x] Stati candidate/draft/review/verified/published, autore, revisore e date; vincoli Zod e gate di generazione per target.
+- [x] Migrazione dei demo a draft senza cambiare gli slug; test di compatibilità e importazione JSON/CSV con staging separato.
 
-Completamento: modello documentato, migrazione delle tre raccolte, controlli di validazione e regole di pubblicazione testati; verifica editoriale indipendente di fonti e provenienza. Nessuna ricetta demo diventa pubblicata automaticamente.
+Modello, regole e limiti documentati in [catalog-model.md](catalog-model.md). Rimangono aperte la revisione delle fonti e dei contenuti reali, l’anagrafica autorevole di ingredienti/luoghi e l’eventuale servizio autenticato con audit delle transizioni editoriali. Lo schema non certifica da solo una fonte o l’identità di un revisore.
 
 ## WebKit e Safari
 

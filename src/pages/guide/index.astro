@@ -1,7 +1,8 @@
 ---
-import {getCollection} from 'astro:content';
+import {visibleCollection} from '../../catalog/collections';
+
 import Layout from '../../layouts/Layout.astro';
 import {href} from '../../lib/urls';
-const entries=await getCollection('guide');
+const entries=await visibleCollection('guide');
 ---
-<Layout title="Patatopedia" description="Storie e idee per conoscere meglio le patate e cucinarle con fantasia."><section class="section wrap"><p class="eyebrow">Il magazine</p><h1>Patatopedia</h1><div class="editorial-grid">{entries.map(entry=><a class="editorial green" href={href(`guide/${entry.id}/`)}><p class="eyebrow">Letture dalla cucina</p><h2>{entry.data.title} ↗</h2><p>{entry.data.description}</p></a>)}</div></section></Layout>
+<Layout title="Patatopedia" description="Storie e idee per conoscere meglio le patate e cucinarle con fantasia."><section class="section wrap"><p class="eyebrow">Il magazine</p><h1>Patatopedia</h1><div class="editorial-grid">{entries.map(entry=><a class="editorial green" href={href(`guide/${entry.id}/`)}><p class="eyebrow">Letture dalla cucina</p><h2>{entry.data.names.italian} ↗</h2><p>{entry.data.description}</p></a>)}</div></section></Layout>

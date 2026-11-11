@@ -1,5 +1,6 @@
 import {test,expect} from '@playwright/test';
-import {contentIds} from '../helpers/catalog.mjs';
+import {contentIds,visibleEntries,catalog} from '../helpers/catalog.mjs';
+import {isVisible} from '../../src/catalog/policy.mjs';
 import {deployment} from '../../src/lib/config.mjs';
 const recipeIds=contentIds('ricette');
 const {target}=deployment(process.env.TEST_TARGET || 'production',process.env);
@@ -12,6 +13,7 @@ test('homepage, responsive navigation and recipe details',async({page,isMobile})
  if(isMobile){const menu=page.getByRole('button',{name:'Menu'});await menu.click();await expect(menu).toHaveAttribute('aria-expanded','true');await page.keyboard.press('Escape');await expect(menu).toHaveAttribute('aria-expanded','false');await menu.click();}
  await page.getByRole('navigation',{name:'Navigazione principale'}).getByRole('link',{name:'Ricette',exact:true}).click();
  await expect(page).toHaveURL(/\/ricette\/$/);await expect(page.locator('[data-recipe]:visible')).toHaveCount(recipeIds.length);
+ if(!recipeIds.includes('rosti')) return;
  await page.locator('[data-recipe] a[href$="/ricette/rosti/"]').click();await expect(page.getByRole('heading',{level:1})).toHaveText('Rösti croccanti');
  await expect(page.getByRole('heading',{name:'Ingredienti',exact:true})).toBeVisible();expect(await page.locator('ol li').count()).toBeGreaterThan(0);
 });
@@ -19,13 +21,13 @@ test('homepage, responsive navigation and recipe details',async({page,isMobile})
 test('search, combined filters, empty state, reset and URL restoration',async({page})=>{
  await page.goto('./ricette/');const query=page.getByRole('searchbox',{name:'Cerca ricette'});
  const catalog=await page.locator('[data-recipe]').evaluateAll(elements=>elements.map(element=>({search:element.getAttribute('data-search')??'',region:element.getAttribute('data-region')})));
- const rostiCount=catalog.filter(recipe=>/r[oö]sti/i.test(recipe.search)).length;expect(rostiCount).toBeGreaterThan(0);
+ const rostiCount=catalog.filter(recipe=>/r[oö]sti/i.test(recipe.search)).length;
  await query.fill('ROSTI');await expect(page.locator('[data-recipe]:visible')).toHaveCount(rostiCount);
  const italianRosti=catalog.filter(recipe=>/r[oö]sti/i.test(recipe.search) && recipe.region==='Italia').length;
  await page.getByRole('button',{name:'Italia',exact:true}).click();await expect(page.locator('[data-recipe]:visible')).toHaveCount(italianRosti);
  await expect(page.locator('[data-empty]')).toBeVisible({visible:italianRosti===0});
  await page.getByRole('button',{name:'Azzera filtri'}).click();await expect(query).toBeFocused();await expect(page.locator('[data-recipe]:visible')).toHaveCount(recipeIds.length);
- const butterCount=catalog.filter(recipe=>/burro/i.test(recipe.search) && recipe.region==='Europa').length;expect(butterCount).toBeGreaterThan(0);
+ const butterCount=catalog.filter(recipe=>/burro/i.test(recipe.search) && recipe.region==='Europa').length;
  await query.fill('burro');await page.getByRole('button',{name:'Europa',exact:true}).click();await expect(page.locator('[data-recipe]:visible')).toHaveCount(butterCount);
  await page.reload();await expect(query).toHaveValue('burro');await expect(page.getByRole('button',{name:'Europa',exact:true})).toHaveAttribute('aria-pressed','true');await expect(page.locator('[data-recipe]:visible')).toHaveCount(butterCount);
  await query.fill('<img src=x onerror=alert(1)>');await page.getByRole('button',{name:'Cerca',exact:true}).click();await expect(page.locator('[data-empty]')).toBeVisible();await expect(page.locator('[data-recipe]:visible')).toHaveCount(0);
@@ -33,13 +35,24 @@ test('search, combined filters, empty state, reset and URL restoration',async({p
 });
 
 test('world links, editorial routes and keyboard access',async({page})=>{
- await page.goto('./');const worldCount=await page.locator('[data-recipe][data-region="Mondo"]').count();expect(worldCount).toBeGreaterThan(0);
+ await page.goto('./');const worldCount=await page.locator('[data-recipe][data-region="Mondo"]').count();
  await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Salta al contenuto'})).toBeFocused();
  await page.getByRole('link',{name:/Un biglietto per nuovi sapori/}).click();await expect(page.locator('[data-recipe]:visible')).toHaveCount(worldCount);await expect(page.getByRole('button',{name:'Resto del mondo'})).toHaveAttribute('aria-pressed','true');
- await page.goto('./curiosita/');await page.getByRole('link',{name:/Tubero o radice/}).click();await expect(page.getByRole('heading',{level:1})).toHaveText('Tubero o radice?');
- await page.goto('./guide/');await page.getByRole('link',{name:/A ogni piatto/}).click();await expect(page.getByRole('heading',{name:'Per gnocchi e purè'})).toBeVisible();
+ for(const collection of ['curiosita','guide']) {
+  await page.goto(`./${collection}/`);
+  const entry=visibleEntries(collection)[0];
+  if(entry){await page.locator(`a[href$="/${collection}/${entry.data.slug}/"]`).click();await expect(page.getByRole('heading',{level:1})).toHaveText(entry.data.names.italian);}
+ }
 });
 
 test('static content remains usable without JavaScript',async({browser,baseURL})=>{
- const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(baseURL!+'ricette/');await expect(page.locator('[data-recipe]')).toHaveCount(recipeIds.length);await page.locator('[data-recipe] a[href$="/ricette/gnocchi/"]').click();await expect(page.getByRole('heading',{level:1})).toHaveText('Gnocchi di patate');await context.close();
+ const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(baseURL!+'ricette/');await expect(page.locator('[data-recipe]')).toHaveCount(recipeIds.length);if(recipeIds.includes('gnocchi')){await page.locator('[data-recipe] a[href$="/ricette/gnocchi/"]').click();await expect(page.getByRole('heading',{level:1})).toHaveText('Gnocchi di patate');}await context.close();
+});
+
+
+test('direct links cannot expose entries excluded by the editorial policy',async({request,baseURL})=>{
+ for(const entry of catalog.filter(entry=>!isVisible(entry.data,target))) {
+  const response=await request.get(`${baseURL}${entry.collection}/${entry.data.slug}/`);
+  expect(response.status()).toBe(404);
+ }
 });

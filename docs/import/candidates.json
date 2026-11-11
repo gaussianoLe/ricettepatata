@@ -1,0 +1,53 @@
+{
+  "formatVersion": 1,
+  "entries": [
+    {
+      "collection": "ricette",
+      "data": {
+        "schemaVersion": 1,
+        "catalogId": "29021ccf-cd8a-4e5a-a70d-0d6c50df8406",
+        "slug": "esempio-candidato",
+        "names": {
+          "italian": "Esempio di candidatura",
+          "original": {
+            "text": "Esempio di candidatura",
+            "language": "it"
+          },
+          "alternatives": []
+        },
+        "description": "Esempio di formato, non una ricetta verificata.",
+        "date": "2026-11-09",
+        "demo": true,
+        "editorial": {
+          "status": "candidate",
+          "author": "Redazione (esempio)"
+        },
+        "sources": [],
+        "notes": [],
+        "externalIds": [],
+        "provenance": {
+          "continent": null,
+          "country": null,
+          "region": null,
+          "traditions": []
+        },
+        "taxonomy": {
+          "courses": [],
+          "cookingMethods": [],
+          "families": [],
+          "occasions": []
+        },
+        "potatoRole": "protagonist",
+        "relation": {
+          "kind": "primary"
+        },
+        "timing": null,
+        "servings": null,
+        "ingredients": [],
+        "steps": [],
+        "color": "gold"
+      },
+      "body": "Esempio di candidatura da completare e verificare.\n"
+    }
+  ]
+}

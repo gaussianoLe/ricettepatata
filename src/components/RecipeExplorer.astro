@@ -8,8 +8,8 @@ const {recipes} = Astro.props;
 <form class="search-form" id="cerca" role="search"><label class="sr-only" for="query">Cerca ricette</label><input id="query" name="q" type="search" placeholder="Una ricetta, un Paese, un ingrediente…"/><button class="button" type="submit">Cerca <span aria-hidden="true">↗</span></button></form>
 <div class="filter-row"><div class="filters" role="group" aria-label="Filtra per provenienza">{['Tutte','Italia','Europa','Mondo'].map((region)=><button type="button" data-filter={region} aria-pressed={region==='Tutte'}>{region==='Mondo'?'Resto del mondo':region}</button>)}</div><button class="reset" type="button" data-reset>Azzera filtri</button></div>
 <p class="result-count" aria-live="polite" aria-atomic="true" data-count>{recipes.length} ricette da scoprire</p>
-<div class="recipe-grid">{recipes.map(recipe=><RecipeCard recipe={recipe}/>)}</div><p class="empty" data-empty hidden>Nessuna ricetta trovata. Prova un altro ingrediente o azzera i filtri.</p>
-<noscript><p>Puoi leggere tutte le ricette qui sotto. Per usare ricerca e filtri, abilita JavaScript.</p></noscript></section>
+<div class="recipe-grid">{recipes.map(recipe=><RecipeCard recipe={recipe}/>)}</div><p class="empty" data-empty hidden={recipes.length>0}>Nessuna ricetta trovata. Prova un altro ingrediente o azzera i filtri.</p>
+<noscript><p>{recipes.length>0?'Puoi leggere tutte le ricette qui sotto. Per usare ricerca e filtri, abilita JavaScript.':'Il ricettario è in preparazione: le ricette saranno disponibili dopo la verifica editoriale.'}</p></noscript></section>
 <script>
 import {normalize, matchesRecipe} from '../lib/search.mjs';
 const explorer = document.querySelector<HTMLElement>('[data-explorer]');

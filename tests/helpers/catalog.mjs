@@ -1,9 +1,9 @@
-import {readdirSync} from 'node:fs';
-import path from 'node:path';
-
-// Derive expectations from the source catalog, independently of the rendered cards.
-export function contentIds(collection) {
-  return readdirSync(path.resolve('src/content', collection), {recursive: true})
-    .filter(file => file.endsWith('.md'))
-    .map(file => file.replaceAll(path.sep, '/').replace(/\.md$/, ''));
+import {readCatalog} from '../../src/catalog/io.mjs';
+import {isVisible} from '../../src/catalog/policy.mjs';
+export const catalog=readCatalog();
+export function visibleEntries(collection,target=process.env.TEST_TARGET||'production') {
+  return catalog.filter(entry=>entry.collection===collection && isVisible(entry.data,target));
+}
+export function contentIds(collection,target=process.env.TEST_TARGET||'production') {
+  return visibleEntries(collection,target).map(entry=>entry.data.slug);
 }

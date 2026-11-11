@@ -1,4 +1,4 @@
-# RicettePatata.it — Foundation e P1.1 Catalog Data Model
+# RicettePatata.it — Catalogo e importazione controllata
 
 Magazine gastronomico statico in italiano dedicato alle patate nel mondo. Astro 7, TypeScript strict e Tailwind CSS 4; nessun server applicativo richiesto sull’hosting.
 
@@ -93,3 +93,9 @@ Le verifiche confrontano pagine e link con le voci effettive delle raccolte, e i
 Attività successive e criteri di completamento: [docs/follow-up.md](docs/follow-up.md).
 
 [Deployment manuale Aruba e protezione WordPress](docs/deployment.md). **Nessun deploy, accesso remoto Aruba o merge è stato eseguito da questo progetto.**
+
+## P1.2 — Primo lotto, dataset non ancora fornito
+
+La predisposizione del lotto da 50 candidate non aggiunge nuove ricette al sito. `npm run catalog:batch` senza input mostra soltanto il [report di attesa](docs/research/readiness-report.json): nessuna importazione eseguita. Quando sarà disponibile il dataset, un profilo esplicito mapperà CSV/JSON alla P1.1, con report di accettati/esclusi/da revisionare e staging esterno dei soli candidate.
+
+Procedura, formato del profilo, limiti e comandi futuri: [docs/first-catalog-batch.md](docs/first-catalog-batch.md). Il [template del profilo](docs/research/profile.template.json) è intenzionalmente incompleto finché non sono noti i dati e il responsabile della preparazione. Non vengono inventate fonti, titoli tradotti, ingredienti o procedimenti mancanti. Nessun contenuto pubblicato o registro sorgente è modificato dalla preparazione.

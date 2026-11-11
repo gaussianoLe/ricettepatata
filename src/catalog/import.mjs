@@ -50,7 +50,7 @@ export function planImport(incoming,existing,registry) {
   return {additions,skipped,registry:nextRegistry};
 }
 
-export function stageImport(plan,directory,checkout=process.cwd()) {
+export function stageImport(plan,directory,checkout=process.cwd(),artifacts={}) {
   const within=(parent,child)=>{
     const relative=path.relative(parent,child);
     return relative==='' || (!path.isAbsolute(relative) && relative!=='..' && !relative.startsWith('..'+path.sep));
@@ -64,6 +64,12 @@ export function stageImport(plan,directory,checkout=process.cwd()) {
   const additions=plan.additions.map(entry=>{
     if(!schemas[entry.collection]) throw new Error('Raccolta di staging sconosciuta');
     return {...entry,data:schemas[entry.collection].parse(entry.data)};
+  });
+  const documents=Object.entries(artifacts).map(([name,value])=>{
+    if(!/^[a-z0-9]+(?:-[a-z0-9]+)*\.json$/.test(name) || name==='registry.json')throw new Error('Nome di artefatto staging non valido o riservato');
+    const json=JSON.stringify(value,null,2);
+    if(typeof json!=='string')throw new Error('Artefatto staging non serializzabile');
+    return [name,json+'\n'];
   });
   const owned=new Map();
   const checkOwned=()=>{
@@ -92,5 +98,9 @@ export function stageImport(plan,directory,checkout=process.cwd()) {
   const registry=JSON.stringify(plan.registry,null,2)+'\n';
   checkOwned();
   writeFileSync(path.join(output,'registry.json'),registry,{flag:'wx',mode:0o600});
+  for(const [name,json] of documents) {
+    checkOwned();
+    writeFileSync(path.join(output,name),json,{flag:'wx',mode:0o600});
+  }
   return output;
 }

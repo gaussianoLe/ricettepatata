@@ -85,3 +85,7 @@ I test di staging coprono alias esterni che puntano al checkout o a suoi discend
 I piani in `docs/editorial/p1.4/enrichments.json` sono documenti di review manuale, non envelope d’importazione. L’importatore continua a rifiutare modifiche a UUID esistenti: nessun upsert o applicazione implicita è stato introdotto. Una proposta richiede review indipendente, autorizzazione e verifica della precondizione SHA prima di un intervento Git separato.
 
 `quantity.approximate` è un booleano facoltativo per quantità numeriche; il JSON in `ingredients` lo mantiene anche nel CSV. `true` richiede una presentazione approssimativa (“circa”), senza inventare tolleranze numeriche. Schema v1 e colonne rimangono compatibili con gli input esistenti; per il nuovo metadato occorre un lettore P1.4.
+
+## Integrazione controllata P1.5
+
+[Piano e report P1.5](integration/p1.5/README.md) documentano tre sole aggiunte draft con identità e formule P1.4. Il contratto d’importazione rimane invariato: ripetizioni identiche sono saltate, aggiornamenti agli UUID esistenti restano conflitti. I draft editoriali non dimostrativi sono privati anche nell’anteprima pubblica da P1.5; nessun contenuto operativo deve essere caricato come asset grezzo. Solo `dist/` supera l’audit pubblico e costituisce un potenziale artefatto di distribuzione, senza autorizzare deploy.

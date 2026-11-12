@@ -107,3 +107,5 @@ JSON e CSV del lotto fornito rappresentano gli stessi 50 candidati; il JSON è l
 Dieci dossier del primo lotto, fonti consultate, decisioni e due conversioni P1.1 in draft sono conservati nell’[area editoriale](docs/editorial/first-ten/README.md), esterna ai contenuti Astro. `npm run editorial:check` controlla identità, riferimenti, artefatti e conservazione del catalogo. Non pubblica né applica record.
 
 Il [consolidamento P1.4](docs/editorial/p1.4/README.md) aggiunge dossier versionati e proposte manuali senza modificare la baseline P1.3, i contenuti Astro o il registro. Verifica con `npm run editorial:consolidation`; nessuna applicazione o pubblicazione automatica.
+
+L’[integrazione controllata P1.5](docs/integration/p1.5/README.md) aggiunge i tre draft P1.4 al catalogo sorgente mantenendoli privati nei due target pubblici. `npm run integration:check` verifica il catalogo e i demo invariati; `npm run integration:output` controlla tutti gli asset di `dist`, dopo una build. Le checklist di arricchimento restano pendenti e non applicate.

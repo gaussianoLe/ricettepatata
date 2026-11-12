@@ -4,11 +4,11 @@ import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {readEditorialBundle,validateEditorialBundle,renderSourceMatrix} from '../src/catalog/editorial.mjs';
-import {readCatalog} from '../src/catalog/io.mjs';
+import {historicalCatalog} from '../src/catalog/history.mjs';
 import {isVisible} from '../src/catalog/policy.mjs';
 const root='docs/editorial/first-ten';
 const bundle=readEditorialBundle(root),dataset=readFileSync('docs/research/lotto-01/dataset.json','utf8');
-const current=readCatalog(),registry=JSON.parse(readFileSync('src/catalog/registry.json','utf8'));
+const {entries:current,registry}=historicalCatalog();
 const check=value=>validateEditorialBundle(value,dataset,current,registry);
 const altered=change=>{const copy=structuredClone(bundle);change(copy);return copy;};
 
@@ -86,16 +86,8 @@ test('dossiers, decisions and generated source matrix cannot silently disappear'
  assert.equal(unresolved.decision.outcome,'needs_review');
  assert.ok(bundle.sources.sources.find(s=>s.id==='ducasse-tartiflette').access==='partial-paywall');
 });
-test('CLI validates the frozen baseline without rewriting research inputs',()=>{
- // The growth matrix adds transient registry entries, so snapshot verification runs before those fixtures in CI.
- const snapshot=JSON.parse(readFileSync(root+'/preserved-catalog.json','utf8'));
- const registryHash=createHash('sha256').update(readFileSync('src/catalog/registry.json')).digest('hex');
- if(registryHash===snapshot['src/catalog/registry.json']){
-  const output=execFileSync(process.execPath,['scripts/editorial-check.mjs'],{encoding:'utf8'});
-  assert.equal(JSON.parse(output).dossiers,bundle.selection.sourceIds.length);
- }else {
-  const fixture=JSON.parse(readFileSync('.astro/p1-catalog-fixtures.json','utf8'));
-  assert.equal(createHash('sha256').update(fixture.registryText).digest('hex'),snapshot['src/catalog/registry.json']);
-  assert.throws(()=>execFileSync(process.execPath,['scripts/editorial-check.mjs'],{encoding:'utf8',stdio:'pipe'}),/Contenuto\/registro modificato/);
- }
+test('CLI validates the frozen historical baseline without rewriting research inputs',()=>{
+ const output=execFileSync(process.execPath,['scripts/editorial-check.mjs'],{encoding:'utf8'});
+ assert.equal(JSON.parse(output).dossiers,bundle.selection.sourceIds.length);
+ assert.throws(()=>execFileSync(process.execPath,['scripts/editorial-check.mjs','--write'],{encoding:'utf8',stdio:'pipe'}),/immutabile/);
 });

@@ -2,7 +2,7 @@ name: Foundation CI
 on:
   pull_request:
   push:
-    branches: [main, feat/p1.2-first-catalog-batch]
+    branches: [main, feat/p1.3-editorial-first-ten]
 permissions:
   contents: read
 concurrency:
@@ -46,12 +46,14 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - name: Validate editorial dossiers and preserved catalog
+        run: npm run editorial:check
       - name: Exercise editorial states, variants and catalog growth
         if: matrix.growth
         run: node tests/helpers/catalog-fixtures.mjs add
       - run: npm run check
       - run: npm run catalog:check
-      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs
+      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs
       - name: Build static magazine
         run: node scripts/build.mjs ${{ matrix.target }}
       - run: node --test tests/output.test.mjs

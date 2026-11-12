@@ -1,0 +1,130 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0001",
+  "researchTechnicalId": "d37c3634-9c3a-5f98-aec2-bb4817ee5a71",
+  "researchLabel": "Pitta di patate salentina",
+  "proposedSlug": "pitta-di-patate-salentina",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Pitta di patate salentina",
+    "original": {
+      "text": "Pitta di patate",
+      "language": "it"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": "Salento",
+    "traditions": [
+      "Cucina salentina"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "puglia-pitta",
+    "agrodolce-pitta"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Denominazione italiana attestata; nessun nome dialettale imposto.",
+      "sourceIds": [
+        "puglia-pitta",
+        "agrodolce-pitta"
+      ],
+      "locator": "Titolo e presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Entrambe collocano la preparazione nel Salento.",
+      "sourceIds": [
+        "puglia-pitta",
+        "agrodolce-pitta"
+      ],
+      "locator": "Presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Impasto di patate, uovo e formaggio; farcia con cipolle, pomodoro, olive e capperi.",
+      "sourceIds": [
+        "puglia-pitta",
+        "agrodolce-pitta"
+      ],
+      "locator": "Ingredienti",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Puglia.com: 4 porzioni, preparazione 90 min e forno 30 min; Agrodolce: 6 porzioni, preparazione 80 min, riposo 30 min.",
+      "sourceIds": [
+        "puglia-pitta",
+        "agrodolce-pitta"
+      ],
+      "locator": "Schede tempi e porzioni",
+      "status": "conflicting"
+    },
+    {
+      "field": "variants",
+      "text": "Ripieni con tonno o salumi sono possibilità documentate, non nuove entità già risolte.",
+      "sourceIds": [
+        "puglia-pitta",
+        "agrodolce-pitta"
+      ],
+      "locator": "Presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "culture",
+      "text": "Non adottata l’etimologia proposta da una sola fonte come fatto storico verificato.",
+      "sourceIds": [
+        "agrodolce-pitta"
+      ],
+      "locator": "Presentazione",
+      "status": "unresolved"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "puglia-pitta",
+        "agrodolce-pitta"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "agrodolce-pitta",
+    "servings": 6,
+    "ingredients": "1 kg patate; 500 g cipolle; 500 g pomodori; 200 g pecorino; 1 uovo; 15 g pangrattato; 40 g olive; 35 g capperi; sale e olio q.b.",
+    "timing": "80 min preparazione; 30 min riposo; forno 30–40 min a 190 °C: non normalizzato."
+  },
+  "originalProcedure": [
+    "Ridurre le patate cotte in purea e unirvi uovo e pecorino.",
+    "Restringere cipolle e pomodori, poi aggiungere olive e capperi.",
+    "Racchiudere la farcia fra due strati di impasto; completare con olio e pangrattato e cuocere."
+  ],
+  "identity": {
+    "disposition": "existing-enrichment",
+    "existingCatalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d"
+  },
+  "decision": {
+    "outcome": "duplicate_or_variant",
+    "reason": "Possibile arricchimento del demo pitta-di-patate: preservare UUID e URL esistenti. Nessuna nuova identità operativa o sovrascrittura automatica."
+  },
+  "openQuestions": [
+    "Approvare il collegamento RP-0001 al record esistente.",
+    "Scegliere una formula e chiarire il conteggio della lessatura."
+  ],
+  "recordPath": null
+}

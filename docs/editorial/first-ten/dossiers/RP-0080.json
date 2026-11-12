@@ -1,0 +1,144 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0080",
+  "researchTechnicalId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+  "researchLabel": "Papas arrugadas con mojo",
+  "proposedSlug": "papas-arrugadas-con-mojo",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Papas arrugadas con mojo",
+    "original": {
+      "text": "Papas arrugadas",
+      "language": "es"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "africa",
+    "country": {
+      "code": "ES",
+      "name": "Spagna"
+    },
+    "region": "Isole Canarie",
+    "traditions": [
+      "Cucina canaria"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "bonviveur-papas",
+    "canarias-gastronomia",
+    "karlos-mojo",
+    "canarias-geografia"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Papas arrugadas è il nome spagnolo della base; il titolo indica il servizio con mojo.",
+      "sourceIds": [
+        "bonviveur-papas",
+        "karlos-mojo"
+      ],
+      "locator": "Titoli e servizio",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Preparazione canaria con accompagnamento di mojo.",
+      "sourceIds": [
+        "canarias-gastronomia",
+        "bonviveur-papas",
+        "karlos-mojo"
+      ],
+      "locator": "Ricette locali e presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "La formula scelta usa patate da contorno, non pretende varietà canarie certificate.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "locator": "Presentazione e ingredienti",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "4 porzioni; 5 min preparazione, 30 min cottura, totale 35. Nessun riposo prescritto: restMinutes=0 è convenzione redazionale esplicita.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "locator": "Información de la receta",
+      "status": "supported"
+    },
+    {
+      "field": "variants",
+      "text": "Mojo rosso, picón o verde sono accompagnamenti documentati; non si inventa una salsa canonica unica.",
+      "sourceIds": [
+        "bonviveur-papas",
+        "canarias-gastronomia",
+        "karlos-mojo"
+      ],
+      "locator": "Servizio e ricette locali",
+      "status": "supported"
+    },
+    {
+      "field": "method",
+      "text": "Bollitura con buccia, eliminazione dell’acqua e asciugatura sul fuoco.",
+      "sourceIds": [
+        "bonviveur-papas",
+        "karlos-mojo"
+      ],
+      "locator": "Procedimenti",
+      "status": "supported"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "bonviveur-papas",
+        "canarias-gastronomia",
+        "karlos-mojo"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    },
+    {
+      "field": "geography",
+      "text": "Spagna è il Paese amministrativo; africa è il raggruppamento geografico adottato per le Canarie atlantiche vicine alla costa africana. Non dedotto automaticamente dal Paese.",
+      "sourceIds": [
+        "canarias-geografia"
+      ],
+      "locator": "Situación y composición",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "bonviveur-papas",
+    "servings": 4,
+    "ingredients": "500 g patate; 75 g sale grosso; circa 2 l acqua; mojo già preparato, dose di servizio non quantificata.",
+    "timing": "5 min preparazione; 30 min cottura (20 bollitura + 10 asciugatura); nessun riposo prescritto."
+  },
+  "originalProcedure": [
+    "Lavare bene le patate lasciando la buccia.",
+    "Metterle in pentola con sale e acqua a coprirle; cuocere e controllare che siano tenere.",
+    "Scolare e asciugare sul fuoco dolce muovendo il recipiente.",
+    "Servire subito con il mojo già preparato."
+  ],
+  "identity": {
+    "disposition": "new-primary",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "ready_for_conversion",
+    "reason": "Formula sufficiente per un draft limitato alle papas servite con mojo già preparato. Nessuna ricetta della salsa incorporata o quantità della salsa inventata; identità nuova senza collisioni."
+  },
+  "openQuestions": [
+    "Il draft non comprende la produzione del mojo; per ampliarlo occorre una formula separatamente verificata.",
+    "Review indipendente necessaria prima di stati verified/published."
+  ],
+  "recordPath": "records.json#RP-0080"
+}

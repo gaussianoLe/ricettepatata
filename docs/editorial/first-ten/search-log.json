@@ -1,0 +1,24 @@
+{
+  "consultedAt": "2026-11-12",
+  "method": "Ricerca web e apertura delle pagine; non scraping automatico né prova in cucina. I gruppi di indipendenza indicano responsabilità editoriali diverse, non certificano l’assenza assoluta di dipendenza bibliografica.",
+  "queriesForUnresolvedName": [
+    "\"patate alla salentina con pomodoro e cipolla\"",
+    "\"patate alla salentina\" -polpo -baccalà -pitta -cookidoo",
+    "\"patate\" \"salentina\" \"pomodoro\" \"cipolla\" ricetta"
+  ],
+  "negativeFinding": "Nessuna fonte diretta sufficiente per RP-0005 nella ricerca svolta; non è prova di inesistenza.",
+  "accessLimitations": [
+    {
+      "url": "https://www.puglia.com/pitta-di-patate/",
+      "outcome": "URL iniziale non accessibile; trovata e consultata la pagina corretta /pitta-di-patate-salentina/."
+    },
+    {
+      "url": "https://www.bonviveur.es/recetas/papas-arrugadas-con-mojo-picon",
+      "outcome": "URL tentato non accessibile; consultata la pagina canonica bonviveur.com/es/recetas/papas-arrugadas."
+    },
+    {
+      "url": "https://www.academiedugout.fr/recettes/tartiflette_6349_2",
+      "outcome": "Accesso parziale con avviso Premium; utilizzati solo i dati visibili."
+    }
+  ]
+}

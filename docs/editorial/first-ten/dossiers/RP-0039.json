@@ -1,0 +1,119 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0039",
+  "researchTechnicalId": "9dd07944-84f6-5f2a-bb79-f3524232aa65",
+  "researchLabel": "Gnocchi di patate",
+  "proposedSlug": "gnocchi-di-patate",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Gnocchi di patate",
+    "original": {
+      "text": "Gnocchi di patate",
+      "language": "it"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": null,
+    "traditions": [
+      "Cucina italiana"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "cucchiaio-gnocchi",
+    "gz-gnocchi"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Nome italiano attestato in entrambe le fonti.",
+      "sourceIds": [
+        "cucchiaio-gnocchi",
+        "gz-gnocchi"
+      ],
+      "locator": "Titoli",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Preparazione italiana diffusa; nessuna singola regione di invenzione assegnata.",
+      "sourceIds": [
+        "cucchiaio-gnocchi",
+        "gz-gnocchi"
+      ],
+      "locator": "Presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Versione con patate, farina e uovo; documentata anche quella senza uova.",
+      "sourceIds": [
+        "cucchiaio-gnocchi",
+        "gz-gnocchi"
+      ],
+      "locator": "Ingredienti e presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Cucchiaio aperto: 4 porzioni, preparazione 45 min, lessatura 30–40 min. Lo snippet indicava 4–5: prevale la pagina consultata.",
+      "sourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "locator": "Scheda e procedimento",
+      "status": "conflicting"
+    },
+    {
+      "field": "variants",
+      "text": "Gnocchi senza uova e condimenti regionali non vengono moltiplicati in nuove ricette.",
+      "sourceIds": [
+        "gz-gnocchi"
+      ],
+      "locator": "Presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "cucchiaio-gnocchi",
+        "gz-gnocchi"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "cucchiaio-gnocchi",
+    "servings": 4,
+    "ingredients": "1 kg patate; 300 g farina 00; 1 uovo; sale; noce moscata facoltativa.",
+    "timing": "45 min preparazione; patate 30–40 min; gnocchi 2–3 min indicativi."
+  },
+  "originalProcedure": [
+    "Schiacciare le patate cotte e amalgamarle brevemente con farina e uovo.",
+    "Ricavare piccoli pezzi dai filoncini e rigarli.",
+    "Cuocere in acqua bollente e verificare la consistenza."
+  ],
+  "identity": {
+    "disposition": "existing-enrichment",
+    "existingCatalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa"
+  },
+  "decision": {
+    "outcome": "duplicate_or_variant",
+    "reason": "Possibile arricchimento del demo gnocchi. Il nome coincide anche se lo slug proposto differisce: riusare eventualmente l’identità esistente."
+  },
+  "openQuestions": [
+    "Approvare il collegamento RP-0039 al record gnocchi.",
+    "Conservare l’intervallo di cottura senza convertirlo in un valore esatto."
+  ],
+  "recordPath": null
+}

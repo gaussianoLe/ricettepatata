@@ -1,0 +1,128 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0077",
+  "researchTechnicalId": "f0c2c946-e7c9-54aa-a656-57ed73820c88",
+  "researchLabel": "Tortilla de patatas",
+  "proposedSlug": "tortilla-de-patatas",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Tortilla di patate",
+    "original": {
+      "text": "Tortilla de patatas",
+      "language": "es"
+    },
+    "alternatives": [
+      {
+        "text": "Tortilla de patata",
+        "language": "es"
+      },
+      {
+        "text": "Tortilla española",
+        "language": "es"
+      }
+    ],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "ES",
+      "name": "Spagna"
+    },
+    "region": null,
+    "traditions": [
+      "Cucina spagnola"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "spain-tortilla",
+    "joseba-tortilla"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Singolare e plurale spagnoli attestati; titolo italiano è traduzione redazionale.",
+      "sourceIds": [
+        "spain-tortilla",
+        "joseba-tortilla"
+      ],
+      "locator": "Titoli",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Preparazione spagnola; non attribuita univocamente a una città di origine.",
+      "sourceIds": [
+        "spain-tortilla",
+        "joseba-tortilla"
+      ],
+      "locator": "Titoli e presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Versioni con cipolla e rapporto patate/uova diverso.",
+      "sourceIds": [
+        "spain-tortilla",
+        "joseba-tortilla"
+      ],
+      "locator": "Ingredienti",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Spain.info: 4 porzioni e 60 min cottura, senza preparazione distinta. Joseba: 15+45 min, ma anche 5 min di riposo e un ulteriore riposo non quantificato.",
+      "sourceIds": [
+        "spain-tortilla",
+        "joseba-tortilla"
+      ],
+      "locator": "Schede e passaggi",
+      "status": "conflicting"
+    },
+    {
+      "field": "variants",
+      "text": "Una versione con tuorlo supplementare non viene dichiarata unica formula tradizionale.",
+      "sourceIds": [
+        "joseba-tortilla"
+      ],
+      "locator": "Ingredienti",
+      "status": "supported"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "spain-tortilla",
+        "joseba-tortilla"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "spain-tortilla",
+    "servings": 4,
+    "ingredients": "4 patate medie; 4–5 uova; 1 cipolla media; 250 ml olio d’oliva; sale.",
+    "timing": "Cottura dichiarata 60 min; tempo di preparazione non distinto."
+  },
+  "originalProcedure": [
+    "Cuocere dolcemente patate e cipolla nell’olio, poi scolare.",
+    "Amalgamare con le uova battute e cuocere in padella sui due lati."
+  ],
+  "identity": {
+    "disposition": "unresolved",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "reason": "Identità disponibile; occorre fissare una versione e chiarire riposi e conteggio dei tempi prima di convertirla."
+  },
+  "openQuestions": [
+    "Scegliere la versione e chiarire tempi attivi e riposi.",
+    "Verificare il punto di cottura dell’uovo prima di una futura pubblicazione."
+  ],
+  "recordPath": null
+}

@@ -1,0 +1,130 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0063",
+  "researchTechnicalId": "ad443f73-b992-53f1-9502-5d8afed05804",
+  "researchLabel": "Tartiflette",
+  "proposedSlug": "tartiflette",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Tartiflette",
+    "original": {
+      "text": "Tartiflette",
+      "language": "fr"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "FR",
+      "name": "Francia"
+    },
+    "region": "Savoia",
+    "traditions": [
+      "Cucina savoiarda"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "reblochon-tartiflette",
+    "ducasse-tartiflette"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Nome francese attestato.",
+      "sourceIds": [
+        "reblochon-tartiflette",
+        "ducasse-tartiflette"
+      ],
+      "locator": "Titoli",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Legame savoiardo del formaggio esplicito; collocazione culinaria savoiarda sostenuta dalla filiera.",
+      "sourceIds": [
+        "reblochon-tartiflette",
+        "ducasse-tartiflette"
+      ],
+      "locator": "Presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Patate, reblochon, cipolle e lardons comuni; la versione Ducasse include panna e burro.",
+      "sourceIds": [
+        "reblochon-tartiflette",
+        "ducasse-tartiflette"
+      ],
+      "locator": "Ingredienti",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Reblochon: 4 porzioni e 25+20 min, ma sequenza 3+20+5+15–20 min. Ducasse: 6 porzioni e 20+55 min.",
+      "sourceIds": [
+        "reblochon-tartiflette",
+        "ducasse-tartiflette"
+      ],
+      "locator": "Schede e passaggi",
+      "status": "conflicting"
+    },
+    {
+      "field": "method",
+      "text": "Ducasse è accessibile solo fino ai primi passaggi: non dichiarata lettura integrale né ricostruita la parte premium.",
+      "sourceIds": [
+        "ducasse-tartiflette"
+      ],
+      "locator": "Preparazione e avviso Premium",
+      "status": "unresolved"
+    },
+    {
+      "field": "variants",
+      "text": "Panna facoltativa e tecniche diverse non danno luogo a nuove identità regionali automatiche.",
+      "sourceIds": [
+        "reblochon-tartiflette",
+        "ducasse-tartiflette"
+      ],
+      "locator": "Confronto formule",
+      "status": "editorial-inference"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "reblochon-tartiflette",
+        "ducasse-tartiflette"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "reblochon-tartiflette",
+    "servings": 4,
+    "ingredients": "1 reblochon; 1 kg patate; 200 g lardons; 2 cipolle circa 200 g; 100 ml vino bianco; pepe; noce moscata facoltativa.",
+    "timing": "25 min preparazione e 20 min cottura dichiarati, incongruenti con il metodo."
+  },
+  "originalProcedure": [
+    "Rosolare cipolle e lardons, aggiungere le patate e poi il vino.",
+    "Incorporare parte del reblochon e usare il resto sulla superficie.",
+    "Gratinare in forno; la durata totale resta da riconciliare."
+  ],
+  "identity": {
+    "disposition": "unresolved",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "reason": "Identità e composizione corroborate; cronologia del metodo Reblochon incompatibile con il tempo di cottura riassuntivo. Seconda fonte leggibile solo in parte."
+  },
+  "openQuestions": [
+    "Chiarire il tempo effettivo della formula Reblochon.",
+    "Consultare integralmente una seconda formula accessibile se deve sostenere tutto il metodo."
+  ],
+  "recordPath": null
+}

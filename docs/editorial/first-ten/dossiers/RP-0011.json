@@ -1,0 +1,129 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0011",
+  "researchTechnicalId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+  "researchLabel": "Gattò di patate",
+  "proposedSlug": "gatto-di-patate",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Gattò di patate",
+    "original": {
+      "text": "Gattò di patate",
+      "language": "it"
+    },
+    "alternatives": [
+      {
+        "text": "Gateau di patate",
+        "language": "it"
+      }
+    ],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": "Napoli, Campania",
+    "traditions": [
+      "Cucina napoletana"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "cucchiaio-gatto",
+    "bracale-gatto",
+    "gz-gatto"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Gattò e gateau di patate designano lo sformato napoletano; non è una ricetta francese solo per il nome.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "bracale-gatto"
+      ],
+      "locator": "Titoli e presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Tradizione napoletana attestata.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "bracale-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Formule con salame/provola oppure prosciutto e mozzarella affumicata; non sommate.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Ingredienti",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Cucchiaio: 6 porzioni, 30 min preparazione, 90 min cottura; corpo: 40 min lessatura più 30–40 forno. GZ dichiara 80 min ma descrive 40–50 più 45.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Schede e procedimenti",
+      "status": "conflicting"
+    },
+    {
+      "field": "culture",
+      "text": "Racconti sull’origine borbonica non verificati tramite documenti storici: esclusi dal record.",
+      "sourceIds": [
+        "bracale-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Presentazioni",
+      "status": "unresolved"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "bracale-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "cucchiaio-gatto",
+    "servings": 6,
+    "ingredients": "1 kg patate; 100 g burro; 60 g parmigiano; 60 g provola; 3 tuorli; 80 g salame; 2 albumi; 150 g mozzarella; prezzemolo, pangrattato e sale.",
+    "timing": "30 min preparazione; cottura dichiarata 90 min, non riconciliata."
+  },
+  "originalProcedure": [
+    "Unire alla purea formaggio, burro, tuorli, salame e provola.",
+    "Incorporare gli albumi montati e racchiudere la mozzarella nel composto.",
+    "Cuocere nello stampo impanato e lasciare intiepidire."
+  ],
+  "identity": {
+    "disposition": "unresolved",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "reason": "Nome e tradizione documentati, ma le schede presentano tempi e formule discordanti; evitare una normalizzazione numerica artificiale."
+  },
+  "openQuestions": [
+    "Scegliere una formula riproducibile e chiarirne i tempi.",
+    "Eventuali date di invenzione richiedono fonti storiche primarie."
+  ],
+  "recordPath": null
+}

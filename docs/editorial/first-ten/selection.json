@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "df247cc63b9cc30c369b83dff36be0dcddfa1f56",
+  "datasetSha256": "65ba0af4214b56604d9f2ce05854ff555dd309dedde45de41e59bb2414e4486f",
+  "consultedAt": "2026-11-12",
+  "sourceIds": [
+    "RP-0001",
+    "RP-0002",
+    "RP-0005",
+    "RP-0039",
+    "RP-0011",
+    "RP-0077",
+    "RP-0079",
+    "RP-0080",
+    "RP-0062",
+    "RP-0063"
+  ]
+}

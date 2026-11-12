@@ -17,7 +17,8 @@
     "catalog:check": "node scripts/catalog-check.mjs",
     "catalog:import": "node scripts/catalog-import.mjs",
     "catalog:batch": "node scripts/catalog-batch.mjs",
-    "catalog:survey": "node scripts/catalog-survey.mjs"
+    "catalog:survey": "node scripts/catalog-survey.mjs",
+    "editorial:check": "node scripts/editorial-check.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

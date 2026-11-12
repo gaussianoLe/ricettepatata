@@ -1,0 +1,123 @@
+{
+  "formatVersion": 1,
+  "scope": "Actually executed local four-configuration matrix; CI runs independent audits on the final SHA.",
+  "configurations": [
+    {
+      "configuration": "production",
+      "target": "production",
+      "base": "/",
+      "site": "https://ricettepatata.it",
+      "syntheticGrowthFixture": false,
+      "audit": {
+        "filesScanned": 10,
+        "markersChecked": 47,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "808f7b7fdc6b0260541dbc9fb7c692c12d98606fc5cbbe22839c33568a8567a0"
+      },
+      "reproducibleBuild": true,
+      "nodeTests": true,
+      "browserTests": true,
+      "directDraftUrls": "404",
+      "rawStaticDraftLeaks": 0,
+      "editorialBrowserTests": 10,
+      "editorialTemporarySessionRemoved": true,
+      "operationalAndPublicOutputUnchangedAfterEditorial": true
+    },
+    {
+      "configuration": "preview",
+      "target": "preview",
+      "base": "/anteprima/",
+      "site": "https://ricettepatata.it",
+      "syntheticGrowthFixture": false,
+      "audit": {
+        "filesScanned": 18,
+        "markersChecked": 47,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "a20c1e3a548c6431b24673bbf46903dc030ae427c7b15024430cc70edda2e3d8"
+      },
+      "reproducibleBuild": true,
+      "nodeTests": true,
+      "browserTests": true,
+      "directDraftUrls": "404",
+      "rawStaticDraftLeaks": 0,
+      "editorialBrowserTests": 10,
+      "editorialTemporarySessionRemoved": true,
+      "operationalAndPublicOutputUnchangedAfterEditorial": true
+    },
+    {
+      "configuration": "production-custom-growth",
+      "target": "production",
+      "base": "/magazine/",
+      "site": "https://cucina.example",
+      "syntheticGrowthFixture": true,
+      "audit": {
+        "filesScanned": 14,
+        "markersChecked": 47,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "3e51720db9db00db0898c133b87995f5ea4947c0fd41dd48dcf430f8d872e405"
+      },
+      "reproducibleBuild": true,
+      "nodeTests": true,
+      "browserTests": true,
+      "directDraftUrls": "404",
+      "rawStaticDraftLeaks": 0,
+      "editorialBrowserTests": 10,
+      "editorialTemporarySessionRemoved": true,
+      "operationalAndPublicOutputUnchangedAfterEditorial": true
+    },
+    {
+      "configuration": "preview-root-http",
+      "target": "preview",
+      "base": "/",
+      "site": "http://localhost:4321",
+      "syntheticGrowthFixture": false,
+      "audit": {
+        "filesScanned": 18,
+        "markersChecked": 47,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "909c07cf1fd65fa5374be6eff199c6c4c243d6a9bfa42fef0253130776c4e5bd"
+      },
+      "reproducibleBuild": true,
+      "nodeTests": true,
+      "browserTests": true,
+      "directDraftUrls": "404",
+      "rawStaticDraftLeaks": 0,
+      "editorialBrowserTests": 10,
+      "editorialTemporarySessionRemoved": true,
+      "operationalAndPublicOutputUnchangedAfterEditorial": true
+    }
+  ],
+  "protectedFilesVerifiedAgainstBaseline": 77,
+  "finalMatrixCounts": {
+    "nodePerConfiguration": 107,
+    "publicBrowserPerConfiguration": 14,
+    "editorialBrowserPerConfiguration": 10,
+    "configurations": 4,
+    "nodeTotal": 428,
+    "browserTotal": 96
+  }
+}

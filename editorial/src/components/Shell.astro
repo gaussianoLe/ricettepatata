@@ -1,0 +1,8 @@
+---
+interface Props {title:string}
+const {title}=Astro.props;
+---
+<!doctype html><html lang="it"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="robots" content="noindex,nofollow,noarchive"/><meta name="referrer" content="no-referrer"/><title>{title} · Redazione locale</title></head><body><header><a href="/">RicettePatata · Redazione locale</a><p class="notice">Ambiente editoriale privato · solo localhost · non distribuibile</p><p>La visualizzazione non costituisce approvazione. Nessuna modifica o pubblicazione automatica.</p></header><main><h1>{title}</h1><slot/></main></body></html>
+<style is:inline>
+:root{font-family:system-ui,sans-serif;color:#26312b;background:#f6f4ec;line-height:1.6}body{margin:0}header,main{max-width:1200px;margin:auto;padding:1.25rem}header{border-bottom:2px solid #c9d5c4}h1,h2,h3{line-height:1.2}a{color:#285c3c}a:focus-visible{outline:3px solid #b14b14;outline-offset:3px}.notice{background:#fff0ce;border-left:5px solid #9b5410;padding:1rem;font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1rem}.panel{background:white;border:1px solid #c9d5c4;border-radius:12px;padding:1.2rem;min-width:0;margin:1rem 0}.badge{display:inline-block;background:#e3eddb;border-radius:8px;padding:.1rem .5rem;margin-right:.5rem}.issues{border-left:4px solid #b14b14;padding-left:1rem}code,pre{overflow-wrap:anywhere;white-space:pre-wrap;font-size:.85rem}table{border-collapse:collapse;width:100%;background:white}th,td{border:1px solid #ccd2c8;padding:.6rem;vertical-align:top;text-align:left}summary{cursor:pointer}li{margin:.3rem 0}.table-scroll{overflow:auto}dt{font-weight:700}dd{margin-left:0;overflow-wrap:anywhere}
+</style>

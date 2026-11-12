@@ -1,0 +1,6 @@
+---
+import Shell from '../components/Shell.astro';
+import {editorialData} from '../../data.mjs';
+const {catalog,proposals}=editorialData();
+---
+<Shell title="Revisione editoriale"><p>Target <code>editorial</code>. Candidate, draft e review vengono letti dai file sorgenti senza modificare la policy pubblica.</p><h2>Catalogo operativo in lavorazione</h2><div class="grid">{catalog.map(entry=><article class="panel"><p class="badge">{entry.data.editorial.status} · {entry.data.demo?'DEMO':'REALE'}</p><h3><a href={`/recipes/${entry.data.catalogId}/`}>{entry.data.names.italian}</a></h3><p><code>{entry.data.slug}</code></p></article>)}</div><h2>Proposte di arricchimento · non applicate</h2><ul>{proposals.map(p=><li><a href={`/enrichments/${p.plan.researchId}/`}>{p.plan.researchId} — {p.record.names.italian}</a> · {p.decision.status} · nessuna approvazione</li>)}</ul></Shell>

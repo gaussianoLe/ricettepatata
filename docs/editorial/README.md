@@ -7,3 +7,5 @@ Il [consolidamento P1.4](p1.4/README.md) mantiene gli artefatti P1.3 immutabili 
 [P1.5 integra i tre draft nel catalogo operativo](../integration/p1.5/README.md), mantenendoli privati in entrambi i target e preservando gli artefatti storici. I controlli P1.3/P1.4 verificano la baseline; `integration:check` controlla le tre aggiunte correnti e i demo invariati.
 
 [P1.6 — Revisione degli arricchimenti](p1.6/README.md): tre decisioni individuali, precondizioni e diff riproducibili; zero sostituzioni per il blocco di visibilità.
+
+[P1.7 — Ambiente locale di revisione](p1.7/README.md): schede in lavorazione e confronto delle proposte senza applicazione; avvio `npm run editorial`.

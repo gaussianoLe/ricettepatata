@@ -1,0 +1,11 @@
+---
+import Shell from '../../components/Shell.astro';
+import Recipe from '../../components/Recipe.astro';
+import {editorialData} from '../../../data.mjs';
+export const prerender=false;
+const {catalog,proposals}=editorialData();
+const entry=catalog.find(e=>e.data.catalogId===Astro.params.id);
+if(!entry)return Astro.redirect('/404');
+const proposal=proposals.find(p=>p.plan.catalogId===entry.data.catalogId);
+---
+<Shell title={entry.data.names.italian}><a href="/">← Catalogo locale</a>{proposal && <p><a href={`/enrichments/${proposal.plan.researchId}/`}>Confronta la proposta non applicata</a></p>}<Recipe record={entry.data} label="Contenuto operativo attuale"/><details><summary>Corpo Markdown sorgente · sola lettura</summary><pre>{entry.body}</pre></details></Shell>

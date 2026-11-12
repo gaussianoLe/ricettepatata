@@ -23,7 +23,9 @@
     "integration:check": "node scripts/integration-check.mjs",
     "integration:output": "node scripts/integration-output.mjs",
     "build:reproducible": "node scripts/verify-reproducible.mjs",
-    "editorial:enrichments": "node scripts/enrichment-review.mjs"
+    "editorial:enrichments": "node scripts/enrichment-review.mjs",
+    "editorial": "node scripts/editorial-dev.mjs",
+    "test:editorial": "node scripts/test-editorial.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

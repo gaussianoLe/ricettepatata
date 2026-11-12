@@ -1,0 +1,20 @@
+{
+  "formatVersion": 1,
+  "status": "waiting_for_dataset",
+  "datasetAvailable": false,
+  "importExecuted": false,
+  "expectedCandidates": 50,
+  "summary": {
+    "received": 0,
+    "accepted": 0,
+    "excluded": 0,
+    "review": 0
+  },
+  "accepted": [],
+  "excluded": [],
+  "review": [],
+  "blockingReasons": [
+    "DATASET_NOT_PROVIDED",
+    "MAPPING_PROFILE_TO_FINALIZE"
+  ]
+}

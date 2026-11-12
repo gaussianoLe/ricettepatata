@@ -15,7 +15,9 @@
     "test": "node --test tests/*.test.mjs",
     "test:e2e": "playwright test",
     "catalog:check": "node scripts/catalog-check.mjs",
-    "catalog:import": "node scripts/catalog-import.mjs"
+    "catalog:import": "node scripts/catalog-import.mjs",
+    "catalog:batch": "node scripts/catalog-batch.mjs",
+    "catalog:survey": "node scripts/catalog-survey.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

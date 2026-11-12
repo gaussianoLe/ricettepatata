@@ -1,0 +1,2779 @@
+{
+  "formatVersion": 1,
+  "datasetId": "ricettepatata-exploratory-census",
+  "lot": "lotto_01",
+  "status": "needs_review",
+  "datasetAvailable": true,
+  "importExecuted": false,
+  "editorialState": "candidate",
+  "stagingKind": "research_quarantine",
+  "comparison": {
+    "equivalent": true,
+    "sameFields": true,
+    "sameOrder": true,
+    "jsonRecords": 50,
+    "csvRecords": 50,
+    "duplicateJsonIds": [],
+    "duplicateCsvIds": [],
+    "differences": [],
+    "jsonFingerprint": "65ba0af4214b56604d9f2ce05854ff555dd309dedde45de41e59bb2414e4486f",
+    "csvFingerprint": "98bbb2fe8ffd8317cb8fc87d1cd8931f823fc8d565cfc60b5a37b31166a976ac"
+  },
+  "methodologyFingerprint": "4eec7ba141cb3ace7dc762092f35b8d037439dc35d923c01f6ea6e134e366b43",
+  "catalogFingerprint": "fff71e27c4acb75cc36e049889a49c6c72c83a3d5ffba57fe3d211bcf1530179",
+  "summary": {
+    "received": 50,
+    "alternativeRowsNotProcessed": 50,
+    "accepted": 0,
+    "excluded": 0,
+    "review": 50
+  },
+  "accepted": [],
+  "excluded": [],
+  "review": [
+    {
+      "sourceId": "RP-0001",
+      "proposedCatalogId": "d37c3634-9c3a-5f98-aec2-bb4817ee5a71",
+      "proposedSlug": "pitta-di-patate-salentina",
+      "editorialState": "candidate",
+      "researchLabel": "Pitta di patate salentina",
+      "declaredCountry": "Italia",
+      "declaredArea": "Salento/Puglia",
+      "preliminaryCategory": "sformati e forno",
+      "sourceFingerprint": "30e44a8b411ebdf210a176791d7ecfd3ffb29e380a9bdf9742c2a48e2a279d67",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+          "slug": "pitta-di-patate",
+          "name": "Pitta di patate",
+          "kind": "SIMILAR_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0002",
+      "proposedCatalogId": "6522115f-4bd1-5483-8fd2-a178173dda53",
+      "proposedSlug": "tiella-barese-riso-patate-e-cozze",
+      "editorialState": "candidate",
+      "researchLabel": "Tiella barese riso patate e cozze",
+      "declaredCountry": "Italia",
+      "declaredArea": "Salento/Puglia",
+      "preliminaryCategory": "sformati e forno",
+      "sourceFingerprint": "1dd24949b56d14bb45990fb15b411b837209e177ccfebac4b2c0b49e64d673c8",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0005",
+      "proposedCatalogId": "724f3333-4782-53af-98ee-b31839e8094c",
+      "proposedSlug": "patate-alla-salentina-con-pomodoro-e-cipolla",
+      "editorialState": "candidate",
+      "researchLabel": "Patate alla salentina con pomodoro e cipolla",
+      "declaredCountry": "Italia",
+      "declaredArea": "Salento/Puglia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "0b24e42f07ccdbe7f497365b3ddb4bc178afe32a141ae35a74882580abf2d34d",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0039",
+      "proposedCatalogId": "9dd07944-84f6-5f2a-bb79-f3524232aa65",
+      "proposedSlug": "gnocchi-di-patate",
+      "editorialState": "candidate",
+      "researchLabel": "Gnocchi di patate",
+      "declaredCountry": "Italia",
+      "declaredArea": "Lombardia",
+      "preliminaryCategory": "impasti e ripieni",
+      "sourceFingerprint": "2bcf453dad82e854988a955e14c71d58e73faefa747238dfce8e6ddce4b0795d",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+          "slug": "gnocchi",
+          "name": "Gnocchi di patate",
+          "kind": "EXACT_NORMALIZED_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0011",
+      "proposedCatalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "proposedSlug": "gatto-di-patate",
+      "editorialState": "candidate",
+      "researchLabel": "Gattò di patate",
+      "declaredCountry": "Italia",
+      "declaredArea": "Campania",
+      "preliminaryCategory": "sformati e forno",
+      "sourceFingerprint": "d432c54d4ee43adb7374c974a98ee528adba87ea5a6864413d998510f9adcffd",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0077",
+      "proposedCatalogId": "f0c2c946-e7c9-54aa-a656-57ed73820c88",
+      "proposedSlug": "tortilla-de-patatas",
+      "editorialState": "candidate",
+      "researchLabel": "Tortilla de patatas",
+      "declaredCountry": "Spagna",
+      "declaredArea": "Spagna",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "1b94a39d8d20b7ffe810298ea5ba3d0496b54f24a68c80d56f773171a99a05ab",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0079",
+      "proposedCatalogId": "c75db4bc-7967-5e64-9cc1-70745740c03f",
+      "proposedSlug": "patatas-bravas",
+      "editorialState": "candidate",
+      "researchLabel": "Patatas bravas",
+      "declaredCountry": "Spagna",
+      "declaredArea": "Spagna",
+      "preliminaryCategory": "fritti e street food",
+      "sourceFingerprint": "f1e42e1a3c360b6c1df25322b01560e47db84927007b34efc606dc292da7d482",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "SLUG_COLLISION",
+          "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+          "slug": "patatas-bravas",
+          "name": "Patatas bravas",
+          "kind": "EXACT_NORMALIZED_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0080",
+      "proposedCatalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "proposedSlug": "papas-arrugadas-con-mojo",
+      "editorialState": "candidate",
+      "researchLabel": "Papas arrugadas con mojo",
+      "declaredCountry": "Spagna",
+      "declaredArea": "Spagna",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "e2c62a47ac5e743edec613ace432908ab73482b6675cfb4204175f997e83966f",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0062",
+      "proposedCatalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "proposedSlug": "gratin-dauphinois",
+      "editorialState": "candidate",
+      "researchLabel": "Gratin dauphinois",
+      "declaredCountry": "Francia",
+      "declaredArea": "Francia",
+      "preliminaryCategory": "sformati e forno",
+      "sourceFingerprint": "caab66f7aa6ddfb71ae95cc1f446b6ecd83edb24b8fb53b1772684c338db7ffb",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0063",
+      "proposedCatalogId": "ad443f73-b992-53f1-9502-5d8afed05804",
+      "proposedSlug": "tartiflette",
+      "editorialState": "candidate",
+      "researchLabel": "Tartiflette",
+      "declaredCountry": "Francia",
+      "declaredArea": "Francia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "50bade7a7486fd2fbdbb2b32c677de2f6dd7952c91f289da573aa86d5e422160",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0064",
+      "proposedCatalogId": "d268deb3-d99f-5eef-89aa-5ee6d5dd1f47",
+      "proposedSlug": "aligot",
+      "editorialState": "candidate",
+      "researchLabel": "Aligot",
+      "declaredCountry": "Francia",
+      "declaredArea": "Francia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "d9b8425aaa6f92ae35bc429dba181170b2dfe9dcf9c3d0c7b31bad48175cdb56",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0113",
+      "proposedCatalogId": "157fd6be-86de-5f1c-ba12-4e699800157b",
+      "proposedSlug": "rosti",
+      "editorialState": "candidate",
+      "researchLabel": "Rösti",
+      "declaredCountry": "Svizzera",
+      "declaredArea": "Svizzera",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "7f341f7bd16e70a7482273468791965ff199d7cf7952e7efa17e8569a172b334",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "SLUG_COLLISION",
+          "catalogId": "8d06d11c-0c18-510c-8627-4fe9c0a07086"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "8d06d11c-0c18-510c-8627-4fe9c0a07086",
+          "slug": "rosti",
+          "name": "Rösti croccanti",
+          "kind": "EXACT_NORMALIZED_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0100",
+      "proposedCatalogId": "c5fe336b-c46c-5236-900e-65b9aad79a2c",
+      "proposedSlug": "kartoffelpuffer",
+      "editorialState": "candidate",
+      "researchLabel": "Kartoffelpuffer",
+      "declaredCountry": "Germania",
+      "declaredArea": "Germania",
+      "preliminaryCategory": "fritti e street food",
+      "sourceFingerprint": "59651849315bfe03df682f5db1388616b33c6ecd03fe4016cbfe4aea25b85f9a",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0098",
+      "proposedCatalogId": "7921e01d-ac44-530d-99df-1f3740131036",
+      "proposedSlug": "kartoffelsalat",
+      "editorialState": "candidate",
+      "researchLabel": "Kartoffelsalat",
+      "declaredCountry": "Germania",
+      "declaredArea": "Germania",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "a690aa4e22ef56a030e99ddbc6419872f794b05d87ee006977e8e004a2ddbbdc",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0167",
+      "proposedCatalogId": "f4e86220-1c0d-5d97-9abe-c4489854bd35",
+      "proposedSlug": "pierogi-ruskie",
+      "editorialState": "candidate",
+      "researchLabel": "Pierogi ruskie",
+      "declaredCountry": "Polonia",
+      "declaredArea": "Polonia",
+      "preliminaryCategory": "impasti e ripieni",
+      "sourceFingerprint": "9b4d328c9bf9c00970e097a302f6aff8448bd4802bba0aca1be616417a477028",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0168",
+      "proposedCatalogId": "c5931b03-f273-5f00-ae7f-bfe4fd720217",
+      "proposedSlug": "placki-ziemniaczane",
+      "editorialState": "candidate",
+      "researchLabel": "Placki ziemniaczane",
+      "declaredCountry": "Polonia",
+      "declaredArea": "Polonia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "50b4aab4ab20f138696f22794244bab3a1eeaca08d7008d9492ddc204c610dc6",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0175",
+      "proposedCatalogId": "8320dee0-a317-5588-b583-8d35db674a36",
+      "proposedSlug": "cepelinai",
+      "editorialState": "candidate",
+      "researchLabel": "Cepelinai",
+      "declaredCountry": "Lituania",
+      "declaredArea": "Lituania",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "dca15ecdb8b59d3d967fb116e9725d91b4f581c5bbc2ee11ff8aaafb6e09bf19",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0176",
+      "proposedCatalogId": "db8874c5-fc04-5327-bef4-e8c7ec639ac7",
+      "proposedSlug": "kugelis",
+      "editorialState": "candidate",
+      "researchLabel": "Kugelis",
+      "declaredCountry": "Lituania",
+      "declaredArea": "Lituania",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "c19a07a33e0dc47a4aeb57f13f2ef5c8e0209dce6eef9afac31fd2eb4e3286ef",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0189",
+      "proposedCatalogId": "3a6af698-abf3-59e6-bca4-df9284ffe45a",
+      "proposedSlug": "deruny",
+      "editorialState": "candidate",
+      "researchLabel": "Deruny",
+      "declaredCountry": "Ucraina",
+      "declaredArea": "Ucraina",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "3e40eecb13a157db9008bfca977efa7d6bcdee308f573e7fd3c7f8184983684f",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0202",
+      "proposedCatalogId": "51f5cae9-12a6-5f43-8033-cf445eacab9a",
+      "proposedSlug": "bryndzove-halusky",
+      "editorialState": "candidate",
+      "researchLabel": "Bryndzové halušky",
+      "declaredCountry": "Slovacchia",
+      "declaredArea": "Slovacchia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "9c188ebb0da8efce3ba3777627eea9f70d7445b67a5686f65d0f90383c2fcd92",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0143",
+      "proposedCatalogId": "6cfd6305-1dcc-545d-b10f-82a77f559924",
+      "proposedSlug": "colcannon-irlandese",
+      "editorialState": "candidate",
+      "researchLabel": "Colcannon irlandese",
+      "declaredCountry": "Irlanda",
+      "declaredArea": "Irlanda",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "9961f383cab5c70633a67b2e5464a44710fd373b3b2784808586ad1e8045710b",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0144",
+      "proposedCatalogId": "442d88db-7c32-5537-85bf-08913d545080",
+      "proposedSlug": "boxty-irlandese",
+      "editorialState": "candidate",
+      "researchLabel": "Boxty irlandese",
+      "declaredCountry": "Irlanda",
+      "declaredArea": "Irlanda",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "2ca1d5c0534acaf8ea1caf5ef10e5c0dfb5fdd779dda343e9d1112d613f68c7e",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0148",
+      "proposedCatalogId": "dba771b1-b2aa-5ec4-80b4-25d425ef29c2",
+      "proposedSlug": "hasselbackspotatis",
+      "editorialState": "candidate",
+      "researchLabel": "Hasselbackspotatis",
+      "declaredCountry": "Svezia",
+      "declaredArea": "Svezia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "db3b5354a081c76f791265bb72998f2fd55c1ab3837121437da529e44718a819",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "c75881ab-d0d2-58f0-afba-6ab298594530",
+          "slug": "hasselback",
+          "name": "Patate Hasselback",
+          "kind": "EXACT_NORMALIZED_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0149",
+      "proposedCatalogId": "533d9504-3b53-536b-8233-18a6b5d6cb11",
+      "proposedSlug": "janssons-frestelse",
+      "editorialState": "candidate",
+      "researchLabel": "Janssons frestelse",
+      "declaredCountry": "Svezia",
+      "declaredArea": "Svezia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "9d71cbe88fd4c893b1699146789698b3c94c166ccdeb5fa802502cd36b8e8888",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0150",
+      "proposedCatalogId": "0d8e0c96-161e-50a0-9d1c-5d846ca69d90",
+      "proposedSlug": "kroppkakor",
+      "editorialState": "candidate",
+      "researchLabel": "Kroppkakor",
+      "declaredCountry": "Svezia",
+      "declaredArea": "Svezia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "e8ba643696b49c4d9e32c1a5dbdc44da8cf0f4e20298729e265aefc15bb16d68",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0226",
+      "proposedCatalogId": "26a4f771-bb3b-51a6-82b7-d8abe6207a7a",
+      "proposedSlug": "kumpir",
+      "editorialState": "candidate",
+      "researchLabel": "Kumpir",
+      "declaredCountry": "Turchia",
+      "declaredArea": "Turchia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "9d8dfe91cbd0beff148262a29f9a664ce22053e8661c8dff379ab6e519a4afee",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0229",
+      "proposedCatalogId": "deb817d3-dc5a-5ed1-af90-2af7d4f848cb",
+      "proposedSlug": "patatesli-borek",
+      "editorialState": "candidate",
+      "researchLabel": "Patatesli börek",
+      "declaredCountry": "Turchia",
+      "declaredArea": "Turchia",
+      "preliminaryCategory": "impasti e ripieni",
+      "sourceFingerprint": "8bebbd92c5ac83ebc10968851d8af262161193a567a188541a5068eea4d8faf7",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0222",
+      "proposedCatalogId": "ad433f8c-35af-55c1-8a87-1d607e45433e",
+      "proposedSlug": "skordalia",
+      "editorialState": "candidate",
+      "researchLabel": "Skordalia",
+      "declaredCountry": "Grecia",
+      "declaredArea": "Grecia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "82e2bc19e57224ec91e018cdae3409138eacaacb5c71b2cb57fbca2d45763363",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0347",
+      "proposedCatalogId": "d1b398ca-feeb-5feb-bd26-133d41fb5814",
+      "proposedSlug": "causa-limena",
+      "editorialState": "candidate",
+      "researchLabel": "Causa limeña",
+      "declaredCountry": "Perù",
+      "declaredArea": "Perù",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "71bd7d5da106ae440295c1b55d1ff6602fcbd8dd7d0ec35959e31259a2315c42",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0348",
+      "proposedCatalogId": "793e3e44-c5a4-5b65-9078-12ff1536a7ca",
+      "proposedSlug": "papa-a-la-huancaina",
+      "editorialState": "candidate",
+      "researchLabel": "Papa a la huancaína",
+      "declaredCountry": "Perù",
+      "declaredArea": "Perù",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "66f56ddccead05d89b41225d355b0ec7b73b2d7176f9c02dc98ac90296789c2b",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0349",
+      "proposedCatalogId": "b7c266d3-b34c-58c2-8884-245b7e8e5620",
+      "proposedSlug": "papa-rellena",
+      "editorialState": "candidate",
+      "researchLabel": "Papa rellena",
+      "declaredCountry": "Perù",
+      "declaredArea": "Perù",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "f5ee3cfe3e89ffe1bf492819b7d786109f347e5d376a6126329a4928e3bc1913",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0351",
+      "proposedCatalogId": "01ad0f5d-eb0a-5ab7-9e96-091123ab0144",
+      "proposedSlug": "carapulcra",
+      "editorialState": "candidate",
+      "researchLabel": "Carapulcra",
+      "declaredCountry": "Perù",
+      "declaredArea": "Perù",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "aa0140e9f1a8262b48434590f2a7f58bd165f68907d4bb577517b75a28b16c66",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0363",
+      "proposedCatalogId": "7240e781-de48-542a-b6b5-6ec23aac15c2",
+      "proposedSlug": "llapingachos",
+      "editorialState": "candidate",
+      "researchLabel": "Llapingachos",
+      "declaredCountry": "Ecuador",
+      "declaredArea": "Ecuador",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "5a3b5c1509a7251572a5327656918c05160ad5de7d2a0e2b44d79edc4bf0ac2d",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0364",
+      "proposedCatalogId": "455d5d0e-7520-5a9b-b311-ca34a982ff53",
+      "proposedSlug": "locro-de-papa",
+      "editorialState": "candidate",
+      "researchLabel": "Locro de papa",
+      "declaredCountry": "Ecuador",
+      "declaredArea": "Ecuador",
+      "preliminaryCategory": "zuppe e stufati",
+      "sourceFingerprint": "ed0914d60ec3e45a6bbe390c0c22efd06c51dc20df28862cec0ab639c664fe25",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0367",
+      "proposedCatalogId": "bf13f109-2a54-5584-a6bc-db8dc6dedc90",
+      "proposedSlug": "ajiaco-santafereno",
+      "editorialState": "candidate",
+      "researchLabel": "Ajiaco santafereño",
+      "declaredCountry": "Colombia",
+      "declaredArea": "Colombia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "02be95987d6577218f35c7f270aa79e4f420f9d99a323c791b0277d01a3a1252",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0380",
+      "proposedCatalogId": "53109020-4376-5619-ba03-a889b6c5cd10",
+      "proposedSlug": "milcao",
+      "editorialState": "candidate",
+      "researchLabel": "Milcao",
+      "declaredCountry": "Cile",
+      "declaredArea": "Cile",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "b14c0f587ac70d6737c6fed70ab3fed74a50f6c7007c977a894371943560c555",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0429",
+      "proposedCatalogId": "f4b6d096-3a52-5ec6-9360-68f0357b5994",
+      "proposedSlug": "poutine",
+      "editorialState": "candidate",
+      "researchLabel": "Poutine",
+      "declaredCountry": "Canada",
+      "declaredArea": "Canada",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "bdb010e90e10f258c94d9fbb002a3ba328e5c707394ebbd01f1f43cdc077dc40",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0387",
+      "proposedCatalogId": "9bece265-e830-54bd-b428-da643482d1ac",
+      "proposedSlug": "tacos-de-papa",
+      "editorialState": "candidate",
+      "researchLabel": "Tacos de papa",
+      "declaredCountry": "Messico",
+      "declaredArea": "Messico",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "9a1282dd8ccd8f709a7c244396d11231163b66387d487b27afbe35fa60d6a9f6",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0237",
+      "proposedCatalogId": "ac8354e5-8ef8-5a66-a585-39b4ad1b0cd7",
+      "proposedSlug": "aloo-gobi",
+      "editorialState": "candidate",
+      "researchLabel": "Aloo gobi",
+      "declaredCountry": "India",
+      "declaredArea": "India",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "5dbcfadc8270cc75719006971dc5e3b8f117bb0f2ee1a963ead968974209530f",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "SLUG_COLLISION",
+          "catalogId": "6477b1b1-ee86-5970-8388-64fadd7c1dc6"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "6477b1b1-ee86-5970-8388-64fadd7c1dc6",
+          "slug": "aloo-gobi",
+          "name": "Aloo gobi",
+          "kind": "EXACT_NORMALIZED_NAME"
+        },
+        {
+          "scope": "lot",
+          "sourceId": "RP-0241",
+          "name": "Dum aloo",
+          "kind": "SIMILAR_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0238",
+      "proposedCatalogId": "71609455-8a9e-58d9-9fc7-4733e25c8549",
+      "proposedSlug": "aloo-tikki",
+      "editorialState": "candidate",
+      "researchLabel": "Aloo tikki",
+      "declaredCountry": "India",
+      "declaredArea": "India",
+      "preliminaryCategory": "fritti e street food",
+      "sourceFingerprint": "9782fb817f3bda711cf685ccab9495d9c90cb9d343fa08166644506da5d70570",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "lot",
+          "sourceId": "RP-0241",
+          "name": "Dum aloo",
+          "kind": "SIMILAR_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0239",
+      "proposedCatalogId": "343458a7-fdb8-59d0-b87c-10144b213c61",
+      "proposedSlug": "aloo-paratha",
+      "editorialState": "candidate",
+      "researchLabel": "Aloo paratha",
+      "declaredCountry": "India",
+      "declaredArea": "India",
+      "preliminaryCategory": "impasti e ripieni",
+      "sourceFingerprint": "a0e782ab3e744420cf34ae73980b3826a9bb2dd224f87b97c5db39f2db5cfca2",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "lot",
+          "sourceId": "RP-0241",
+          "name": "Dum aloo",
+          "kind": "SIMILAR_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0241",
+      "proposedCatalogId": "d93ef84b-7f98-5dc0-8ade-8f03c54be536",
+      "proposedSlug": "dum-aloo",
+      "editorialState": "candidate",
+      "researchLabel": "Dum aloo",
+      "declaredCountry": "India",
+      "declaredArea": "India",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "ee949d2af6666a3d9b63bf28ec2df8061a4c0dd0bafe0228a38ade867db05948",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        },
+        {
+          "code": "POSSIBLE_DUPLICATE_OR_VARIANT"
+        }
+      ],
+      "matches": [
+        {
+          "scope": "catalog",
+          "catalogId": "6477b1b1-ee86-5970-8388-64fadd7c1dc6",
+          "slug": "aloo-gobi",
+          "name": "Aloo gobi",
+          "kind": "SIMILAR_NAME"
+        },
+        {
+          "scope": "lot",
+          "sourceId": "RP-0237",
+          "name": "Aloo gobi",
+          "kind": "SIMILAR_NAME"
+        },
+        {
+          "scope": "lot",
+          "sourceId": "RP-0238",
+          "name": "Aloo tikki",
+          "kind": "SIMILAR_NAME"
+        },
+        {
+          "scope": "lot",
+          "sourceId": "RP-0239",
+          "name": "Aloo paratha",
+          "kind": "SIMILAR_NAME"
+        }
+      ],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0288",
+      "proposedCatalogId": "5148d0af-87a6-58fc-b799-57ca15823c53",
+      "proposedSlug": "gamja-jeon",
+      "editorialState": "candidate",
+      "researchLabel": "Gamja-jeon",
+      "declaredCountry": "Corea del Sud",
+      "declaredArea": "Corea del Sud",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "0d6240cd6b7275b248501e74cd522e8eed4508806048b90822566e9a9538566d",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0289",
+      "proposedCatalogId": "e5ce4604-c939-517f-91bf-d8cadf3e440f",
+      "proposedSlug": "gamja-jorim",
+      "editorialState": "candidate",
+      "researchLabel": "Gamja-jorim",
+      "declaredCountry": "Corea del Sud",
+      "declaredArea": "Corea del Sud",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "8fbecc09617b7597bf6aeff1c0ddea419bb5c182531b6a2badf25186dab87dba",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0282",
+      "proposedCatalogId": "7e5c380f-49b3-597e-a915-2cc2db2102e4",
+      "proposedSlug": "korokke",
+      "editorialState": "candidate",
+      "researchLabel": "Korokke",
+      "declaredCountry": "Giappone",
+      "declaredArea": "Giappone",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "b94dfef061423e7bfc799251185e3119f451020a1f1528377a8ad2a1a9ca6440",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0283",
+      "proposedCatalogId": "3e75be89-cf7e-5c81-be36-c81276deb24b",
+      "proposedSlug": "nikujaga",
+      "editorialState": "candidate",
+      "researchLabel": "Nikujaga",
+      "declaredCountry": "Giappone",
+      "declaredArea": "Giappone",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "62770878d2bcd0d6ebbe162886dd15fb7435bc6f018ae80f8b43188e1f934af8",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0277",
+      "proposedCatalogId": "91e0930a-f155-595b-a74d-c3468ae340a5",
+      "proposedSlug": "suan-la-tu-dou-si",
+      "editorialState": "candidate",
+      "researchLabel": "Suan la tu dou si",
+      "declaredCountry": "Cina",
+      "declaredArea": "Cina",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "910701b7ab9b8dec0ef92dcc8816f70ea231ea4a9d158ac5818c66d9f65f984f",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0294",
+      "proposedCatalogId": "45737e2b-67f3-54c8-a007-9439ad0fc8fd",
+      "proposedSlug": "perkedel-kentang",
+      "editorialState": "candidate",
+      "researchLabel": "Perkedel kentang",
+      "declaredCountry": "Indonesia",
+      "declaredArea": "Indonesia",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "7e8347c0ba0b25556f879136fcbb284d9e2fdc4d6ff0aa8ee5b453a8a3a16172",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0323",
+      "proposedCatalogId": "a4e80fae-5e26-5b47-aefd-53b4cc93d930",
+      "proposedSlug": "maakouda",
+      "editorialState": "candidate",
+      "researchLabel": "Maakouda",
+      "declaredCountry": "Marocco",
+      "declaredArea": "Marocco",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "691c1c04119e2349f3a73156e7e8dea32a38106740f30860b1d1f439461679db",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    },
+    {
+      "sourceId": "RP-0308",
+      "proposedCatalogId": "21337a27-0c0a-555c-9345-9adda512f9cc",
+      "proposedSlug": "kuku-sibzamini",
+      "editorialState": "candidate",
+      "researchLabel": "Kuku sibzamini",
+      "declaredCountry": "Iran",
+      "declaredArea": "Iran",
+      "preliminaryCategory": "altre preparazioni",
+      "sourceFingerprint": "aba2d0a5b4f212c217b1927173f009e82fef769797933df5115d346c7419bfc1",
+      "reasons": [
+        {
+          "code": "SOURCE_MARKED_NOT_IMPORTABLE"
+        },
+        {
+          "code": "MISSING_ORIGINAL_LANGUAGE"
+        },
+        {
+          "code": "ITALIAN_AND_ORIGINAL_TITLES_NOT_DISTINGUISHED"
+        },
+        {
+          "code": "POTATO_ROLE_NOT_CONFIRMED"
+        },
+        {
+          "code": "CANONICAL_RELATION_UNRESOLVED"
+        },
+        {
+          "code": "RECIPE_DESCRIPTION_NOT_PROVIDED"
+        },
+        {
+          "code": "PRELIMINARY_TAXONOMY_NOT_MAPPED"
+        },
+        {
+          "code": "INDIVIDUAL_SOURCE_MISSING"
+        }
+      ],
+      "matches": [],
+      "missingRecipeData": [
+        "sources.author",
+        "sources.accessedAt",
+        "names.original.language",
+        "names.italian/original distinction",
+        "potatoRole",
+        "relation.kind",
+        "description",
+        "ingredients",
+        "steps",
+        "timing",
+        "servings"
+      ],
+      "p11RecordCreated": false
+    }
+  ],
+  "blockingReasons": [
+    "RESEARCH_PAYLOAD_NOT_IMPORTABLE",
+    "P11_REQUIRED_FACTS_NOT_PROVIDED"
+  ],
+  "statistics": {
+    "identityCollisions": 0,
+    "slugCollisions": 3,
+    "rowsWithPossibleMatches": 9,
+    "missingIndividualSources": 50
+  },
+  "sourceContentChanged": false
+}

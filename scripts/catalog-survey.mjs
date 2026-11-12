@@ -1,0 +1,10 @@
+import {parseArgs} from 'node:util';
+import {readFileSync} from 'node:fs';
+import {readCatalog} from '../src/catalog/io.mjs';
+import {prepareSurveyLot,stageSurveyQuarantine} from '../src/catalog/research/survey.mjs';
+const {values}=parseArgs({options:{json:{type:'string'},csv:{type:'string'},methodology:{type:'string'},stage:{type:'string'}}});
+if(!values.json || !values.csv || !values.methodology)throw new Error('Uso: npm run catalog:survey -- --json principale.json --csv alternativa.csv --methodology README.md [--stage directory-esterna]');
+const lot=prepareSurveyLot(readFileSync(values.json,'utf8'),readFileSync(values.csv,'utf8'),readFileSync(values.methodology,'utf8'),readCatalog(),JSON.parse(readFileSync('src/catalog/registry.json','utf8')));
+console.log(JSON.stringify(lot.report,null,2));
+if(values.stage)console.error(`Quarantena esterna: ${stageSurveyQuarantine(lot,values.stage)}. Nessun record Astro creato.`);
+if(lot.report.status!=='prepared')process.exitCode=2;

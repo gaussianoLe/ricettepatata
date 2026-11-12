@@ -1,0 +1,137 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "2a85624b03d84e7b462f381d7e854a09e7e5ecdf",
+  "consultedAt": "2026-11-12",
+  "inputHashes": {
+    "baseline.json": "0203cde9d89011915fd817f4d681746c0484043ab00cad6212f2e34fbed9ba85",
+    "selection.json": "d2497f1fc038eb98b99f965a56fced45b92d17417b79d3766ad83619d270f421",
+    "sources.json": "e84ec7dfb701e75a92df34a82740ebd1c07fd1c0e3f18e64865957c99382bd5d",
+    "search-log.json": "bac844974b03d9aab9b5c940727e4435b5c547647980d3b4bf2d429ed6a4d270",
+    "records.json": "16b04ec345f78af3a455ac3c2cf9a35c2c1a174ad9c250bdb8755675fc5891b4",
+    "enrichments.json": "1f17ec2a7beac56bfae1cf25091db718e879f9da282fa61d52b57149aa3c7d78",
+    "dossiers/RP-0001.json": "f9fdf10c3c39469e7750f608c5955af5d96ec78ba043e163ae898e835d9a9aab",
+    "dossiers/RP-0002.json": "2fa28d64e345370df855f4cc088281d4a9fe9b02fd2b0e356bafb898538a4fd3",
+    "dossiers/RP-0005.json": "915d6513ed3a1de0ab02bcadf44a385a0d1b7dd9268c2fd43c9c4670a673f980",
+    "dossiers/RP-0011.json": "27a443e1656008a17b9def7a9183365bc6e8c6f9cbba169167daed963d640873",
+    "dossiers/RP-0039.json": "9c7837bcfbae2b0e8c3949a3d92ee1f23fe16a5999a156acb41beb0f0492c1cf",
+    "dossiers/RP-0062.json": "9fd42e976b147e2716aa0a521a0969c0cf5b4bbcadf62db164ccd005414c6b40",
+    "dossiers/RP-0063.json": "716d257e5c2f923416ac5c76821d702f713f7c86c8034953c85cff49242eb2a5",
+    "dossiers/RP-0077.json": "50d5d7f4491bd411f264fd2f66809e4d74df0b4153353434802f4b9c3f1f9020",
+    "dossiers/RP-0079.json": "9c63ec89284598c77eb84cf056356ef12a9d05786e26d1af22cc5aecd8c901ca",
+    "dossiers/RP-0080.json": "2e2e870d1cf52f0f9ef86a0902b25239b3b38f9fe7576e48e468dd1969465836"
+  },
+  "summary": {
+    "assessed": 10,
+    "consolidated": 6,
+    "newDrafts": 1,
+    "retainedDrafts": 2,
+    "enrichmentProposals": 3,
+    "blocked": 4,
+    "addedSources": 8,
+    "reconsultedSources": 7
+  },
+  "identityChecks": [
+    {
+      "researchId": "RP-0001",
+      "outcome": "enrichment-proposal",
+      "technicalId": "d37c3634-9c3a-5f98-aec2-bb4817ee5a71",
+      "existingCatalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+      "reservedSlugOwner": null,
+      "possibleMatches": [
+        "f727b885-d91c-5ed7-8ff9-66cacc74208d"
+      ]
+    },
+    {
+      "researchId": "RP-0002",
+      "outcome": "needs_review",
+      "technicalId": "6522115f-4bd1-5483-8fd2-a178173dda53",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    },
+    {
+      "researchId": "RP-0005",
+      "outcome": "needs_review",
+      "technicalId": "724f3333-4782-53af-98ee-b31839e8094c",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    },
+    {
+      "researchId": "RP-0011",
+      "outcome": "new-draft",
+      "technicalId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    },
+    {
+      "researchId": "RP-0039",
+      "outcome": "enrichment-proposal",
+      "technicalId": "9dd07944-84f6-5f2a-bb79-f3524232aa65",
+      "existingCatalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+      "reservedSlugOwner": null,
+      "possibleMatches": [
+        "6d84129f-ef35-51f5-b5aa-60ed022140fa"
+      ]
+    },
+    {
+      "researchId": "RP-0062",
+      "outcome": "retained-draft",
+      "technicalId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    },
+    {
+      "researchId": "RP-0063",
+      "outcome": "needs_review",
+      "technicalId": "ad443f73-b992-53f1-9502-5d8afed05804",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    },
+    {
+      "researchId": "RP-0077",
+      "outcome": "needs_review",
+      "technicalId": "f0c2c946-e7c9-54aa-a656-57ed73820c88",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    },
+    {
+      "researchId": "RP-0079",
+      "outcome": "enrichment-proposal",
+      "technicalId": "c75db4bc-7967-5e64-9cc1-70745740c03f",
+      "existingCatalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "reservedSlugOwner": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "possibleMatches": [
+        "449f2fe8-e698-5a54-9ea7-8a29984f5de8"
+      ]
+    },
+    {
+      "researchId": "RP-0080",
+      "outcome": "retained-draft",
+      "technicalId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "existingCatalogId": null,
+      "reservedSlugOwner": null,
+      "possibleMatches": []
+    }
+  ],
+  "plan": {
+    "newCatalogEntriesIfApproved": 3,
+    "skipped": 0,
+    "updatesApplied": 0
+  },
+  "baselineUnchanged": true,
+  "sourceContentChanged": false,
+  "registryChanged": false,
+  "appliedToAstro": false,
+  "publicationAuthorized": false,
+  "catalogFingerprint": "fff71e27c4acb75cc36e049889a49c6c72c83a3d5ffba57fe3d211bcf1530179",
+  "limitations": [
+    "Consolidated include draft e proposte complete; non equivale a verified o pubblicazione.",
+    "Nessuna applicazione dei draft o dei piani; nessun upsert introdotto.",
+    "Prove in cucina e review indipendente restano necessarie."
+  ]
+}

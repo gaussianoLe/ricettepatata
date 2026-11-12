@@ -1,0 +1,212 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0001",
+  "researchTechnicalId": "d37c3634-9c3a-5f98-aec2-bb4817ee5a71",
+  "researchLabel": "Pitta di patate salentina",
+  "proposedSlug": "pitta-di-patate-salentina",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0001.json",
+  "names": {
+    "italian": "Pitta di patate salentina",
+    "original": {
+      "text": "Pitta di patate",
+      "language": "it"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": "Salento",
+    "traditions": [
+      "Cucina salentina"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "agrodolce-pitta"
+  ],
+  "claims": [
+    {
+      "field": "identity",
+      "text": "Stessa ricetta/famiglia del demo, proposta di arricchimento editoriale con identità esistente. Non provata una variante regionale autonoma.",
+      "sourceIds": [
+        "agrodolce-pitta"
+      ],
+      "status": "editorial-inference",
+      "locator": "Confronto con il demo"
+    },
+    {
+      "field": "differences",
+      "text": "Pecorino 60→200 g; cipolle 2 pezzi→500 g; pomodori 300→500 g; aggiunti uovo, olive e capperi della formula scelta. Porzioni 4→6; tempi non resi scalari per non confondere preparazione e cottura. Mantenere pitta salentina come stessa famiglia; non creata una variante regionale dal solo ripieno.",
+      "sourceIds": [
+        "agrodolce-pitta"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti e tempi della fonte scelta; frontmatter demo"
+    }
+  ],
+  "formula": {
+    "sourceId": "agrodolce-pitta",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "patata",
+        "ingredientId": "patata",
+        "name": "patate",
+        "quantity": {
+          "value": 1,
+          "unit": "kg"
+        },
+        "optional": false
+      },
+      {
+        "id": "cipolla",
+        "ingredientId": "cipolla",
+        "name": "cipolle dorate",
+        "quantity": {
+          "value": 500,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "pomodoro",
+        "ingredientId": "pomodoro",
+        "name": "pomodori",
+        "quantity": {
+          "value": 500,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "pecorino",
+        "ingredientId": "pecorino",
+        "name": "pecorino",
+        "quantity": {
+          "value": 200,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "uovo",
+        "ingredientId": "uovo",
+        "name": "uovo",
+        "quantity": {
+          "value": 1,
+          "unit": "piece"
+        },
+        "optional": false
+      },
+      {
+        "id": "pangrattato",
+        "ingredientId": "pangrattato",
+        "name": "pangrattato",
+        "quantity": {
+          "value": 15,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "olive",
+        "ingredientId": "olive",
+        "name": "olive nere",
+        "quantity": {
+          "value": 40,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "capperi",
+        "ingredientId": "capperi",
+        "name": "capperi",
+        "quantity": {
+          "value": 35,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "sale",
+        "ingredientId": "sale",
+        "name": "sale",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "olio",
+        "ingredientId": "olio",
+        "name": "olio extravergine",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      }
+    ],
+    "timing": null,
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Cuocere e schiacciare le patate.",
+        "ingredientIds": [
+          "patata"
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Preparare il sugo con cipolle, pomodori, olive e capperi; far intiepidire.",
+        "ingredientIds": [
+          "cipolla",
+          "pomodoro",
+          "olive",
+          "capperi",
+          "olio",
+          "sale"
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Unire uovo e pecorino alle patate, farcire fra due strati e completare con pangrattato e olio; forno 190 °C per 30–40 min.",
+        "ingredientIds": [
+          "patata",
+          "uovo",
+          "pecorino",
+          "pangrattato",
+          "olio"
+        ]
+      }
+    ],
+    "selectionRationale": "Formula della singola fonte selezionata per la proposta, senza combinare quantità.",
+    "timingBasis": "Intervalli non convertiti in numeri esatti; per bravas 10+25 con sola breve scolatura non conteggiata come riposo autonomo."
+  },
+  "identity": {
+    "existingCatalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+    "operationalSlug": "pitta-di-patate",
+    "relation": "same-recipe-enrichment",
+    "rationale": "Nome e struttura compatibili con il record già registrato. Scelta proposta, non fusione automatica."
+  },
+  "decision": {
+    "outcome": "enrichment-proposal",
+    "proposedStatus": "candidate",
+    "reason": "Proposta revisionabile di aggiornamento manuale; nessuna applicazione o nuovo UUID operativo."
+  },
+  "openQuestions": [
+    "Approvare esplicitamente il collegamento dell’ID di ricerca alla scheda esistente.",
+    "Rivedere formula, tempi e testo prima di sostituire il demo; nessuna promozione automatica."
+  ],
+  "changesFromP13": [
+    "Pecorino 60→200 g; cipolle 2 pezzi→500 g; pomodori 300→500 g; aggiunti uovo, olive e capperi della formula scelta.",
+    "Porzioni 4→6; tempi non resi scalari per non confondere preparazione e cottura.",
+    "Mantenere pitta salentina come stessa famiglia; non creata una variante regionale dal solo ripieno."
+  ]
+}

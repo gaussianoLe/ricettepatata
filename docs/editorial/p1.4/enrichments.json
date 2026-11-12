@@ -1,0 +1,1451 @@
+{
+  "formatVersion": 1,
+  "plans": [
+    {
+      "researchId": "RP-0001",
+      "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+      "slug": "pitta-di-patate",
+      "targetPath": "src/content/ricette/pitta-di-patate.md",
+      "beforeSha256": "39368462b4d7099e2916264e117c3d1576551359b1f447ef5d2409ffba5bdc54",
+      "disposition": "same-recipe-enrichment",
+      "requiresIndependentReview": true,
+      "application": "manual-only",
+      "fieldChanges": [
+        {
+          "field": "names",
+          "before": {
+            "italian": "Pitta di patate",
+            "original": {
+              "text": "Pitta di patate",
+              "language": "it"
+            },
+            "alternatives": []
+          },
+          "after": {
+            "italian": "Pitta di patate salentina",
+            "original": {
+              "text": "Pitta di patate",
+              "language": "it"
+            },
+            "alternatives": []
+          }
+        },
+        {
+          "field": "date",
+          "before": "2026-11-09",
+          "after": "2026-11-12"
+        },
+        {
+          "field": "demo",
+          "before": true,
+          "after": false
+        },
+        {
+          "field": "editorial",
+          "before": {
+            "status": "draft",
+            "author": "RicettePatata.it"
+          },
+          "after": {
+            "status": "candidate",
+            "author": "RicettePatata.it — proposta P1.4 assistita"
+          }
+        },
+        {
+          "field": "sources",
+          "before": [
+            {
+              "id": "prototipo-p0",
+              "kind": "internal",
+              "title": "Prototipo P0 — contenuto non verificato",
+              "url": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/ricette/pitta-di-patate.md",
+              "author": "RicettePatata.it",
+              "accessedAt": "2026-11-09"
+            }
+          ],
+          "after": [
+            {
+              "id": "agrodolce-pitta",
+              "kind": "primary",
+              "title": "Pitta di patate pugliese",
+              "url": "https://www.agrodolce.it/ricette/pitta-patate",
+              "author": "Tiziana Molti",
+              "accessedAt": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "field": "externalIds",
+          "before": [],
+          "after": [
+            {
+              "namespace": "ricettepatata-exploratory-census",
+              "value": "RP-0001"
+            }
+          ]
+        },
+        {
+          "field": "timing",
+          "before": {
+            "prepMinutes": 30,
+            "cookMinutes": 45,
+            "restMinutes": 0
+          },
+          "after": null
+        },
+        {
+          "field": "servings",
+          "before": 4,
+          "after": 6
+        },
+        {
+          "field": "ingredients",
+          "before": [
+            {
+              "id": "patata",
+              "ingredientId": "patata",
+              "name": "patate",
+              "quantity": {
+                "value": 1,
+                "unit": "kg"
+              },
+              "optional": false
+            },
+            {
+              "id": "cipolla",
+              "ingredientId": "cipolla",
+              "name": "cipolle",
+              "quantity": {
+                "value": 2,
+                "unit": "piece"
+              },
+              "optional": false
+            },
+            {
+              "id": "pomodoro",
+              "ingredientId": "pomodoro",
+              "name": "pomodori pelati",
+              "quantity": {
+                "value": 300,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "pecorino",
+              "ingredientId": "pecorino",
+              "name": "pecorino",
+              "quantity": {
+                "value": 60,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "olio-extravergine",
+              "ingredientId": "olio-extravergine",
+              "name": "olio extravergine",
+              "quantity": {
+                "value": 3,
+                "unit": "tbsp"
+              },
+              "optional": false
+            },
+            {
+              "id": "pangrattato",
+              "ingredientId": "pangrattato",
+              "name": "pangrattato",
+              "quantity": {
+                "value": 30,
+                "unit": "g"
+              },
+              "optional": false
+            }
+          ],
+          "after": [
+            {
+              "id": "patata",
+              "ingredientId": "patata",
+              "name": "patate",
+              "quantity": {
+                "value": 1,
+                "unit": "kg"
+              },
+              "optional": false
+            },
+            {
+              "id": "cipolla",
+              "ingredientId": "cipolla",
+              "name": "cipolle dorate",
+              "quantity": {
+                "value": 500,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "pomodoro",
+              "ingredientId": "pomodoro",
+              "name": "pomodori",
+              "quantity": {
+                "value": 500,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "pecorino",
+              "ingredientId": "pecorino",
+              "name": "pecorino",
+              "quantity": {
+                "value": 200,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "uovo",
+              "ingredientId": "uovo",
+              "name": "uovo",
+              "quantity": {
+                "value": 1,
+                "unit": "piece"
+              },
+              "optional": false
+            },
+            {
+              "id": "pangrattato",
+              "ingredientId": "pangrattato",
+              "name": "pangrattato",
+              "quantity": {
+                "value": 15,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "olive",
+              "ingredientId": "olive",
+              "name": "olive nere",
+              "quantity": {
+                "value": 40,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "capperi",
+              "ingredientId": "capperi",
+              "name": "capperi",
+              "quantity": {
+                "value": 35,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            },
+            {
+              "id": "olio",
+              "ingredientId": "olio",
+              "name": "olio extravergine",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "field": "steps",
+          "before": [
+            {
+              "id": "step-1",
+              "text": "Lessa le patate finché tenere, poi sbucciale e schiacciale.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-2",
+              "text": "Affetta le cipolle e cuocile con metà olio; aggiungi i pomodori e fai restringere per 20 minuti.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-3",
+              "text": "Mescola patate e pecorino. Disponine metà in una teglia unta, aggiungi il ripieno e copri con le patate rimaste.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-4",
+              "text": "Completa con pangrattato e olio e cuoci a 190 °C per circa 35 minuti, fino a doratura.",
+              "ingredientIds": []
+            }
+          ],
+          "after": [
+            {
+              "id": "step-1",
+              "text": "Cuocere e schiacciare le patate.",
+              "ingredientIds": [
+                "patata"
+              ]
+            },
+            {
+              "id": "step-2",
+              "text": "Preparare il sugo con cipolle, pomodori, olive e capperi; far intiepidire.",
+              "ingredientIds": [
+                "cipolla",
+                "pomodoro",
+                "olive",
+                "capperi",
+                "olio",
+                "sale"
+              ]
+            },
+            {
+              "id": "step-3",
+              "text": "Unire uovo e pecorino alle patate, farcire fra due strati e completare con pangrattato e olio; forno 190 °C per 30–40 min.",
+              "ingredientIds": [
+                "patata",
+                "uovo",
+                "pecorino",
+                "pangrattato",
+                "olio"
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedRecord": {
+        "schemaVersion": 1,
+        "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+        "slug": "pitta-di-patate",
+        "names": {
+          "italian": "Pitta di patate salentina",
+          "original": {
+            "text": "Pitta di patate",
+            "language": "it"
+          },
+          "alternatives": []
+        },
+        "description": "Un cuore mediterraneo sotto una crosticina dorata. Il comfort food salentino per le grandi tavolate.",
+        "date": "2026-11-12",
+        "demo": false,
+        "editorial": {
+          "status": "candidate",
+          "author": "RicettePatata.it — proposta P1.4 assistita"
+        },
+        "sources": [
+          {
+            "id": "agrodolce-pitta",
+            "kind": "primary",
+            "title": "Pitta di patate pugliese",
+            "url": "https://www.agrodolce.it/ricette/pitta-patate",
+            "author": "Tiziana Molti",
+            "accessedAt": "2026-11-12"
+          }
+        ],
+        "notes": [],
+        "externalIds": [
+          {
+            "namespace": "ricettepatata-exploratory-census",
+            "value": "RP-0001"
+          }
+        ],
+        "provenance": {
+          "continent": "europe",
+          "country": {
+            "code": "IT",
+            "name": "Italia"
+          },
+          "region": "Salento",
+          "traditions": [
+            "Cucina salentina"
+          ]
+        },
+        "taxonomy": {
+          "courses": [
+            "piatto-unico"
+          ],
+          "cookingMethods": [
+            "bollitura",
+            "forno"
+          ],
+          "families": [
+            "sformati"
+          ],
+          "occasions": [
+            "quotidiano"
+          ]
+        },
+        "potatoRole": "protagonist",
+        "relation": {
+          "kind": "primary"
+        },
+        "timing": null,
+        "servings": 6,
+        "ingredients": [
+          {
+            "id": "patata",
+            "ingredientId": "patata",
+            "name": "patate",
+            "quantity": {
+              "value": 1,
+              "unit": "kg"
+            },
+            "optional": false
+          },
+          {
+            "id": "cipolla",
+            "ingredientId": "cipolla",
+            "name": "cipolle dorate",
+            "quantity": {
+              "value": 500,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "pomodoro",
+            "ingredientId": "pomodoro",
+            "name": "pomodori",
+            "quantity": {
+              "value": 500,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "pecorino",
+            "ingredientId": "pecorino",
+            "name": "pecorino",
+            "quantity": {
+              "value": 200,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "uovo",
+            "ingredientId": "uovo",
+            "name": "uovo",
+            "quantity": {
+              "value": 1,
+              "unit": "piece"
+            },
+            "optional": false
+          },
+          {
+            "id": "pangrattato",
+            "ingredientId": "pangrattato",
+            "name": "pangrattato",
+            "quantity": {
+              "value": 15,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "olive",
+            "ingredientId": "olive",
+            "name": "olive nere",
+            "quantity": {
+              "value": 40,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "capperi",
+            "ingredientId": "capperi",
+            "name": "capperi",
+            "quantity": {
+              "value": 35,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "sale",
+            "ingredientId": "sale",
+            "name": "sale",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          },
+          {
+            "id": "olio",
+            "ingredientId": "olio",
+            "name": "olio extravergine",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          }
+        ],
+        "steps": [
+          {
+            "id": "step-1",
+            "text": "Cuocere e schiacciare le patate.",
+            "ingredientIds": [
+              "patata"
+            ]
+          },
+          {
+            "id": "step-2",
+            "text": "Preparare il sugo con cipolle, pomodori, olive e capperi; far intiepidire.",
+            "ingredientIds": [
+              "cipolla",
+              "pomodoro",
+              "olive",
+              "capperi",
+              "olio",
+              "sale"
+            ]
+          },
+          {
+            "id": "step-3",
+            "text": "Unire uovo e pecorino alle patate, farcire fra due strati e completare con pangrattato e olio; forno 190 °C per 30–40 min.",
+            "ingredientIds": [
+              "patata",
+              "uovo",
+              "pecorino",
+              "pangrattato",
+              "olio"
+            ]
+          }
+        ],
+        "color": "gold"
+      }
+    },
+    {
+      "researchId": "RP-0039",
+      "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+      "slug": "gnocchi",
+      "targetPath": "src/content/ricette/gnocchi.md",
+      "beforeSha256": "8504294b36217e0e7b65fc719d296b326648d726134ea430777b31fb608567ca",
+      "disposition": "same-recipe-enrichment",
+      "requiresIndependentReview": true,
+      "application": "manual-only",
+      "fieldChanges": [
+        {
+          "field": "date",
+          "before": "2026-11-09",
+          "after": "2026-11-12"
+        },
+        {
+          "field": "demo",
+          "before": true,
+          "after": false
+        },
+        {
+          "field": "editorial",
+          "before": {
+            "status": "draft",
+            "author": "RicettePatata.it"
+          },
+          "after": {
+            "status": "candidate",
+            "author": "RicettePatata.it — proposta P1.4 assistita"
+          }
+        },
+        {
+          "field": "sources",
+          "before": [
+            {
+              "id": "prototipo-p0",
+              "kind": "internal",
+              "title": "Prototipo P0 — contenuto non verificato",
+              "url": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/ricette/gnocchi.md",
+              "author": "RicettePatata.it",
+              "accessedAt": "2026-11-09"
+            }
+          ],
+          "after": [
+            {
+              "id": "cucchiaio-gnocchi",
+              "kind": "primary",
+              "title": "Gnocchi di patate ricetta base",
+              "url": "https://www.cucchiaio.it/ricetta/ricetta-gnocchi-patate-ricetta-base/",
+              "author": "Riccardo Carnevali / Il Cucchiaio d’Argento",
+              "accessedAt": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "field": "externalIds",
+          "before": [],
+          "after": [
+            {
+              "namespace": "ricettepatata-exploratory-census",
+              "value": "RP-0039"
+            }
+          ]
+        },
+        {
+          "field": "timing",
+          "before": {
+            "prepMinutes": 40,
+            "cookMinutes": 5,
+            "restMinutes": 0
+          },
+          "after": null
+        },
+        {
+          "field": "ingredients",
+          "before": [
+            {
+              "id": "patata",
+              "ingredientId": "patata",
+              "name": "patate farinose",
+              "quantity": {
+                "value": 700,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "farina",
+              "ingredientId": "farina",
+              "name": "farina, più altra per il piano",
+              "quantity": {
+                "value": 180,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "uovo",
+              "ingredientId": "uovo",
+              "name": "uovo",
+              "quantity": {
+                "value": 1,
+                "unit": "piece"
+              },
+              "optional": false
+            },
+            {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          ],
+          "after": [
+            {
+              "id": "patata",
+              "ingredientId": "patata",
+              "name": "patate",
+              "quantity": {
+                "value": 1,
+                "unit": "kg"
+              },
+              "optional": false
+            },
+            {
+              "id": "farina",
+              "ingredientId": "farina",
+              "name": "farina 00",
+              "quantity": {
+                "value": 300,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "uovo",
+              "ingredientId": "uovo",
+              "name": "uovo",
+              "quantity": {
+                "value": 1,
+                "unit": "piece"
+              },
+              "optional": false
+            },
+            {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            },
+            {
+              "id": "noce-moscata",
+              "ingredientId": "noce-moscata",
+              "name": "noce moscata",
+              "quantity": {
+                "value": 1,
+                "unit": "pinch"
+              },
+              "optional": true
+            }
+          ]
+        },
+        {
+          "field": "steps",
+          "before": [
+            {
+              "id": "step-1",
+              "text": "Lessa le patate con la buccia finché tenere, sbucciale e schiacciale.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-2",
+              "text": "Lascia intiepidire, incorpora farina, uovo e sale lavorando il minimo necessario.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-3",
+              "text": "Forma dei filoncini e tagliali in piccoli gnocchi.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-4",
+              "text": "Cuoci in acqua salata a piccoli lotti e scola quando salgono a galla. Condisci a piacere.",
+              "ingredientIds": []
+            }
+          ],
+          "after": [
+            {
+              "id": "step-1",
+              "text": "Lessare le patate con buccia per 30–40 minuti, pelarle e schiacciarle.",
+              "ingredientIds": [
+                "patata"
+              ]
+            },
+            {
+              "id": "step-2",
+              "text": "Amalgamare brevemente con farina,uovo,sale e noce moscata facoltativa; ricavare gli gnocchi.",
+              "ingredientIds": [
+                "patata",
+                "farina",
+                "uovo",
+                "sale",
+                "noce-moscata"
+              ]
+            },
+            {
+              "id": "step-3",
+              "text": "Lessare gli gnocchi a piccoli lotti, circa 2–3 minuti, verificandone la cottura.",
+              "ingredientIds": [
+                "patata"
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedRecord": {
+        "schemaVersion": 1,
+        "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+        "slug": "gnocchi",
+        "names": {
+          "italian": "Gnocchi di patate",
+          "original": {
+            "text": "Gnocchi di patate",
+            "language": "it"
+          },
+          "alternatives": []
+        },
+        "description": "Farina sulle mani e un pranzo della domenica da inventare, un piccolo gnocco alla volta.",
+        "date": "2026-11-12",
+        "demo": false,
+        "editorial": {
+          "status": "candidate",
+          "author": "RicettePatata.it — proposta P1.4 assistita"
+        },
+        "sources": [
+          {
+            "id": "cucchiaio-gnocchi",
+            "kind": "primary",
+            "title": "Gnocchi di patate ricetta base",
+            "url": "https://www.cucchiaio.it/ricetta/ricetta-gnocchi-patate-ricetta-base/",
+            "author": "Riccardo Carnevali / Il Cucchiaio d’Argento",
+            "accessedAt": "2026-11-12"
+          }
+        ],
+        "notes": [],
+        "externalIds": [
+          {
+            "namespace": "ricettepatata-exploratory-census",
+            "value": "RP-0039"
+          }
+        ],
+        "provenance": {
+          "continent": "europe",
+          "country": {
+            "code": "IT",
+            "name": "Italia"
+          },
+          "region": null,
+          "traditions": [
+            "Cucina italiana"
+          ]
+        },
+        "taxonomy": {
+          "courses": [
+            "primo"
+          ],
+          "cookingMethods": [
+            "bollitura"
+          ],
+          "families": [
+            "gnocchi"
+          ],
+          "occasions": [
+            "quotidiano"
+          ]
+        },
+        "potatoRole": "protagonist",
+        "relation": {
+          "kind": "primary"
+        },
+        "timing": null,
+        "servings": 4,
+        "ingredients": [
+          {
+            "id": "patata",
+            "ingredientId": "patata",
+            "name": "patate",
+            "quantity": {
+              "value": 1,
+              "unit": "kg"
+            },
+            "optional": false
+          },
+          {
+            "id": "farina",
+            "ingredientId": "farina",
+            "name": "farina 00",
+            "quantity": {
+              "value": 300,
+              "unit": "g"
+            },
+            "optional": false
+          },
+          {
+            "id": "uovo",
+            "ingredientId": "uovo",
+            "name": "uovo",
+            "quantity": {
+              "value": 1,
+              "unit": "piece"
+            },
+            "optional": false
+          },
+          {
+            "id": "sale",
+            "ingredientId": "sale",
+            "name": "sale",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          },
+          {
+            "id": "noce-moscata",
+            "ingredientId": "noce-moscata",
+            "name": "noce moscata",
+            "quantity": {
+              "value": 1,
+              "unit": "pinch"
+            },
+            "optional": true
+          }
+        ],
+        "steps": [
+          {
+            "id": "step-1",
+            "text": "Lessare le patate con buccia per 30–40 minuti, pelarle e schiacciarle.",
+            "ingredientIds": [
+              "patata"
+            ]
+          },
+          {
+            "id": "step-2",
+            "text": "Amalgamare brevemente con farina,uovo,sale e noce moscata facoltativa; ricavare gli gnocchi.",
+            "ingredientIds": [
+              "patata",
+              "farina",
+              "uovo",
+              "sale",
+              "noce-moscata"
+            ]
+          },
+          {
+            "id": "step-3",
+            "text": "Lessare gli gnocchi a piccoli lotti, circa 2–3 minuti, verificandone la cottura.",
+            "ingredientIds": [
+              "patata"
+            ]
+          }
+        ],
+        "color": "green"
+      }
+    },
+    {
+      "researchId": "RP-0079",
+      "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "slug": "patatas-bravas",
+      "targetPath": "src/content/ricette/patatas-bravas.md",
+      "beforeSha256": "9d9b148fbc58119f9d689d11d849b1be2af53dd0abc9a5dbdeed97f5832db60f",
+      "disposition": "same-recipe-enrichment",
+      "requiresIndependentReview": true,
+      "application": "manual-only",
+      "fieldChanges": [
+        {
+          "field": "description",
+          "before": "L’ora delle tapas arriva a casa: patate al forno e una salsa dal carattere vivace.",
+          "after": "Proposta della versione fritta con salsa di paprika e brodo; formula da revisionare prima di sostituire il demo."
+        },
+        {
+          "field": "date",
+          "before": "2026-11-09",
+          "after": "2026-11-12"
+        },
+        {
+          "field": "demo",
+          "before": true,
+          "after": false
+        },
+        {
+          "field": "editorial",
+          "before": {
+            "status": "draft",
+            "author": "RicettePatata.it"
+          },
+          "after": {
+            "status": "candidate",
+            "author": "RicettePatata.it — proposta P1.4 assistita"
+          }
+        },
+        {
+          "field": "sources",
+          "before": [
+            {
+              "id": "prototipo-p0",
+              "kind": "internal",
+              "title": "Prototipo P0 — contenuto non verificato",
+              "url": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/ricette/patatas-bravas.md",
+              "author": "RicettePatata.it",
+              "accessedAt": "2026-11-09"
+            }
+          ],
+          "after": [
+            {
+              "id": "joseba-bravas",
+              "kind": "primary",
+              "title": "Patatas bravas, receta de Joseba Arguiñano",
+              "url": "https://www.hogarmania.com/cocina/recetas/aperitivos/patatas-bravas-9642.html",
+              "author": "Joseba Arguiñano",
+              "accessedAt": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "field": "externalIds",
+          "before": [],
+          "after": [
+            {
+              "namespace": "ricettepatata-exploratory-census",
+              "value": "RP-0079"
+            }
+          ]
+        },
+        {
+          "field": "provenance",
+          "before": {
+            "continent": "europe",
+            "country": {
+              "code": "ES",
+              "name": "Spagna"
+            },
+            "region": null,
+            "traditions": [
+              "Cucina spagnola"
+            ]
+          },
+          "after": {
+            "continent": "europe",
+            "country": {
+              "code": "ES",
+              "name": "Spagna"
+            },
+            "region": null,
+            "traditions": [
+              "Tradizione delle tapas spagnole"
+            ]
+          }
+        },
+        {
+          "field": "taxonomy",
+          "before": {
+            "courses": [
+              "snack"
+            ],
+            "cookingMethods": [
+              "forno",
+              "stufatura"
+            ],
+            "families": [
+              "patate-arrosto"
+            ],
+            "occasions": [
+              "quotidiano"
+            ]
+          },
+          "after": {
+            "courses": [
+              "snack"
+            ],
+            "cookingMethods": [
+              "frittura",
+              "padella"
+            ],
+            "families": [
+              "altro"
+            ],
+            "occasions": [
+              "quotidiano"
+            ]
+          }
+        },
+        {
+          "field": "timing",
+          "before": {
+            "prepMinutes": 15,
+            "cookMinutes": 35,
+            "restMinutes": 0
+          },
+          "after": {
+            "prepMinutes": 10,
+            "cookMinutes": 25,
+            "restMinutes": 0
+          }
+        },
+        {
+          "field": "ingredients",
+          "before": [
+            {
+              "id": "patata",
+              "ingredientId": "patata",
+              "name": "patate",
+              "quantity": {
+                "value": 700,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "pomodoro",
+              "ingredientId": "pomodoro",
+              "name": "passata di pomodoro",
+              "quantity": {
+                "value": 200,
+                "unit": "g"
+              },
+              "optional": false
+            },
+            {
+              "id": "paprika",
+              "ingredientId": "paprika",
+              "name": "paprika affumicata",
+              "quantity": {
+                "value": 1,
+                "unit": "tsp"
+              },
+              "optional": false
+            },
+            {
+              "id": "peperoncino",
+              "ingredientId": "peperoncino",
+              "name": "peperoncino",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            },
+            {
+              "id": "olio",
+              "ingredientId": "olio",
+              "name": "olio",
+              "quantity": {
+                "value": 3,
+                "unit": "tbsp"
+              },
+              "optional": false
+            },
+            {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          ],
+          "after": [
+            {
+              "id": "patata",
+              "ingredientId": "patata",
+              "name": "patate",
+              "quantity": {
+                "value": 2,
+                "unit": "piece"
+              },
+              "optional": false
+            },
+            {
+              "id": "cipolla",
+              "ingredientId": "cipolla",
+              "name": "cipolla",
+              "quantity": {
+                "value": 1,
+                "unit": "piece"
+              },
+              "optional": false
+            },
+            {
+              "id": "paprika-dolce",
+              "ingredientId": "paprika-dolce",
+              "name": "paprika dolce",
+              "quantity": {
+                "value": 0.5,
+                "unit": "tbsp"
+              },
+              "optional": false
+            },
+            {
+              "id": "paprika-piccante",
+              "ingredientId": "paprika-piccante",
+              "name": "paprika piccante",
+              "quantity": {
+                "value": 1,
+                "unit": "tbsp"
+              },
+              "optional": false
+            },
+            {
+              "id": "farina",
+              "ingredientId": "farina",
+              "name": "farina",
+              "quantity": {
+                "value": 2,
+                "unit": "tbsp"
+              },
+              "optional": false
+            },
+            {
+              "id": "brodo",
+              "ingredientId": "brodo",
+              "name": "brodo di pollo",
+              "quantity": {
+                "value": 250,
+                "unit": "ml"
+              },
+              "optional": false
+            },
+            {
+              "id": "olio",
+              "ingredientId": "olio",
+              "name": "olio extravergine",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            },
+            {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            },
+            {
+              "id": "prezzemolo",
+              "ingredientId": "prezzemolo",
+              "name": "prezzemolo",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          ]
+        },
+        {
+          "field": "steps",
+          "before": [
+            {
+              "id": "step-1",
+              "text": "Taglia le patate a cubetti, condisci con due cucchiai d’olio e sale.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-2",
+              "text": "Cuoci a 210 °C per circa 35 minuti, girando a metà cottura.",
+              "ingredientIds": []
+            },
+            {
+              "id": "step-3",
+              "text": "Scalda la passata con l’olio rimasto, paprika e peperoncino per 15 minuti. Servi sulle patate.",
+              "ingredientIds": []
+            }
+          ],
+          "after": [
+            {
+              "id": "step-1",
+              "text": "Friggere le patate e, separatamente, ammorbidire la cipolla.",
+              "ingredientIds": [
+                "patata",
+                "olio",
+                "cipolla"
+              ]
+            },
+            {
+              "id": "step-2",
+              "text": "Unire paprika e farina alla cipolla, poi aggiungere il brodo gradualmente e cuocere circa 10 minuti.",
+              "ingredientIds": [
+                "cipolla",
+                "paprika-dolce",
+                "paprika-piccante",
+                "farina",
+                "brodo"
+              ]
+            },
+            {
+              "id": "step-3",
+              "text": "Frullare la salsa e distribuirla sulle patate scolate; completare con sale e prezzemolo.",
+              "ingredientIds": [
+                "patata",
+                "sale",
+                "prezzemolo"
+              ]
+            }
+          ]
+        }
+      ],
+      "proposedRecord": {
+        "schemaVersion": 1,
+        "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+        "slug": "patatas-bravas",
+        "names": {
+          "italian": "Patatas bravas",
+          "original": {
+            "text": "Patatas bravas",
+            "language": "es"
+          },
+          "alternatives": []
+        },
+        "description": "Proposta della versione fritta con salsa di paprika e brodo; formula da revisionare prima di sostituire il demo.",
+        "date": "2026-11-12",
+        "demo": false,
+        "editorial": {
+          "status": "candidate",
+          "author": "RicettePatata.it — proposta P1.4 assistita"
+        },
+        "sources": [
+          {
+            "id": "joseba-bravas",
+            "kind": "primary",
+            "title": "Patatas bravas, receta de Joseba Arguiñano",
+            "url": "https://www.hogarmania.com/cocina/recetas/aperitivos/patatas-bravas-9642.html",
+            "author": "Joseba Arguiñano",
+            "accessedAt": "2026-11-12"
+          }
+        ],
+        "notes": [],
+        "externalIds": [
+          {
+            "namespace": "ricettepatata-exploratory-census",
+            "value": "RP-0079"
+          }
+        ],
+        "provenance": {
+          "continent": "europe",
+          "country": {
+            "code": "ES",
+            "name": "Spagna"
+          },
+          "region": null,
+          "traditions": [
+            "Tradizione delle tapas spagnole"
+          ]
+        },
+        "taxonomy": {
+          "courses": [
+            "snack"
+          ],
+          "cookingMethods": [
+            "frittura",
+            "padella"
+          ],
+          "families": [
+            "altro"
+          ],
+          "occasions": [
+            "quotidiano"
+          ]
+        },
+        "potatoRole": "protagonist",
+        "relation": {
+          "kind": "primary"
+        },
+        "timing": {
+          "prepMinutes": 10,
+          "cookMinutes": 25,
+          "restMinutes": 0
+        },
+        "servings": 4,
+        "ingredients": [
+          {
+            "id": "patata",
+            "ingredientId": "patata",
+            "name": "patate",
+            "quantity": {
+              "value": 2,
+              "unit": "piece"
+            },
+            "optional": false
+          },
+          {
+            "id": "cipolla",
+            "ingredientId": "cipolla",
+            "name": "cipolla",
+            "quantity": {
+              "value": 1,
+              "unit": "piece"
+            },
+            "optional": false
+          },
+          {
+            "id": "paprika-dolce",
+            "ingredientId": "paprika-dolce",
+            "name": "paprika dolce",
+            "quantity": {
+              "value": 0.5,
+              "unit": "tbsp"
+            },
+            "optional": false
+          },
+          {
+            "id": "paprika-piccante",
+            "ingredientId": "paprika-piccante",
+            "name": "paprika piccante",
+            "quantity": {
+              "value": 1,
+              "unit": "tbsp"
+            },
+            "optional": false
+          },
+          {
+            "id": "farina",
+            "ingredientId": "farina",
+            "name": "farina",
+            "quantity": {
+              "value": 2,
+              "unit": "tbsp"
+            },
+            "optional": false
+          },
+          {
+            "id": "brodo",
+            "ingredientId": "brodo",
+            "name": "brodo di pollo",
+            "quantity": {
+              "value": 250,
+              "unit": "ml"
+            },
+            "optional": false
+          },
+          {
+            "id": "olio",
+            "ingredientId": "olio",
+            "name": "olio extravergine",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          },
+          {
+            "id": "sale",
+            "ingredientId": "sale",
+            "name": "sale",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          },
+          {
+            "id": "prezzemolo",
+            "ingredientId": "prezzemolo",
+            "name": "prezzemolo",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          }
+        ],
+        "steps": [
+          {
+            "id": "step-1",
+            "text": "Friggere le patate e, separatamente, ammorbidire la cipolla.",
+            "ingredientIds": [
+              "patata",
+              "olio",
+              "cipolla"
+            ]
+          },
+          {
+            "id": "step-2",
+            "text": "Unire paprika e farina alla cipolla, poi aggiungere il brodo gradualmente e cuocere circa 10 minuti.",
+            "ingredientIds": [
+              "cipolla",
+              "paprika-dolce",
+              "paprika-piccante",
+              "farina",
+              "brodo"
+            ]
+          },
+          {
+            "id": "step-3",
+            "text": "Frullare la salsa e distribuirla sulle patate scolate; completare con sale e prezzemolo.",
+            "ingredientIds": [
+              "patata",
+              "sale",
+              "prezzemolo"
+            ]
+          }
+        ],
+        "color": "pink"
+      }
+    }
+  ]
+}

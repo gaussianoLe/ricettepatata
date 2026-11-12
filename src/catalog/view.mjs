@@ -2,7 +2,7 @@ const units={g:'g',kg:'kg',ml:'ml',l:'l',tsp:'cucchiaini',tbsp:'cucchiai',cup:'t
 /** @param {import('astro/zod').z.infer<typeof import('./schema.mjs').ingredientSchema>} ingredient */
 export function formatIngredient(ingredient) {
   const q=ingredient.quantity;
-  const amount=q.value===null?'q.b.':`${q.value}${q.max===undefined?'':`–${q.max}`} ${units[q.unit]}`.trim();
+  const amount=q.value===null?'q.b.':`${q.approximate?'circa ':''}${q.value}${q.max===undefined?'':`–${q.max}`} ${units[q.unit]}`.trim();
   return `${amount} ${ingredient.name}${ingredient.preparation?`, ${ingredient.preparation}`:''}${ingredient.optional?' (facoltativo)':''}`;
 }
 /** @param {import('astro/zod').z.infer<typeof import('./schema.mjs').recipeSchema>} record */

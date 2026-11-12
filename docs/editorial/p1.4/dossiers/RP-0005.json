@@ -1,0 +1,77 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0005",
+  "researchTechnicalId": "724f3333-4782-53af-98ee-b31839e8094c",
+  "researchLabel": "Patate alla salentina con pomodoro e cipolla",
+  "proposedSlug": "patate-alla-salentina-con-pomodoro-e-cipolla",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0005.json",
+  "names": {
+    "italian": "Patate alla salentina con pomodoro e cipolla",
+    "original": {
+      "text": "Patate alla salentina con pomodoro e cipolla",
+      "language": "it"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": null,
+    "traditions": [
+      "Attribuzione del dataset da verificare"
+    ]
+  },
+  "potatoRole": null,
+  "sourceIds": [
+    "puglia-info",
+    "salento-insalata",
+    "puglia-pitta"
+  ],
+  "claims": [
+    {
+      "field": "name",
+      "text": "Ricerca esatta e ampliata senza riscontro diretto sufficiente della denominazione. Le occorrenze vicine non dimostrano una tradizione distinta.",
+      "sourceIds": [],
+      "status": "unresolved",
+      "locator": "Search log P1.4"
+    },
+    {
+      "field": "context",
+      "text": "La pagina Puglia.info descrive polpette di patate con pomodoro e cipolla, non la candidata dal titolo proposto: non rinominate per farle coincidere.",
+      "sourceIds": [
+        "puglia-info"
+      ],
+      "status": "supported",
+      "locator": "Polpette di patate"
+    },
+    {
+      "field": "formula",
+      "text": "Nessuna dose, tecnica, tempo o attribuzione storica viene trasferita da piatti omonimi o simili.",
+      "sourceIds": [],
+      "status": "editorial-inference",
+      "locator": "Decisione redazionale"
+    }
+  ],
+  "formula": null,
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "Identità culinaria non stabilita; UUID di ricerca conservato, non ritirato dal registro."
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "proposedStatus": "candidate",
+    "reason": "Needs_review mantenuto; evidenza insufficiente per dismissione definitiva o per inventare una formula."
+  },
+  "openQuestions": [
+    "Richiedere una fonte diretta al compilatore del dataset.",
+    "Valutare successivamente la dismissione se l’identità non viene chiarita."
+  ],
+  "changesFromP13": [
+    "Nuova ricerca negativa documentata; nessuna tradizione inventata."
+  ]
+}

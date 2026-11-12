@@ -1,0 +1,157 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0039",
+  "researchTechnicalId": "9dd07944-84f6-5f2a-bb79-f3524232aa65",
+  "researchLabel": "Gnocchi di patate",
+  "proposedSlug": "gnocchi-di-patate",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0039.json",
+  "names": {
+    "italian": "Gnocchi di patate",
+    "original": {
+      "text": "Gnocchi di patate",
+      "language": "it"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": null,
+    "traditions": [
+      "Cucina italiana"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "cucchiaio-gnocchi"
+  ],
+  "claims": [
+    {
+      "field": "identity",
+      "text": "Stessa ricetta/famiglia del demo, proposta di arricchimento editoriale con identità esistente. Non provata una variante regionale autonoma.",
+      "sourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "status": "editorial-inference",
+      "locator": "Confronto con il demo"
+    },
+    {
+      "field": "differences",
+      "text": "Patate 700 g→1 kg; farina 180→300 g; aggiunta noce moscata facoltativa. La cottura del demo,5 min, omette la lessatura delle patate: conservati intervalli nel dossier, timing null nella proposta candidate. Stessa ricetta base: condimenti diversi non costituiscono automaticamente varianti regionali.",
+      "sourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti e tempi della fonte scelta; frontmatter demo"
+    }
+  ],
+  "formula": {
+    "sourceId": "cucchiaio-gnocchi",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "patata",
+        "ingredientId": "patata",
+        "name": "patate",
+        "quantity": {
+          "value": 1,
+          "unit": "kg"
+        },
+        "optional": false
+      },
+      {
+        "id": "farina",
+        "ingredientId": "farina",
+        "name": "farina 00",
+        "quantity": {
+          "value": 300,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "uovo",
+        "ingredientId": "uovo",
+        "name": "uovo",
+        "quantity": {
+          "value": 1,
+          "unit": "piece"
+        },
+        "optional": false
+      },
+      {
+        "id": "sale",
+        "ingredientId": "sale",
+        "name": "sale",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "noce-moscata",
+        "ingredientId": "noce-moscata",
+        "name": "noce moscata",
+        "quantity": {
+          "value": 1,
+          "unit": "pinch"
+        },
+        "optional": true
+      }
+    ],
+    "timing": null,
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Lessare le patate con buccia per 30–40 minuti, pelarle e schiacciarle.",
+        "ingredientIds": [
+          "patata"
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Amalgamare brevemente con farina,uovo,sale e noce moscata facoltativa; ricavare gli gnocchi.",
+        "ingredientIds": [
+          "patata",
+          "farina",
+          "uovo",
+          "sale",
+          "noce-moscata"
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Lessare gli gnocchi a piccoli lotti, circa 2–3 minuti, verificandone la cottura.",
+        "ingredientIds": [
+          "patata"
+        ]
+      }
+    ],
+    "selectionRationale": "Formula della singola fonte selezionata per la proposta, senza combinare quantità.",
+    "timingBasis": "Intervalli non convertiti in numeri esatti; per bravas 10+25 con sola breve scolatura non conteggiata come riposo autonomo."
+  },
+  "identity": {
+    "existingCatalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+    "operationalSlug": "gnocchi",
+    "relation": "same-recipe-enrichment",
+    "rationale": "Nome e struttura compatibili con il record già registrato. Scelta proposta, non fusione automatica."
+  },
+  "decision": {
+    "outcome": "enrichment-proposal",
+    "proposedStatus": "candidate",
+    "reason": "Proposta revisionabile di aggiornamento manuale; nessuna applicazione o nuovo UUID operativo."
+  },
+  "openQuestions": [
+    "Approvare esplicitamente il collegamento dell’ID di ricerca alla scheda esistente.",
+    "Rivedere formula, tempi e testo prima di sostituire il demo; nessuna promozione automatica."
+  ],
+  "changesFromP13": [
+    "Patate 700 g→1 kg; farina 180→300 g; aggiunta noce moscata facoltativa.",
+    "La cottura del demo,5 min, omette la lessatura delle patate: conservati intervalli nel dossier, timing null nella proposta candidate.",
+    "Stessa ricetta base: condimenti diversi non costituiscono automaticamente varianti regionali."
+  ]
+}

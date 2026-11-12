@@ -1,0 +1,261 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0011",
+  "researchTechnicalId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+  "researchLabel": "Gattò di patate",
+  "proposedSlug": "gatto-di-patate",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0011.json",
+  "names": {
+    "italian": "Gattò di patate",
+    "original": {
+      "text": "Gattò di patate",
+      "language": "it"
+    },
+    "alternatives": [
+      {
+        "text": "Gateau di patate",
+        "language": "it"
+      }
+    ]
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": "Napoli, Campania",
+    "traditions": [
+      "Cucina napoletana"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "ruggiero-gatto",
+    "cucchiaio-gatto",
+    "gz-gatto"
+  ],
+  "claims": [
+    {
+      "field": "formula",
+      "text": "Selezionata soltanto la versione Ruggiero, teglia 20×20 cm e 6 porzioni; la pagina dichiara la derivazione da GialloZafferano.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti, dosi e collegamento Fonte"
+    },
+    {
+      "field": "timing",
+      "text": "Preparazione 30 min; budget cottura dichiarato 70 min coerente col limite alto di lessatura 30–40 min più forno 30 min a 180 °C. Non è una durata esatta per ogni patata.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti e procedimento"
+    },
+    {
+      "field": "independence",
+      "text": "Ruggiero e GialloZafferano non sono conteggiati come conferme indipendenti della formula; Cucchiaio è un riscontro distinto dell’identità, con dosi differenti.",
+      "sourceIds": [
+        "ruggiero-gatto",
+        "cucchiaio-gatto"
+      ],
+      "status": "editorial-inference",
+      "locator": "Fonte dichiarata e confronto P1.3"
+    },
+    {
+      "field": "history",
+      "text": "Le attribuzioni a inventori o nozze reali restano non provate; nessuna nota storica è inserita nel draft.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "gz-gatto"
+      ],
+      "status": "unresolved",
+      "locator": "Dossier storico P1.3"
+    }
+  ],
+  "formula": {
+    "sourceId": "ruggiero-gatto",
+    "servings": 6,
+    "ingredients": [
+      {
+        "id": "patata",
+        "ingredientId": "patata",
+        "name": "patate",
+        "quantity": {
+          "value": 500,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "fiordilatte",
+        "ingredientId": "fiordilatte",
+        "name": "fiordilatte",
+        "quantity": {
+          "value": 100,
+          "unit": "g"
+        },
+        "optional": false,
+        "preparation": "da scolare"
+      },
+      {
+        "id": "salame",
+        "ingredientId": "salame",
+        "name": "salame napoletano",
+        "quantity": {
+          "value": 50,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "prosciutto",
+        "ingredientId": "prosciutto",
+        "name": "prosciutto cotto",
+        "quantity": {
+          "value": 50,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "parmigiano-composto",
+        "ingredientId": "parmigiano",
+        "name": "Parmigiano per il composto",
+        "quantity": {
+          "value": 2,
+          "unit": "tbsp"
+        },
+        "optional": false
+      },
+      {
+        "id": "uovo",
+        "ingredientId": "uovo",
+        "name": "uova",
+        "quantity": {
+          "value": 2,
+          "unit": "piece"
+        },
+        "optional": false
+      },
+      {
+        "id": "olio",
+        "ingredientId": "olio",
+        "name": "olio extravergine",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "pepe",
+        "ingredientId": "pepe",
+        "name": "pepe nero",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "sale",
+        "ingredientId": "sale",
+        "name": "sale",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "pangrattato",
+        "ingredientId": "pangrattato",
+        "name": "pangrattato per la superficie",
+        "quantity": {
+          "value": 20,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "parmigiano-superficie",
+        "ingredientId": "parmigiano",
+        "name": "Parmigiano per la superficie",
+        "quantity": {
+          "value": 30,
+          "unit": "g"
+        },
+        "optional": false
+      }
+    ],
+    "timing": {
+      "prepMinutes": 30,
+      "cookMinutes": 70,
+      "restMinutes": 0
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Lessare le patate dalla ripresa del bollore per circa 30–40 minuti; verificarne la tenerezza, pelarle e schiacciarle.",
+        "ingredientIds": [
+          "patata"
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Scolare il fiordilatte e tagliarlo con i salumi. Amalgamare alla purea uova, Parmigiano del composto, olio, sale e pepe, poi i cubetti.",
+        "ingredientIds": [
+          "fiordilatte",
+          "salame",
+          "prosciutto",
+          "patata",
+          "uovo",
+          "parmigiano-composto",
+          "olio",
+          "sale",
+          "pepe"
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Ungere e impanare la pirofila 20×20 cm, versare il composto e distribuire pangrattato, Parmigiano della superficie e olio.",
+        "ingredientIds": [
+          "olio",
+          "pangrattato",
+          "parmigiano-superficie"
+        ]
+      },
+      {
+        "id": "step-4",
+        "text": "Cuocere nel forno statico già caldo a 180 °C per circa 30 minuti.",
+        "ingredientIds": [
+          "patata"
+        ]
+      }
+    ],
+    "selectionRationale": "Scelta dell’intera formula Ruggiero, senza adottare le dosi della pagina GZ attuale.",
+    "timingBasis": "70 min è il budget della fonte e il limite alto di 30–40+30. Nessun riposo prescritto; nessuna durata aggiunta come se fosse attestata."
+  },
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "Nessuna ricetta del catalogo corrisponde al gattò; nessun nuovo UUID derivato dal titolo."
+  },
+  "decision": {
+    "outcome": "new-draft",
+    "proposedStatus": "draft",
+    "reason": "Versione riproducibile scelta senza mescolare gli ingredienti delle altre fonti; draft con tempi dell’autore e intervallo operativo esplicito."
+  },
+  "openQuestions": [
+    "Tempi indicativi da confermare in cucina.",
+    "Approvazione indipendente richiesta; origine storica esatta non stabilita."
+  ],
+  "changesFromP13": [
+    "Una nuova formula selezionata con fonte integralmente leggibile.",
+    "Nuovo draft P1.1, stessa identità tecnica P1.2; nessuna promozione editoriale."
+  ]
+}

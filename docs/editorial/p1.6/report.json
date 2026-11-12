@@ -1,0 +1,114 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "f20de92df2a558de96f5aabe84ce8ccacf80ca20",
+  "summary": {
+    "reviewed": 3,
+    "applied": 0,
+    "prepared_not_applied": 0,
+    "blocked": 3,
+    "newIdentities": 0,
+    "promotions": 0
+  },
+  "decisions": [
+    {
+      "researchId": "RP-0001",
+      "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+      "slug": "pitta-di-patate",
+      "status": "blocked",
+      "applied": false,
+      "applicationApproved": false,
+      "preconditionVerified": true,
+      "proposedStatus": "candidate",
+      "formulaSourceIds": [
+        "agrodolce-pitta"
+      ],
+      "visibility": {
+        "production": {
+          "before": false,
+          "after": false
+        },
+        "preview": {
+          "before": true,
+          "after": false
+        },
+        "regressesPreview": true
+      },
+      "openIssues": [
+        "Concordare se ritirare la pagina demo dalla preview o introdurre una separazione di lavoro autorizzata, senza renderla pubblica.",
+        "Revisione indipendente di formula e resa 4→6 ancora pendente.",
+        "Tempi complessivi non riconciliati; mantenere timing=null e stato candidate."
+      ]
+    },
+    {
+      "researchId": "RP-0039",
+      "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+      "slug": "gnocchi",
+      "status": "blocked",
+      "applied": false,
+      "applicationApproved": false,
+      "preconditionVerified": true,
+      "proposedStatus": "candidate",
+      "formulaSourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "visibility": {
+        "production": {
+          "before": false,
+          "after": false
+        },
+        "preview": {
+          "before": true,
+          "after": false
+        },
+        "regressesPreview": true
+      },
+      "openIssues": [
+        "Stesso blocco di visibilità: un candidate reale rimuoverebbe il demo dalla preview.",
+        "Documentare farina variabile nel testo o nella preparation già prevista dal modello, senza inventare range.",
+        "Tempi per lotti e raffreddamento incompleti: timing=null; candidate resta compatibile.",
+        "Review indipendente e approvazione della sostituzione pendenti."
+      ]
+    },
+    {
+      "researchId": "RP-0079",
+      "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "slug": "patatas-bravas",
+      "status": "blocked",
+      "applied": false,
+      "applicationApproved": false,
+      "preconditionVerified": true,
+      "proposedStatus": "candidate",
+      "formulaSourceIds": [
+        "joseba-bravas"
+      ],
+      "visibility": {
+        "production": {
+          "before": false,
+          "after": false
+        },
+        "preview": {
+          "before": true,
+          "after": false
+        },
+        "regressesPreview": true
+      },
+      "openIssues": [
+        "Decisione indipendente stessa ricetta o variante ancora pendente: nessuna sostituzione autorizzata.",
+        "La conversione demo→candidate eliminerebbe la pagina dalla preview; non aggirare la policy.",
+        "Controllare ingredienti/allergeni del brodo effettivo; non conservare qualifiche vegetariane.",
+        "Completare il procedimento originale con gestione della paprika e precauzioni di frittura; nessuna temperatura inventata."
+      ]
+    }
+  ],
+  "baseline": {
+    "filesChecked": 64,
+    "sha256": "c026db6cecd3d36ec4309f54e30e867e558a662a69814be91dc3a739295b54b2",
+    "p12ThroughP15Unchanged": true,
+    "currentCatalogValidated": true
+  },
+  "modelChangeRequired": false,
+  "reason": "P1.1 candidate supports null timing; intervals and unknown durations remain in sourced findings. No operational replacement is authorized.",
+  "independentReview": "pending",
+  "mergeAuthorized": false,
+  "deploymentAuthorized": false
+}

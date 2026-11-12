@@ -1,0 +1,56 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0001",
+  "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+  "slug": "pitta-di-patate",
+  "targetPath": "src/content/ricette/pitta-di-patate.md",
+  "beforeSha256": "39368462b4d7099e2916264e117c3d1576551359b1f447ef5d2409ffba5bdc54",
+  "sourceProposal": "docs/editorial/p1.4/enrichments.json",
+  "status": "blocked",
+  "applied": false,
+  "applicationApproved": false,
+  "independentReview": "pending",
+  "allowedOperationalChanges": [],
+  "proposedStatus": "candidate",
+  "visibility": {
+    "currentProduction": false,
+    "currentPreview": true,
+    "proposedProduction": false,
+    "proposedPreview": false,
+    "regressesPreview": true,
+    "reason": "Il candidate reale è escluso da entrambi i target. Tenere demo=true in draft/review esporrebbe una bozza reale; non è una soluzione autorizzata."
+  },
+  "formulaDecision": "Formula Agrodolce coerente come proposta per sei persone; non è un ridimensionamento lineare del demo da quattro. Ripieno e impasto cambiano insieme. Nessuna applicazione approvata.",
+  "identityDecision": "Stessa famiglia della pitta salentina; mantenere UUID e URL operativi. Nessuna nuova variante regionale dimostrata.",
+  "findings": [
+    {
+      "field": "ingredients/servings",
+      "text": "Confermati per 6: patate 1 kg; cipolle e pomodori 500 g ciascuno; pecorino 200 g; uovo 1; pangrattato 15 g; olive 40 g; capperi 35 g; olio e sale q.b. Dal demo cambiano anche farcia e proporzioni, non solo resa.",
+      "sourceIds": [
+        "agrodolce-pitta"
+      ],
+      "locator": "Ingredienti per 6 persone"
+    },
+    {
+      "field": "timing",
+      "text": "La scheda indica preparazione 80 min e riposo 30 min. Lessatura senza durata; cipolle circa 15 min più pomodoro circa 15 min; forno 190 °C, 30–40 min. Non chiaro se gli 80 includano lavorazioni o cotture: nessuna somma in totale esatto.",
+      "sourceIds": [
+        "agrodolce-pitta"
+      ],
+      "locator": "Scheda tempi e procedimento 1–9"
+    },
+    {
+      "field": "steps",
+      "text": "La proposta abbrevia passaggi: chiarire raffreddamento, cipolle non rosolate, pomodori pelati e privati dei semi, olive denocciolate e riposo. Non inventare minuti per lessatura o raffreddamento.",
+      "sourceIds": [
+        "agrodolce-pitta"
+      ],
+      "locator": "Procedimento 1–9 e introduzione"
+    }
+  ],
+  "openIssues": [
+    "Concordare se ritirare la pagina demo dalla preview o introdurre una separazione di lavoro autorizzata, senza renderla pubblica.",
+    "Revisione indipendente di formula e resa 4→6 ancora pendente.",
+    "Tempi complessivi non riconciliati; mantenere timing=null e stato candidate."
+  ]
+}

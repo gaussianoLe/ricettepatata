@@ -5,3 +5,5 @@ I dossier e i record di quest’area sono separati dalle Astro Content Collectio
 Il [consolidamento P1.4](p1.4/README.md) mantiene gli artefatti P1.3 immutabili e aggiunge dossier versionati, proposte manuali di arricchimento e controlli ripetibili. `npm run editorial:consolidation` non applica né pubblica dati.
 
 [P1.5 integra i tre draft nel catalogo operativo](../integration/p1.5/README.md), mantenendoli privati in entrambi i target e preservando gli artefatti storici. I controlli P1.3/P1.4 verificano la baseline; `integration:check` controlla le tre aggiunte correnti e i demo invariati.
+
+[P1.6 — Revisione degli arricchimenti](p1.6/README.md): tre decisioni individuali, precondizioni e diff riproducibili; zero sostituzioni per il blocco di visibilità.

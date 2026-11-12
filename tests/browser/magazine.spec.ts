@@ -71,3 +71,21 @@ test('integrated editorial drafts stay private in lists, search and direct URLs'
   expect(response.status()).toBe(404);
  }
 });
+
+
+test('P1.6 blocked enrichments leave each preview demo unchanged and private in production',async({page,request,baseURL})=>{
+ const {readFileSync}=await import('node:fs');
+ const {plans}=JSON.parse(readFileSync('docs/editorial/p1.4/enrichments.json','utf8'));
+ for(const plan of plans){
+  const current=catalog.find(e=>e.data.catalogId===plan.catalogId)!;
+  const response=await request.get(`${baseURL}ricette/${plan.slug}/`);
+  expect(response.status()).toBe(target==='preview'?200:404);
+  if(target==='preview'){
+   await page.goto(`./ricette/${plan.slug}/`);
+   await expect(page.getByRole('heading',{level:1})).toHaveText(current.data.names.italian);
+   const html=await page.content();
+   for(const source of plan.proposedRecord.sources)expect(html).not.toContain(source.url);
+   await expect(page.locator('ol')).toContainText(current.data.steps[0].text);
+  }
+ }
+});

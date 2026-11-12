@@ -1,0 +1,54 @@
+{
+  "formatVersion": 1,
+  "method": "Pagine aperte tramite web il 12 novembre 2026. Evidenza testuale accessibile; nessuna verifica autonoma del video. Le vecchie consultazioni P1.3/P1.4 restano storiche e non sono spacciate per nuove visite.",
+  "sources": [
+    {
+      "id": "agrodolce-pitta",
+      "kind": "primary",
+      "title": "Pitta di patate pugliese",
+      "url": "https://www.agrodolce.it/ricette/pitta-patate",
+      "author": "Tiziana Molti",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "id": "cucchiaio-gnocchi",
+      "kind": "primary",
+      "title": "Gnocchi di patate ricetta base",
+      "url": "https://www.cucchiaio.it/ricetta/ricetta-gnocchi-patate-ricetta-base/",
+      "author": "Riccardo Carnevali / Il Cucchiaio d’Argento",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "id": "joseba-bravas",
+      "kind": "primary",
+      "title": "Patatas bravas, receta de Joseba Arguiñano",
+      "url": "https://www.hogarmania.com/cocina/recetas/aperitivos/patatas-bravas-9642.html",
+      "author": "Joseba Arguiñano",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "id": "lfb-frying",
+      "kind": "primary",
+      "title": "Deep fat fryers",
+      "url": "https://www.london-fire.gov.uk/safety/the-home/cooking/deep-fat-fryers/",
+      "author": "London Fire Brigade",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "id": "home-office-fire",
+      "kind": "primary",
+      "title": "Fire safety in the home (accessible version)",
+      "url": "https://www.gov.uk/government/publications/make-your-home-safe-from-fire/fire-safety-in-the-home-accessible-version",
+      "author": "Home Office",
+      "accessedAt": "2026-11-12"
+    },
+    {
+      "id": "govuk-allergens",
+      "kind": "primary",
+      "title": "Understanding food labelling: Allergen labelling",
+      "url": "https://www.gov.uk/understanding-food-labelling/allergen-labelling",
+      "author": "GOV.UK",
+      "accessedAt": "2026-11-12"
+    }
+  ]
+}

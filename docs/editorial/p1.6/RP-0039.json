@@ -1,0 +1,57 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0039",
+  "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+  "slug": "gnocchi",
+  "targetPath": "src/content/ricette/gnocchi.md",
+  "beforeSha256": "8504294b36217e0e7b65fc719d296b326648d726134ea430777b31fb608567ca",
+  "sourceProposal": "docs/editorial/p1.4/enrichments.json",
+  "status": "blocked",
+  "applied": false,
+  "applicationApproved": false,
+  "independentReview": "pending",
+  "allowedOperationalChanges": [],
+  "proposedStatus": "candidate",
+  "visibility": {
+    "currentProduction": false,
+    "currentPreview": true,
+    "proposedProduction": false,
+    "proposedPreview": false,
+    "regressesPreview": true,
+    "reason": "Il candidate reale è escluso da entrambi i target. Tenere demo=true in draft/review esporrebbe una bozza reale; non è una soluzione autorizzata."
+  },
+  "formulaDecision": "Base del Cucchiaio per quattro persone; farina 300 g come dose di riferimento variabile secondo umidità, non intervallo numerico inventato. Condimenti esclusi dalla formula base. Nessuna applicazione approvata.",
+  "identityDecision": "Ricetta base italiana diffusa: nessuna attribuzione regionale esclusiva; UUID e slug gnocchi invariati.",
+  "findings": [
+    {
+      "field": "ingredients",
+      "text": "Riferimento per 4: patate 1 kg, farina 00 300 g, uovo 1, sale, noce moscata facoltativa. La farina va regolata con cautela secondo le patate; non dichiarare 300 g come dose universale né inventare un massimo.",
+      "sourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "locator": "Dosi e consigli dello chef"
+    },
+    {
+      "field": "timing",
+      "text": "Scheda: preparazione 45 min, cottura 30–40 min. Procedimento: patate 30–40 min secondo dimensioni, intiepidimento non quantificato, lavorazione breve, gnocchi 2–3 min a lotti con verifica. Il numero dei lotti non è noto: nessun totale esatto.",
+      "sourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "locator": "Scheda tempi e procedimento 1–3"
+    },
+    {
+      "field": "provenance/relation",
+      "text": "La base non include il sugo. I condimenti non fondano da soli una nuova identità regionale; nessuna regione esclusiva è supportata per questa proposta.",
+      "sourceIds": [
+        "cucchiaio-gnocchi"
+      ],
+      "locator": "Presentazione, procedimento 3 e varianti"
+    }
+  ],
+  "openIssues": [
+    "Stesso blocco di visibilità: un candidate reale rimuoverebbe il demo dalla preview.",
+    "Documentare farina variabile nel testo o nella preparation già prevista dal modello, senza inventare range.",
+    "Tempi per lotti e raffreddamento incompleti: timing=null; candidate resta compatibile.",
+    "Review indipendente e approvazione della sostituzione pendenti."
+  ]
+}

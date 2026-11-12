@@ -1,0 +1,67 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0079",
+  "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+  "slug": "patatas-bravas",
+  "targetPath": "src/content/ricette/patatas-bravas.md",
+  "beforeSha256": "9d9b148fbc58119f9d689d11d849b1be2af53dd0abc9a5dbdeed97f5832db60f",
+  "sourceProposal": "docs/editorial/p1.4/enrichments.json",
+  "status": "blocked",
+  "applied": false,
+  "applicationApproved": false,
+  "independentReview": "pending",
+  "allowedOperationalChanges": [],
+  "proposedStatus": "candidate",
+  "visibility": {
+    "currentProduction": false,
+    "currentPreview": true,
+    "proposedProduction": false,
+    "proposedPreview": false,
+    "regressesPreview": true,
+    "reason": "Il candidate reale è escluso da entrambi i target. Tenere demo=true in draft/review esporrebbe una bozza reale; non è una soluzione autorizzata."
+  },
+  "formulaDecision": "Formula Joseba verificata come proposta distinta dal demo al forno: sostituzione sostanziale di tecnica e salsa. Deciso di NON sostituire in questa PR; valutare in review se revisione della stessa identità o variante documentata. Nessun nuovo UUID creato.",
+  "identityDecision": "Non basta la differenza forno/frittura per provare una variante regionale. Identità operativa preservata; scelta stessa ricetta/variante ancora pendente.",
+  "findings": [
+    {
+      "field": "ingredients/timing",
+      "text": "Joseba: 2 patate, cipolla, paprika dolce ½ cucchiaio e piccante 1, farina 2, brodo di pollo 250 ml, olio/sale/prezzemolo; 4 porzioni, 10+25 min. Paprika e farina a fuoco dolce, brodo graduale, salsa circa 10 min. Il demo usa forno e pomodoro.",
+      "sourceIds": [
+        "joseba-bravas"
+      ],
+      "locator": "Ingredienti, scheda e passaggi 2–4"
+    },
+    {
+      "field": "diet/allergens",
+      "text": "Il pollo rende questa formula non vegetariana: è un’inferenza dagli ingredienti. La pagina segnala glutine; composizione e allergeni del brodo specifico restano da controllare, senza attribuire automaticamente sedano o altri allergeni al prodotto ignoto.",
+      "sourceIds": [
+        "joseba-bravas",
+        "govuk-allergens"
+      ],
+      "locator": "Ingredienti, Alérgenos; elenco allergeni GOV.UK"
+    },
+    {
+      "field": "frying",
+      "text": "Frittura in olio a fuoco medio fino a patate tenere e dorate, senza temperatura numerica nella fonte. Asciugare le patate; non superare un terzo della pentola con olio; se fuma spegnere e raffreddare. Preferire controllo termostatico.",
+      "sourceIds": [
+        "joseba-bravas",
+        "lfb-frying"
+      ],
+      "locator": "Passaggio 2; Deep fat frying"
+    },
+    {
+      "field": "fire-safety",
+      "text": "Non usare acqua su olio in fiamme né affrontare il fuoco; interrompere il calore solo se sicuro. Le indicazioni antincendio non determinano dosi o temperatura della ricetta.",
+      "sourceIds": [
+        "home-office-fire"
+      ],
+      "locator": "Deep fat frying / What to do if a pan catches fire"
+    }
+  ],
+  "openIssues": [
+    "Decisione indipendente stessa ricetta o variante ancora pendente: nessuna sostituzione autorizzata.",
+    "La conversione demo→candidate eliminerebbe la pagina dalla preview; non aggirare la policy.",
+    "Controllare ingredienti/allergeni del brodo effettivo; non conservare qualifiche vegetariane.",
+    "Completare il procedimento originale con gestione della paprika e precauzioni di frittura; nessuna temperatura inventata."
+  ]
+}

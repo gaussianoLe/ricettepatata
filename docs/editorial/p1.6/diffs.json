@@ -1,0 +1,1592 @@
+{
+  "formatVersion": 1,
+  "applied": false,
+  "items": [
+    {
+      "researchId": "RP-0001",
+      "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+      "slug": "pitta-di-patate",
+      "targetPath": "src/content/ricette/pitta-di-patate.md",
+      "beforeSha256": "39368462b4d7099e2916264e117c3d1576551359b1f447ef5d2409ffba5bdc54",
+      "proposalSha256": "f2df38a5bfbba91f5f77413fb150d2b5131dc8a59dae015b5f2f3dad9c6fdd42",
+      "applied": false,
+      "bodyDisposition": "No replacement body supplied by P1.4; existing Markdown body unchanged. Future editing requires separate review.",
+      "changes": [
+        {
+          "path": "/data/date",
+          "before": {
+            "present": true,
+            "value": "2026-11-09"
+          },
+          "after": {
+            "present": true,
+            "value": "2026-11-12"
+          }
+        },
+        {
+          "path": "/data/demo",
+          "before": {
+            "present": true,
+            "value": true
+          },
+          "after": {
+            "present": true,
+            "value": false
+          }
+        },
+        {
+          "path": "/data/editorial/author",
+          "before": {
+            "present": true,
+            "value": "RicettePatata.it"
+          },
+          "after": {
+            "present": true,
+            "value": "RicettePatata.it — proposta P1.4 assistita"
+          }
+        },
+        {
+          "path": "/data/editorial/status",
+          "before": {
+            "present": true,
+            "value": "draft"
+          },
+          "after": {
+            "present": true,
+            "value": "candidate"
+          }
+        },
+        {
+          "path": "/data/externalIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "namespace": "ricettepatata-exploratory-census",
+              "value": "RP-0001"
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/1/name",
+          "before": {
+            "present": true,
+            "value": "cipolle"
+          },
+          "after": {
+            "present": true,
+            "value": "cipolle dorate"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "piece"
+          },
+          "after": {
+            "present": true,
+            "value": "g"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/quantity/value",
+          "before": {
+            "present": true,
+            "value": 2
+          },
+          "after": {
+            "present": true,
+            "value": 500
+          }
+        },
+        {
+          "path": "/data/ingredients/2/name",
+          "before": {
+            "present": true,
+            "value": "pomodori pelati"
+          },
+          "after": {
+            "present": true,
+            "value": "pomodori"
+          }
+        },
+        {
+          "path": "/data/ingredients/2/quantity/value",
+          "before": {
+            "present": true,
+            "value": 300
+          },
+          "after": {
+            "present": true,
+            "value": 500
+          }
+        },
+        {
+          "path": "/data/ingredients/3/quantity/value",
+          "before": {
+            "present": true,
+            "value": 60
+          },
+          "after": {
+            "present": true,
+            "value": 200
+          }
+        },
+        {
+          "path": "/data/ingredients/4/id",
+          "before": {
+            "present": true,
+            "value": "olio-extravergine"
+          },
+          "after": {
+            "present": true,
+            "value": "uovo"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/ingredientId",
+          "before": {
+            "present": true,
+            "value": "olio-extravergine"
+          },
+          "after": {
+            "present": true,
+            "value": "uovo"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/name",
+          "before": {
+            "present": true,
+            "value": "olio extravergine"
+          },
+          "after": {
+            "present": true,
+            "value": "uovo"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "tbsp"
+          },
+          "after": {
+            "present": true,
+            "value": "piece"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/quantity/value",
+          "before": {
+            "present": true,
+            "value": 3
+          },
+          "after": {
+            "present": true,
+            "value": 1
+          }
+        },
+        {
+          "path": "/data/ingredients/5/quantity/value",
+          "before": {
+            "present": true,
+            "value": 30
+          },
+          "after": {
+            "present": true,
+            "value": 15
+          }
+        },
+        {
+          "path": "/data/ingredients/6",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "olive",
+              "ingredientId": "olive",
+              "name": "olive nere",
+              "quantity": {
+                "value": 40,
+                "unit": "g"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/7",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "capperi",
+              "ingredientId": "capperi",
+              "name": "capperi",
+              "quantity": {
+                "value": 35,
+                "unit": "g"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/8",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/9",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "olio",
+              "ingredientId": "olio",
+              "name": "olio extravergine",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/names/italian",
+          "before": {
+            "present": true,
+            "value": "Pitta di patate"
+          },
+          "after": {
+            "present": true,
+            "value": "Pitta di patate salentina"
+          }
+        },
+        {
+          "path": "/data/servings",
+          "before": {
+            "present": true,
+            "value": 4
+          },
+          "after": {
+            "present": true,
+            "value": 6
+          }
+        },
+        {
+          "path": "/data/sources/0/accessedAt",
+          "before": {
+            "present": true,
+            "value": "2026-11-09"
+          },
+          "after": {
+            "present": true,
+            "value": "2026-11-12"
+          }
+        },
+        {
+          "path": "/data/sources/0/author",
+          "before": {
+            "present": true,
+            "value": "RicettePatata.it"
+          },
+          "after": {
+            "present": true,
+            "value": "Tiziana Molti"
+          }
+        },
+        {
+          "path": "/data/sources/0/id",
+          "before": {
+            "present": true,
+            "value": "prototipo-p0"
+          },
+          "after": {
+            "present": true,
+            "value": "agrodolce-pitta"
+          }
+        },
+        {
+          "path": "/data/sources/0/kind",
+          "before": {
+            "present": true,
+            "value": "internal"
+          },
+          "after": {
+            "present": true,
+            "value": "primary"
+          }
+        },
+        {
+          "path": "/data/sources/0/title",
+          "before": {
+            "present": true,
+            "value": "Prototipo P0 — contenuto non verificato"
+          },
+          "after": {
+            "present": true,
+            "value": "Pitta di patate pugliese"
+          }
+        },
+        {
+          "path": "/data/sources/0/url",
+          "before": {
+            "present": true,
+            "value": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/ricette/pitta-di-patate.md"
+          },
+          "after": {
+            "present": true,
+            "value": "https://www.agrodolce.it/ricette/pitta-patate"
+          }
+        },
+        {
+          "path": "/data/steps/0/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/0/text",
+          "before": {
+            "present": true,
+            "value": "Lessa le patate finché tenere, poi sbucciale e schiacciale."
+          },
+          "after": {
+            "present": true,
+            "value": "Cuocere e schiacciare le patate."
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "cipolla"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/1",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "pomodoro"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/2",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "olive"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/3",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "capperi"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/4",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "olio"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/5",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "sale"
+          }
+        },
+        {
+          "path": "/data/steps/1/text",
+          "before": {
+            "present": true,
+            "value": "Affetta le cipolle e cuocile con metà olio; aggiungi i pomodori e fai restringere per 20 minuti."
+          },
+          "after": {
+            "present": true,
+            "value": "Preparare il sugo con cipolle, pomodori, olive e capperi; far intiepidire."
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/1",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "uovo"
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/2",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "pecorino"
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/3",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "pangrattato"
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/4",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "olio"
+          }
+        },
+        {
+          "path": "/data/steps/2/text",
+          "before": {
+            "present": true,
+            "value": "Mescola patate e pecorino. Disponine metà in una teglia unta, aggiungi il ripieno e copri con le patate rimaste."
+          },
+          "after": {
+            "present": true,
+            "value": "Unire uovo e pecorino alle patate, farcire fra due strati e completare con pangrattato e olio; forno 190 °C per 30–40 min."
+          }
+        },
+        {
+          "path": "/data/steps/3",
+          "before": {
+            "present": true,
+            "value": {
+              "id": "step-4",
+              "text": "Completa con pangrattato e olio e cuoci a 190 °C per circa 35 minuti, fino a doratura.",
+              "ingredientIds": []
+            }
+          },
+          "after": {
+            "present": false
+          }
+        },
+        {
+          "path": "/data/timing",
+          "before": {
+            "present": true,
+            "value": {
+              "prepMinutes": 30,
+              "cookMinutes": 45,
+              "restMinutes": 0
+            }
+          },
+          "after": {
+            "present": true,
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "researchId": "RP-0039",
+      "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+      "slug": "gnocchi",
+      "targetPath": "src/content/ricette/gnocchi.md",
+      "beforeSha256": "8504294b36217e0e7b65fc719d296b326648d726134ea430777b31fb608567ca",
+      "proposalSha256": "08496182001ce832714171f56fb2aa9605bab1816f4de397a2cf4878f2ccfb74",
+      "applied": false,
+      "bodyDisposition": "No replacement body supplied by P1.4; existing Markdown body unchanged. Future editing requires separate review.",
+      "changes": [
+        {
+          "path": "/data/date",
+          "before": {
+            "present": true,
+            "value": "2026-11-09"
+          },
+          "after": {
+            "present": true,
+            "value": "2026-11-12"
+          }
+        },
+        {
+          "path": "/data/demo",
+          "before": {
+            "present": true,
+            "value": true
+          },
+          "after": {
+            "present": true,
+            "value": false
+          }
+        },
+        {
+          "path": "/data/editorial/author",
+          "before": {
+            "present": true,
+            "value": "RicettePatata.it"
+          },
+          "after": {
+            "present": true,
+            "value": "RicettePatata.it — proposta P1.4 assistita"
+          }
+        },
+        {
+          "path": "/data/editorial/status",
+          "before": {
+            "present": true,
+            "value": "draft"
+          },
+          "after": {
+            "present": true,
+            "value": "candidate"
+          }
+        },
+        {
+          "path": "/data/externalIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "namespace": "ricettepatata-exploratory-census",
+              "value": "RP-0039"
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/0/name",
+          "before": {
+            "present": true,
+            "value": "patate farinose"
+          },
+          "after": {
+            "present": true,
+            "value": "patate"
+          }
+        },
+        {
+          "path": "/data/ingredients/0/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "g"
+          },
+          "after": {
+            "present": true,
+            "value": "kg"
+          }
+        },
+        {
+          "path": "/data/ingredients/0/quantity/value",
+          "before": {
+            "present": true,
+            "value": 700
+          },
+          "after": {
+            "present": true,
+            "value": 1
+          }
+        },
+        {
+          "path": "/data/ingredients/1/name",
+          "before": {
+            "present": true,
+            "value": "farina, più altra per il piano"
+          },
+          "after": {
+            "present": true,
+            "value": "farina 00"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/quantity/value",
+          "before": {
+            "present": true,
+            "value": 180
+          },
+          "after": {
+            "present": true,
+            "value": 300
+          }
+        },
+        {
+          "path": "/data/ingredients/4",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "noce-moscata",
+              "ingredientId": "noce-moscata",
+              "name": "noce moscata",
+              "quantity": {
+                "value": 1,
+                "unit": "pinch"
+              },
+              "optional": true
+            }
+          }
+        },
+        {
+          "path": "/data/sources/0/accessedAt",
+          "before": {
+            "present": true,
+            "value": "2026-11-09"
+          },
+          "after": {
+            "present": true,
+            "value": "2026-11-12"
+          }
+        },
+        {
+          "path": "/data/sources/0/author",
+          "before": {
+            "present": true,
+            "value": "RicettePatata.it"
+          },
+          "after": {
+            "present": true,
+            "value": "Riccardo Carnevali / Il Cucchiaio d’Argento"
+          }
+        },
+        {
+          "path": "/data/sources/0/id",
+          "before": {
+            "present": true,
+            "value": "prototipo-p0"
+          },
+          "after": {
+            "present": true,
+            "value": "cucchiaio-gnocchi"
+          }
+        },
+        {
+          "path": "/data/sources/0/kind",
+          "before": {
+            "present": true,
+            "value": "internal"
+          },
+          "after": {
+            "present": true,
+            "value": "primary"
+          }
+        },
+        {
+          "path": "/data/sources/0/title",
+          "before": {
+            "present": true,
+            "value": "Prototipo P0 — contenuto non verificato"
+          },
+          "after": {
+            "present": true,
+            "value": "Gnocchi di patate ricetta base"
+          }
+        },
+        {
+          "path": "/data/sources/0/url",
+          "before": {
+            "present": true,
+            "value": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/ricette/gnocchi.md"
+          },
+          "after": {
+            "present": true,
+            "value": "https://www.cucchiaio.it/ricetta/ricetta-gnocchi-patate-ricetta-base/"
+          }
+        },
+        {
+          "path": "/data/steps/0/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/0/text",
+          "before": {
+            "present": true,
+            "value": "Lessa le patate con la buccia finché tenere, sbucciale e schiacciale."
+          },
+          "after": {
+            "present": true,
+            "value": "Lessare le patate con buccia per 30–40 minuti, pelarle e schiacciarle."
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/1",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "farina"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/2",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "uovo"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/3",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "sale"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/4",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "noce-moscata"
+          }
+        },
+        {
+          "path": "/data/steps/1/text",
+          "before": {
+            "present": true,
+            "value": "Lascia intiepidire, incorpora farina, uovo e sale lavorando il minimo necessario."
+          },
+          "after": {
+            "present": true,
+            "value": "Amalgamare brevemente con farina,uovo,sale e noce moscata facoltativa; ricavare gli gnocchi."
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/2/text",
+          "before": {
+            "present": true,
+            "value": "Forma dei filoncini e tagliali in piccoli gnocchi."
+          },
+          "after": {
+            "present": true,
+            "value": "Lessare gli gnocchi a piccoli lotti, circa 2–3 minuti, verificandone la cottura."
+          }
+        },
+        {
+          "path": "/data/steps/3",
+          "before": {
+            "present": true,
+            "value": {
+              "id": "step-4",
+              "text": "Cuoci in acqua salata a piccoli lotti e scola quando salgono a galla. Condisci a piacere.",
+              "ingredientIds": []
+            }
+          },
+          "after": {
+            "present": false
+          }
+        },
+        {
+          "path": "/data/timing",
+          "before": {
+            "present": true,
+            "value": {
+              "prepMinutes": 40,
+              "cookMinutes": 5,
+              "restMinutes": 0
+            }
+          },
+          "after": {
+            "present": true,
+            "value": null
+          }
+        }
+      ]
+    },
+    {
+      "researchId": "RP-0079",
+      "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "slug": "patatas-bravas",
+      "targetPath": "src/content/ricette/patatas-bravas.md",
+      "beforeSha256": "9d9b148fbc58119f9d689d11d849b1be2af53dd0abc9a5dbdeed97f5832db60f",
+      "proposalSha256": "a67b637eb78b680c9c7af6a1141bdf4d1e1289553ce5a9b9323e8bb6b55b9aec",
+      "applied": false,
+      "bodyDisposition": "No replacement body supplied by P1.4; existing Markdown body unchanged. Future editing requires separate review.",
+      "changes": [
+        {
+          "path": "/data/date",
+          "before": {
+            "present": true,
+            "value": "2026-11-09"
+          },
+          "after": {
+            "present": true,
+            "value": "2026-11-12"
+          }
+        },
+        {
+          "path": "/data/demo",
+          "before": {
+            "present": true,
+            "value": true
+          },
+          "after": {
+            "present": true,
+            "value": false
+          }
+        },
+        {
+          "path": "/data/description",
+          "before": {
+            "present": true,
+            "value": "L’ora delle tapas arriva a casa: patate al forno e una salsa dal carattere vivace."
+          },
+          "after": {
+            "present": true,
+            "value": "Proposta della versione fritta con salsa di paprika e brodo; formula da revisionare prima di sostituire il demo."
+          }
+        },
+        {
+          "path": "/data/editorial/author",
+          "before": {
+            "present": true,
+            "value": "RicettePatata.it"
+          },
+          "after": {
+            "present": true,
+            "value": "RicettePatata.it — proposta P1.4 assistita"
+          }
+        },
+        {
+          "path": "/data/editorial/status",
+          "before": {
+            "present": true,
+            "value": "draft"
+          },
+          "after": {
+            "present": true,
+            "value": "candidate"
+          }
+        },
+        {
+          "path": "/data/externalIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "namespace": "ricettepatata-exploratory-census",
+              "value": "RP-0079"
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/0/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "g"
+          },
+          "after": {
+            "present": true,
+            "value": "piece"
+          }
+        },
+        {
+          "path": "/data/ingredients/0/quantity/value",
+          "before": {
+            "present": true,
+            "value": 700
+          },
+          "after": {
+            "present": true,
+            "value": 2
+          }
+        },
+        {
+          "path": "/data/ingredients/1/id",
+          "before": {
+            "present": true,
+            "value": "pomodoro"
+          },
+          "after": {
+            "present": true,
+            "value": "cipolla"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/ingredientId",
+          "before": {
+            "present": true,
+            "value": "pomodoro"
+          },
+          "after": {
+            "present": true,
+            "value": "cipolla"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/name",
+          "before": {
+            "present": true,
+            "value": "passata di pomodoro"
+          },
+          "after": {
+            "present": true,
+            "value": "cipolla"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "g"
+          },
+          "after": {
+            "present": true,
+            "value": "piece"
+          }
+        },
+        {
+          "path": "/data/ingredients/1/quantity/value",
+          "before": {
+            "present": true,
+            "value": 200
+          },
+          "after": {
+            "present": true,
+            "value": 1
+          }
+        },
+        {
+          "path": "/data/ingredients/2/id",
+          "before": {
+            "present": true,
+            "value": "paprika"
+          },
+          "after": {
+            "present": true,
+            "value": "paprika-dolce"
+          }
+        },
+        {
+          "path": "/data/ingredients/2/ingredientId",
+          "before": {
+            "present": true,
+            "value": "paprika"
+          },
+          "after": {
+            "present": true,
+            "value": "paprika-dolce"
+          }
+        },
+        {
+          "path": "/data/ingredients/2/name",
+          "before": {
+            "present": true,
+            "value": "paprika affumicata"
+          },
+          "after": {
+            "present": true,
+            "value": "paprika dolce"
+          }
+        },
+        {
+          "path": "/data/ingredients/2/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "tsp"
+          },
+          "after": {
+            "present": true,
+            "value": "tbsp"
+          }
+        },
+        {
+          "path": "/data/ingredients/2/quantity/value",
+          "before": {
+            "present": true,
+            "value": 1
+          },
+          "after": {
+            "present": true,
+            "value": 0.5
+          }
+        },
+        {
+          "path": "/data/ingredients/3/id",
+          "before": {
+            "present": true,
+            "value": "peperoncino"
+          },
+          "after": {
+            "present": true,
+            "value": "paprika-piccante"
+          }
+        },
+        {
+          "path": "/data/ingredients/3/ingredientId",
+          "before": {
+            "present": true,
+            "value": "peperoncino"
+          },
+          "after": {
+            "present": true,
+            "value": "paprika-piccante"
+          }
+        },
+        {
+          "path": "/data/ingredients/3/name",
+          "before": {
+            "present": true,
+            "value": "peperoncino"
+          },
+          "after": {
+            "present": true,
+            "value": "paprika piccante"
+          }
+        },
+        {
+          "path": "/data/ingredients/3/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "qb"
+          },
+          "after": {
+            "present": true,
+            "value": "tbsp"
+          }
+        },
+        {
+          "path": "/data/ingredients/3/quantity/value",
+          "before": {
+            "present": true,
+            "value": null
+          },
+          "after": {
+            "present": true,
+            "value": 1
+          }
+        },
+        {
+          "path": "/data/ingredients/4/id",
+          "before": {
+            "present": true,
+            "value": "olio"
+          },
+          "after": {
+            "present": true,
+            "value": "farina"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/ingredientId",
+          "before": {
+            "present": true,
+            "value": "olio"
+          },
+          "after": {
+            "present": true,
+            "value": "farina"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/name",
+          "before": {
+            "present": true,
+            "value": "olio"
+          },
+          "after": {
+            "present": true,
+            "value": "farina"
+          }
+        },
+        {
+          "path": "/data/ingredients/4/quantity/value",
+          "before": {
+            "present": true,
+            "value": 3
+          },
+          "after": {
+            "present": true,
+            "value": 2
+          }
+        },
+        {
+          "path": "/data/ingredients/5/id",
+          "before": {
+            "present": true,
+            "value": "sale"
+          },
+          "after": {
+            "present": true,
+            "value": "brodo"
+          }
+        },
+        {
+          "path": "/data/ingredients/5/ingredientId",
+          "before": {
+            "present": true,
+            "value": "sale"
+          },
+          "after": {
+            "present": true,
+            "value": "brodo"
+          }
+        },
+        {
+          "path": "/data/ingredients/5/name",
+          "before": {
+            "present": true,
+            "value": "sale"
+          },
+          "after": {
+            "present": true,
+            "value": "brodo di pollo"
+          }
+        },
+        {
+          "path": "/data/ingredients/5/quantity/unit",
+          "before": {
+            "present": true,
+            "value": "qb"
+          },
+          "after": {
+            "present": true,
+            "value": "ml"
+          }
+        },
+        {
+          "path": "/data/ingredients/5/quantity/value",
+          "before": {
+            "present": true,
+            "value": null
+          },
+          "after": {
+            "present": true,
+            "value": 250
+          }
+        },
+        {
+          "path": "/data/ingredients/6",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "olio",
+              "ingredientId": "olio",
+              "name": "olio extravergine",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/7",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "sale",
+              "ingredientId": "sale",
+              "name": "sale",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/ingredients/8",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": {
+              "id": "prezzemolo",
+              "ingredientId": "prezzemolo",
+              "name": "prezzemolo",
+              "quantity": {
+                "value": null,
+                "unit": "qb"
+              },
+              "optional": false
+            }
+          }
+        },
+        {
+          "path": "/data/provenance/traditions/0",
+          "before": {
+            "present": true,
+            "value": "Cucina spagnola"
+          },
+          "after": {
+            "present": true,
+            "value": "Tradizione delle tapas spagnole"
+          }
+        },
+        {
+          "path": "/data/sources/0/accessedAt",
+          "before": {
+            "present": true,
+            "value": "2026-11-09"
+          },
+          "after": {
+            "present": true,
+            "value": "2026-11-12"
+          }
+        },
+        {
+          "path": "/data/sources/0/author",
+          "before": {
+            "present": true,
+            "value": "RicettePatata.it"
+          },
+          "after": {
+            "present": true,
+            "value": "Joseba Arguiñano"
+          }
+        },
+        {
+          "path": "/data/sources/0/id",
+          "before": {
+            "present": true,
+            "value": "prototipo-p0"
+          },
+          "after": {
+            "present": true,
+            "value": "joseba-bravas"
+          }
+        },
+        {
+          "path": "/data/sources/0/kind",
+          "before": {
+            "present": true,
+            "value": "internal"
+          },
+          "after": {
+            "present": true,
+            "value": "primary"
+          }
+        },
+        {
+          "path": "/data/sources/0/title",
+          "before": {
+            "present": true,
+            "value": "Prototipo P0 — contenuto non verificato"
+          },
+          "after": {
+            "present": true,
+            "value": "Patatas bravas, receta de Joseba Arguiñano"
+          }
+        },
+        {
+          "path": "/data/sources/0/url",
+          "before": {
+            "present": true,
+            "value": "https://github.com/gaussianoLe/ricettepatata/blob/dc72557/src/content/ricette/patatas-bravas.md"
+          },
+          "after": {
+            "present": true,
+            "value": "https://www.hogarmania.com/cocina/recetas/aperitivos/patatas-bravas-9642.html"
+          }
+        },
+        {
+          "path": "/data/steps/0/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/0/ingredientIds/1",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "olio"
+          }
+        },
+        {
+          "path": "/data/steps/0/ingredientIds/2",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "cipolla"
+          }
+        },
+        {
+          "path": "/data/steps/0/text",
+          "before": {
+            "present": true,
+            "value": "Taglia le patate a cubetti, condisci con due cucchiai d’olio e sale."
+          },
+          "after": {
+            "present": true,
+            "value": "Friggere le patate e, separatamente, ammorbidire la cipolla."
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "cipolla"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/1",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "paprika-dolce"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/2",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "paprika-piccante"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/3",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "farina"
+          }
+        },
+        {
+          "path": "/data/steps/1/ingredientIds/4",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "brodo"
+          }
+        },
+        {
+          "path": "/data/steps/1/text",
+          "before": {
+            "present": true,
+            "value": "Cuoci a 210 °C per circa 35 minuti, girando a metà cottura."
+          },
+          "after": {
+            "present": true,
+            "value": "Unire paprika e farina alla cipolla, poi aggiungere il brodo gradualmente e cuocere circa 10 minuti."
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/0",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "patata"
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/1",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "sale"
+          }
+        },
+        {
+          "path": "/data/steps/2/ingredientIds/2",
+          "before": {
+            "present": false
+          },
+          "after": {
+            "present": true,
+            "value": "prezzemolo"
+          }
+        },
+        {
+          "path": "/data/steps/2/text",
+          "before": {
+            "present": true,
+            "value": "Scalda la passata con l’olio rimasto, paprika e peperoncino per 15 minuti. Servi sulle patate."
+          },
+          "after": {
+            "present": true,
+            "value": "Frullare la salsa e distribuirla sulle patate scolate; completare con sale e prezzemolo."
+          }
+        },
+        {
+          "path": "/data/taxonomy/cookingMethods/0",
+          "before": {
+            "present": true,
+            "value": "forno"
+          },
+          "after": {
+            "present": true,
+            "value": "frittura"
+          }
+        },
+        {
+          "path": "/data/taxonomy/cookingMethods/1",
+          "before": {
+            "present": true,
+            "value": "stufatura"
+          },
+          "after": {
+            "present": true,
+            "value": "padella"
+          }
+        },
+        {
+          "path": "/data/taxonomy/families/0",
+          "before": {
+            "present": true,
+            "value": "patate-arrosto"
+          },
+          "after": {
+            "present": true,
+            "value": "altro"
+          }
+        },
+        {
+          "path": "/data/timing/cookMinutes",
+          "before": {
+            "present": true,
+            "value": 35
+          },
+          "after": {
+            "present": true,
+            "value": 25
+          }
+        },
+        {
+          "path": "/data/timing/prepMinutes",
+          "before": {
+            "present": true,
+            "value": 15
+          },
+          "after": {
+            "present": true,
+            "value": 10
+          }
+        }
+      ]
+    }
+  ]
+}

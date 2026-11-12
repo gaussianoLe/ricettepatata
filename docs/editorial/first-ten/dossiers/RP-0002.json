@@ -1,0 +1,125 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0002",
+  "researchTechnicalId": "6522115f-4bd1-5483-8fd2-a178173dda53",
+  "researchLabel": "Tiella barese riso patate e cozze",
+  "proposedSlug": "tiella-barese-riso-patate-e-cozze",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Tiella barese di riso, patate e cozze",
+    "original": {
+      "text": "Tiella barese",
+      "language": "it"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": "Bari, Puglia",
+    "traditions": [
+      "Cucina barese"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "cesarine-tiella",
+    "graziella-tiella",
+    "masserie-tiella"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Tiella barese e riso, patate e cozze sono nomi della preparazione.",
+      "sourceIds": [
+        "cesarine-tiella",
+        "graziella-tiella",
+        "masserie-tiella"
+      ],
+      "locator": "Titoli e presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Legame con la tradizione barese.",
+      "sourceIds": [
+        "cesarine-tiella",
+        "graziella-tiella",
+        "masserie-tiella"
+      ],
+      "locator": "Presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Patate, riso e cozze sono componenti strutturali; protagonista condivisa, non semplice contorno.",
+      "sourceIds": [
+        "cesarine-tiella",
+        "masserie-tiella"
+      ],
+      "locator": "Ingredienti",
+      "status": "editorial-inference"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Monica: 30 min preparazione, 45 min forno, 30 min riposo, porzioni assenti. Masserie: 6 porzioni e tempo globale 60 min.",
+      "sourceIds": [
+        "cesarine-tiella",
+        "masserie-tiella"
+      ],
+      "locator": "Schede e procedimento",
+      "status": "conflicting"
+    },
+    {
+      "field": "variants",
+      "text": "Formaggio e apertura delle cozze cambiano tra le versioni; nessuna relazione canonica automatica.",
+      "sourceIds": [
+        "graziella-tiella",
+        "masserie-tiella"
+      ],
+      "locator": "Preparazione",
+      "status": "supported"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "cesarine-tiella",
+        "graziella-tiella",
+        "masserie-tiella"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "cesarine-tiella",
+    "servings": null,
+    "ingredients": "300 g riso; 5 patate grandi; 1 cipolla; 1 spicchio aglio; 10 pomodorini; 500 g cozze a mezzo guscio; 50 g pecorino; olio, sale, pepe, prezzemolo q.b.",
+    "timing": "30/45/30 min; forno statico 200 °C."
+  },
+  "originalProcedure": [
+    "Affettare le patate e predisporre il condimento tritato.",
+    "Alternare patate, cozze, riso e condimento; versare il liquido indicato dalla fonte.",
+    "Cuocere in forno e attendere il riposo prescritto."
+  ],
+  "identity": {
+    "disposition": "unresolved",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "reason": "Identità nuova possibile, ma la formula di Monica non dichiara le porzioni e le altre versioni differiscono. Non trasferire le porzioni da una formula all’altra."
+  },
+  "openQuestions": [
+    "Definire formula, porzioni e quantità d’acqua riproducibili.",
+    "Sottoporre la gestione delle cozze a review culinaria dedicata."
+  ],
+  "recordPath": null
+}

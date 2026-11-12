@@ -1,0 +1,119 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0079",
+  "researchTechnicalId": "c75db4bc-7967-5e64-9cc1-70745740c03f",
+  "researchLabel": "Patatas bravas",
+  "proposedSlug": "patatas-bravas",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Patatas bravas",
+    "original": {
+      "text": "Patatas bravas",
+      "language": "es"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "ES",
+      "name": "Spagna"
+    },
+    "region": null,
+    "traditions": [
+      "Tradizione delle tapas spagnole"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "spain-tapas",
+    "joseba-bravas"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Nome spagnolo attestato; conservato anche nel titolo italiano.",
+      "sourceIds": [
+        "spain-tapas",
+        "joseba-bravas"
+      ],
+      "locator": "Titoli e sezione Patatas bravas",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Tapa spagnola; città d’invenzione non stabilita.",
+      "sourceIds": [
+        "spain-tapas",
+        "joseba-bravas"
+      ],
+      "locator": "Presentazioni",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Joseba usa paprika, farina e brodo; il demo propone pomodoro e forno. Sono formule differenti.",
+      "sourceIds": [
+        "joseba-bravas"
+      ],
+      "locator": "Ingredienti; confronto con demo",
+      "status": "editorial-inference"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Joseba: 4 porzioni, 10 min preparazione e 25 min cottura.",
+      "sourceIds": [
+        "joseba-bravas"
+      ],
+      "locator": "Scheda",
+      "status": "supported"
+    },
+    {
+      "field": "variants",
+      "text": "La frittura documentata non rende automaticamente il demo al forno una variante regionale.",
+      "sourceIds": [
+        "spain-tapas",
+        "joseba-bravas"
+      ],
+      "locator": "Preparazione",
+      "status": "editorial-inference"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "spain-tapas",
+        "joseba-bravas"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "joseba-bravas",
+    "servings": 4,
+    "ingredients": "2 patate; 1 cipolla; ½ cucchiaio paprika dolce; 1 cucchiaio piccante; 2 cucchiai farina; 250 ml brodo di pollo; olio, sale e prezzemolo.",
+    "timing": "10 min preparazione, 25 min cottura."
+  },
+  "originalProcedure": [
+    "Friggere le patate; su un altro fuoco ammorbidire la cipolla.",
+    "Aggiungere paprika e farina, poi versare il brodo gradualmente.",
+    "Cuocere e frullare la salsa, quindi distribuirla sulle patate scolate."
+  ],
+  "identity": {
+    "disposition": "existing-enrichment",
+    "existingCatalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8"
+  },
+  "decision": {
+    "outcome": "duplicate_or_variant",
+    "reason": "Slug patatas-bravas già riservato. Proposta di arricchimento dell’identità esistente, non creazione di una seconda ricetta."
+  },
+  "openQuestions": [
+    "Approvare il collegamento RP-0079 all’UUID riservato.",
+    "Decidere se correggere il demo o documentare una variante tecnica, senza attribuzione regionale inventata."
+  ],
+  "recordPath": null
+}

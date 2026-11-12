@@ -101,3 +101,7 @@ JSON e CSV del lotto fornito rappresentano gli stessi 50 candidati; il JSON è l
 [Report e riepilogo del lotto](docs/research/lotto-01/README.md), [report JSON](docs/research/lotto-01/report.json) e [manifest dello staging esterno](docs/research/lotto-01/staging-manifest.json). Il pacchetto esterno è una quarantena di ricerca, non contenuto Astro: nessun file di `src/content` o registro sorgente è stato modificato.
 
 `npm run catalog:survey` gestisce il formato ricevuto `research-candidates-v1`. Il comando generale `catalog:batch` senza input continua a mostrare il report di attesa per quell’invocazione; non descrive più lo stato del lotto 01 già ricevuto. Procedura generale: [docs/first-catalog-batch.md](docs/first-catalog-batch.md).
+
+## Lavorazione editoriale P1.3
+
+Dieci dossier del primo lotto, fonti consultate, decisioni e due conversioni P1.1 in draft sono conservati nell’[area editoriale](docs/editorial/first-ten/README.md), esterna ai contenuti Astro. `npm run editorial:check` controlla identità, riferimenti, artefatti e conservazione del catalogo. Non pubblica né applica record.

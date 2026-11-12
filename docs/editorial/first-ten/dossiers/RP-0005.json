@@ -1,0 +1,100 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0005",
+  "researchTechnicalId": "724f3333-4782-53af-98ee-b31839e8094c",
+  "researchLabel": "Patate alla salentina con pomodoro e cipolla",
+  "proposedSlug": "patate-alla-salentina-con-pomodoro-e-cipolla",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Patate alla salentina con pomodoro e cipolla",
+    "original": {
+      "text": "Patate alla salentina con pomodoro e cipolla",
+      "language": "it"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": null,
+    "traditions": [
+      "Attribuzione del dataset da verificare"
+    ]
+  },
+  "potatoRole": null,
+  "potatoRoleBasis": "Non determinabile per una preparazione non identificata.",
+  "sourceIds": [
+    "salento-insalata",
+    "puglia-pitta"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Titolo e lingua conservati dal dataset; denominazione tradizionale non verificata.",
+      "sourceIds": [],
+      "locator": "Ricerca esatta e ricerca ampliata",
+      "status": "unresolved"
+    },
+    {
+      "field": "geography",
+      "text": "La collocazione salentina della candidata resta un’ipotesi del dataset.",
+      "sourceIds": [
+        "salento-insalata",
+        "puglia-pitta"
+      ],
+      "locator": "Fonti su piatti diversi",
+      "status": "unresolved"
+    },
+    {
+      "field": "ingredients",
+      "text": "Nessuna formula attribuibile con sicurezza alla candidata.",
+      "sourceIds": [],
+      "locator": "Ricerca senza riscontro diretto",
+      "status": "unresolved"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Dosi, porzioni e tempi ignoti.",
+      "sourceIds": [],
+      "locator": "Nessuna fonte diretta",
+      "status": "unresolved"
+    },
+    {
+      "field": "variants",
+      "text": "Possibile confusione con pitta o insalata; non classificata come variante senza prova.",
+      "sourceIds": [
+        "salento-insalata",
+        "puglia-pitta"
+      ],
+      "locator": "Confronto fra denominazioni",
+      "status": "unresolved"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Non determinabile per una preparazione non identificata.",
+      "sourceIds": [],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "unresolved"
+    }
+  ],
+  "documentedFormula": null,
+  "originalProcedure": [],
+  "identity": {
+    "disposition": "unresolved",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "reason": "La denominazione esatta non è stata confermata. Le fonti contestuali descrivono pitta o insalata: non dimostrano una distinta ricetta con questo nome."
+  },
+  "openQuestions": [
+    "Ottenere una fonte diretta della denominazione e della tecnica.",
+    "Chiarire se sia un piatto distinto o una descrizione generica."
+  ],
+  "recordPath": null
+}

@@ -1,0 +1,134 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "df247cc63b9cc30c369b83dff36be0dcddfa1f56",
+  "consultedAt": "2026-11-12",
+  "datasetSha256": "65ba0af4214b56604d9f2ce05854ff555dd309dedde45de41e59bb2414e4486f",
+  "inputHashes": {
+    "selection.json": "eb7ae70505ec124aac7b39fe334e42c22885baf7ee4904f56ad7944db5f1eb1a",
+    "sources.json": "b2e1ae46183ac06446dcff44d785b86efd218b16ed6e96b9921efe969d7dcc66",
+    "search-log.json": "6f626adff1a1655f5469b845b3174178c666d53e9d6aa3aaf84fed9e910c46f1",
+    "records.json": "60b102a00bc1078118be411a09dec3566f73001d87de3d2e790dc5f2105990cd",
+    "preserved-catalog.json": "e28c4e8aac64c9f0c4d68b226cee6d63aa6b5ed7a567abed2b81f9aef0d6ccfb",
+    "dossiers/RP-0001.json": "d80ed672e304bda4f580db66de04b6280f654f369502447c59afaf45cdebee49",
+    "dossiers/RP-0002.json": "f5a83a82e58dc03ff1d3cdb72db69d66e77072f7fd7fda1bbf21688677deb290",
+    "dossiers/RP-0005.json": "fccb30bda596ae58c5b874cfc0f035b175b39b0bef1c7c084542e4bf7345b692",
+    "dossiers/RP-0011.json": "6cb02909b9228a9bfb642bd64f245ae809ea626da2de9fb06610adc0b4bc7cfd",
+    "dossiers/RP-0039.json": "d46da8a064b7ace98e096307e48df09ab30cf6078134903da84ff41911165f67",
+    "dossiers/RP-0062.json": "4b624f491cebcfa98ec3373d71ecbc9a940c3a76eb305d3bffd68f2c37b82974",
+    "dossiers/RP-0063.json": "042d9ac65775ffd8b5cdaa2b58a3b06f7e0947d1a624e4cefa26f4303c61bb12",
+    "dossiers/RP-0077.json": "bac7996c79f938963fd514f3e14223ffba586301b1ce54ca3b552a7d6a2310bd",
+    "dossiers/RP-0079.json": "a39757b91e9499b20329520d9b2199715080a8f5bb1259d55b31b275b31a5cb7",
+    "dossiers/RP-0080.json": "76a4d47359f774960318bfc511c0d99bc9bf8f497013127ca5a0b3a67ddab382"
+  },
+  "summary": {
+    "selected": 10,
+    "dossiers": 10,
+    "sources": 24,
+    "readyForConversion": 2,
+    "needsReview": 5,
+    "duplicateOrVariant": 3,
+    "p11Records": 2
+  },
+  "identityChecks": [
+    {
+      "researchId": "RP-0001",
+      "researchTechnicalId": "d37c3634-9c3a-5f98-aec2-bb4817ee5a71",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [
+        "f727b885-d91c-5ed7-8ff9-66cacc74208d"
+      ],
+      "existingCatalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+      "outcome": "duplicate_or_variant"
+    },
+    {
+      "researchId": "RP-0002",
+      "researchTechnicalId": "6522115f-4bd1-5483-8fd2-a178173dda53",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "needs_review"
+    },
+    {
+      "researchId": "RP-0005",
+      "researchTechnicalId": "724f3333-4782-53af-98ee-b31839e8094c",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "needs_review"
+    },
+    {
+      "researchId": "RP-0011",
+      "researchTechnicalId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "needs_review"
+    },
+    {
+      "researchId": "RP-0039",
+      "researchTechnicalId": "9dd07944-84f6-5f2a-bb79-f3524232aa65",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [
+        "6d84129f-ef35-51f5-b5aa-60ed022140fa"
+      ],
+      "existingCatalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+      "outcome": "duplicate_or_variant"
+    },
+    {
+      "researchId": "RP-0062",
+      "researchTechnicalId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "ready_for_conversion"
+    },
+    {
+      "researchId": "RP-0063",
+      "researchTechnicalId": "ad443f73-b992-53f1-9502-5d8afed05804",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "needs_review"
+    },
+    {
+      "researchId": "RP-0077",
+      "researchTechnicalId": "f0c2c946-e7c9-54aa-a656-57ed73820c88",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "needs_review"
+    },
+    {
+      "researchId": "RP-0079",
+      "researchTechnicalId": "c75db4bc-7967-5e64-9cc1-70745740c03f",
+      "reservedSlugOwner": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "possibleCatalogMatches": [
+        "449f2fe8-e698-5a54-9ea7-8a29984f5de8"
+      ],
+      "existingCatalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "outcome": "duplicate_or_variant"
+    },
+    {
+      "researchId": "RP-0080",
+      "researchTechnicalId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "reservedSlugOwner": null,
+      "possibleCatalogMatches": [],
+      "existingCatalogId": null,
+      "outcome": "ready_for_conversion"
+    }
+  ],
+  "sourceContentChanged": false,
+  "registryChanged": false,
+  "appliedToAstro": false,
+  "publicationAuthorized": false,
+  "plan": {
+    "additions": 2,
+    "skipped": 0
+  },
+  "catalogFingerprint": "fff71e27c4acb75cc36e049889a49c6c72c83a3d5ffba57fe3d211bcf1530179",
+  "limitations": [
+    "Validazione strutturale e referenziale; non verifica automatica delle affermazioni.",
+    "Nessuna prova in cucina né review indipendente già completata.",
+    "Dossier e record separati dai loader Astro; nessun aggiornamento dei demo."
+  ]
+}

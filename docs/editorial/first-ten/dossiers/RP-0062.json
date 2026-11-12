@@ -1,0 +1,129 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0062",
+  "researchTechnicalId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+  "researchLabel": "Gratin dauphinois",
+  "proposedSlug": "gratin-dauphinois",
+  "editorialStatus": "candidate",
+  "consultedAt": "2026-11-12",
+  "names": {
+    "italian": "Gratin dauphinois",
+    "original": {
+      "text": "Gratin dauphinois",
+      "language": "fr"
+    },
+    "alternatives": [],
+    "italianNameBasis": "Scelta redazionale italiana; non è attestazione di un nome storico distinto."
+  },
+  "geography": {
+    "continent": "europe",
+    "country": {
+      "code": "FR",
+      "name": "Francia"
+    },
+    "region": "Delfinato (Dauphiné)",
+    "traditions": [
+      "Cucina del Delfinato"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "potatoRoleBasis": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+  "sourceIds": [
+    "eurial-gratin",
+    "alpes-gratin",
+    "laruelle-gratin"
+  ],
+  "claims": [
+    {
+      "field": "names",
+      "text": "Denominazione francese attestata; conservata in italiano.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin"
+      ],
+      "locator": "Titoli",
+      "status": "supported"
+    },
+    {
+      "field": "geography",
+      "text": "Legame con il Dauphiné indicato da Alpes Isère.",
+      "sourceIds": [
+        "alpes-gratin"
+      ],
+      "locator": "Presentazione",
+      "status": "supported"
+    },
+    {
+      "field": "ingredients",
+      "text": "Formula Eurial senza formaggio e senza burro; latticini e patate come struttura del piatto.",
+      "sourceIds": [
+        "eurial-gratin"
+      ],
+      "locator": "PDF p. 1",
+      "status": "supported"
+    },
+    {
+      "field": "yieldTiming",
+      "text": "Eurial: 4 porzioni, 40 min preparazione, 35 min cottura (20 in casseruola più 15 in forno). Nessun riposo prescritto: restMinutes=0 è convenzione redazionale.",
+      "sourceIds": [
+        "eurial-gratin"
+      ],
+      "locator": "PDF p. 1",
+      "status": "supported"
+    },
+    {
+      "field": "variants",
+      "text": "Alpes Isère: forno 160 °C per 90–120 min; Laruelle: 180 °C per 45–60. Formula scelta: precottura e 200 °C.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin"
+      ],
+      "locator": "Procedimenti",
+      "status": "conflicting"
+    },
+    {
+      "field": "culture",
+      "text": "Non aggiunti aneddoti su date d’invenzione o divieti assoluti sugli ingredienti.",
+      "sourceIds": [],
+      "locator": "Politica editoriale",
+      "status": "editorial-inference"
+    },
+    {
+      "field": "potatoRole",
+      "text": "Valutazione editoriale della struttura e delle dosi, non dichiarazione testuale delle fonti.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin"
+      ],
+      "locator": "Ingredienti e struttura del piatto; classificazione redazionale",
+      "status": "editorial-inference"
+    }
+  ],
+  "documentedFormula": {
+    "sourceId": "eurial-gratin",
+    "servings": 4,
+    "ingredients": "1 kg patate; 500 ml panna densa al 30%; 250 ml latte; 1 spicchio aglio; sale, pepe e noce moscata.",
+    "timing": "40 min preparazione; 35 min cottura; nessun riposo prescritto."
+  },
+  "originalProcedure": [
+    "Pelare e affettare sottilmente le patate.",
+    "Cuocerle circa 20 minuti con panna, latte, aglio schiacciato e noce moscata; regolare sale e pepe.",
+    "Trasferire in una pirofila e terminare in forno a 200 °C per circa 15 minuti."
+  ],
+  "identity": {
+    "disposition": "new-primary",
+    "existingCatalogId": null
+  },
+  "decision": {
+    "outcome": "ready_for_conversion",
+    "reason": "Scelta esplicita della formula Eurial, completa di dosi, porzioni e tempi coerenti; altre tecniche restano documentate senza mescolarle. Nuova identità senza collisioni."
+  },
+  "openQuestions": [
+    "La formula scelta è una versione documentata, non una pretesa ricetta unica.",
+    "Review indipendente e prova in cucina restano da svolgere."
+  ],
+  "recordPath": "records.json#RP-0062"
+}

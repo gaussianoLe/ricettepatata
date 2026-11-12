@@ -1,0 +1,13 @@
+{
+  "src/catalog/registry.json": "3af4b5bffb04925fceebbb22e2b07aaec016bced30bf454a960e1195b04397d1",
+  "src/content/curiosita/tubero-o-radice.md": "82ff82b64d9b296da2f4a0f2a5a264c93aa83b2d69cbf59c7acd7d2976960e50",
+  "src/content/curiosita/un-mondo-di-colori.md": "6012e98dd9483643d3df4c00a26cacbfb14d09ba1e32fe5e5902c417210f3743",
+  "src/content/guide/scegliere-le-patate.md": "b9ffa374a22cb3a82549bed9e7a78ff05e30da22bcb593243d00e0d5aad88500",
+  "src/content/guide/taglio-hasselback.md": "d5c50768b7811700ad818677f6920d864bfa446826cae9cac360d1e9e3553033",
+  "src/content/ricette/aloo-gobi.md": "eac21e650a70c33900f71a5f34c7aa1fd82980f01d80e14487998b7327cc7c35",
+  "src/content/ricette/gnocchi.md": "8504294b36217e0e7b65fc719d296b326648d726134ea430777b31fb608567ca",
+  "src/content/ricette/hasselback.md": "1dd1c8ecea6887f93b6a35fe147059756972bfaa1952e9e07d8f5e556dcfc220",
+  "src/content/ricette/patatas-bravas.md": "9d9b148fbc58119f9d689d11d849b1be2af53dd0abc9a5dbdeed97f5832db60f",
+  "src/content/ricette/pitta-di-patate.md": "39368462b4d7099e2916264e117c3d1576551359b1f447ef5d2409ffba5bdc54",
+  "src/content/ricette/rosti.md": "a6233c7c3ff8a7a1d4555d03f316c9d705f49415bb954fc0105027f2cbf59dae"
+}

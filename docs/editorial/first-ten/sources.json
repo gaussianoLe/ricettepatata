@@ -1,0 +1,270 @@
+{
+  "formatVersion": 1,
+  "consultedAt": "2026-11-12",
+  "sources": [
+    {
+      "id": "puglia-pitta",
+      "kind": "secondary",
+      "url": "https://www.puglia.com/pitta-di-patate-salentina/",
+      "title": "Pitta di patate: classico della cucina salentina",
+      "author": "Puglia.com (ente editore; firma individuale non indicata)",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "puglia-com",
+      "assessment": "regional-editorial",
+      "access": "full"
+    },
+    {
+      "id": "agrodolce-pitta",
+      "kind": "primary",
+      "url": "https://www.agrodolce.it/ricette/pitta-patate",
+      "title": "Pitta di patate pugliese",
+      "author": "Tiziana Molti",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "agrodolce",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "cesarine-tiella",
+      "kind": "primary",
+      "url": "https://cesarine.com/it/blog/ricettario-cesarine/ricetta-tiella-barese",
+      "title": "Alla scoperta di un piatto antico che racconta Bari",
+      "author": "Cesarine; ricetta di Monica Laura",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "cesarine",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "graziella-tiella",
+      "kind": "primary",
+      "url": "https://www.cucinaconmegraziellaeraffaele.it/riso-patate-e-cozze/",
+      "title": "RISO PATATE E COZZE",
+      "author": "Graziella Giannuzzi",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "graziella-giannuzzi",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "masserie-tiella",
+      "kind": "primary",
+      "url": "https://www.masserie.com/ricette/tiella-barese/",
+      "title": "Tiella barese",
+      "author": "Masserie di Sant’Eramo",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "masserie",
+      "assessment": "producer-recipe",
+      "access": "full"
+    },
+    {
+      "id": "salento-insalata",
+      "kind": "secondary",
+      "url": "https://www.viaggianelsalento.it/blog/arte-e-cultura/64-i-verdi-primi-piatti-del-salento-l-insalata-di-patate",
+      "title": "I verdi primi piatti del Salento: l’insalata di patate",
+      "author": "Viaggia nel Salento s.r.l.",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "viaggia-nel-salento",
+      "assessment": "tourism-context",
+      "access": "full"
+    },
+    {
+      "id": "cucchiaio-gnocchi",
+      "kind": "primary",
+      "url": "https://www.cucchiaio.it/ricetta/ricetta-gnocchi-patate-ricetta-base/",
+      "title": "Gnocchi di patate ricetta base",
+      "author": "Riccardo Carnevali / Il Cucchiaio d’Argento",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "editoriale-domus",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "gz-gnocchi",
+      "kind": "secondary",
+      "url": "https://ricette.giallozafferano.it/Gnocchi-di-patate.html",
+      "title": "Gnocchi di patate",
+      "author": "GialloZafferano (ente editore; firma individuale non indicata)",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "mondadori",
+      "assessment": "regional-editorial",
+      "access": "full"
+    },
+    {
+      "id": "cucchiaio-gatto",
+      "kind": "secondary",
+      "url": "https://www.cucchiaio.it/ricetta/gateau-di-patate/",
+      "title": "Gateau di patate",
+      "author": "Il Cucchiaio d’Argento (ente editore; firma individuale non indicata)",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "editoriale-domus",
+      "assessment": "regional-editorial",
+      "access": "full"
+    },
+    {
+      "id": "bracale-gatto",
+      "kind": "primary",
+      "url": "https://www.lucianopignataro.it/a/gatto-di-patate/5763/",
+      "title": "Gattò di patate raccontato da Raffaele Bracale",
+      "author": "Raffaele Bracale",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "luciano-pignataro",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "gz-gatto",
+      "kind": "secondary",
+      "url": "https://ricette.giallozafferano.it/Gateau-di-patate.html",
+      "title": "Gateau di patate",
+      "author": "GialloZafferano (ente editore; firma individuale non indicata)",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "mondadori",
+      "assessment": "regional-editorial",
+      "access": "full"
+    },
+    {
+      "id": "spain-tortilla",
+      "kind": "secondary",
+      "url": "https://www.spain.info/es/receta/tortilla-patata/",
+      "title": "Tortilla de patata",
+      "author": "Spain.info / Turespaña",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "turespana",
+      "assessment": "official-tourism",
+      "access": "full"
+    },
+    {
+      "id": "joseba-tortilla",
+      "kind": "primary",
+      "url": "https://www.hogarmania.com/cocina/recetas/huevos/tortilla-patatas-8684.html",
+      "title": "Tortilla de patatas o tortilla española por Joseba Arguiñano",
+      "author": "Joseba Arguiñano",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "bainet",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "spain-tapas",
+      "kind": "secondary",
+      "url": "https://www.spain.info/es/top/tapas-recomendadas-populares-espana/",
+      "title": "20 tapas recomendadas y muy populares en España",
+      "author": "Spain.info / Turespaña",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "turespana",
+      "assessment": "official-tourism",
+      "access": "full"
+    },
+    {
+      "id": "joseba-bravas",
+      "kind": "primary",
+      "url": "https://www.hogarmania.com/cocina/recetas/aperitivos/patatas-bravas-9642.html",
+      "title": "Patatas bravas, receta de Joseba Arguiñano",
+      "author": "Joseba Arguiñano",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "bainet",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "bonviveur-papas",
+      "kind": "primary",
+      "url": "https://bonviveur.com/es/recetas/papas-arrugadas",
+      "title": "Papas arrugadas",
+      "author": "Sofía de la Torre",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "bonviveur",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "canarias-gastronomia",
+      "kind": "secondary",
+      "url": "https://www.holaislascanarias.com/gastronomia-canaria/",
+      "title": "Gastronomía canaria",
+      "author": "Hola Islas Canarias (portale turistico regionale)",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "promotur-canarias",
+      "assessment": "official-tourism",
+      "access": "full"
+    },
+    {
+      "id": "karlos-mojo",
+      "kind": "primary",
+      "url": "https://www.hogarmania.com/cocina/recetas/salsas/mojo-verde-2793.html",
+      "title": "Mojo verde y papas arrugadas ¡una espectacular receta canaria!",
+      "author": "Karlos Arguiñano",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "bainet",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "alpes-gratin",
+      "kind": "secondary",
+      "url": "https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/",
+      "title": "Gratin dauphinois",
+      "author": "Les Passions de Laurie, in collaborazione con Alpes Isère",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "alpes-isere",
+      "assessment": "official-tourism",
+      "access": "full"
+    },
+    {
+      "id": "laruelle-gratin",
+      "kind": "primary",
+      "url": "https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html",
+      "title": "Gratin Dauphinois",
+      "author": "Philippe Laruelle / de Buyer",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "debuyer",
+      "assessment": "recipe-author",
+      "access": "full"
+    },
+    {
+      "id": "eurial-gratin",
+      "kind": "primary",
+      "url": "https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf",
+      "title": "Gratin Dauphinois — fiche recette 177",
+      "author": "Eurial Food Service & Industry",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "eurial",
+      "assessment": "producer-recipe",
+      "access": "full"
+    },
+    {
+      "id": "reblochon-tartiflette",
+      "kind": "primary",
+      "url": "https://www.reblochon.fr/nos-recettes/tartiflette-reblochon-de-savoie/",
+      "title": "Recette de la Tartiflette au Reblochon",
+      "author": "Reblochon.fr (ente di filiera; firma individuale non indicata)",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "reblochon",
+      "assessment": "producer-recipe",
+      "access": "full"
+    },
+    {
+      "id": "ducasse-tartiflette",
+      "kind": "primary",
+      "url": "https://www.academiedugout.fr/recettes/tartiflette_6349_2",
+      "title": "Tartiflette",
+      "author": "Alain Ducasse",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "academie-du-gout",
+      "assessment": "recipe-author",
+      "access": "partial-paywall"
+    },
+    {
+      "id": "canarias-geografia",
+      "kind": "primary",
+      "url": "https://www.gobiernodecanarias.org/transparencia/temas/institucional-organizativa/instituciones/informacion-sobre-las-islas-canarias/geografia-canarias/",
+      "title": "Geografía de las Islas Canarias",
+      "author": "Gobierno de Canarias / GRAFCAN",
+      "accessedAt": "2026-11-12",
+      "independenceGroup": "gobierno-canarias",
+      "assessment": "official-geography",
+      "access": "full"
+    }
+  ]
+}

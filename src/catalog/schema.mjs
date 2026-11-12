@@ -41,7 +41,7 @@ const common = {
   externalIds: z.array(z.strictObject({namespace: slug, value: text})),
 };
 const quantity = z.union([
-  z.strictObject({value: z.number().positive(), max: z.number().positive().optional(), unit: z.enum(['g','kg','ml','l','tsp','tbsp','cup','piece','pinch'])})
+  z.strictObject({value: z.number().positive(), max: z.number().positive().optional(), approximate: z.boolean().optional(), unit: z.enum(['g','kg','ml','l','tsp','tbsp','cup','piece','pinch'])})
     .refine(q => q.max === undefined || q.max >= q.value, 'Intervallo quantità non valido'),
   z.strictObject({value: z.null(), unit: z.literal('qb')}),
 ]);

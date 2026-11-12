@@ -1,0 +1,36 @@
+{
+  "consultedAt": "2026-11-12",
+  "queriesForRP0005": [
+    "\"patate alla salentina con pomodoro e cipolla\"",
+    "\"patate alla salentina\" -pitta -polpo -baccalà -cookidoo"
+  ],
+  "finding": "Nessun riscontro diretto sufficiente; non è prova di inesistenza. Polpette, pitta e insalata non sono state rinominate per farle coincidere.",
+  "failedAccess": [
+    {
+      "url": "https://www.report.rai.it/dl/portali/site/articolo/ContentItem-645c4a3f-b9c5-47b3-9b65-76d48db90ed2.html",
+      "access": "unavailable",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.bontadialtamura.shop/blogs/ricette/riso-patate-e-cozze-tiella-barese",
+      "access": "unavailable",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.ideeperviaggiare.it/DettaglioRicetta?idContenitore=34&idRicetta=141&nomeRegione=Puglia",
+      "access": "unavailable",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://cdn.cook.stbm.it/PDF/Tiella-barese.pdf",
+      "access": "unavailable",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://ricette.giallozafferano.it/Come-pulire-le-cozze.html",
+      "access": "unavailable",
+      "usedAsEvidence": false
+    }
+  ],
+  "method": "Ricerca e lettura di pagine accessibili; non ricostruiti testi premium o fonti non recuperabili. Fonti P1.3 ereditate marcate consultedInP14=false se non riaperte."
+}

@@ -1,0 +1,130 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0002",
+  "researchTechnicalId": "6522115f-4bd1-5483-8fd2-a178173dda53",
+  "researchLabel": "Tiella barese riso patate e cozze",
+  "proposedSlug": "tiella-barese-riso-patate-e-cozze",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0002.json",
+  "names": {
+    "italian": "Tiella barese di riso, patate e cozze",
+    "original": {
+      "text": "Tiella barese",
+      "language": "it"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "IT",
+      "name": "Italia"
+    },
+    "region": "Bari, Puglia",
+    "traditions": [
+      "Cucina barese"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "masserie-tiella",
+    "graziella-tiella",
+    "cucchiaio-pulizia",
+    "izs-bivalvi",
+    "izs-linee-guida"
+  ],
+  "claims": [
+    {
+      "field": "formula",
+      "text": "Selezione di lavoro Masserie: 6 persone, 250 g riso, 500 g patate, 1 kg cozze; nessuna dose presa dalla formula Monica.",
+      "sourceIds": [
+        "masserie-tiella"
+      ],
+      "status": "supported",
+      "locator": "Dosi e ingredienti"
+    },
+    {
+      "field": "liquid",
+      "text": "La fonte prescrive acqua sopra gli ingredienti più liquido filtrato delle cozze, senza volume totale né geometria della teglia; non ricavato un numero inventato.",
+      "sourceIds": [
+        "masserie-tiella"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti e procedimento"
+    },
+    {
+      "field": "timing",
+      "text": "60 min globali e forno 190 °C per 40–45 min; fase sul gas e preparazione non separatamente quantificate.",
+      "sourceIds": [
+        "masserie-tiella"
+      ],
+      "status": "conflicting",
+      "locator": "Ingredienti e procedimento"
+    },
+    {
+      "field": "cleaning",
+      "text": "Rimuovere incrostazioni e bisso, risciacquare e scartare gusci rotti o vuoti è documentato nella guida culinaria distinta. Non importarne olio, vino o altri ingredienti nella tiella.",
+      "sourceIds": [
+        "cucchiaio-pulizia"
+      ],
+      "status": "supported",
+      "locator": "Come preparare, passaggio 1"
+    },
+    {
+      "field": "opening",
+      "text": "La formula selezionata apre le cozze a crudo e filtra il liquido. Questo non è un trattamento di cottura né prova di sicurezza.",
+      "sourceIds": [
+        "masserie-tiella"
+      ],
+      "status": "supported",
+      "locator": "Preparazione"
+    },
+    {
+      "field": "safety",
+      "text": "IZSVe indica prodotto tracciato/vitale e una cottura proseguita 5 min dopo apertura delle valve; le biotossine termostabili non sono eliminate dalla cottura. Non si deduce il trattamento al cuore da temperatura del forno.",
+      "sourceIds": [
+        "izs-bivalvi"
+      ],
+      "status": "supported",
+      "locator": "PDF pp. 10, 12, 14"
+    },
+    {
+      "field": "conflict",
+      "text": "La guida culinaria suggerisce di estrarre i molluschi all’apertura: tale indicazione non è adottata come criterio sanitario e contrasta con il riferimento IZSVe.",
+      "sourceIds": [
+        "cucchiaio-pulizia",
+        "izs-bivalvi"
+      ],
+      "status": "conflicting",
+      "locator": "Guida, fine cottura; PDF p. 12"
+    }
+  ],
+  "formula": {
+    "sourceId": "masserie-tiella",
+    "servings": 6,
+    "ingredients": [],
+    "timing": null,
+    "steps": [],
+    "selectionRationale": "Selezione documentale della formula Masserie; non ancora un pacchetto ingredienti/procedimento pronto per P1.1.",
+    "timingBasis": "Fonte: 60 min totali e forno 40–45; preparazione e fase sul gas restano ignote."
+  },
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "Nuova identità tecnica conservata ma nessun record operativo proposto."
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "proposedStatus": "candidate",
+    "reason": "Resta needs_review: liquido, geometria della teglia e protocollo termico riproducibile non sufficientemente definiti."
+  },
+  "openQuestions": [
+    "Quantificare il liquido totale per una teglia dichiarata con la stessa formula.",
+    "Validare pulizia/apertura e trattamento termico delle cozze senza assimilare forno e temperatura al cuore.",
+    "Separare preparazione e cottura nel budget dei tempi."
+  ],
+  "changesFromP13": [
+    "Formula di lavoro scelta con porzioni note; nessuna combinazione di dosi.",
+    "Aggiunti riferimenti distinti per pulizia e sicurezza, senza convertirli in una nuova ricetta."
+  ]
+}

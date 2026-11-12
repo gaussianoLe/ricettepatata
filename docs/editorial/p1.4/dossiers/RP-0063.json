@@ -1,0 +1,101 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0063",
+  "researchTechnicalId": "ad443f73-b992-53f1-9502-5d8afed05804",
+  "researchLabel": "Tartiflette",
+  "proposedSlug": "tartiflette",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0063.json",
+  "names": {
+    "italian": "Tartiflette",
+    "original": {
+      "text": "Tartiflette",
+      "language": "fr"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "FR",
+      "name": "Francia"
+    },
+    "region": "Savoia",
+    "traditions": [
+      "Cucina savoiarda"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "cnipt-tartiflette",
+    "ducros-tartiflette",
+    "reblochon-tartiflette",
+    "ducasse-tartiflette"
+  ],
+  "claims": [
+    {
+      "field": "formula",
+      "text": "Scelta di lavoro CNIPT per 4 persone: formula distinta, senza copiare ingredienti dalle altre versioni.",
+      "sourceIds": [
+        "cnipt-tartiflette"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti"
+    },
+    {
+      "field": "timing",
+      "text": "La cottura CNIPT torna: 10 min precottura +15 rosolatura +5 vino +15 forno =45; preparazione dichiarata 15. Raffreddamento prima di pelare e attesa al servizio non quantificati.",
+      "sourceIds": [
+        "cnipt-tartiflette"
+      ],
+      "status": "supported",
+      "locator": "Scheda e passaggi 1–5"
+    },
+    {
+      "field": "comparison",
+      "text": "Ducros è integralmente accessibile ma dichiara 30 min cottura contro 15–20 di lessatura più 30 forno; non usato per riempire i tempi CNIPT.",
+      "sourceIds": [
+        "ducros-tartiflette"
+      ],
+      "status": "conflicting",
+      "locator": "Ingredienti e procedimento"
+    },
+    {
+      "field": "access",
+      "text": "La parte premium Ducasse rimane non ricostruita; le due nuove pagine sono leggibili integralmente.",
+      "sourceIds": [
+        "cnipt-tartiflette",
+        "ducros-tartiflette"
+      ],
+      "status": "supported",
+      "locator": "Pagine aperte e baseline P1.3"
+    }
+  ],
+  "formula": {
+    "sourceId": "cnipt-tartiflette",
+    "servings": 4,
+    "ingredients": [],
+    "timing": null,
+    "steps": [],
+    "selectionRationale": "Formula CNIPT selezionata; la cottura è riconciliata ma i riposi restano aperti.",
+    "timingBasis": "15 min preparazione,45 cottura; 10+15+5+15=45. Raffreddamento e servizio non quantificati."
+  },
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "Identità tecnica preservata; nessuna nuova variante generata da semplici differenze di tecnica."
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "proposedStatus": "candidate",
+    "reason": "Riconciliata la cottura della formula scelta, ma i riposi non hanno una durata sufficiente per un draft completo con tempi scalari; resta needs_review."
+  },
+  "openQuestions": [
+    "Quantificare raffreddamento e attesa al servizio; non imporre zero.",
+    "Prova in cucina e review indipendente prima della conversione."
+  ],
+  "changesFromP13": [
+    "Due nuove ricette integralmente accessibili.",
+    "Risolto il conteggio della cottura senza usare il riepilogo incongruente Reblochon."
+  ]
+}

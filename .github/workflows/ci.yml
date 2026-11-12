@@ -2,7 +2,7 @@ name: Foundation CI
 on:
   pull_request:
   push:
-    branches: [main, feat/p1.3-editorial-first-ten]
+    branches: [main, feat/p1.4-editorial-consolidation]
 permissions:
   contents: read
 concurrency:
@@ -48,15 +48,17 @@ jobs:
       - run: npm ci
       - name: Validate editorial dossiers and preserved catalog
         run: npm run editorial:check
+      - name: Validate consolidation and historical baseline
+        run: npm run editorial:consolidation
       - name: Exercise editorial states, variants and catalog growth
         if: matrix.growth
         run: node tests/helpers/catalog-fixtures.mjs add
       - run: npm run check
       - run: npm run catalog:check
-      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs
+      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs
       - name: Build static magazine
         run: node scripts/build.mjs ${{ matrix.target }}
-      - run: node --test tests/output.test.mjs
+      - run: node --test tests/output.test.mjs tests/consolidation-output.test.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - name: Remove synthetic catalog fixtures

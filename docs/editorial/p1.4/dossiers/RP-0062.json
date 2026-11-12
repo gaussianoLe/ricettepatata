@@ -1,0 +1,195 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0062",
+  "researchTechnicalId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+  "researchLabel": "Gratin dauphinois",
+  "proposedSlug": "gratin-dauphinois",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0062.json",
+  "names": {
+    "italian": "Gratin dauphinois",
+    "original": {
+      "text": "Gratin dauphinois",
+      "language": "fr"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "FR",
+      "name": "Francia"
+    },
+    "region": "Delfinato (Dauphiné)",
+    "traditions": [
+      "Cucina del Delfinato"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "eurial-gratin",
+    "alpes-gratin",
+    "laruelle-gratin"
+  ],
+  "claims": [
+    {
+      "field": "formula",
+      "text": "Riconfermata esclusivamente la formula Eurial; latte 250 ml e panna 500 ml, senza aggiunte dalle altre versioni.",
+      "sourceIds": [
+        "eurial-gratin"
+      ],
+      "status": "supported",
+      "locator": "PDF p. 1 ingredienti"
+    },
+    {
+      "field": "timing",
+      "text": "40 min preparazione e 35 cottura: 20 in casseruola più 15 in forno a 200 °C; nessun riposo prescritto.",
+      "sourceIds": [
+        "eurial-gratin"
+      ],
+      "status": "supported",
+      "locator": "PDF p. 1"
+    },
+    {
+      "field": "variants",
+      "text": "Le versioni Alpes Isère e Laruelle restano riferimenti storici P1.3, non formule ricombinate.",
+      "sourceIds": [
+        "alpes-gratin",
+        "laruelle-gratin"
+      ],
+      "status": "editorial-inference",
+      "locator": "Dossier P1.3 RP-0062"
+    }
+  ],
+  "formula": {
+    "sourceId": "eurial-gratin",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "patata",
+        "ingredientId": "patata",
+        "name": "patate",
+        "quantity": {
+          "value": 1,
+          "unit": "kg"
+        },
+        "optional": false
+      },
+      {
+        "id": "panna",
+        "ingredientId": "panna",
+        "name": "panna densa al 30% di grassi",
+        "quantity": {
+          "value": 500,
+          "unit": "ml"
+        },
+        "optional": false
+      },
+      {
+        "id": "latte",
+        "ingredientId": "latte",
+        "name": "latte",
+        "quantity": {
+          "value": 250,
+          "unit": "ml"
+        },
+        "optional": false
+      },
+      {
+        "id": "aglio",
+        "ingredientId": "aglio",
+        "name": "aglio",
+        "quantity": {
+          "value": 1,
+          "unit": "piece"
+        },
+        "optional": false,
+        "preparation": "spicchio schiacciato"
+      },
+      {
+        "id": "sale",
+        "ingredientId": "sale",
+        "name": "sale",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "pepe",
+        "ingredientId": "pepe",
+        "name": "pepe",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "noce-moscata",
+        "ingredientId": "noce-moscata",
+        "name": "noce moscata",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      }
+    ],
+    "timing": {
+      "prepMinutes": 40,
+      "cookMinutes": 35,
+      "restMinutes": 0
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Pelare, lavare e tagliare le patate in fette sottili.",
+        "ingredientIds": [
+          "patata"
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Cuocerle circa 20 minuti in casseruola con latte, panna, aglio e noce moscata; aggiustare sale e pepe.",
+        "ingredientIds": [
+          "patata",
+          "latte",
+          "panna",
+          "aglio",
+          "noce-moscata",
+          "sale",
+          "pepe"
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Trasferire nella pirofila e completare in forno già caldo a 200 °C per circa 15 minuti.",
+        "ingredientIds": [
+          "patata",
+          "latte",
+          "panna"
+        ]
+      }
+    ],
+    "selectionRationale": "Stessa formula documentata P1.3, ricontrollata in P1.4.",
+    "timingBasis": "Tempi dell’autore; restMinutes=0 indica assenza di riposo prescritto, non misurazione sperimentale."
+  },
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "UUID tecnico P1.2 preservato; nessuna collisione nel catalogo corrente."
+  },
+  "decision": {
+    "outcome": "retained-draft",
+    "proposedStatus": "draft",
+    "reason": "Draft e formula mantenuti senza correzioni culinarie non supportate."
+  },
+  "openQuestions": [
+    "Review indipendente e prova in cucina; confronto con altre versioni solo documentale."
+  ],
+  "changesFromP13": [
+    "Ricontrollata la scheda Eurial; nessuna modifica ai dati del record."
+  ]
+}

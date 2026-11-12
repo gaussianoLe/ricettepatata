@@ -56,3 +56,12 @@ test('direct links cannot expose entries excluded by the editorial policy',async
   expect(response.status()).toBe(404);
  }
 });
+
+test('isolated editorial drafts stay unavailable through direct URLs',async({request,baseURL})=>{
+ const {readFileSync}=await import('node:fs');
+ const {entries}=JSON.parse(readFileSync('docs/editorial/p1.4/records.json','utf8'));
+ for(const entry of entries){
+  const response=await request.get(`${baseURL}ricette/${entry.data.slug}/`);
+  expect(response.status()).toBe(404);
+ }
+});

@@ -1,0 +1,98 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0077",
+  "researchTechnicalId": "f0c2c946-e7c9-54aa-a656-57ed73820c88",
+  "researchLabel": "Tortilla de patatas",
+  "proposedSlug": "tortilla-de-patatas",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0077.json",
+  "names": {
+    "italian": "Tortilla di patate",
+    "original": {
+      "text": "Tortilla de patatas",
+      "language": "es"
+    },
+    "alternatives": [
+      {
+        "text": "Tortilla de patata",
+        "language": "es"
+      },
+      {
+        "text": "Tortilla española",
+        "language": "es"
+      }
+    ]
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "ES",
+      "name": "Spagna"
+    },
+    "region": null,
+    "traditions": [
+      "Cucina spagnola"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "bonviveur-tortilla",
+    "spain-tortilla",
+    "joseba-tortilla"
+  ],
+  "claims": [
+    {
+      "field": "formula",
+      "text": "Scelta la versione Serrano con cipolla facoltativa: 700 g patate non pelate, 6 uova grandi, 500 ml olio e 1 cucchiaino sale. Nessuna dose presa da altri autori.",
+      "sourceIds": [
+        "bonviveur-tortilla"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti"
+    },
+    {
+      "field": "timing",
+      "text": "Frittura 20–30 min; riposo della miscela 10 min; cottura finale variabile su due lati e riposo finale non quantificato. La scheda indica 10+45 e totale 60: non riconciliato automaticamente.",
+      "sourceIds": [
+        "bonviveur-tortilla"
+      ],
+      "status": "conflicting",
+      "locator": "Ingredienti e procedimento"
+    },
+    {
+      "field": "scope",
+      "text": "Scegliere il grado di cottura dell’uovo modifica i tempi; non colmate le durate mancanti con valori di Spain.info o Joseba.",
+      "sourceIds": [
+        "bonviveur-tortilla"
+      ],
+      "status": "editorial-inference",
+      "locator": "Come cuocere e servire"
+    }
+  ],
+  "formula": {
+    "sourceId": "bonviveur-tortilla",
+    "servings": 4,
+    "ingredients": [],
+    "timing": null,
+    "steps": [],
+    "selectionRationale": "Versione di Serrano con cipolla facoltativa, senza ibridazione.",
+    "timingBasis": "10 preparazione +45 cottura dichiarati; riposo miscela 10, riposo finale variabile: nessun totale preciso attribuito."
+  },
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "Identità primaria di lavoro senza collisione nota; conversione trattenuta per evidenze temporali."
+  },
+  "decision": {
+    "outcome": "needs_review",
+    "proposedStatus": "candidate",
+    "reason": "La nuova fonte chiarisce il riposo, ma restano budget e cottura finale variabili; candidate in needs_review."
+  },
+  "openQuestions": [
+    "Definire un punto di cottura e tempi verificabili per la formula scelta.",
+    "Quantificare il riposo finale e distinguere il totale dal tempo attivo."
+  ],
+  "changesFromP13": [
+    "Formula Serrano letta integralmente; riposo 10 min esplicito, non stimato."
+  ]
+}

@@ -99,3 +99,7 @@ Ogni avvio/configurazione Astro valida l’intero catalogo e il registro prima d
 Un test genera e valida 5.000 candidate indipendenti. È una verifica del modello e degli indici, **non** un benchmark di build o browser su 5.000 pagine pubblicate. La ricerca corrente resta statica nel DOM; indicizzazione/paginazione per cataloghi molto grandi richiederanno una milestone dedicata.
 
 Importazione JSON/CSV e staging: [catalog-import.md](catalog-import.md). Test e limiti: [catalog-validation.md](catalog-validation.md). Il funzionamento dei glob loader segue la [documentazione Astro](https://docs.astro.build/en/reference/content-loader-reference/).
+
+## Estensione facoltativa P1.4: quantità approssimative
+
+Una quantità numerica può aggiungere `approximate: true`, per esempio `{value: 2, unit: "l", approximate: true}`. `formatIngredient` rende “circa 2 l” e conserva eventuali intervalli; false o assente mantiene la resa precedente. Il campo non ha default, quindi non modifica i documenti già validati. Le quantità `qb` non ammettono questo metadato. Il booleano sopravvive all’importazione JSON/CSV nel consueto oggetto `ingredients`; un lettore strict precedente a P1.4 richiede aggiornamento per leggerlo. Nessuna identità, policy di pubblicazione o contenuto preesistente viene modificato dall’estensione.

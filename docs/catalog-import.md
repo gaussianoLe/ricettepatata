@@ -79,3 +79,9 @@ Dopo l’ispezione della proposta, un intervento Git separato sul branch di impo
 `servings` è deserializzato come scalare JSON, mantenendo numero o null anziché una stringa CSV. Un round-trip di una ricetta draft completa verifica l’equivalenza JSON/CSV, porzioni numeriche, tempi non nulli e validazione del piano di importazione.
 
 I test di staging coprono alias esterni che puntano al checkout o a suoi discendenti, anche con un alias del checkout stesso; alias innocui verso directory esterne; destinazioni esistenti e sostituzione della directory in coincidenza con un errore di serializzazione. In quest’ultimo caso i dati della directory estranea rimangono intatti, senza cleanup ricorsivo.
+
+## P1.4: proposte di arricchimento e precisione delle quantità
+
+I piani in `docs/editorial/p1.4/enrichments.json` sono documenti di review manuale, non envelope d’importazione. L’importatore continua a rifiutare modifiche a UUID esistenti: nessun upsert o applicazione implicita è stato introdotto. Una proposta richiede review indipendente, autorizzazione e verifica della precondizione SHA prima di un intervento Git separato.
+
+`quantity.approximate` è un booleano facoltativo per quantità numeriche; il JSON in `ingredients` lo mantiene anche nel CSV. `true` richiede una presentazione approssimativa (“circa”), senza inventare tolleranze numeriche. Schema v1 e colonne rimangono compatibili con gli input esistenti; per il nuovo metadato occorre un lettore P1.4.

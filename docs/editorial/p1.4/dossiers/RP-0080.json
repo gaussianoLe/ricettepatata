@@ -1,0 +1,171 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0080",
+  "researchTechnicalId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+  "researchLabel": "Papas arrugadas con mojo",
+  "proposedSlug": "papas-arrugadas-con-mojo",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0080.json",
+  "names": {
+    "italian": "Papas arrugadas con mojo",
+    "original": {
+      "text": "Papas arrugadas",
+      "language": "es"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "africa",
+    "country": {
+      "code": "ES",
+      "name": "Spagna"
+    },
+    "region": "Isole Canarie",
+    "traditions": [
+      "Cucina canaria"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "bonviveur-papas",
+    "canarias-gastronomia",
+    "karlos-mojo",
+    "canarias-geografia"
+  ],
+  "claims": [
+    {
+      "field": "formula",
+      "text": "Confermata la formula delle sole patate; il mojo resta già preparato, senza dose numerica o tempi della salsa.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "status": "supported",
+      "locator": "Informazioni ricetta e servizio"
+    },
+    {
+      "field": "quantity",
+      "text": "L’acqua indicata circa 2 litri richiede un valore approssimativo anche nella resa visuale, non soltanto una nota successiva.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "status": "supported",
+      "locator": "Cómo hacer, acqua di copertura"
+    },
+    {
+      "field": "timing",
+      "text": "5 min preparazione e 30 cottura, articolati in circa 20+10; servizio immediato, nessun riposo prescritto.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti e procedimento"
+    }
+  ],
+  "formula": {
+    "sourceId": "bonviveur-papas",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "patata",
+        "ingredientId": "patata",
+        "name": "patate piccole da contorno",
+        "quantity": {
+          "value": 500,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "sale",
+        "ingredientId": "sale",
+        "name": "sale grosso per la cottura",
+        "quantity": {
+          "value": 75,
+          "unit": "g"
+        },
+        "optional": false
+      },
+      {
+        "id": "acqua",
+        "ingredientId": "acqua",
+        "name": "acqua di cottura",
+        "quantity": {
+          "value": 2,
+          "unit": "l",
+          "approximate": true
+        },
+        "optional": false,
+        "preparation": "Quantità approssimativa: coprire le patate."
+      },
+      {
+        "id": "mojo",
+        "ingredientId": "mojo",
+        "name": "mojo già preparato",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false,
+        "preparation": "Accompagnamento di servizio non quantificato dalla fonte; la produzione della salsa è esclusa dai tempi."
+      }
+    ],
+    "timing": {
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "restMinutes": 0
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Lavare accuratamente le patate senza pelarle.",
+        "ingredientIds": [
+          "patata"
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Coprirle d’acqua in pentola, aggiungere il sale e cuocere circa 20 minuti; controllare che siano tenere.",
+        "ingredientIds": [
+          "patata",
+          "acqua",
+          "sale"
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Scolare e mantenere sul fuoco dolce circa 10 minuti, muovendo la pentola finché la buccia si asciuga.",
+        "ingredientIds": [
+          "patata"
+        ]
+      },
+      {
+        "id": "step-4",
+        "text": "Servire subito con il mojo già pronto.",
+        "ingredientIds": [
+          "patata",
+          "mojo"
+        ]
+      }
+    ],
+    "selectionRationale": "Stessa formula documentata P1.3, ricontrollata in P1.4.",
+    "timingBasis": "Tempi dell’autore; restMinutes=0 indica assenza di riposo prescritto, non misurazione sperimentale."
+  },
+  "identity": {
+    "existingCatalogId": null,
+    "operationalSlug": null,
+    "relation": "primary",
+    "rationale": "UUID tecnico P1.2 preservato; nessuna collisione nel catalogo corrente."
+  },
+  "decision": {
+    "outcome": "retained-draft",
+    "proposedStatus": "draft",
+    "reason": "Draft mantenuto, corretta la precisione dell’acqua senza alterare dose o ambito."
+  },
+  "openQuestions": [
+    "Review indipendente e prova in cucina.",
+    "Un’eventuale ricetta del mojo richiede una verifica separata."
+  ],
+  "changesFromP13": [
+    "Metadato quantity.approximate=true per l’acqua; formatter con prefisso circa.",
+    "Altri dati culinari e identità P1.3 invariati."
+  ]
+}

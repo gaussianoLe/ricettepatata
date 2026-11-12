@@ -1,0 +1,205 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0079",
+  "researchTechnicalId": "c75db4bc-7967-5e64-9cc1-70745740c03f",
+  "researchLabel": "Patatas bravas",
+  "proposedSlug": "patatas-bravas",
+  "baselineDossier": "docs/editorial/first-ten/dossiers/RP-0079.json",
+  "names": {
+    "italian": "Patatas bravas",
+    "original": {
+      "text": "Patatas bravas",
+      "language": "es"
+    },
+    "alternatives": []
+  },
+  "provenance": {
+    "continent": "europe",
+    "country": {
+      "code": "ES",
+      "name": "Spagna"
+    },
+    "region": null,
+    "traditions": [
+      "Tradizione delle tapas spagnole"
+    ]
+  },
+  "potatoRole": "protagonist",
+  "sourceIds": [
+    "joseba-bravas"
+  ],
+  "claims": [
+    {
+      "field": "identity",
+      "text": "Stessa ricetta/famiglia del demo, proposta di arricchimento editoriale con identità esistente. Non provata una variante regionale autonoma.",
+      "sourceIds": [
+        "joseba-bravas"
+      ],
+      "status": "editorial-inference",
+      "locator": "Confronto con il demo"
+    },
+    {
+      "field": "differences",
+      "text": "Dal demo al forno a patate fritte; salsa con cipolla, paprika, farina e brodo di pollo, senza passata. Quantità e tempi della sola formula Joseba; non dichiarata variante regionale del demo. Segnalato il brodo di pollo: non ereditare implicitamente qualifiche vegetariane.",
+      "sourceIds": [
+        "joseba-bravas"
+      ],
+      "status": "supported",
+      "locator": "Ingredienti e tempi della fonte scelta; frontmatter demo"
+    }
+  ],
+  "formula": {
+    "sourceId": "joseba-bravas",
+    "servings": 4,
+    "ingredients": [
+      {
+        "id": "patata",
+        "ingredientId": "patata",
+        "name": "patate",
+        "quantity": {
+          "value": 2,
+          "unit": "piece"
+        },
+        "optional": false
+      },
+      {
+        "id": "cipolla",
+        "ingredientId": "cipolla",
+        "name": "cipolla",
+        "quantity": {
+          "value": 1,
+          "unit": "piece"
+        },
+        "optional": false
+      },
+      {
+        "id": "paprika-dolce",
+        "ingredientId": "paprika-dolce",
+        "name": "paprika dolce",
+        "quantity": {
+          "value": 0.5,
+          "unit": "tbsp"
+        },
+        "optional": false
+      },
+      {
+        "id": "paprika-piccante",
+        "ingredientId": "paprika-piccante",
+        "name": "paprika piccante",
+        "quantity": {
+          "value": 1,
+          "unit": "tbsp"
+        },
+        "optional": false
+      },
+      {
+        "id": "farina",
+        "ingredientId": "farina",
+        "name": "farina",
+        "quantity": {
+          "value": 2,
+          "unit": "tbsp"
+        },
+        "optional": false
+      },
+      {
+        "id": "brodo",
+        "ingredientId": "brodo",
+        "name": "brodo di pollo",
+        "quantity": {
+          "value": 250,
+          "unit": "ml"
+        },
+        "optional": false
+      },
+      {
+        "id": "olio",
+        "ingredientId": "olio",
+        "name": "olio extravergine",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "sale",
+        "ingredientId": "sale",
+        "name": "sale",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      },
+      {
+        "id": "prezzemolo",
+        "ingredientId": "prezzemolo",
+        "name": "prezzemolo",
+        "quantity": {
+          "value": null,
+          "unit": "qb"
+        },
+        "optional": false
+      }
+    ],
+    "timing": {
+      "prepMinutes": 10,
+      "cookMinutes": 25,
+      "restMinutes": 0
+    },
+    "steps": [
+      {
+        "id": "step-1",
+        "text": "Friggere le patate e, separatamente, ammorbidire la cipolla.",
+        "ingredientIds": [
+          "patata",
+          "olio",
+          "cipolla"
+        ]
+      },
+      {
+        "id": "step-2",
+        "text": "Unire paprika e farina alla cipolla, poi aggiungere il brodo gradualmente e cuocere circa 10 minuti.",
+        "ingredientIds": [
+          "cipolla",
+          "paprika-dolce",
+          "paprika-piccante",
+          "farina",
+          "brodo"
+        ]
+      },
+      {
+        "id": "step-3",
+        "text": "Frullare la salsa e distribuirla sulle patate scolate; completare con sale e prezzemolo.",
+        "ingredientIds": [
+          "patata",
+          "sale",
+          "prezzemolo"
+        ]
+      }
+    ],
+    "selectionRationale": "Formula della singola fonte selezionata per la proposta, senza combinare quantità.",
+    "timingBasis": "Intervalli non convertiti in numeri esatti; per bravas 10+25 con sola breve scolatura non conteggiata come riposo autonomo."
+  },
+  "identity": {
+    "existingCatalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+    "operationalSlug": "patatas-bravas",
+    "relation": "same-recipe-enrichment",
+    "rationale": "Nome e struttura compatibili con il record già registrato. Scelta proposta, non fusione automatica."
+  },
+  "decision": {
+    "outcome": "enrichment-proposal",
+    "proposedStatus": "candidate",
+    "reason": "Proposta revisionabile di aggiornamento manuale; nessuna applicazione o nuovo UUID operativo."
+  },
+  "openQuestions": [
+    "Approvare esplicitamente il collegamento dell’ID di ricerca alla scheda esistente.",
+    "Rivedere formula, tempi e testo prima di sostituire il demo; nessuna promozione automatica."
+  ],
+  "changesFromP13": [
+    "Dal demo al forno a patate fritte; salsa con cipolla, paprika, farina e brodo di pollo, senza passata.",
+    "Quantità e tempi della sola formula Joseba; non dichiarata variante regionale del demo.",
+    "Segnalato il brodo di pollo: non ereditare implicitamente qualifiche vegetariane."
+  ]
+}

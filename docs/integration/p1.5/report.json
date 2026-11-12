@@ -1,0 +1,167 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "d9e11bf7a8bc20b03f68fa6ec42466c44bac8dae",
+  "sourceSha256": "16b04ec345f78af3a455ac3c2cf9a35c2c1a174ad9c250bdb8755675fc5891b4",
+  "summary": {
+    "integratedDrafts": 3,
+    "newlyPublished": 0,
+    "demoUpdates": 0,
+    "enrichmentsApplied": 0,
+    "identityOrSlugCollisions": 0
+  },
+  "integrated": [
+    {
+      "researchId": "RP-0080",
+      "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "slug": "papas-arrugadas-con-mojo",
+      "file": "src/content/ricette/papas-arrugadas-con-mojo.md",
+      "fileSha256": "81928e0906bb2c47d4c9dae31906289ac2d57bd50ce04beb1c6ced62449d26b3",
+      "status": "draft",
+      "sourceArtifact": "docs/editorial/p1.4/records.json",
+      "dossier": "docs/editorial/p1.4/dossiers/RP-0080.json",
+      "formulaSourceId": "bonviveur-papas",
+      "sourceIds": [
+        "bonviveur-papas",
+        "canarias-gastronomia",
+        "karlos-mojo",
+        "canarias-geografia"
+      ],
+      "visibility": {
+        "production": false,
+        "preview": false
+      }
+    },
+    {
+      "researchId": "RP-0062",
+      "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "slug": "gratin-dauphinois",
+      "file": "src/content/ricette/gratin-dauphinois.md",
+      "fileSha256": "3f350177156469d6020e264c9d5509ae8d870d47bad6e2cd537c0ceb69ff4fec",
+      "status": "draft",
+      "sourceArtifact": "docs/editorial/p1.4/records.json",
+      "dossier": "docs/editorial/p1.4/dossiers/RP-0062.json",
+      "formulaSourceId": "eurial-gratin",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin"
+      ],
+      "visibility": {
+        "production": false,
+        "preview": false
+      }
+    },
+    {
+      "researchId": "RP-0011",
+      "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "slug": "gatto-di-patate",
+      "file": "src/content/ricette/gatto-di-patate.md",
+      "fileSha256": "dc37397a2a39c0a2c30cc30fcd5dc5d03c85b4a72708a67e32bc436c7bb0b796",
+      "status": "draft",
+      "sourceArtifact": "docs/editorial/p1.4/records.json",
+      "dossier": "docs/editorial/p1.4/dossiers/RP-0011.json",
+      "formulaSourceId": "ruggiero-gatto",
+      "sourceIds": [
+        "ruggiero-gatto",
+        "cucchiaio-gatto",
+        "gz-gatto"
+      ],
+      "visibility": {
+        "production": false,
+        "preview": false
+      }
+    }
+  ],
+  "enrichments": [
+    {
+      "researchId": "RP-0001",
+      "catalogId": "f727b885-d91c-5ed7-8ff9-66cacc74208d",
+      "slug": "pitta-di-patate",
+      "beforeSha256": "39368462b4d7099e2916264e117c3d1576551359b1f447ef5d2409ffba5bdc54",
+      "preconditionVerified": true,
+      "applied": false,
+      "status": "prepared_not_applied",
+      "openIssues": [
+        "timing=null: preparazione, lessatura, forno e riposo non riconciliati in valori scalari.",
+        "Porzioni 4→6, ingredienti e quantità variati: confermare l’intera formula Agrodolce."
+      ]
+    },
+    {
+      "researchId": "RP-0039",
+      "catalogId": "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+      "slug": "gnocchi",
+      "beforeSha256": "8504294b36217e0e7b65fc719d296b326648d726134ea430777b31fb608567ca",
+      "preconditionVerified": true,
+      "applied": false,
+      "status": "prepared_not_applied",
+      "openIssues": [
+        "timing=null: mantenere gli intervalli della lessatura e cottura degli gnocchi, senza inventare un totale esatto.",
+        "Quantità diverse dal demo; validare farina variabile e condimento fuori dalla formula base."
+      ]
+    },
+    {
+      "researchId": "RP-0079",
+      "catalogId": "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+      "slug": "patatas-bravas",
+      "beforeSha256": "9d9b148fbc58119f9d689d11d849b1be2af53dd0abc9a5dbdeed97f5832db60f",
+      "preconditionVerified": true,
+      "applied": false,
+      "status": "prepared_not_applied",
+      "openIssues": [
+        "Cambio dal forno alla frittura e dalla passata alla salsa di paprika: approvare il cambiamento sostanziale.",
+        "Il brodo di pollo esclude l’assunzione implicita di una formula vegetariana.",
+        "Il proposedRecord rimane candidate anche se i tempi sono numerici; nessuna verifica indipendente o autorizzazione alla sostituzione."
+      ]
+    }
+  ],
+  "visibility": {
+    "policy": "Real editorial drafts excluded in both public targets; unchanged demo preview retained",
+    "visibleIds": {
+      "production": [],
+      "preview": [
+        "1eaf4ed2-c576-5d73-9a2e-807eb2413aeb",
+        "25896c56-8bf1-5324-9c2e-326aebbc0872",
+        "449f2fe8-e698-5a54-9ea7-8a29984f5de8",
+        "6477b1b1-ee86-5970-8388-64fadd7c1dc6",
+        "6d84129f-ef35-51f5-b5aa-60ed022140fa",
+        "8d06d11c-0c18-510c-8627-4fe9c0a07086",
+        "c75881ab-d0d2-58f0-afba-6ab298594530",
+        "d4f86f7e-cb78-5929-b7b6-63b9102547b7",
+        "f0979c35-c021-51f7-8a89-67f8833f7086",
+        "f727b885-d91c-5ed7-8ff9-66cacc74208d"
+      ]
+    },
+    "publicDrafts": 0,
+    "staticAudit": {
+      "command": "npm run integration:output",
+      "evidence": "docs/integration/p1.5/visibility-evidence.json",
+      "configurations": [
+        "production",
+        "preview",
+        "production-custom-growth",
+        "preview-root-http"
+      ],
+      "scope": "All dist files, compressed assets and direct URL browser checks; actual CI audits run after build"
+    }
+  },
+  "history": {
+    "p13Unchanged": true,
+    "p14Unchanged": true,
+    "p12Unchanged": true
+  },
+  "registry": {
+    "existingPreserved": true,
+    "added": 3,
+    "sha256": "911bd92e53db8ccae0d336869d86b93ec3ea02a47590ed2c6e8007c95e61309b"
+  },
+  "repeatImport": {
+    "additions": 0,
+    "skipped": 3
+  },
+  "publicationAuthorized": false,
+  "limitations": [
+    "Draft recipes retain P1.4 editorial and culinary limitations.",
+    "Bodies copied verbatim include historical annotations referring to the formerly external drafts.",
+    "Local Astro caches and repository files are not public deployment artifacts; only audited dist is deployable. No deployment performed."
+  ]
+}

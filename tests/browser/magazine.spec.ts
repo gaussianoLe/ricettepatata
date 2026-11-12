@@ -57,10 +57,16 @@ test('direct links cannot expose entries excluded by the editorial policy',async
  }
 });
 
-test('isolated editorial drafts stay unavailable through direct URLs',async({request,baseURL})=>{
+test('integrated editorial drafts stay private in lists, search and direct URLs',async({page,request,baseURL})=>{
  const {readFileSync}=await import('node:fs');
  const {entries}=JSON.parse(readFileSync('docs/editorial/p1.4/records.json','utf8'));
+ await page.goto('./ricette/');
+ const html=await page.content();
  for(const entry of entries){
+  expect(html).not.toContain(entry.data.catalogId);
+  expect(html).not.toContain(entry.data.description);
+  await page.getByRole('searchbox',{name:'Cerca ricette'}).fill(entry.data.names.italian);
+  await expect(page.locator('[data-recipe]:visible')).toHaveCount(0);
   const response=await request.get(`${baseURL}ricette/${entry.data.slug}/`);
   expect(response.status()).toBe(404);
  }

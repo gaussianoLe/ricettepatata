@@ -1,0 +1,66 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "d9e11bf7a8bc20b03f68fa6ec42466c44bac8dae",
+  "source": "docs/editorial/p1.4/records.json",
+  "sourceSha256": "16b04ec345f78af3a455ac3c2cf9a35c2c1a174ad9c250bdb8755675fc5891b4",
+  "baselineRegistrySha256": "3af4b5bffb04925fceebbb22e2b07aaec016bced30bf454a960e1195b04397d1",
+  "additions": [
+    {
+      "researchId": "RP-0080",
+      "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "slug": "papas-arrugadas-con-mojo",
+      "targetPath": "src/content/ricette/papas-arrugadas-con-mojo.md",
+      "status": "draft",
+      "sourceIds": [
+        "bonviveur-papas",
+        "canarias-gastronomia",
+        "karlos-mojo",
+        "canarias-geografia"
+      ]
+    },
+    {
+      "researchId": "RP-0062",
+      "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "slug": "gratin-dauphinois",
+      "targetPath": "src/content/ricette/gratin-dauphinois.md",
+      "status": "draft",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin"
+      ]
+    },
+    {
+      "researchId": "RP-0011",
+      "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "slug": "gatto-di-patate",
+      "targetPath": "src/content/ricette/gatto-di-patate.md",
+      "status": "draft",
+      "sourceIds": [
+        "ruggiero-gatto",
+        "cucchiaio-gatto",
+        "gz-gatto"
+      ]
+    }
+  ],
+  "skipped": 0,
+  "enrichmentsApplied": 0,
+  "staging": {
+    "kind": "external",
+    "directoryName": "ricettepatata-p15-reviewed-stage",
+    "files": [
+      {
+        "path": "content/ricette/papas-arrugadas-con-mojo.md",
+        "sha256": "81928e0906bb2c47d4c9dae31906289ac2d57bd50ce04beb1c6ced62449d26b3"
+      },
+      {
+        "path": "content/ricette/gratin-dauphinois.md",
+        "sha256": "3f350177156469d6020e264c9d5509ae8d870d47bad6e2cd537c0ceb69ff4fec"
+      },
+      {
+        "path": "content/ricette/gatto-di-patate.md",
+        "sha256": "dc37397a2a39c0a2c30cc30fcd5dc5d03c85b4a72708a67e32bc436c7bb0b796"
+      }
+    ]
+  }
+}

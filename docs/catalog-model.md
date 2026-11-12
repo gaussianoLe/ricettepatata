@@ -103,3 +103,7 @@ Importazione JSON/CSV e staging: [catalog-import.md](catalog-import.md). Test e 
 ## Estensione facoltativa P1.4: quantità approssimative
 
 Una quantità numerica può aggiungere `approximate: true`, per esempio `{value: 2, unit: "l", approximate: true}`. `formatIngredient` rende “circa 2 l” e conserva eventuali intervalli; false o assente mantiene la resa precedente. Il campo non ha default, quindi non modifica i documenti già validati. Le quantità `qb` non ammettono questo metadato. Il booleano sopravvive all’importazione JSON/CSV nel consueto oggetto `ingredients`; un lettore strict precedente a P1.4 richiede aggiornamento per leggerlo. Nessuna identità, policy di pubblicazione o contenuto preesistente viene modificato dall’estensione.
+
+## P1.5: draft editoriali privati nei target pubblici
+
+I draft con `demo: false` non sono visibili in produzione né nell’anteprima pubblica. I demo preesistenti mantengono la precedente anteprima, senza nuovi dati demo. La policy opera anche nel loader tramite un content store filtrato; le pagine mantengono il filtro come ulteriore controllo. Il catalogo completo viene sempre validato. Nessun campo o stato editoriale nuovo: i tre record integrati rimangono normali draft P1.1. Le precedenti descrizioni dell’anteprima dei draft vanno lette come comportamento storico, superato per i draft editoriali da P1.5.

@@ -1,17 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {readFileSync,existsSync} from 'node:fs';
+import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
-import {readConsolidation,verifyHistoricalBaseline,validateConsolidation,renderConsolidationMatrix,sha256} from '../src/catalog/consolidation.mjs';
+import {readConsolidation,verifyHistoricalBaseline,validateConsolidation,renderConsolidationMatrix} from '../src/catalog/consolidation.mjs';
 import {readEditorialBundle} from '../src/catalog/editorial.mjs';
-import {readCatalog} from '../src/catalog/io.mjs';
+import {historicalCatalog} from '../src/catalog/history.mjs';
 import {recipeSchema,ingredientSchema} from '../src/catalog/schema.mjs';
 import {formatIngredient,recipeView} from '../src/catalog/view.mjs';
 import {planImport,parseImport,csvColumns} from '../src/catalog/import.mjs';
 import {isVisible} from '../src/catalog/policy.mjs';
 const root='docs/editorial/p1.4',bundle=readConsolidation(root),baseline=readEditorialBundle();
-const catalog=readCatalog(),registry=JSON.parse(readFileSync('src/catalog/registry.json','utf8'));
-const readHistorical=file=>file==='src/catalog/registry.json' && existsSync('.astro/p1-catalog-fixtures.json')?Buffer.from(JSON.parse(readFileSync('.astro/p1-catalog-fixtures.json','utf8')).registryText):readFileSync(file);
+const {entries:catalog,registry,readHistorical}=historicalCatalog();
 const check=b=>validateConsolidation(b,baseline,catalog,registry,readHistorical);
 const edit=fn=>{const copy=structuredClone(bundle);fn(copy);return copy;};
 const forId=(b,id)=>b.dossiers.find(d=>d.researchId===id);
@@ -91,8 +90,8 @@ test('retained drafts preserve their formulas, prepared mojo scope and isolated 
  assert.match(papas.ingredients.find(i=>i.id==='mojo').preparation,/esclusa dai tempi/);
  for(const e of bundle.records.entries){assert.equal(isVisible(e.data,'production'),false);assert.equal(catalog.some(c=>c.data.catalogId===e.data.catalogId),false);assert.equal(Object.hasOwn(registry,e.data.catalogId),false);}
 });
-test('the consolidation CLI is read-only by default and verifies current derived outputs',()=>{
- if(sha256(readFileSync('src/catalog/registry.json'))===bundle.baseline.files['src/catalog/registry.json']){
-  const result=execFileSync(process.execPath,['scripts/consolidation-check.mjs'],{encoding:'utf8'});assert.equal(JSON.parse(result).blocked,4);
- }else assert.throws(()=>execFileSync(process.execPath,['scripts/consolidation-check.mjs'],{encoding:'utf8',stdio:'pipe'}),/Baseline storica modificata/);
+test('the consolidation CLI checks the historical snapshot and rejects rewriting it',()=>{
+ const result=execFileSync(process.execPath,['scripts/consolidation-check.mjs'],{encoding:'utf8'});
+ assert.equal(JSON.parse(result).blocked,4);
+ assert.throws(()=>execFileSync(process.execPath,['scripts/consolidation-check.mjs','--write'],{encoding:'utf8',stdio:'pipe'}),/immutabile/);
 });

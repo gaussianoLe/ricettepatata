@@ -38,5 +38,17 @@
   "d4f86f7e-cb78-5929-b7b6-63b9102547b7": {
     "collection": "guide",
     "slug": "scegliere-le-patate"
+  },
+  "8bb84554-1db7-58df-a43a-c5bea8155ff0": {
+    "collection": "ricette",
+    "slug": "papas-arrugadas-con-mojo"
+  },
+  "1dbbf517-99d2-5c16-9ef3-a83064238ffb": {
+    "collection": "ricette",
+    "slug": "gratin-dauphinois"
+  },
+  "3f5f6cf2-d990-5bcb-92e5-9c388233acbb": {
+    "collection": "ricette",
+    "slug": "gatto-di-patate"
   }
 }

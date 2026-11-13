@@ -2,7 +2,7 @@ name: Foundation CI
 on:
   pull_request:
   push:
-    branches: [main, feat/p1.6-controlled-enrichments]
+    branches: [main, feat/p1.7-private-editorial-preview]
 permissions:
   contents: read
 concurrency:
@@ -59,16 +59,20 @@ jobs:
         run: node tests/helpers/catalog-fixtures.mjs add
       - run: npm run check
       - run: npm run catalog:check
-      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs tests/integration.test.mjs tests/enrichment-review.test.mjs
+      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs tests/integration.test.mjs tests/enrichment-review.test.mjs tests/private-editorial.test.mjs
       - name: Build static magazine
         run: node scripts/build.mjs ${{ matrix.target }}
       - name: Verify reproducible static build
         run: node scripts/verify-reproducible.mjs ${{ matrix.target }}
       - name: Audit all public static assets for draft data
         run: npm run integration:output
-      - run: node --test tests/output.test.mjs tests/consolidation-output.test.mjs tests/integration-output.test.mjs tests/enrichment-output.test.mjs
+      - run: node --test tests/output.test.mjs tests/consolidation-output.test.mjs tests/integration-output.test.mjs tests/enrichment-output.test.mjs tests/private-editorial-output.test.mjs
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - name: Test isolated local editorial app without retaining private artifacts
+        run: npm run test:editorial
+      - name: Reaudit public assets after local editorial session
+        run: npm run integration:output
       - name: Remove synthetic catalog fixtures
         if: always() && matrix.growth
         run: node tests/helpers/catalog-fixtures.mjs remove

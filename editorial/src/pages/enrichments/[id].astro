@@ -1,0 +1,10 @@
+---
+import Shell from '../../components/Shell.astro';
+import Recipe from '../../components/Recipe.astro';
+import {editorialData} from '../../../data.mjs';
+export const prerender=false;
+const proposal=editorialData().proposals.find(p=>p.plan.researchId===Astro.params.id);
+if(!proposal)return Astro.redirect('/404');
+const {plan,record,decision,operational,diff,preconditionMatches}=proposal;
+---
+<Shell title={`${plan.researchId} · confronto editoriale`}><a href="/">← Catalogo locale</a><div class="notice"><strong>Decisione: {decision.status} · NON APPLICATA</strong><p>Review indipendente: {decision.independentReview}. Applicazione approvata: {decision.applicationApproved?'sì':'no'}.</p><p>Precondizione SHA-256: {preconditionMatches?'corrispondente':'MISMATCH — proposta da riesaminare'}</p><code>{plan.beforeSha256}</code><p>Il nuovo accesso locale non rimuove i blocchi P1.6 e non approva la sostituzione.</p></div><h2>Questioni aperte</h2><ul>{decision.openIssues.map(issue=><li>{issue}</li>)}</ul><p>{decision.formulaDecision}</p><p>{decision.identityDecision}</p><div class="grid"><Recipe record={operational.data} label="Contenuto operativo attuale"/><Recipe record={record} label="Proposta di arricchimento · candidate"/></div><h2>Differenze strutturate P1.6</h2><p>{diff.bodyDisposition}</p><div class="table-scroll"><table><thead><tr><th>Campo</th><th>Prima</th><th>Proposto</th></tr></thead><tbody>{diff.changes.map(change=><tr><th scope="row"><code>{change.path}</code></th><td><pre>{change.before.present?JSON.stringify(change.before.value,null,2):'Campo assente'}</pre></td><td><pre>{change.after.present?JSON.stringify(change.after.value,null,2):'Campo assente'}</pre></td></tr>)}</tbody></table></div><h2>Rilievi e fonti della revisione</h2><ul>{decision.findings.map(finding=><li>{finding.text} <small>Fonti: {finding.sourceIds.join(', ')} · {finding.locator}</small></li>)}</ul></Shell>

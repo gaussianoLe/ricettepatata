@@ -1,5 +1,6 @@
 export function deployment(target, env = {}) {
   if (!['production', 'preview'].includes(target)) throw new Error('Target sconosciuto: usare production oppure preview');
+  if(env.BUILD_TARGET && env.BUILD_TARGET!==target)throw new Error('BUILD_TARGET in conflitto con il target richiesto; editorial non distribuibile');
   const site = env.SITE_URL || 'https://ricettepatata.it';
   const url = new URL(site);
   if (!['https:', 'http:'].includes(url.protocol) || url.pathname !== '/' || url.search || url.hash || url.username || url.password) throw new Error('SITE_URL deve essere un’origine HTTP(S), senza percorso o credenziali');

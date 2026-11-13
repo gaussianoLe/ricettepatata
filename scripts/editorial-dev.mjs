@@ -1,0 +1,10 @@
+import {parseArgs} from 'node:util';
+import {startEditorial,repository} from '../editorial/runtime.mjs';
+const {values}=parseArgs({options:{port:{type:'string'},host:{type:'string'}}});
+process.chdir(repository);
+process.env.ASTRO_TELEMETRY_DISABLED='1';
+const session=await startEditorial(values);
+console.log(`EDITORIAL LOCALE — non distribuibile: http://127.0.0.1:${session.address.port}/`);
+let stopping=false;
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,async()=>{if(stopping)return;stopping=true;try{await session.stop();}finally{process.exit(0);}});
+process.on('exit',()=>session.cleanup());

@@ -111,3 +111,5 @@ Il [consolidamento P1.4](docs/editorial/p1.4/README.md) aggiunge dossier version
 L’[integrazione controllata P1.5](docs/integration/p1.5/README.md) aggiunge i tre draft P1.4 al catalogo sorgente mantenendoli privati nei due target pubblici. `npm run integration:check` verifica il catalogo e i demo invariati; `npm run integration:output` controlla tutti gli asset di `dist`, dopo una build. Le checklist di arricchimento restano pendenti e non applicate.
 
 P1.6: [revisione individuale degli arricchimenti](docs/editorial/p1.6/README.md), diff e decisioni bloccate senza modifiche ai demo. Verifica: `npm run editorial:enrichments`.
+
+P1.7: `npm run editorial` apre la [revisione locale privata](docs/editorial/p1.7/README.md) su http://127.0.0.1:4322/. Solo dev, nessuna build o distribuzione editoriale.

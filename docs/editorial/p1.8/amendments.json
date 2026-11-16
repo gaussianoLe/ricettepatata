@@ -1,0 +1,65 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "eb20683ad773882c88b06457c47642a42ea0d456",
+  "mode": "manual-draft-revisions-no-upsert",
+  "entries": [
+    {
+      "researchId": "RP-0011",
+      "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "slug": "gatto-di-patate",
+      "file": "src/content/ricette/gatto-di-patate.md",
+      "beforeFile": "docs/editorial/p1.8/before/gatto-di-patate.md",
+      "beforeSha256": "dc37397a2a39c0a2c30cc30fcd5dc5d03c85b4a72708a67e32bc436c7bb0b796",
+      "afterSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419",
+      "changedFields": [
+        "ingredients",
+        "notes",
+        "sources",
+        "steps",
+        "body"
+      ],
+      "dossier": "docs/editorial/p1.8/dossiers/RP-0011.json",
+      "authorization": "P1.8 request: sourced manual draft revision only",
+      "state": "draft",
+      "demo": false
+    },
+    {
+      "researchId": "RP-0062",
+      "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "slug": "gratin-dauphinois",
+      "file": "src/content/ricette/gratin-dauphinois.md",
+      "beforeFile": "docs/editorial/p1.8/before/gratin-dauphinois.md",
+      "beforeSha256": "3f350177156469d6020e264c9d5509ae8d870d47bad6e2cd537c0ceb69ff4fec",
+      "afterSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+      "changedFields": [
+        "notes",
+        "sources",
+        "steps",
+        "body"
+      ],
+      "dossier": "docs/editorial/p1.8/dossiers/RP-0062.json",
+      "authorization": "P1.8 request: sourced manual draft revision only",
+      "state": "draft",
+      "demo": false
+    },
+    {
+      "researchId": "RP-0080",
+      "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "slug": "papas-arrugadas-con-mojo",
+      "file": "src/content/ricette/papas-arrugadas-con-mojo.md",
+      "beforeFile": "docs/editorial/p1.8/before/papas-arrugadas-con-mojo.md",
+      "beforeSha256": "81928e0906bb2c47d4c9dae31906289ac2d57bd50ce04beb1c6ced62449d26b3",
+      "afterSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d",
+      "changedFields": [
+        "notes",
+        "sources",
+        "steps",
+        "body"
+      ],
+      "dossier": "docs/editorial/p1.8/dossiers/RP-0080.json",
+      "authorization": "P1.8 request: sourced manual draft revision only",
+      "state": "draft",
+      "demo": false
+    }
+  ]
+}

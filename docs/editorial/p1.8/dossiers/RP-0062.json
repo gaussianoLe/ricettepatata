@@ -1,0 +1,137 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0062",
+  "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+  "slug": "gratin-dauphinois",
+  "file": "src/content/ricette/gratin-dauphinois.md",
+  "outcome": "needs_revision",
+  "catalogStatus": "draft",
+  "demo": false,
+  "formulaSourceId": "eurial-gratin",
+  "recordSourceIds": [
+    "eurial-gratin",
+    "alpes-gratin",
+    "laruelle-gratin",
+    "fsa-cooking",
+    "govuk-allergens",
+    "atelier-gratin"
+  ],
+  "identity": {
+    "names": {
+      "italian": "Gratin dauphinois",
+      "original": {
+        "text": "Gratin dauphinois",
+        "language": "fr"
+      },
+      "alternatives": []
+    },
+    "provenance": {
+      "continent": "europe",
+      "country": {
+        "code": "FR",
+        "name": "Francia"
+      },
+      "region": "Delfinato (Dauphiné)",
+      "traditions": [
+        "Cucina del Delfinato"
+      ]
+    },
+    "geographyBasis": "Regional culinary association, no exclusive inventor attribution"
+  },
+  "formula": {
+    "servings": 4,
+    "originalNumericQuantitiesPreserved": true,
+    "addedUnquantifiedIngredient": null
+  },
+  "timing": {
+    "declared": {
+      "prepMinutes": 40,
+      "cookMinutes": 35,
+      "restMinutes": 0
+    },
+    "basis": "La scheda Eurial distingue preparazione 40 minuti e cottura 35, cioè circa 20 sul fornello più 15 in forno. Lo spessore e il recipiente non sono quantificati; questi tempi non sono una garanzia di cottura per ogni montaggio.",
+    "unknownDurationsNotSetToZero": true
+  },
+  "equipment": [
+    "Casseruola, coltello o strumento da taglio e pirofila da gratin",
+    "Forno a 200 °C; modalità non specificata da Eurial"
+  ],
+  "claims": [
+    {
+      "id": "RP-0062-1",
+      "field": "formula-timing",
+      "text": "Dosi e tempi Eurial conservati; nessun formaggio in elenco.",
+      "sourceIds": [
+        "eurial-gratin"
+      ],
+      "locator": "PDF p.1 Ingredienti/Etapes",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0062-2",
+      "field": "missing-parameters",
+      "text": "Fette definite sottili, senza millimetri; teglia e modalità forno non specificate nel PDF.",
+      "sourceIds": [
+        "eurial-gratin"
+      ],
+      "locator": "PDF p.1",
+      "status": "unresolved"
+    },
+    {
+      "id": "RP-0062-3",
+      "field": "comparisons",
+      "text": "Altre versioni con tagli misurati e cotture diverse non risolvono la breve finitura Eurial.",
+      "sourceIds": [
+        "alpes-gratin",
+        "laruelle-gratin",
+        "atelier-gratin"
+      ],
+      "locator": "Procedimenti delle tre versioni",
+      "status": "editorial-inference"
+    },
+    {
+      "id": "RP-0062-safety",
+      "field": "storage-reheating",
+      "text": "Indicazioni generali sugli avanzi, non durata di conservazione validata sperimentalmente per il piatto.",
+      "sourceIds": [
+        "fsa-cooking"
+      ],
+      "locator": "§7 Using your leftovers",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0062-allergens",
+      "field": "allergens",
+      "text": "Latte e panna implicano latte come allergene. L’assenza di formaggio non rende questa formula priva di latticini. Nessuna certificazione di assenza di altri allergeni.",
+      "sourceIds": [
+        "govuk-allergens",
+        "eurial-gratin"
+      ],
+      "locator": "Ingredienti della formula; elenco allergeni e prodotti preconfezionati",
+      "status": "editorial-inference"
+    }
+  ],
+  "essentialIssues": [
+    "Confermare spessore delle fette, geometria della pirofila e intensità della precottura coerenti con la breve finitura Eurial; le altre fonti non verificano questa combinazione.",
+    "Modalità del forno non indicata: non inventare statico o ventilato."
+  ],
+  "openIssues": [
+    "Prova tecnica mirata o precisazione dell’autore necessaria prima di dichiarare il dossier pronto.",
+    "Non combinare i 2–3 mm di Laruelle, i 3 mm di Atelier e i 15 minuti Eurial come se fossero un’unica ricetta verificata.",
+    "Review indipendente e prove in cucina non svolte."
+  ],
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "checklist": {
+    "identityDocumented": true,
+    "formulaDocumented": true,
+    "procedureReviewed": true,
+    "timingReconciled": false,
+    "essentialParametersResolved": false,
+    "allergenScopeDocumented": true,
+    "storageSourceDocumented": true,
+    "originalText": true,
+    "noRightsUnverifiedImagesAdded": true,
+    "independentApproval": false
+  }
+}

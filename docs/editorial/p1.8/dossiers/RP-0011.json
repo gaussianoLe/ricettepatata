@@ -1,0 +1,149 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0011",
+  "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+  "slug": "gatto-di-patate",
+  "file": "src/content/ricette/gatto-di-patate.md",
+  "outcome": "ready_for_independent_review",
+  "catalogStatus": "draft",
+  "demo": false,
+  "formulaSourceId": "ruggiero-gatto",
+  "recordSourceIds": [
+    "ruggiero-gatto",
+    "cucchiaio-gatto",
+    "gz-gatto",
+    "fsa-cooking",
+    "govuk-allergens"
+  ],
+  "identity": {
+    "names": {
+      "italian": "Gattò di patate",
+      "original": {
+        "text": "Gattò di patate",
+        "language": "it"
+      },
+      "alternatives": [
+        {
+          "text": "Gateau di patate",
+          "language": "it"
+        }
+      ]
+    },
+    "provenance": {
+      "continent": "europe",
+      "country": {
+        "code": "IT",
+        "name": "Italia"
+      },
+      "region": "Napoli, Campania",
+      "traditions": [
+        "Cucina napoletana"
+      ]
+    },
+    "geographyBasis": "Regional culinary association, no exclusive inventor attribution"
+  },
+  "formula": {
+    "servings": 6,
+    "originalNumericQuantitiesPreserved": true,
+    "addedUnquantifiedIngredient": "Breadcrumb lining required by source procedure; q.b. without inventing grams"
+  },
+  "timing": {
+    "declared": {
+      "prepMinutes": 30,
+      "cookMinutes": 70,
+      "restMinutes": 0
+    },
+    "basis": "I 70 minuti di cottura sono il budget dichiarato dalla fonte: lessatura 30–40 più forno circa 30. Riscaldamento dell’acqua e scolatura non sono quantificati; non è un tempo totale garantito. Nessun riposo numerico è prescritto.",
+    "unknownDurationsNotSetToZero": true
+  },
+  "equipment": [
+    "Pirofila quadrata 20×20 cm",
+    "Pentola, scolapasta, schiacciapatate, ciotola e spatola",
+    "Forno statico preriscaldato"
+  ],
+  "claims": [
+    {
+      "id": "RP-0011-1",
+      "field": "formula",
+      "text": "Formula Ruggiero per sei e pirofila 20×20; pane per il rivestimento richiesto dal procedimento ma non pesato separatamente.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "locator": "Ingredienti e Preparazione",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0011-2",
+      "field": "timing",
+      "text": "Budget alto di lessatura più forno, non un cronometro complessivo.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "locator": "Cottura/Preparazione",
+      "status": "editorial-inference"
+    },
+    {
+      "id": "RP-0011-3",
+      "field": "identity-variants",
+      "text": "Identità partenopea e formule diverse; nessuna attribuzione a inventori o nozze reali adottata.",
+      "sourceIds": [
+        "cucchiaio-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Presentazioni e varianti",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0011-4",
+      "field": "independence",
+      "text": "Ruggiero cita GialloZafferano: stesso gruppo documentale, non due conferme indipendenti.",
+      "sourceIds": [
+        "ruggiero-gatto",
+        "gz-gatto"
+      ],
+      "locator": "Fonte dichiarata da Ruggiero",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0011-safety",
+      "field": "storage-reheating",
+      "text": "Indicazioni generali sugli avanzi, non durata di conservazione validata sperimentalmente per il piatto.",
+      "sourceIds": [
+        "fsa-cooking"
+      ],
+      "locator": "§7 Using your leftovers",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0011-allergens",
+      "field": "allergens",
+      "text": "Uova e latte sono presenti; il pangrattato ordinario implica cereali con glutine. Verificare anche etichette dei salumi e contaminazioni: nessuna dichiarazione di assenza di allergeni.",
+      "sourceIds": [
+        "govuk-allergens",
+        "ruggiero-gatto"
+      ],
+      "locator": "Ingredienti della formula; elenco allergeni e prodotti preconfezionati",
+      "status": "editorial-inference"
+    }
+  ],
+  "essentialIssues": [],
+  "openIssues": [
+    "Review indipendente ancora da svolgere.",
+    "Nessuna prova in cucina: resa e tempi della fonte non sono misurazioni nostre.",
+    "Pangrattato per rivestire la teglia non pesato dalla fonte; indicato q.b. senza sottrarlo ai 20 g della superficie."
+  ],
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "checklist": {
+    "identityDocumented": true,
+    "formulaDocumented": true,
+    "procedureReviewed": true,
+    "timingReconciled": true,
+    "essentialParametersResolved": true,
+    "allergenScopeDocumented": true,
+    "storageSourceDocumented": true,
+    "originalText": true,
+    "noRightsUnverifiedImagesAdded": true,
+    "independentApproval": false
+  }
+}

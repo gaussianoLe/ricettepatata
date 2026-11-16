@@ -30,7 +30,7 @@
       "title": "Gateau di patate",
       "url": "https://www.antonioruggiero.com/ricette/gateau-di-patate/",
       "author": "Antonio Ruggiero S.p.A.; formula attribuita dalla pagina a GialloZafferano",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-13"
     },
     {
       "id": "cucchiaio-gatto",
@@ -38,7 +38,7 @@
       "title": "Gateau di patate",
       "url": "https://www.cucchiaio.it/ricetta/gateau-di-patate/",
       "author": "Il Cucchiaio d’Argento (ente editore; firma individuale non indicata)",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-13"
     },
     {
       "id": "gz-gatto",
@@ -46,10 +46,35 @@
       "title": "Gateau di patate",
       "url": "https://ricette.giallozafferano.it/Gateau-di-patate.html",
       "author": "GialloZafferano (ente editore; firma individuale non indicata)",
-      "accessedAt": "2026-11-12"
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "id": "fsa-cooking",
+      "kind": "primary",
+      "title": "Cooking your food",
+      "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+      "author": "Food Standards Agency",
+      "accessedAt": "2026-11-13"
+    },
+    {
+      "id": "govuk-allergens",
+      "kind": "primary",
+      "title": "Understanding food labelling: Allergen labelling",
+      "url": "https://www.gov.uk/understanding-food-labelling/allergen-labelling",
+      "author": "GOV.UK",
+      "accessedAt": "2026-11-13"
     }
   ],
-  "notes": [],
+  "notes": [
+    {
+      "id": "contesto-p18",
+      "kind": "culture",
+      "text": "Gattò e gateau designano una preparazione associata alla cucina partenopea; le fonti mostrano più formule domestiche, non un disciplinare unico.",
+      "sourceIds": [
+        "cucchiaio-gatto"
+      ]
+    }
+  ],
   "externalIds": [
     {
       "namespace": "ricettepatata-exploratory-census",
@@ -201,26 +226,37 @@
         "unit": "g"
       },
       "optional": false
+    },
+    {
+      "id": "pangrattato-pirofila",
+      "ingredientId": "pangrattato",
+      "name": "pangrattato per rivestire la pirofila",
+      "quantity": {
+        "value": null,
+        "unit": "qb"
+      },
+      "optional": false,
+      "preparation": "Uso richiesto dal procedimento; quantità separata non numerica nella fonte. I 20 g elencati restano per la superficie."
     }
   ],
   "steps": [
     {
       "id": "step-1",
-      "text": "Lessare le patate dalla ripresa del bollore per circa 30–40 minuti; verificarne la tenerezza, pelarle e schiacciarle.",
+      "text": "Lavare le patate e metterle in acqua fredda. Dal bollore cuocere circa 30–40 minuti, finché la forchetta raggiunge facilmente il centro; scolare, pelare con cautela e schiacciare ancora calde.",
       "ingredientIds": [
         "patata"
       ]
     },
     {
       "id": "step-2",
-      "text": "Scolare il fiordilatte e tagliarlo con i salumi. Amalgamare alla purea uova, Parmigiano del composto, olio, sale e pepe, poi i cubetti.",
+      "text": "Tagliare e scolare il fiordilatte; ridurre i salumi a cubetti. Unire alle patate uova, Parmigiano del composto, olio, sale e pepe, poi formaggio e salumi.",
       "ingredientIds": [
+        "patata",
         "fiordilatte",
         "salame",
         "prosciutto",
-        "patata",
-        "uovo",
         "parmigiano-composto",
+        "uovo",
         "olio",
         "sale",
         "pepe"
@@ -228,22 +264,58 @@
     },
     {
       "id": "step-3",
-      "text": "Ungere e impanare la pirofila 20×20 cm, versare il composto e distribuire pangrattato, Parmigiano della superficie e olio.",
+      "text": "Ungere la pirofila 20×20 cm e rivestirla con pangrattato quanto basta. Versare e livellare il composto; distribuire i 20 g di pangrattato della superficie, i 30 g di Parmigiano e un filo d’olio.",
       "ingredientIds": [
         "olio",
+        "pangrattato-pirofila",
         "pangrattato",
         "parmigiano-superficie"
       ]
     },
     {
       "id": "step-4",
-      "text": "Cuocere nel forno statico già caldo a 180 °C per circa 30 minuti.",
+      "text": "Infornare a 180 °C in forno statico preriscaldato per circa 30 minuti. Verificare che il composto sia cotto e ben caldo anche al centro prima del servizio.",
       "ingredientIds": [
-        "patata"
+        "patata",
+        "uovo"
       ]
     }
   ],
   "color": "gold"
 }
 ---
-Bozza esterna P1.4;70 minuti di cottura sono il budget dichiarato dalla fonte, non una misura esatta. Nessuna attribuzione storica verificata.
+## Introduzione
+
+Un composto di patate lega fiordilatte e salumi in una teglia quadrata. Questa scheda segue una formula precisa, senza presentarla come l’unica versione napoletana.
+
+## Formula e attrezzatura
+
+Fonte della formula: ruggiero-gatto. Porzioni e quantità numeriche del draft precedente conservate.
+
+- Pirofila quadrata 20×20 cm
+- Pentola, scolapasta, schiacciapatate, ciotola e spatola
+- Forno statico preriscaldato
+
+## Tempi e limiti
+
+I 70 minuti di cottura sono il budget dichiarato dalla fonte: lessatura 30–40 più forno circa 30. Riscaldamento dell’acqua e scolatura non sono quantificati; non è un tempo totale garantito. Nessun riposo numerico è prescritto.
+
+## Allergeni
+
+Uova e latte sono presenti; il pangrattato ordinario implica cereali con glutine. Verificare anche etichette dei salumi e contaminazioni: nessuna dichiarazione di assenza di allergeni.
+
+## Varianti documentate
+
+Il Cucchiaio documenta ripieni con salame oppure prosciutto e una formula diversa con provola. Sono confronti separati: qui fiordilatte, salame e prosciutto restano tutti obbligatori, senza scambiarli automaticamente.
+
+## Conservazione e riscaldamento
+
+Refrigerare gli avanzi entro due ore e consumarli entro 48 ore; riscaldarli una sola volta, ben caldi anche al centro. Indicazioni generali FSA, non una conservabilità sperimentata per questa ricetta.
+
+## Stato della lavorazione
+
+Esito dossier P1.8: ready_for_independent_review. Stato catalogo: draft, demo: false. Nessuna prova in cucina o approvazione indipendente già svolta.
+
+- Review indipendente ancora da svolgere.
+- Nessuna prova in cucina: resa e tempi della fonte non sono misurazioni nostre.
+- Pangrattato per rivestire la teglia non pesato dalla fonte; indicato q.b. senza sottrarlo ai 20 g della superficie.

@@ -18,6 +18,7 @@ test('real private drafts show quantities, procedure, sources and identity local
   else await expect(page.getByText('Procedimento mancante',{exact:true})).toBeVisible();
   if(recipe.data.sources.length)await expect(page.locator(`a[href="${recipe.data.sources[0].url}"]`)).toBeVisible();
   await expect(page.getByText(recipe.data.slug,{exact:true})).toBeVisible();
+  if(recipe.validation){await expect(page.getByRole('heading',{name:`Validazione gastronomica P1.8: ${recipe.validation.outcome}`,exact:true})).toBeVisible();for(const issue of recipe.validation.essentialIssues)await expect(page.getByText(issue,{exact:true})).toBeVisible();}
  }
 });
 test('each enrichment compares original demo, candidate, structured changes and unresolved decision',async({page})=>{

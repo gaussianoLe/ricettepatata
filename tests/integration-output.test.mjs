@@ -1,8 +1,9 @@
+import {draftAuditEntries} from '../src/catalog/validation-cycle.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {integrationInputs,auditPublicOutput} from '../src/catalog/integration.mjs';
+import {auditPublicOutput} from '../src/catalog/integration.mjs';
 import {readFileSync,readdirSync} from 'node:fs';
-const inputs=integrationInputs();
+const inputs={entries:draftAuditEntries()};
 test('entire static deployment excludes all three draft identities, formulas and source/body data',()=>{
  const audit=auditPublicOutput(inputs.entries);assert.equal(audit.draftLeaks,0);assert.ok(audit.filesScanned>0);assert.equal(audit.allFileTypes,true);
 });

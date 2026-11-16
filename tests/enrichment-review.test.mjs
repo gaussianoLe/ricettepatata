@@ -1,3 +1,4 @@
+import {currentValidationState} from '../src/catalog/validation-cycle.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
@@ -11,7 +12,10 @@ if(existsSync('.astro/p1-catalog-fixtures.json')){
  const fixture=JSON.parse(readFileSync('.astro/p1-catalog-fixtures.json'));
  entries=entries.filter(e=>!fixture.files.includes(e.file));registryText=fixture.registryText;
 }
-const registry=JSON.parse(registryText),bytes=file=>file==='src/catalog/registry.json'?Buffer.from(registryText):readFileSync(file);
+const registry=JSON.parse(registryText);
+const history=currentValidationState(entries,registry,file=>file==='src/catalog/registry.json'?Buffer.from(registryText):readFileSync(file));
+entries=history.historicalEntries;
+const bytes=history.readHistorical;
 const check=(data=inputs,catalog=entries,reg=registry,read=bytes)=>validateReview(data,catalog,reg,read);
 test('three blocked decisions and reproducible diffs preserve all P1.2–P1.5 baselines',()=>{
  const result=check();assert.deepEqual(result.report,JSON.parse(readFileSync('docs/editorial/p1.6/report.json')));

@@ -1,3 +1,4 @@
+import {currentValidationState} from '../src/catalog/validation-cycle.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync,mkdtempSync,writeFileSync,mkdirSync,rmSync} from 'node:fs';
@@ -17,11 +18,14 @@ if(existsSync('.astro/p1-catalog-fixtures.json')){
  const fixture=JSON.parse(readFileSync('.astro/p1-catalog-fixtures.json','utf8'));
  current=current.filter(e=>!fixture.files.includes(e.file));registryText=fixture.registryText;registry=JSON.parse(registryText);
 }
-const check=(entries=current,reg=registry,source=inputs)=>validateIntegration(source,entries,reg,file=>file==='src/catalog/registry.json'?Buffer.from(registryText):readFileSync(file));
+const history=currentValidationState(current,registry,file=>file==='src/catalog/registry.json'?Buffer.from(registryText):readFileSync(file));
+// P1.8 validates the live catalog before projecting exact P1.5 bytes for these historical assertions.
+current=history.historicalEntries;
+const check=(entries=current,reg=registry,source=inputs)=>validateIntegration(source,entries,reg,history.readHistorical);
 const modified=fn=>{const e=structuredClone(current);fn(e);return e;};
 const ids=new Set(inputs.entries.map(e=>e.data.catalogId));
 
-test('exactly three operational drafts preserve P1.4 data, bodies, identity and formula',()=>{
+test('P1.5 historical integration preserves the original three P1.4 drafts after live validation',()=>{
  const report=check(),saved=JSON.parse(readFileSync('docs/integration/p1.5/report.json','utf8'));
  assert.deepEqual(report,saved);
  assert.deepEqual(report.summary,{integratedDrafts:3,newlyPublished:0,demoUpdates:0,enrichmentsApplied:0,identityOrSlugCollisions:0});

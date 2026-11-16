@@ -1,0 +1,708 @@
+{
+  "formatVersion": 1,
+  "operational": [
+    {
+      "researchId": "RP-0011",
+      "file": "src/content/ricette/gatto-di-patate.md",
+      "beforeSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419",
+      "afterSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419",
+      "changes": []
+    },
+    {
+      "researchId": "RP-0062",
+      "file": "src/content/ricette/gratin-dauphinois.md",
+      "beforeSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+      "afterSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+      "changes": []
+    },
+    {
+      "researchId": "RP-0080",
+      "file": "src/content/ricette/papas-arrugadas-con-mojo.md",
+      "beforeSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d",
+      "afterSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d",
+      "changes": []
+    }
+  ],
+  "unappliedAlternative": {
+    "target": "src/content/ricette/gratin-dauphinois.md",
+    "sourceId": "merrett-dauphinoise",
+    "currentSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+    "proposalSha256": "376d2db63151bf4f2c7f33db0879d2455d43b021c4dca142722556d71814f4fb",
+    "applied": false,
+    "changes": [
+      {
+        "path": "/body",
+        "before": {
+          "present": true,
+          "value": "## Introduzione\n\nPatate, latte e panna passano prima dalla casseruola e poi dal forno. La formula Eurial è conservata senza formaggio; alcuni parametri necessari a una ripetizione precisa restano da chiarire.\n\n## Formula e attrezzatura\n\nFonte della formula: eurial-gratin. Porzioni e quantità numeriche del draft precedente conservate.\n\n- Casseruola, coltello o strumento da taglio e pirofila da gratin\n- Forno a 200 °C; modalità non specificata da Eurial\n\n## Tempi e limiti\n\nLa scheda Eurial distingue preparazione 40 minuti e cottura 35, cioè circa 20 sul fornello più 15 in forno. Lo spessore e il recipiente non sono quantificati; questi tempi non sono una garanzia di cottura per ogni montaggio.\n\n## Allergeni\n\nLatte e panna implicano latte come allergene. L’assenza di formaggio non rende questa formula priva di latticini. Nessuna certificazione di assenza di altri allergeni.\n\n## Varianti documentate\n\nAlpes Isère, Laruelle e L’atelier des Chefs usano dosi o cotture differenti. Le loro misure di taglio e i loro tempi sono confronti, non correzioni automaticamente trasferibili alla formula Eurial.\n\n## Conservazione e riscaldamento\n\nRefrigerare gli avanzi entro due ore e consumarli entro 48 ore; riscaldarli una sola volta, ben caldi anche al centro. Indicazioni generali FSA, non una conservabilità sperimentata per questa ricetta.\n\n## Stato della lavorazione\n\nEsito dossier P1.8: needs_revision. Stato catalogo: draft, demo: false. Nessuna prova in cucina o approvazione indipendente già svolta.\n\n- Confermare spessore delle fette, geometria della pirofila e intensità della precottura coerenti con la breve finitura Eurial; le altre fonti non verificano questa combinazione.\n- Modalità del forno non indicata: non inventare statico o ventilato.\n- Prova tecnica mirata o precisazione dell’autore necessaria prima di dichiarare il dossier pronto.\n- Non combinare i 2–3 mm di Laruelle, i 3 mm di Atelier e i 15 minuti Eurial come se fossero un’unica ricetta verificata.\n- Review indipendente e prove in cucina non svolte.\n"
+        },
+        "after": {
+          "present": true,
+          "value": "Proposta candidate in sola lettura. Formula unica Merrett, non applicata. Quaranta-cinque minuti di cottura sono il metadato della fonte, non la somma esatta dei passaggi. Footprint e altezza delle pareti non specificati; 5 cm indica lo strato di patate. La doratura aggiuntiva facoltativa di 5 minuti non specifica i nuovi gradi. Nessuna prova pratica o approvazione."
+        }
+      },
+      {
+        "path": "/data/date",
+        "before": {
+          "present": true,
+          "value": "2026-11-12"
+        },
+        "after": {
+          "present": true,
+          "value": "2026-11-16"
+        }
+      },
+      {
+        "path": "/data/description",
+        "before": {
+          "present": true,
+          "value": "Patate affettate e cotte con latte e panna, poi finite in forno: una versione documentata del gratin del Delfinato."
+        },
+        "after": {
+          "present": true,
+          "value": "Proposta separata della formula Merrett, con formaggio facoltativo. Non sostituisce il gratin operativo e non è approvata."
+        }
+      },
+      {
+        "path": "/data/editorial/author",
+        "before": {
+          "present": true,
+          "value": "RicettePatata.it — lavorazione editoriale assistita"
+        },
+        "after": {
+          "present": true,
+          "value": "RicettePatata.it — proposta P1.9 assistita"
+        }
+      },
+      {
+        "path": "/data/editorial/status",
+        "before": {
+          "present": true,
+          "value": "draft"
+        },
+        "after": {
+          "present": true,
+          "value": "candidate"
+        }
+      },
+      {
+        "path": "/data/ingredients/0/name",
+        "before": {
+          "present": true,
+          "value": "patate"
+        },
+        "after": {
+          "present": true,
+          "value": "patate grandi King Edward o Maris Piper"
+        }
+      },
+      {
+        "path": "/data/ingredients/0/preparation",
+        "before": {
+          "present": false
+        },
+        "after": {
+          "present": true,
+          "value": "Numero della fonte, senza conversione inventata in grammi"
+        }
+      },
+      {
+        "path": "/data/ingredients/0/quantity/unit",
+        "before": {
+          "present": true,
+          "value": "kg"
+        },
+        "after": {
+          "present": true,
+          "value": "piece"
+        }
+      },
+      {
+        "path": "/data/ingredients/0/quantity/value",
+        "before": {
+          "present": true,
+          "value": 1
+        },
+        "after": {
+          "present": true,
+          "value": 8
+        }
+      },
+      {
+        "path": "/data/ingredients/1/name",
+        "before": {
+          "present": true,
+          "value": "panna densa al 30% di grassi"
+        },
+        "after": {
+          "present": true,
+          "value": "panna double cream"
+        }
+      },
+      {
+        "path": "/data/ingredients/2/quantity/value",
+        "before": {
+          "present": true,
+          "value": 250
+        },
+        "after": {
+          "present": true,
+          "value": 500
+        }
+      },
+      {
+        "path": "/data/ingredients/3/preparation",
+        "before": {
+          "present": true,
+          "value": "spicchio schiacciato"
+        },
+        "after": {
+          "present": true,
+          "value": "spicchi"
+        }
+      },
+      {
+        "path": "/data/ingredients/3/quantity/value",
+        "before": {
+          "present": true,
+          "value": 1
+        },
+        "after": {
+          "present": true,
+          "value": 3
+        }
+      },
+      {
+        "path": "/data/ingredients/4/id",
+        "before": {
+          "present": true,
+          "value": "sale"
+        },
+        "after": {
+          "present": true,
+          "value": "gruyere"
+        }
+      },
+      {
+        "path": "/data/ingredients/4/ingredientId",
+        "before": {
+          "present": true,
+          "value": "sale"
+        },
+        "after": {
+          "present": true,
+          "value": "gruyere"
+        }
+      },
+      {
+        "path": "/data/ingredients/4/name",
+        "before": {
+          "present": true,
+          "value": "sale"
+        },
+        "after": {
+          "present": true,
+          "value": "gruyère grattugiato"
+        }
+      },
+      {
+        "path": "/data/ingredients/4/optional",
+        "before": {
+          "present": true,
+          "value": false
+        },
+        "after": {
+          "present": true,
+          "value": true
+        }
+      },
+      {
+        "path": "/data/ingredients/4/quantity/unit",
+        "before": {
+          "present": true,
+          "value": "qb"
+        },
+        "after": {
+          "present": true,
+          "value": "g"
+        }
+      },
+      {
+        "path": "/data/ingredients/4/quantity/value",
+        "before": {
+          "present": true,
+          "value": null
+        },
+        "after": {
+          "present": true,
+          "value": 100
+        }
+      },
+      {
+        "path": "/data/ingredients/5",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "pepe",
+            "ingredientId": "pepe",
+            "name": "pepe",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/ingredients/6",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "noce-moscata",
+            "ingredientId": "noce-moscata",
+            "name": "noce moscata",
+            "quantity": {
+              "value": null,
+              "unit": "qb"
+            },
+            "optional": false
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/names/italian",
+        "before": {
+          "present": true,
+          "value": "Gratin dauphinois"
+        },
+        "after": {
+          "present": true,
+          "value": "Gratin di patate — proposta Paul Merrett"
+        }
+      },
+      {
+        "path": "/data/names/original/language",
+        "before": {
+          "present": true,
+          "value": "fr"
+        },
+        "after": {
+          "present": true,
+          "value": "en"
+        }
+      },
+      {
+        "path": "/data/names/original/text",
+        "before": {
+          "present": true,
+          "value": "Gratin dauphinois"
+        },
+        "after": {
+          "present": true,
+          "value": "Dauphinoise potatoes"
+        }
+      },
+      {
+        "path": "/data/notes/0",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "contesto-p18",
+            "kind": "culture",
+            "text": "Il gratin dauphinois è associato al Delfinato; la formula qui scelta è una specifica versione con precottura e senza formaggio.",
+            "sourceIds": [
+              "alpes-gratin"
+            ]
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/provenance/continent",
+        "before": {
+          "present": true,
+          "value": "europe"
+        },
+        "after": {
+          "present": true,
+          "value": null
+        }
+      },
+      {
+        "path": "/data/provenance/country",
+        "before": {
+          "present": true,
+          "value": {
+            "code": "FR",
+            "name": "Francia"
+          }
+        },
+        "after": {
+          "present": true,
+          "value": null
+        }
+      },
+      {
+        "path": "/data/provenance/region",
+        "before": {
+          "present": true,
+          "value": "Delfinato (Dauphiné)"
+        },
+        "after": {
+          "present": true,
+          "value": null
+        }
+      },
+      {
+        "path": "/data/provenance/traditions/0",
+        "before": {
+          "present": true,
+          "value": "Cucina del Delfinato"
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/servings",
+        "before": {
+          "present": true,
+          "value": 4
+        },
+        "after": {
+          "present": true,
+          "value": 8
+        }
+      },
+      {
+        "path": "/data/sources/0/accessedAt",
+        "before": {
+          "present": true,
+          "value": "2026-11-13"
+        },
+        "after": {
+          "present": true,
+          "value": "2026-11-16"
+        }
+      },
+      {
+        "path": "/data/sources/0/author",
+        "before": {
+          "present": true,
+          "value": "Eurial Food Service & Industry"
+        },
+        "after": {
+          "present": true,
+          "value": "Paul Merrett / Good Food"
+        }
+      },
+      {
+        "path": "/data/sources/0/id",
+        "before": {
+          "present": true,
+          "value": "eurial-gratin"
+        },
+        "after": {
+          "present": true,
+          "value": "merrett-dauphinoise"
+        }
+      },
+      {
+        "path": "/data/sources/0/title",
+        "before": {
+          "present": true,
+          "value": "Gratin Dauphinois — fiche recette 177"
+        },
+        "after": {
+          "present": true,
+          "value": "Dauphinoise potatoes"
+        }
+      },
+      {
+        "path": "/data/sources/0/url",
+        "before": {
+          "present": true,
+          "value": "https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf"
+        },
+        "after": {
+          "present": true,
+          "value": "https://www.bbcgoodfood.com/recipes/dauphinoise-potatoes"
+        }
+      },
+      {
+        "path": "/data/sources/1",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "alpes-gratin",
+            "kind": "secondary",
+            "title": "Gratin dauphinois",
+            "url": "https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/",
+            "author": "Les Passions de Laurie, in collaborazione con Alpes Isère",
+            "accessedAt": "2026-11-13"
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/sources/2",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "laruelle-gratin",
+            "kind": "primary",
+            "title": "Gratin Dauphinois",
+            "url": "https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html",
+            "author": "Philippe Laruelle / de Buyer",
+            "accessedAt": "2026-11-13"
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/sources/3",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "fsa-cooking",
+            "kind": "primary",
+            "title": "Cooking your food",
+            "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+            "author": "Food Standards Agency",
+            "accessedAt": "2026-11-13"
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/sources/4",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "govuk-allergens",
+            "kind": "primary",
+            "title": "Understanding food labelling: Allergen labelling",
+            "url": "https://www.gov.uk/understanding-food-labelling/allergen-labelling",
+            "author": "GOV.UK",
+            "accessedAt": "2026-11-13"
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/sources/5",
+        "before": {
+          "present": true,
+          "value": {
+            "id": "atelier-gratin",
+            "kind": "primary",
+            "title": "Gratin dauphinois",
+            "url": "https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/",
+            "author": "L’atelier des Chefs (ente; firma individuale non indicata)",
+            "accessedAt": "2026-11-13"
+          }
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/steps/0/ingredientIds/0",
+        "before": {
+          "present": true,
+          "value": "patata"
+        },
+        "after": {
+          "present": true,
+          "value": "panna"
+        }
+      },
+      {
+        "path": "/data/steps/0/ingredientIds/1",
+        "before": {
+          "present": false
+        },
+        "after": {
+          "present": true,
+          "value": "latte"
+        }
+      },
+      {
+        "path": "/data/steps/0/ingredientIds/2",
+        "before": {
+          "present": false
+        },
+        "after": {
+          "present": true,
+          "value": "aglio"
+        }
+      },
+      {
+        "path": "/data/steps/0/text",
+        "before": {
+          "present": true,
+          "value": "Pelare e lavare le patate, poi affettarle sottilmente e in modo uniforme. Eurial non precisa lo spessore in millimetri: non attribuirle una misura presa da un’altra ricetta."
+        },
+        "after": {
+          "present": true,
+          "value": "Scaldare il forno a 190 °C oppure 170 °C ventilato. Portare panna, latte e aglio a sobbollire."
+        }
+      },
+      {
+        "path": "/data/steps/1/ingredientIds/1",
+        "before": {
+          "present": true,
+          "value": "latte"
+        },
+        "after": {
+          "present": true,
+          "value": "panna"
+        }
+      },
+      {
+        "path": "/data/steps/1/ingredientIds/2",
+        "before": {
+          "present": true,
+          "value": "panna"
+        },
+        "after": {
+          "present": true,
+          "value": "latte"
+        }
+      },
+      {
+        "path": "/data/steps/1/ingredientIds/4",
+        "before": {
+          "present": true,
+          "value": "noce-moscata"
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/steps/1/ingredientIds/5",
+        "before": {
+          "present": true,
+          "value": "sale"
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/steps/1/ingredientIds/6",
+        "before": {
+          "present": true,
+          "value": "pepe"
+        },
+        "after": {
+          "present": false
+        }
+      },
+      {
+        "path": "/data/steps/1/text",
+        "before": {
+          "present": true,
+          "value": "Mettere in casseruola patate, latte, panna, aglio schiacciato e noce moscata. Eseguire la precottura per circa 20 minuti, poi regolare sale e pepe. La fonte non specifica l’intensità del fornello."
+        },
+        "after": {
+          "present": true,
+          "value": "Affettare le patate a circa 3–4 mm; cuocerle nel composto per circa 3 minuti, fino ad appena cotte, separandole delicatamente."
+        }
+      },
+      {
+        "path": "/data/steps/2/ingredientIds/1",
+        "before": {
+          "present": true,
+          "value": "latte"
+        },
+        "after": {
+          "present": true,
+          "value": "panna"
+        }
+      },
+      {
+        "path": "/data/steps/2/ingredientIds/2",
+        "before": {
+          "present": true,
+          "value": "panna"
+        },
+        "after": {
+          "present": true,
+          "value": "latte"
+        }
+      },
+      {
+        "path": "/data/steps/2/ingredientIds/3",
+        "before": {
+          "present": false
+        },
+        "after": {
+          "present": true,
+          "value": "aglio"
+        }
+      },
+      {
+        "path": "/data/steps/2/text",
+        "before": {
+          "present": true,
+          "value": "Preriscaldare il forno a 200 °C. Trasferire patate e composto nella pirofila e completare la cottura per circa 15 minuti, come indica Eurial; non aggiungere formaggio. Modalità del forno e dimensioni della pirofila restano da confermare."
+        },
+        "after": {
+          "present": true,
+          "value": "Trasferire con una schiumarola in un recipiente largo e basso, formando uno strato di patate di circa 5 cm. Eliminare l’aglio e versare il liquido sufficiente a inumidire gli strati."
+        }
+      },
+      {
+        "path": "/data/steps/3",
+        "before": {
+          "present": false
+        },
+        "after": {
+          "present": true,
+          "value": {
+            "id": "step-4",
+            "text": "Aggiungere il gruyère soltanto se scelto; infornare per circa 30 minuti fino a patate tenere e superficie dorata.",
+            "ingredientIds": [
+              "patata",
+              "gruyere"
+            ]
+          }
+        }
+      },
+      {
+        "path": "/data/timing",
+        "before": {
+          "present": true,
+          "value": {
+            "prepMinutes": 40,
+            "cookMinutes": 35,
+            "restMinutes": 0
+          }
+        },
+        "after": {
+          "present": true,
+          "value": null
+        }
+      }
+    ]
+  }
+}

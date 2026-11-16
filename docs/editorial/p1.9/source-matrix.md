@@ -1,0 +1,22 @@
+# Matrice delle fonti P1.9
+
+Consultazione effettiva: **16 novembre 2026**. Titoli, autori/enti, date e gruppi documentali in `sources.json`; riscontri originali e limiti nelle checklist individuali. Nessuna fonte di solo snippet o non accessibile è conteggiata come letta.
+
+| Ricetta | Voce verificata | Riscontro | Fonti | Passaggio |
+| --- | --- | --- | --- | --- |
+| RP-0011 | doses-yield | documented | [ruggiero-gatto](https://www.antonioruggiero.com/ricette/gateau-di-patate/) | Ingredienti / Dosi |
+| RP-0011 | pan-lining | documented_limit | [ruggiero-gatto](https://www.antonioruggiero.com/ricette/gateau-di-patate/) | Preparazione; ingredienti superficie |
+| RP-0011 | time-budget | documented_limit | [ruggiero-gatto](https://www.antonioruggiero.com/ricette/gateau-di-patate/) | Cottura / Preparazione |
+| RP-0011 | food-safety | documented_limit | [fsa-cooking](https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food), [govuk-allergens](https://www.gov.uk/understanding-food-labelling/allergen-labelling) | §7; ingredienti e categorie allergeni |
+| RP-0062 | slice-thickness | unresolved | [eurial-gratin](https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf), [alpes-gratin](https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/), [laruelle-gratin](https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html), [atelier-gratin](https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/) | Etapes / Préparation |
+| RP-0062 | pan-geometry | unresolved | [eurial-gratin](https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf), [alpes-gratin](https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/), [laruelle-gratin](https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html), [atelier-gratin](https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/) | Recipienti nei procedimenti |
+| RP-0062 | precook | unresolved | [eurial-gratin](https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf), [atelier-gratin](https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/) | Precottura |
+| RP-0062 | oven-mode | unresolved | [eurial-gratin](https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf), [alpes-gratin](https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/), [laruelle-gratin](https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html), [atelier-gratin](https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/) | Forno |
+| RP-0062 | compatibility | unresolved | [eurial-gratin](https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf), [alpes-gratin](https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/), [laruelle-gratin](https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html), [atelier-gratin](https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/) | Confronto formula-comparison.json |
+| RP-0062 | alternative | prepared_not_applied | [merrett-dauphinoise](https://www.bbcgoodfood.com/recipes/dauphinoise-potatoes) | Ingredienti e Method |
+| RP-0080 | water-salt | documented_limit | [bonviveur-papas](https://bonviveur.com/es/recetas/papas-arrugadas) | Ingredienti / Cómo hacer |
+| RP-0080 | drying | documented | [bonviveur-papas](https://bonviveur.com/es/recetas/papas-arrugadas) | Cómo hacer |
+| RP-0080 | mojo-scope | documented_limit | [bonviveur-papas](https://bonviveur.com/es/recetas/papas-arrugadas) | Servizio |
+| RP-0080 | allergens | documented_limit | [govuk-allergens](https://www.gov.uk/understanding-food-labelling/allergen-labelling), [bonviveur-papas](https://bonviveur.com/es/recetas/papas-arrugadas) | Free-from / Ingredienti |
+
+Sono state consultate 12 fonti: otto pertinenti già presenti in P1.8 e quattro aggiuntive. Merrett è la sola fonte culinaria della proposta alternativa. Nigella, French Cooking Academy e Kenwood/Blanc sono state valutate e scartate; ragioni in `formula-comparison.json`. Il PDF de Buyer troppo grande e la ricerca Delia bloccata sono tentativi non riusciti, non riscontri. Ruggiero mantiene l’attribuzione dichiarata a GialloZafferano: non viene ricontato come conferma indipendente. Le linee guida generali non attestano la riuscita di una specifica cottura.

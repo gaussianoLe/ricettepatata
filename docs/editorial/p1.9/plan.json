@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "621233dae580cd9e393441be756266192d2bae76",
+  "operationalWritesAuthorized": [],
+  "operationalChanges": 0,
+  "proposal": {
+    "file": "docs/editorial/p1.9/alternative.json",
+    "sha256": "376d2db63151bf4f2c7f33db0879d2455d43b021c4dca142722556d71814f4fb",
+    "status": "prepared_not_applied"
+  },
+  "requireIndependentReview": true,
+  "mergeAuthorized": false,
+  "deploymentAuthorized": false
+}

@@ -1,0 +1,74 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0080",
+  "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+  "slug": "papas-arrugadas-con-mojo",
+  "file": "src/content/ricette/papas-arrugadas-con-mojo.md",
+  "outcome": "ready_for_independent_review",
+  "previousDossier": "docs/editorial/p1.8/dossiers/RP-0080.json",
+  "operationalSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d",
+  "operationalChanges": 0,
+  "catalogStatus": "draft",
+  "demo": false,
+  "secondDocumentaryReviewCompleted": true,
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "independentApproval": false,
+  "essentialIssues": [],
+  "openIssues": [
+    "Review indipendente e prova in cucina non svolte.",
+    "Mojo effettivo ed eventuali contaminazioni da verificare prima di dichiarazioni specifiche."
+  ],
+  "checklist": [
+    {
+      "id": "water-salt",
+      "checked": true,
+      "result": "documented_limit",
+      "finding": "Formula e acqua approssimativa confermate; sale di cottura non convertito in sale ingerito o dato nutrizionale.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "locator": "Ingredienti / Cómo hacer"
+    },
+    {
+      "id": "drying",
+      "checked": true,
+      "result": "documented",
+      "finding": "Scolare prima della fase a fuoco dolce; l’asciugatura non consiste nell’evaporare tutta l’acqua iniziale.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "locator": "Cómo hacer"
+    },
+    {
+      "id": "mojo-scope",
+      "checked": true,
+      "result": "documented_limit",
+      "finding": "Salsa già pronta fuori dai tempi e dalla formula delle patate; nessuna nuova ricetta del mojo.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "locator": "Servizio"
+    },
+    {
+      "id": "allergens",
+      "checked": true,
+      "result": "documented_limit",
+      "finding": "Nessuna garanzia di assenza trasferita a una salsa non definita; serve l’etichetta/formula effettiva.",
+      "sourceIds": [
+        "govuk-allergens",
+        "bonviveur-papas"
+      ],
+      "locator": "Free-from / Ingredienti"
+    }
+  ],
+  "resolvedIssues": [
+    "Seconda lettura critica completata senza evidenza che giustifichi variazioni della formula."
+  ],
+  "pendingApprovals": [
+    "review-indipendente",
+    "eventuale-scelta-e-applicazione-formula"
+  ],
+  "beforeSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d",
+  "afterSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d"
+}

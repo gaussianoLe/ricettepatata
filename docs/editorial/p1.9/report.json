@@ -1,0 +1,108 @@
+{
+  "formatVersion": 1,
+  "baseCommit": "621233dae580cd9e393441be756266192d2bae76",
+  "summary": {
+    "reviewed": 3,
+    "readyForIndependentReview": 2,
+    "needsRevision": 1,
+    "operationalChanges": 0,
+    "proposalsPrepared": 1,
+    "proposalsApplied": 0,
+    "promotions": 0,
+    "newIdentities": 0
+  },
+  "recipes": [
+    {
+      "researchId": "RP-0011",
+      "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "slug": "gatto-di-patate",
+      "outcome": "ready_for_independent_review",
+      "operationalChanges": 0,
+      "status": "draft",
+      "demo": false,
+      "essentialIssues": [],
+      "openIssues": [
+        "Review indipendente ancora pendente.",
+        "Resa, consistenza e tempi non provati in cucina.",
+        "Etichette dei salumi e rischio di contaminazione non verificati su prodotti effettivi."
+      ],
+      "checklistReviewed": 4,
+      "independentApproval": false
+    },
+    {
+      "researchId": "RP-0062",
+      "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "slug": "gratin-dauphinois",
+      "outcome": "needs_revision",
+      "operationalChanges": 0,
+      "status": "draft",
+      "demo": false,
+      "essentialIssues": [
+        "Formula Eurial ancora priva di taglio misurato, geometria, intensità della precottura e modalità del forno.",
+        "Compatibilità dell’insieme non dimostrata: nessuna miscela di parametri fra autori."
+      ],
+      "openIssues": [
+        "Impronta e altezza del recipiente non numeriche: 5 cm è lo spessore del cibo, non della pirofila.",
+        "Compatibilità della pezzatura delle otto patate e della cottura breve da sottoporre a review, senza inventare una massa.",
+        "Scelta del formaggio facoltativo e impatto su identità/titolo prima di una sostituzione.",
+        "Aumento finale del calore non quantificato dalla fonte; nessun grado inventato.",
+        "Nessuna prova in cucina, scelta della formula o autorizzazione di applicazione già completata."
+      ],
+      "checklistReviewed": 6,
+      "independentApproval": false
+    },
+    {
+      "researchId": "RP-0080",
+      "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "slug": "papas-arrugadas-con-mojo",
+      "outcome": "ready_for_independent_review",
+      "operationalChanges": 0,
+      "status": "draft",
+      "demo": false,
+      "essentialIssues": [],
+      "openIssues": [
+        "Review indipendente e prova in cucina non svolte.",
+        "Mojo effettivo ed eventuali contaminazioni da verificare prima di dichiarazioni specifiche."
+      ],
+      "checklistReviewed": 4,
+      "independentApproval": false
+    }
+  ],
+  "alternative": {
+    "status": "prepared_not_applied",
+    "sourceId": "merrett-dauphinoise",
+    "fullyDeterminedGeometry": false,
+    "applicationApproved": false,
+    "openIssues": [
+      "Impronta e altezza del recipiente non numeriche: 5 cm è lo spessore del cibo, non della pirofila.",
+      "Compatibilità della pezzatura delle otto patate e della cottura breve da sottoporre a review, senza inventare una massa.",
+      "Scelta del formaggio facoltativo e impatto su identità/titolo prima di una sostituzione.",
+      "Aumento finale del calore non quantificato dalla fonte; nessun grado inventato.",
+      "Nessuna prova in cucina, scelta della formula o autorizzazione di applicazione già completata."
+    ]
+  },
+  "sources": {
+    "consultedAt": "2026-11-16",
+    "consulted": 12,
+    "failedAttempts": [
+      {
+        "url": "https://media1.debuyer.com/img/cms/Catalogues/Brochures/FR/BROCHURE_AFFINITY_10-3703_V2026.pdf",
+        "access": "failed-size-limit",
+        "reason": "Il tool web non ha letto il PDF da circa 23 MB; lo snippet Ø24 non è prova adottata."
+      },
+      {
+        "url": "https://www.deliaonline.com/",
+        "access": "robots-blocked",
+        "reason": "Ricerca bloccata da robots.txt; nessuna fonte verificata attribuita a Delia."
+      }
+    ]
+  },
+  "baseline": {
+    "filesChecked": 114,
+    "allHashesUnchanged": true,
+    "p12ThroughP18Preserved": true
+  },
+  "kitchenTests": false,
+  "independentReview": "pending",
+  "publicationAuthorized": false
+}

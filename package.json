@@ -26,7 +26,9 @@
     "editorial:enrichments": "node scripts/enrichment-review.mjs",
     "editorial": "node scripts/editorial-dev.mjs",
     "test:editorial": "node scripts/test-editorial.mjs",
-    "editorial:validation": "node scripts/recipe-validation.mjs"
+    "editorial:validation": "node scripts/recipe-validation.mjs",
+    "editorial:resolution": "node scripts/editorial-resolution.mjs",
+    "editorial:resolution:output": "node scripts/editorial-resolution.mjs --output"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

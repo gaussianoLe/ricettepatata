@@ -1,0 +1,218 @@
+{
+  "formatVersion": 1,
+  "status": "prepared_not_applied",
+  "applicationApproved": false,
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "selection": "candidate-for-formula-decision-only",
+  "sourceId": "merrett-dauphinoise",
+  "targetResearchId": "RP-0062",
+  "targetPath": "src/content/ricette/gratin-dauphinois.md",
+  "currentSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+  "singleSourceFormula": true,
+  "parameters": {
+    "sliceMm": {
+      "min": 3,
+      "max": 4
+    },
+    "panFootprintCm": null,
+    "panWallDepthCm": null,
+    "foodLayerDepthCm": {
+      "value": 5,
+      "approximate": true
+    },
+    "precook": {
+      "minutes": 3,
+      "intensity": "simmer",
+      "endpoint": "just cooked"
+    },
+    "oven": {
+      "conventionalCelsius": 190,
+      "fanCelsius": 170,
+      "minutes": 30,
+      "endpoint": "soft and browned"
+    },
+    "optionalBrowning": {
+      "minutes": 5,
+      "newCelsius": null
+    },
+    "declaredTiming": {
+      "prepMinutes": 20,
+      "cookMinutes": 45
+    },
+    "completeIngredientAndProcedureSource": true,
+    "fullyDeterminedGeometry": false
+  },
+  "openIssues": [
+    "Impronta e altezza del recipiente non numeriche: 5 cm è lo spessore del cibo, non della pirofila.",
+    "Compatibilità della pezzatura delle otto patate e della cottura breve da sottoporre a review, senza inventare una massa.",
+    "Scelta del formaggio facoltativo e impatto su identità/titolo prima di una sostituzione.",
+    "Aumento finale del calore non quantificato dalla fonte; nessun grado inventato.",
+    "Nessuna prova in cucina, scelta della formula o autorizzazione di applicazione già completata."
+  ],
+  "editorialConsequences": [
+    "Nuove quantità, porzioni, nome originale inglese e prodotto double cream; non una correzione puntuale della formula Eurial.",
+    "Stessa identità tecnica proposta solo per confronto; provenienza non trasferita automaticamente. Nessun UUID o URL nuovo.",
+    "L’eventuale scelta richiede decisione distinta, nuova baseline autorizzata e review indipendente."
+  ],
+  "entry": {
+    "collection": "ricette",
+    "data": {
+      "schemaVersion": 1,
+      "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+      "slug": "gratin-dauphinois",
+      "names": {
+        "italian": "Gratin di patate — proposta Paul Merrett",
+        "original": {
+          "text": "Dauphinoise potatoes",
+          "language": "en"
+        },
+        "alternatives": []
+      },
+      "description": "Proposta separata della formula Merrett, con formaggio facoltativo. Non sostituisce il gratin operativo e non è approvata.",
+      "date": "2026-11-16",
+      "demo": false,
+      "editorial": {
+        "status": "candidate",
+        "author": "RicettePatata.it — proposta P1.9 assistita"
+      },
+      "sources": [
+        {
+          "id": "merrett-dauphinoise",
+          "kind": "primary",
+          "title": "Dauphinoise potatoes",
+          "url": "https://www.bbcgoodfood.com/recipes/dauphinoise-potatoes",
+          "author": "Paul Merrett / Good Food",
+          "accessedAt": "2026-11-16"
+        }
+      ],
+      "notes": [],
+      "externalIds": [
+        {
+          "namespace": "ricettepatata-exploratory-census",
+          "value": "RP-0062"
+        }
+      ],
+      "provenance": {
+        "continent": null,
+        "country": null,
+        "region": null,
+        "traditions": []
+      },
+      "taxonomy": {
+        "courses": [
+          "contorno"
+        ],
+        "cookingMethods": [
+          "stufatura",
+          "forno"
+        ],
+        "families": [
+          "sformati"
+        ],
+        "occasions": []
+      },
+      "potatoRole": "protagonist",
+      "relation": {
+        "kind": "primary"
+      },
+      "timing": null,
+      "servings": 8,
+      "ingredients": [
+        {
+          "id": "patata",
+          "ingredientId": "patata",
+          "name": "patate grandi King Edward o Maris Piper",
+          "quantity": {
+            "value": 8,
+            "unit": "piece"
+          },
+          "optional": false,
+          "preparation": "Numero della fonte, senza conversione inventata in grammi"
+        },
+        {
+          "id": "panna",
+          "ingredientId": "panna",
+          "name": "panna double cream",
+          "quantity": {
+            "value": 500,
+            "unit": "ml"
+          },
+          "optional": false
+        },
+        {
+          "id": "latte",
+          "ingredientId": "latte",
+          "name": "latte",
+          "quantity": {
+            "value": 500,
+            "unit": "ml"
+          },
+          "optional": false
+        },
+        {
+          "id": "aglio",
+          "ingredientId": "aglio",
+          "name": "aglio",
+          "quantity": {
+            "value": 3,
+            "unit": "piece"
+          },
+          "optional": false,
+          "preparation": "spicchi"
+        },
+        {
+          "id": "gruyere",
+          "ingredientId": "gruyere",
+          "name": "gruyère grattugiato",
+          "quantity": {
+            "value": 100,
+            "unit": "g"
+          },
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "id": "step-1",
+          "text": "Scaldare il forno a 190 °C oppure 170 °C ventilato. Portare panna, latte e aglio a sobbollire.",
+          "ingredientIds": [
+            "panna",
+            "latte",
+            "aglio"
+          ]
+        },
+        {
+          "id": "step-2",
+          "text": "Affettare le patate a circa 3–4 mm; cuocerle nel composto per circa 3 minuti, fino ad appena cotte, separandole delicatamente.",
+          "ingredientIds": [
+            "patata",
+            "panna",
+            "latte",
+            "aglio"
+          ]
+        },
+        {
+          "id": "step-3",
+          "text": "Trasferire con una schiumarola in un recipiente largo e basso, formando uno strato di patate di circa 5 cm. Eliminare l’aglio e versare il liquido sufficiente a inumidire gli strati.",
+          "ingredientIds": [
+            "patata",
+            "panna",
+            "latte",
+            "aglio"
+          ]
+        },
+        {
+          "id": "step-4",
+          "text": "Aggiungere il gruyère soltanto se scelto; infornare per circa 30 minuti fino a patate tenere e superficie dorata.",
+          "ingredientIds": [
+            "patata",
+            "gruyere"
+          ]
+        }
+      ],
+      "color": "gold"
+    },
+    "body": "Proposta candidate in sola lettura. Formula unica Merrett, non applicata. Quaranta-cinque minuti di cottura sono il metadato della fonte, non la somma esatta dei passaggi. Footprint e altezza delle pareti non specificati; 5 cm indica lo strato di patate. La doratura aggiuntiva facoltativa di 5 minuti non specifica i nuovi gradi. Nessuna prova pratica o approvazione."
+  }
+}

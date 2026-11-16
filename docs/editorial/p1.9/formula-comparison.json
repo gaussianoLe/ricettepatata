@@ -1,0 +1,134 @@
+{
+  "formatVersion": 1,
+  "scope": "Comparison only: no cross-formula assembly",
+  "items": [
+    {
+      "sourceId": "eurial-gratin",
+      "potatoes": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "creamMl": 500,
+      "milkMl": 250,
+      "sliceMm": null,
+      "panFootprintCm": null,
+      "panWallDepthCm": null,
+      "foodLayerDepthCm": null,
+      "precook": {
+        "minutes": 20,
+        "intensity": null
+      },
+      "oven": {
+        "celsius": 200,
+        "mode": null,
+        "minutes": 15
+      },
+      "assessment": "Underdetermined: the PDF does not specify geometry, slice measurement, hob intensity or oven mode. No correction imported from another version."
+    },
+    {
+      "sourceId": "alpes-gratin",
+      "potatoes": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "creamMl": 250,
+      "milkMl": 250,
+      "sliceMm": {
+        "min": 2,
+        "max": 2
+      },
+      "panFootprintCm": null,
+      "panWallDepthCm": null,
+      "foodLayerDepthCm": null,
+      "precook": {
+        "minutes": null,
+        "intensity": "Milk boiled separately; no potato precook specified"
+      },
+      "oven": {
+        "celsius": 160,
+        "mode": null,
+        "minutes": {
+          "min": 90,
+          "max": 120
+        }
+      },
+      "assessment": "Different liquid ratio and method. Does not validate Eurial timing; no geometry or fan mode supplied."
+    },
+    {
+      "sourceId": "laruelle-gratin",
+      "potatoes": {
+        "value": 1,
+        "unit": "kg"
+      },
+      "creamMl": 300,
+      "milkMl": 300,
+      "sliceMm": {
+        "min": 2,
+        "max": 3
+      },
+      "panFootprintCm": null,
+      "panWallDepthCm": null,
+      "foodLayerDepthCm": null,
+      "precook": {
+        "minutes": null,
+        "intensity": "None in the online recipe"
+      },
+      "oven": {
+        "celsius": 180,
+        "mode": null,
+        "minutes": {
+          "min": 45,
+          "max": 60
+        }
+      },
+      "assessment": "Butter and raw-potato oven method; no dimensions inferred from product pictures or an unread brochure."
+    },
+    {
+      "sourceId": "atelier-gratin",
+      "potatoes": {
+        "value": 1.2,
+        "unit": "kg"
+      },
+      "creamMl": 100,
+      "milkMl": 900,
+      "sliceMm": {
+        "min": 3,
+        "max": 3
+      },
+      "panFootprintCm": null,
+      "panWallDepthCm": null,
+      "foodLayerDepthCm": "Top layer at liquid level, without a numerical depth",
+      "precook": {
+        "minutes": 20,
+        "intensity": "Gentle after milk boils"
+      },
+      "oven": {
+        "celsius": 180,
+        "mode": null,
+        "minutes": {
+          "min": 30,
+          "max": 40
+        }
+      },
+      "restMinutes": 45,
+      "assessment": "Different recipe, aromatics and resting phase. Cannot supply missing Eurial parameters."
+    }
+  ],
+  "screenedAlternatives": [
+    {
+      "sourceId": "nigella-gratin",
+      "disposition": "not-selected",
+      "reason": "Different named gratin; pan footprint and fan mode supplied, but depth absent and metric/imperial slice indications differ. No correction inferred."
+    },
+    {
+      "sourceId": "fca-gratin",
+      "disposition": "not-selected",
+      "reason": "Only medium dish, missing oven mode; note mentions 90 minutes while procedure states 120–150. No harmonization invented."
+    },
+    {
+      "sourceId": "blanc-kenwood",
+      "disposition": "not-selected",
+      "reason": "Recipe lacks numerical slice thickness, pan geometry and fan mode."
+    }
+  ]
+}

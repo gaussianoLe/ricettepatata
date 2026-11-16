@@ -1,0 +1,75 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0011",
+  "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+  "slug": "gatto-di-patate",
+  "file": "src/content/ricette/gatto-di-patate.md",
+  "outcome": "ready_for_independent_review",
+  "previousDossier": "docs/editorial/p1.8/dossiers/RP-0011.json",
+  "operationalSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419",
+  "operationalChanges": 0,
+  "catalogStatus": "draft",
+  "demo": false,
+  "secondDocumentaryReviewCompleted": true,
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "independentApproval": false,
+  "essentialIssues": [],
+  "openIssues": [
+    "Review indipendente ancora pendente.",
+    "Resa, consistenza e tempi non provati in cucina.",
+    "Etichette dei salumi e rischio di contaminazione non verificati su prodotti effettivi."
+  ],
+  "checklist": [
+    {
+      "id": "doses-yield",
+      "checked": true,
+      "result": "documented",
+      "finding": "Dosi e sei porzioni corrispondono a Ruggiero; la resa dichiarata non è prova di sei pasti completi.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "locator": "Ingredienti / Dosi"
+    },
+    {
+      "id": "pan-lining",
+      "checked": true,
+      "result": "documented_limit",
+      "finding": "20×20 cm e rivestimento confermati; quantità q.b. separata è interpretazione redazionale P1.8 del gesto non pesato, non una dose numerica attestata.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "locator": "Preparazione; ingredienti superficie"
+    },
+    {
+      "id": "time-budget",
+      "checked": true,
+      "result": "documented_limit",
+      "finding": "Lessatura e forno sostengono il budget; avvio, scolatura e dipendenza dalla patata restano non misurati.",
+      "sourceIds": [
+        "ruggiero-gatto"
+      ],
+      "locator": "Cottura / Preparazione"
+    },
+    {
+      "id": "food-safety",
+      "checked": true,
+      "result": "documented_limit",
+      "finding": "Confermate cautele generali FSA sugli avanzi e la verifica del calore al centro; nessuna misurazione della scheda.",
+      "sourceIds": [
+        "fsa-cooking",
+        "govuk-allergens"
+      ],
+      "locator": "§7; ingredienti e categorie allergeni"
+    }
+  ],
+  "resolvedIssues": [
+    "Seconda lettura critica completata senza evidenza che giustifichi variazioni della formula."
+  ],
+  "pendingApprovals": [
+    "review-indipendente",
+    "eventuale-scelta-e-applicazione-formula"
+  ],
+  "beforeSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419",
+  "afterSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419"
+}

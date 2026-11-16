@@ -1,0 +1,182 @@
+{
+  "formatVersion": 1,
+  "consultedAt": "2026-11-16",
+  "sources": [
+    {
+      "id": "eurial-gratin",
+      "kind": "primary",
+      "url": "https://www.eurialfoodservice-industry.fr/wp-content/uploads/2020/06/177-FICHE-RECETTE-GRATIN-DAUPHINOIS.pdf",
+      "title": "Gratin Dauphinois — fiche recette 177",
+      "author": "Eurial Food Service & Industry",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "eurial",
+      "assessment": "producer-recipe",
+      "access": "full",
+      "derivedFrom": [],
+      "role": "recipe-or-context",
+      "consultedInP19": true
+    },
+    {
+      "id": "alpes-gratin",
+      "kind": "secondary",
+      "url": "https://www.alpes-isere.com/saveurs/recettes-locales/gratin-dauphinois/",
+      "title": "Gratin dauphinois",
+      "author": "Les Passions de Laurie, in collaborazione con Alpes Isère",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "alpes-isere",
+      "assessment": "official-tourism",
+      "access": "full",
+      "derivedFrom": [],
+      "role": "recipe-or-context",
+      "consultedInP19": true
+    },
+    {
+      "id": "laruelle-gratin",
+      "kind": "primary",
+      "url": "https://www.debuyer.com/fr/blog/post/gratin-dauphinois.html",
+      "title": "Gratin Dauphinois",
+      "author": "Philippe Laruelle / de Buyer",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "debuyer",
+      "assessment": "recipe-author",
+      "access": "full",
+      "derivedFrom": [],
+      "role": "recipe-or-context",
+      "consultedInP19": true
+    },
+    {
+      "id": "atelier-gratin",
+      "kind": "primary",
+      "title": "Gratin dauphinois",
+      "url": "https://www.atelierdeschefs.fr/recettes/793/gratin-dauphinois/",
+      "author": "L’atelier des Chefs (ente; firma individuale non indicata)",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "atelier-des-chefs",
+      "derivedFrom": [],
+      "role": "comparison-only",
+      "access": "full",
+      "consultedInP19": true
+    },
+    {
+      "id": "ruggiero-gatto",
+      "kind": "secondary",
+      "url": "https://www.antonioruggiero.com/ricette/gateau-di-patate/",
+      "title": "Gateau di patate",
+      "author": "Antonio Ruggiero S.p.A.; formula attribuita dalla pagina a GialloZafferano",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "mondadori",
+      "assessment": "derived recipe; GialloZafferano credited by the page",
+      "access": "full",
+      "derivedFrom": [
+        "gz-gatto"
+      ],
+      "role": "recipe-or-context",
+      "consultedInP19": true
+    },
+    {
+      "id": "bonviveur-papas",
+      "kind": "primary",
+      "url": "https://bonviveur.com/es/recetas/papas-arrugadas",
+      "title": "Papas arrugadas",
+      "author": "Sofía de la Torre",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "bonviveur",
+      "assessment": "recipe-author",
+      "access": "full",
+      "derivedFrom": [],
+      "role": "recipe-or-context",
+      "consultedInP19": true
+    },
+    {
+      "id": "fsa-cooking",
+      "kind": "primary",
+      "title": "Cooking your food",
+      "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+      "author": "Food Standards Agency",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "food-standards-agency",
+      "derivedFrom": [],
+      "role": "general-safety-not-recipe-validation",
+      "access": "full",
+      "consultedInP19": true
+    },
+    {
+      "id": "govuk-allergens",
+      "kind": "primary",
+      "title": "Understanding food labelling: Allergen labelling",
+      "url": "https://www.gov.uk/understanding-food-labelling/allergen-labelling",
+      "author": "GOV.UK",
+      "accessedAt": "2026-11-16",
+      "independenceGroup": "uk-government",
+      "derivedFrom": [],
+      "role": "allergen-categories",
+      "access": "full",
+      "consultedInP19": true
+    },
+    {
+      "id": "merrett-dauphinoise",
+      "kind": "primary",
+      "title": "Dauphinoise potatoes",
+      "url": "https://www.bbcgoodfood.com/recipes/dauphinoise-potatoes",
+      "author": "Paul Merrett / Good Food",
+      "independenceGroup": "good-food",
+      "derivedFrom": [],
+      "role": "single-formula-alternative",
+      "accessedAt": "2026-11-16",
+      "consultedInP19": true,
+      "access": "full"
+    },
+    {
+      "id": "nigella-gratin",
+      "kind": "primary",
+      "title": "Creamy Potato Gratin",
+      "url": "https://www.nigella.com/recipes/creamy-potato-gratin",
+      "author": "Nigella Lawson",
+      "independenceGroup": "nigella-lawson",
+      "derivedFrom": [],
+      "role": "screened-not-selected",
+      "accessedAt": "2026-11-16",
+      "consultedInP19": true,
+      "access": "full"
+    },
+    {
+      "id": "fca-gratin",
+      "kind": "primary",
+      "title": "Gratin Dauphinois Recipe Card",
+      "url": "https://static1.squarespace.com/static/6109e64cfe878a0cad199515/t/6201d62f25b30e6220504629/1644287536508/Gratin%2BDauphinois.pdf",
+      "author": "French Cooking Academy (ente; firma individuale non indicata)",
+      "independenceGroup": "french-cooking-academy",
+      "derivedFrom": [],
+      "role": "screened-not-selected",
+      "accessedAt": "2026-11-16",
+      "consultedInP19": true,
+      "access": "full"
+    },
+    {
+      "id": "blanc-kenwood",
+      "kind": "primary",
+      "title": "Dauphinoise Potatoes by Raymond Blanc",
+      "url": "https://www.kenwoodworld.com/en-gb/r/recipes/dauphinoise-potatoes-by-raymond-blanc/blt470bce728ea2b750",
+      "author": "Raymond Blanc / Kenwood",
+      "independenceGroup": "kenwood-blanc",
+      "derivedFrom": [],
+      "role": "screened-not-selected",
+      "accessedAt": "2026-11-16",
+      "consultedInP19": true,
+      "access": "full"
+    }
+  ],
+  "method": "Pagine complete e passaggi pertinenti consultati online; PDF Eurial e French Cooking Academy letti. Nessun filmato visionato e nessuna prova in cucina.",
+  "limitations": [
+    {
+      "url": "https://media1.debuyer.com/img/cms/Catalogues/Brochures/FR/BROCHURE_AFFINITY_10-3703_V2026.pdf",
+      "access": "failed-size-limit",
+      "reason": "Il tool web non ha letto il PDF da circa 23 MB; lo snippet Ø24 non è prova adottata."
+    },
+    {
+      "url": "https://www.deliaonline.com/",
+      "access": "robots-blocked",
+      "reason": "Ricerca bloccata da robots.txt; nessuna fonte verificata attribuita a Delia."
+    }
+  ]
+}

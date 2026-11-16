@@ -1,0 +1,9 @@
+---
+import Shell from '../../components/Shell.astro';
+import Recipe from '../../components/Recipe.astro';
+import {resolutionData} from '../../../data.mjs';
+export const prerender=false;
+if(Astro.params.id!=='RP-0062')return Astro.redirect('/404');
+const {alternative,record,current,diff,preconditionMatches}=resolutionData();
+---
+<Shell title="Gratin · decisione separata P1.9"><a href="/">← Redazione locale</a><section class="notice"><h2>Proposta separata · NON APPLICATA</h2><p><strong>{alternative.status}</strong></p><p>Applicazione approvata: {alternative.applicationApproved?'sì':'no'}. Nessuna prova in cucina.</p><p>SHA corrente: {preconditionMatches?'corrispondente alla precondizione':'MISMATCH — riesaminare la proposta'}</p></section><h2>Questioni aperte e conseguenze</h2><ul>{alternative.openIssues.map(issue=><li>{issue}</li>)}</ul><ul>{alternative.editorialConsequences.map(issue=><li>{issue}</li>)}</ul><div class="grid"><Recipe record={current.data} label="Record operativo invariato"/><Recipe record={record} label="Alternativa P1.9 · non applicata"/></div><h2>Parametri della sola formula alternativa</h2><p>Lo strato di patate non è l’altezza della pirofila.</p><pre>{JSON.stringify(alternative.parameters,null,2)}</pre><h2>Diff proposto · nessuna scrittura</h2><div class="table-scroll"><table><thead><tr><th>Campo</th><th>Operativo</th><th>Proposto</th></tr></thead><tbody>{diff.changes.map(change=><tr><th scope="row"><code>{change.path}</code></th><td><pre>{change.before.present?JSON.stringify(change.before.value,null,2):'Assente'}</pre></td><td><pre>{change.after.present?JSON.stringify(change.after.value,null,2):'Assente'}</pre></td></tr>)}</tbody></table></div></Shell>

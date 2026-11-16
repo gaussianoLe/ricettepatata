@@ -4,7 +4,7 @@ import {readCatalog} from '../src/catalog/io.mjs';
 import {recipeSchema} from '../src/catalog/schema.mjs';
 /** @typedef {import('astro/zod').z.infer<typeof import('../src/catalog/schema.mjs').recipeSchema>} RecipeRecord */
 /** @typedef {{outcome:string,essentialIssues:string[],openIssues:string[]}} ValidationDossier */
-/** @typedef {{file:string,collection:string,data:RecipeRecord,body:string,validation?:ValidationDossier}} RecipeEntry */
+/** @typedef {{file:string,collection:string,data:RecipeRecord,body:string,validation?:ValidationDossier,resolution?:ValidationDossier}} RecipeEntry */
 /** @typedef {{researchId:string,catalogId:string,slug:string,targetPath:string,beforeSha256:string,proposedRecord:RecipeRecord}} Plan */
 /** @typedef {{status:string,independentReview:string,applicationApproved:boolean,openIssues:string[],formulaDecision:string,identityDecision:string,findings:{text:string,sourceIds:string[],locator:string}[]}} Decision */
 /** @typedef {{bodyDisposition:string,changes:{path:string,before:{present:boolean,value?:unknown},after:{present:boolean,value?:unknown}}[]}} Diff */
@@ -19,7 +19,8 @@ export function editorialData(){
  const catalog=readCatalog().filter(e=>e.collection==='ricette' && editorialEligible(e.data)).map(entry=>{
   const researchId=entry.data.externalIds.find(id=>id.namespace==='ricettepatata-exploratory-census')?.value;
   const file=researchId && /^RP-[0-9]{4}$/.test(researchId)?`docs/editorial/p1.8/dossiers/${researchId}.json`:null;
-  return {...entry,...(file && existsSync(file)?{validation:JSON.parse(readFileSync(file,'utf8'))}:{})};
+  const resolutionFile=researchId && /^RP-[0-9]{4}$/.test(researchId)?`docs/editorial/p1.9/dossiers/${researchId}.json`:null;
+  return {...entry,...(file && existsSync(file)?{validation:JSON.parse(readFileSync(file,'utf8'))}:{}),...(resolutionFile && existsSync(resolutionFile)?{resolution:JSON.parse(readFileSync(resolutionFile,'utf8'))}:{})};
  });
  /** @type {{plans:Plan[]}} */
  const {plans}=JSON.parse(readFileSync('docs/editorial/p1.4/enrichments.json','utf8'));
@@ -37,4 +38,17 @@ export function editorialData(){
   return {plan,record,decision,operational,preconditionMatches,diff};
  });
  return {catalog,proposals};
+}
+
+/** @typedef {{status:string,applicationApproved:boolean,currentSha256:string,openIssues:string[],editorialConsequences:string[],parameters:unknown,entry:{data:RecipeRecord,body:string}}} Alternative */
+export function resolutionData(){
+ /** @type {Alternative} */
+ const alternative=JSON.parse(readFileSync('docs/editorial/p1.9/alternative.json','utf8'));
+ const record=recipeSchema.parse(alternative.entry.data);
+ const current=readCatalog().find(e=>e.data.catalogId===record.catalogId);
+ if(!current || current.data.slug!==record.slug)throw new Error('Identità alternativa P1.9 non risolta');
+ /** @type {{unappliedAlternative:Diff}} */
+ const {unappliedAlternative:diff}=JSON.parse(readFileSync('docs/editorial/p1.9/diffs.json','utf8'));
+ const preconditionMatches=createHash('sha256').update(readFileSync(current.file)).digest('hex')===alternative.currentSha256;
+ return {alternative,record,current,diff,preconditionMatches};
 }

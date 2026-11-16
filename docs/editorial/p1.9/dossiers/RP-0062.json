@@ -1,0 +1,113 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0062",
+  "catalogId": "1dbbf517-99d2-5c16-9ef3-a83064238ffb",
+  "slug": "gratin-dauphinois",
+  "file": "src/content/ricette/gratin-dauphinois.md",
+  "outcome": "needs_revision",
+  "previousDossier": "docs/editorial/p1.8/dossiers/RP-0062.json",
+  "operationalSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+  "operationalChanges": 0,
+  "catalogStatus": "draft",
+  "demo": false,
+  "secondDocumentaryReviewCompleted": true,
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "independentApproval": false,
+  "essentialIssues": [
+    "Formula Eurial ancora priva di taglio misurato, geometria, intensità della precottura e modalità del forno.",
+    "Compatibilità dell’insieme non dimostrata: nessuna miscela di parametri fra autori."
+  ],
+  "openIssues": [
+    "Impronta e altezza del recipiente non numeriche: 5 cm è lo spessore del cibo, non della pirofila.",
+    "Compatibilità della pezzatura delle otto patate e della cottura breve da sottoporre a review, senza inventare una massa.",
+    "Scelta del formaggio facoltativo e impatto su identità/titolo prima di una sostituzione.",
+    "Aumento finale del calore non quantificato dalla fonte; nessun grado inventato.",
+    "Nessuna prova in cucina, scelta della formula o autorizzazione di applicazione già completata."
+  ],
+  "checklist": [
+    {
+      "id": "slice-thickness",
+      "checked": true,
+      "result": "unresolved",
+      "finding": "Eurial resta non numerica; misure delle altre formule non trasferite.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin",
+        "atelier-gratin"
+      ],
+      "locator": "Etapes / Préparation"
+    },
+    {
+      "id": "pan-geometry",
+      "checked": true,
+      "result": "unresolved",
+      "finding": "Nessuna delle quattro pagine determina impronta e profondità. Non dedotte da fotografie o SKU non letti.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin",
+        "atelier-gratin"
+      ],
+      "locator": "Recipienti nei procedimenti"
+    },
+    {
+      "id": "precook",
+      "checked": true,
+      "result": "unresolved",
+      "finding": "Solo Atelier chiarisce l’intensità, ma con formula diversa; non applicata a Eurial.",
+      "sourceIds": [
+        "eurial-gratin",
+        "atelier-gratin"
+      ],
+      "locator": "Precottura"
+    },
+    {
+      "id": "oven-mode",
+      "checked": true,
+      "result": "unresolved",
+      "finding": "Temperatura non equivale a modalità; nessuna assunzione statico/ventilato per Eurial.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin",
+        "atelier-gratin"
+      ],
+      "locator": "Forno"
+    },
+    {
+      "id": "compatibility",
+      "checked": true,
+      "result": "unresolved",
+      "finding": "Rapporti fra liquidi, geometria e cotture restano specifici della singola formula.",
+      "sourceIds": [
+        "eurial-gratin",
+        "alpes-gratin",
+        "laruelle-gratin",
+        "atelier-gratin"
+      ],
+      "locator": "Confronto formula-comparison.json"
+    },
+    {
+      "id": "alternative",
+      "checked": true,
+      "result": "prepared_not_applied",
+      "finding": "Formula Merrett completa di ingredienti e procedimento, più determinata ma con lacune geometriche esplicite; decisione separata ancora pendente.",
+      "sourceIds": [
+        "merrett-dauphinoise"
+      ],
+      "locator": "Ingredienti e Method"
+    }
+  ],
+  "resolvedIssues": [
+    "Conclusa la verifica delle quattro fonti e il rifiuto motivato del loro assemblaggio.",
+    "Predisposta una proposta singola separata con impatti e lacune espliciti."
+  ],
+  "pendingApprovals": [
+    "review-indipendente",
+    "eventuale-scelta-e-applicazione-formula"
+  ],
+  "beforeSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985",
+  "afterSha256": "e59ffa965b68c481d9147805631cb004180dc52e82e2dbf4effbb006fe8cb985"
+}

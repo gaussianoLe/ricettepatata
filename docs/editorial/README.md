@@ -11,3 +11,5 @@ Il [consolidamento P1.4](p1.4/README.md) mantiene gli artefatti P1.3 immutabili 
 [P1.7 — Ambiente locale di revisione](p1.7/README.md): schede in lavorazione e confronto delle proposte senza applicazione; avvio `npm run editorial`.
 
 [P1.8 — Validazione documentale dei tre draft](p1.8/README.md): esiti individuali, fonti ricontrollate, diff e criticità; nessuna promozione editoriale.
+
+[P1.9 — Risoluzione documentale e decisione sulla formula](p1.9/README.md): checklist riesaminate, criticità del gratin esplicite e alternativa non applicata.

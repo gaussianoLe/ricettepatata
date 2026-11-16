@@ -51,6 +51,7 @@ test('static content remains usable without JavaScript',async({browser,baseURL})
 
 
 test('direct links cannot expose entries excluded by the editorial policy',async({request,baseURL})=>{
+ expect((await request.get(`${baseURL}resolution/RP-0062/`)).status()).toBe(404);
  for(const entry of catalog.filter(entry=>!isVisible(entry.data,target))) {
   const response=await request.get(`${baseURL}${entry.collection}/${entry.data.slug}/`);
   expect(response.status()).toBe(404);

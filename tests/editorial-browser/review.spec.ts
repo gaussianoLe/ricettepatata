@@ -18,6 +18,7 @@ test('real private drafts show quantities, procedure, sources and identity local
   else await expect(page.getByText('Procedimento mancante',{exact:true})).toBeVisible();
   if(recipe.data.sources.length)await expect(page.locator(`a[href="${recipe.data.sources[0].url}"]`)).toBeVisible();
   await expect(page.getByText(recipe.data.slug,{exact:true})).toBeVisible();
+  if(recipe.resolution)await expect(page.getByRole('heading',{name:`Risoluzione editoriale P1.9: ${recipe.resolution.outcome}`,exact:true})).toBeVisible();
   if(recipe.validation){await expect(page.getByRole('heading',{name:`Validazione gastronomica P1.8: ${recipe.validation.outcome}`,exact:true})).toBeVisible();for(const issue of recipe.validation.essentialIssues)await expect(page.getByText(issue,{exact:true})).toBeVisible();}
  }
 });
@@ -32,7 +33,14 @@ test('each enrichment compares original demo, candidate, structured changes and 
   await expect(page.locator('table')).toContainText('/data/demo');
   if(p.record.timing===null)await expect(page.getByText('Non quantificati: nessuna durata totale inventata',{exact:true})).toBeVisible();
  }
+ await page.goto('/resolution/RP-0062/');
+ await expect(page.getByRole('heading',{name:'Record operativo invariato',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Alternativa P1.9 · non applicata',exact:true})).toBeVisible();
+ await expect(page.getByText('prepared_not_applied',{exact:true})).toBeVisible();
+ await expect(page.locator('table')).toContainText('/data/ingredients');
+ await expect(page.getByText('Lo strato di patate non è l’altezza della pirofila.',{exact:true})).toBeVisible();
 });
+
 test('localhost guard refuses foreign Host/Origin, writes and raw private files',async({request})=>{
  const response=await request.get('/');expect(response.status()).toBe(200);
  expect(response.headers()['cache-control']).toBe('no-store');expect(response.headers()['x-robots-tag']).toContain('noindex');

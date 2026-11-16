@@ -117,3 +117,5 @@ P1.7: `npm run editorial` apre la [revisione locale privata](docs/editorial/p1.7
 P1.8: [revisione gastronomica documentale dei tre draft](docs/editorial/p1.8/README.md), con registro delle modifiche correnti e baseline storiche preservate. Controllo: `npm run editorial:validation`.
 
 P1.9: [seconda revisione e proposta separata del gratin](docs/editorial/p1.9/README.md). Zero modifiche operative; controllo `npm run editorial:resolution`.
+
+P2.0: [preparazione locale delle prime due pagine editoriali](docs/editorial/p2.0/README.md), senza pubblicazione o promozioni.

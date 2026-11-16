@@ -1,0 +1,7 @@
+# Accessibilità e consultazione
+
+Verifiche automatizzate con Playwright/Chromium e axe-core, regole WCAG 2 A/AA e 2.1 A/AA, sulle due ricette; viewport desktop, tablet iPad e mobile iPhone. Anche viewport 320 px con JS disabilitato. I risultati effettivi sono in validation-evidence.json; nessuna dichiarazione di conformità integrale derivata soltanto dall’automazione.
+
+Copertura: un H1, heading ordinati, lingua italiana e lingua nome originale, main/header/footer/nav nominati, lista ingredienti e lista ordinata passaggi, checkbox con label, bottone con aria-pressed, skip link e focus tastiera, Space/Enter, ancora procedimento, assenza di overflow orizzontale anche in modalità cucina, fonti leggibili e URL lunghi spezzabili. Axe verifica anche contrasto e nomi accessibili con pannello questioni aperto e modalità cucina attiva. Fallback fotografico testuale senza alt inventato, nessuna dipendenza da hover, movimento o colore soltanto. Nessun menu mobile necessario nella pagina locale.
+
+Restano manuali: screen reader reali, zoom e preferenze utente su hardware reale, leggibilità durante uso in cucina e test gastronomico, Safari/WebKit e Firefox. Nessun mantenimento dello schermo acceso; nessuna persistenza delle spunte. Il layout stampabile conserva le avvertenze di bozza. Nessuna evidenza privata caricata nei workflow CI: test privati senza trace, screenshot, video o report HTML, output temporaneo cancellato.

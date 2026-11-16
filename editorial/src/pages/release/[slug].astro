@@ -1,0 +1,22 @@
+---
+import RecipeArticle from '../../../../src/components/RecipeArticle.astro';
+import {releaseEntry} from '../../../release.mjs';
+export const prerender=false;
+const release=releaseEntry(Astro.params.slug??'');
+if(!release)return new Response('Pagina di preparazione non disponibile',{status:404});
+const {entry,researchId,sections,seo,openIssues}=release;
+const other=releaseEntry(entry.data.slug==='gatto-di-patate'?'papas-arrugadas-con-mojo':'gatto-di-patate');
+---
+<!doctype html><html lang="it"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="robots" content="noindex,nofollow,noarchive"/><meta name="referrer" content="no-referrer"/>
+<title>{seo.title} · RicettePatata.it</title><meta name="description" content={seo.description}/><link rel="canonical" href={seo.canonical}/>
+<meta property="og:title" content={seo.title}/><meta property="og:description" content={seo.description}/><meta property="og:type" content="article"/><meta property="og:url" content={seo.canonical}/><meta property="og:locale" content="it_IT"/><meta property="og:site_name" content="RicettePatata.it"/>
+<script type="application/ld+json" set:html={JSON.stringify(seo.schema).replace(/</g,'\u003c')}/><script type="application/ld+json" set:html={JSON.stringify(seo.breadcrumb).replace(/</g,'\u003c')}/>
+</head><body><a class="skip" href="#contenuto">Salta al contenuto</a>
+<header class="masthead"><a href="/">ricette<span>patata</span>.it</a><p>Il ricettario dal mondo · anteprima editoriale locale</p></header>
+<aside class="review-notice" aria-label="Stato della revisione"><strong>Bozza non pubblicata · {entry.data.editorial.status} · ricetta reale, non demo</strong><p>Solo localhost. Pagina pronta per revisione, pubblicazione non autorizzata. Nessuna prova in cucina.</p><details><summary>Questioni aperte e asset mancanti</summary><ul>{openIssues.map((issue:string)=><li>{issue}</li>)}<li>Fotografia originale con licenza e attribuzione documentate ancora mancante; anteprima social solo testuale.</li></ul><p>{researchId} · <code>{entry.data.catalogId}</code> · <code>{entry.data.slug}</code></p><a href={`/recipes/${entry.data.catalogId}/`}>Consulta il record operativo e i dossier</a></details></aside>
+<main id="contenuto" tabindex="-1"><RecipeArticle record={entry.data} sections={sections} catalogHref="/" related={other?[{title:other.entry.data.names.italian,href:`/release/${other.entry.data.slug}/`}]:[]}/></main>
+<footer><p>RicettePatata.it · Preparazione del rilascio P2.0 · Nessuna approvazione o pubblicazione da questa interfaccia.</p></footer>
+</body></html>
+<style is:inline>
+html{background:#fffdf7;color:#25392e;scroll-behavior:auto}body{margin:0;font-family:system-ui,sans-serif;line-height:1.6}*{box-sizing:border-box}.masthead,.review-notice,body>footer{padding:1rem max(1.2rem,calc((100% - 1096px)/2));overflow-wrap:anywhere}.masthead{border-bottom:2px solid #28583b}.masthead a{color:#25392e;text-decoration:none;font-size:1.8rem;font-weight:900;letter-spacing:-.06em}.masthead a span{color:#8f351b}.masthead p{font-size:.85rem;margin:.25rem 0}.review-notice{background:#fff0ce;border-bottom:1px solid #ab7b32}.review-notice p{margin:.4rem 0}.review-notice a{color:#28583b}.review-notice summary{cursor:pointer;min-height:44px;padding:.6rem 0}a:focus-visible,summary:focus-visible{outline:3px solid #8f351b;outline-offset:4px}.skip{position:absolute;left:1rem;top:-10rem;padding:1rem;background:#25392e;color:white;z-index:10}.skip:focus{top:1rem}body>footer{background:#eeefdf;font-size:.9rem}code{overflow-wrap:anywhere;font-size:.9em}
+</style>

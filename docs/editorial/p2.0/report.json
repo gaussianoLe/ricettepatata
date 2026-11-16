@@ -1,0 +1,40 @@
+{
+  "phase": "P2.0",
+  "baseCommit": "8ae5168d54283d61ba73369dd63b7f6b5a884825",
+  "branch": "feat/p2.0-first-editorial-release",
+  "preparedRecipes": [
+    "RP-0011",
+    "RP-0080"
+  ],
+  "outcome": "ready_for_independent_page_review_not_published",
+  "excluded": {
+    "RP-0062": "needs_revision"
+  },
+  "catalogStates": "draft",
+  "demo": false,
+  "operationalChanges": 0,
+  "formulaChanges": 0,
+  "registryChanges": 0,
+  "publicPolicyChanges": 0,
+  "historicalChanges": 0,
+  "newlyPublished": 0,
+  "kitchenTestsPerformed": false,
+  "independentReview": "requested_on_PR_after_final_CI",
+  "missingAssets": [
+    "Licensed and attributed Gatt\u00f2 photograph, alt and responsive/social crops",
+    "Licensed and attributed Papas photograph, alt and responsive/social crops"
+  ],
+  "seo": "Local-only Recipe and BreadcrumbList from existing data; final HTTPS canonical, textual Open Graph fallback, no invented images, rating, reviews, nutrition or guaranteed total duration. Not eligible for image-dependent rich results.",
+  "accessibility": "Zero axe WCAG 2/2.1 A/AA violations in tested states; keyboard, 320px no-JS, desktop/tablet/mobile checked. No full conformance claim.",
+  "validation": "validation-evidence.json",
+  "localMatrix": {
+    "configurations": 4,
+    "nodeExecutions": 512,
+    "publicBrowserCases": 56,
+    "privateBrowserCases": 96
+  },
+  "publicDraftExposure": 0,
+  "publicationAuthorized": false,
+  "deploymentPerformed": false,
+  "mergePerformed": false
+}

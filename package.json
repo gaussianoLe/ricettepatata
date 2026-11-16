@@ -28,11 +28,14 @@
     "test:editorial": "node scripts/test-editorial.mjs",
     "editorial:validation": "node scripts/recipe-validation.mjs",
     "editorial:resolution": "node scripts/editorial-resolution.mjs",
-    "editorial:resolution:output": "node scripts/editorial-resolution.mjs --output"
+    "editorial:resolution:output": "node scripts/editorial-resolution.mjs --output",
+    "release:check": "node scripts/release-check.mjs",
+    "release:output": "node scripts/release-check.mjs --output"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
     "@astrojs/sitemap": "^3.7.4",
+    "@axe-core/playwright": "^4.14.0",
     "@playwright/test": "^1.65.0",
     "@tailwindcss/vite": "^4.3.5",
     "astro": "^7.4.7",

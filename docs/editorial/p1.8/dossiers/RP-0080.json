@@ -1,0 +1,143 @@
+{
+  "formatVersion": 1,
+  "researchId": "RP-0080",
+  "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+  "slug": "papas-arrugadas-con-mojo",
+  "file": "src/content/ricette/papas-arrugadas-con-mojo.md",
+  "outcome": "ready_for_independent_review",
+  "catalogStatus": "draft",
+  "demo": false,
+  "formulaSourceId": "bonviveur-papas",
+  "recordSourceIds": [
+    "bonviveur-papas",
+    "canarias-gastronomia",
+    "karlos-mojo",
+    "canarias-geografia",
+    "fsa-cooking",
+    "govuk-allergens"
+  ],
+  "identity": {
+    "names": {
+      "italian": "Papas arrugadas con mojo",
+      "original": {
+        "text": "Papas arrugadas",
+        "language": "es"
+      },
+      "alternatives": []
+    },
+    "provenance": {
+      "continent": "africa",
+      "country": {
+        "code": "ES",
+        "name": "Spagna"
+      },
+      "region": "Isole Canarie",
+      "traditions": [
+        "Cucina canaria"
+      ]
+    },
+    "geographyBasis": "Geographic classification distinct from political country ES"
+  },
+  "formula": {
+    "servings": 4,
+    "originalNumericQuantitiesPreserved": true,
+    "addedUnquantifiedIngredient": null
+  },
+  "timing": {
+    "declared": {
+      "prepMinutes": 5,
+      "cookMinutes": 30,
+      "restMinutes": 0
+    },
+    "basis": "5 minuti di preparazione e 30 di cottura sono i valori Bonviveur: circa 20 di lessatura e 10 di asciugatura. Il mojo deve essere pronto; la sua preparazione e l’eventuale attesa non sono conteggiate.",
+    "unknownDurationsNotSetToZero": true
+  },
+  "equipment": [
+    "Pentola larga per patate non ammassate",
+    "Scolapasta e coltello per controllare la tenerezza"
+  ],
+  "claims": [
+    {
+      "id": "RP-0080-1",
+      "field": "formula-technique",
+      "text": "Quantità, asciugatura dopo scolatura e acqua approssimativa preservate; nessuna evaporazione di due litri richiesta.",
+      "sourceIds": [
+        "bonviveur-papas"
+      ],
+      "locator": "Ingredienti e Cómo hacer",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0080-2",
+      "field": "mojo-scope",
+      "text": "Mojo pronto fuori dal tempo delle papas; variante Karlos non fusa con il metodo selezionato.",
+      "sourceIds": [
+        "bonviveur-papas",
+        "karlos-mojo"
+      ],
+      "locator": "Servizio e procedure",
+      "status": "editorial-inference"
+    },
+    {
+      "id": "RP-0080-3",
+      "field": "geography",
+      "text": "Localizzazione atlantica presso la costa africana e Paese ES mantenuti; continente è una classificazione editoriale, non una rivendicazione politica.",
+      "sourceIds": [
+        "canarias-geografia"
+      ],
+      "locator": "Situación y composición",
+      "status": "editorial-inference"
+    },
+    {
+      "id": "RP-0080-4",
+      "field": "tradition",
+      "text": "Papas con mojo come preparazione canaria; nessun inventore o data d’origine attribuiti.",
+      "sourceIds": [
+        "canarias-gastronomia"
+      ],
+      "locator": "Recetas locales",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0080-safety",
+      "field": "storage-reheating",
+      "text": "Indicazioni generali sugli avanzi, non durata di conservazione validata sperimentalmente per il piatto.",
+      "sourceIds": [
+        "fsa-cooking"
+      ],
+      "locator": "§7 Using your leftovers",
+      "status": "supported"
+    },
+    {
+      "id": "RP-0080-allergens",
+      "field": "allergens",
+      "text": "La salsa non ha una composizione fissata in questa scheda: verificare ingredienti ed etichetta del mojo effettivo. Non estendere alle patate con qualsiasi salsa le etichette “senza glutine” o “vegano” della pagina di riferimento.",
+      "sourceIds": [
+        "govuk-allergens",
+        "bonviveur-papas"
+      ],
+      "locator": "Ingredienti della formula; elenco allergeni e prodotti preconfezionati",
+      "status": "editorial-inference"
+    }
+  ],
+  "essentialIssues": [],
+  "openIssues": [
+    "Mojo effettivo da scegliere prima di formulare informazioni allergeniche specifiche o una sua ricetta separata.",
+    "Africa è la classificazione geografica adottata dal catalogo per la collocazione atlantica presso la costa africana; Paese ES indica l’appartenenza politica spagnola. Non sono classificazioni equivalenti.",
+    "Review indipendente e prova in cucina non svolte."
+  ],
+  "kitchenTestPerformed": false,
+  "independentReview": "pending",
+  "checklist": {
+    "identityDocumented": true,
+    "formulaDocumented": true,
+    "procedureReviewed": true,
+    "timingReconciled": true,
+    "essentialParametersResolved": true,
+    "allergenScopeDocumented": true,
+    "storageSourceDocumented": true,
+    "originalText": true,
+    "noRightsUnverifiedImagesAdded": true,
+    "independentApproval": false
+  }
+}

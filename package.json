@@ -25,7 +25,8 @@
     "build:reproducible": "node scripts/verify-reproducible.mjs",
     "editorial:enrichments": "node scripts/enrichment-review.mjs",
     "editorial": "node scripts/editorial-dev.mjs",
-    "test:editorial": "node scripts/test-editorial.mjs"
+    "test:editorial": "node scripts/test-editorial.mjs",
+    "editorial:validation": "node scripts/recipe-validation.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

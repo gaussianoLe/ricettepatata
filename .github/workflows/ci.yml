@@ -2,7 +2,7 @@ name: Foundation CI
 on:
   pull_request:
   push:
-    branches: [main, feat/p1.7-private-editorial-preview]
+    branches: [main, feat/p1.8-first-recipes-validation]
 permissions:
   contents: read
 concurrency:
@@ -50,6 +50,8 @@ jobs:
         run: npm run editorial:check
       - name: Validate consolidation and historical baseline
         run: npm run editorial:consolidation
+      - name: Validate sourced draft revisions and preserved historical snapshots
+        run: npm run editorial:validation
       - name: Validate controlled catalog integration
         run: npm run integration:check
       - name: Validate individual enrichment decisions and unchanged baseline
@@ -59,7 +61,7 @@ jobs:
         run: node tests/helpers/catalog-fixtures.mjs add
       - run: npm run check
       - run: npm run catalog:check
-      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs tests/integration.test.mjs tests/enrichment-review.test.mjs tests/private-editorial.test.mjs
+      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs tests/integration.test.mjs tests/enrichment-review.test.mjs tests/private-editorial.test.mjs tests/recipe-validation.test.mjs
       - name: Build static magazine
         run: node scripts/build.mjs ${{ matrix.target }}
       - name: Verify reproducible static build

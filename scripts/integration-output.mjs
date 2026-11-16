@@ -1,2 +1,3 @@
-import {integrationInputs,auditPublicOutput} from '../src/catalog/integration.mjs';
-console.log(JSON.stringify(auditPublicOutput(integrationInputs().entries)));
+import {auditPublicOutput} from '../src/catalog/integration.mjs';
+import {draftAuditEntries} from '../src/catalog/validation-cycle.mjs';
+console.log(JSON.stringify(auditPublicOutput(draftAuditEntries())));

@@ -59,7 +59,8 @@ test('direct links cannot expose entries excluded by the editorial policy',async
 
 test('integrated editorial drafts stay private in lists, search and direct URLs',async({page,request,baseURL})=>{
  const {readFileSync}=await import('node:fs');
- const {entries}=JSON.parse(readFileSync('docs/editorial/p1.4/records.json','utf8'));
+ const original=JSON.parse(readFileSync('docs/editorial/p1.4/records.json','utf8')).entries;
+ const entries=catalog.filter(e=>original.some((old:{data:{catalogId:string}})=>old.data.catalogId===e.data.catalogId));
  await page.goto('./ricette/');
  const html=await page.content();
  for(const entry of entries){

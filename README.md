@@ -119,3 +119,5 @@ P1.8: [revisione gastronomica documentale dei tre draft](docs/editorial/p1.8/REA
 P1.9: [seconda revisione e proposta separata del gratin](docs/editorial/p1.9/README.md). Zero modifiche operative; controllo `npm run editorial:resolution`.
 
 P2.0: [preparazione locale delle prime due pagine editoriali](docs/editorial/p2.0/README.md), senza pubblicazione o promozioni.
+
+P2.1: [rifinitura UX editoriale locale e confronto tracciabile](docs/editorial/p2.1/README.md), senza modifiche alle ricette o pubblicazione.

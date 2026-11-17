@@ -1,0 +1,53 @@
+{
+  "phase": "P2.1",
+  "baseCommit": "19507b4eabede713ca74f019372c38643945adab",
+  "branch": "feat/p2.1-editorial-ux-refinement",
+  "recipes": {
+    "RP-0011": "draft, demo false, UX ready for independent review",
+    "RP-0080": "draft, demo false, UX ready for independent review",
+    "RP-0062": "excluded; needs_revision unchanged"
+  },
+  "operationalChanges": 0,
+  "recipeFormulaChanges": 0,
+  "metadataChanges": 0,
+  "publicPolicyChanges": 0,
+  "historicalSnapshotChanges": 0,
+  "published": 0,
+  "protectedFiles": 148,
+  "presentation": "Pure deterministic source excerpts and ingredient formatting; complete original record/dossier remains outside the reader article.",
+  "changes": [
+    "Compact hero and explicit photo placeholder",
+    "Quantity/name/detail separation, accessible checkboxes",
+    "Visible step numbering and cooking mode emphasis",
+    "Differentiated equipment, limits, allergen, variant, storage, culture and source sections",
+    "Editorial dossier separated from reusable article, with full source and trace map"
+  ],
+  "verification": {
+    "configurations": 4,
+    "nodeExecutions": 544,
+    "publicBrowserCases": 56,
+    "privateBrowserCases": 144,
+    "responsiveWidths": [
+      320,
+      375,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "axeViolations": 0,
+    "publicDraftLeaks": 0,
+    "publicOutputsByteIdenticalToP20": true,
+    "privateArtifactsUploaded": false
+  },
+  "screenshots": "Temporary before/after and cooking screenshots prepared and removed; reproducer provided.",
+  "remainingIssues": [
+    "Independent review pending",
+    "No kitchen trial",
+    "Licensed photos missing",
+    "Manual Safari/WebKit, screen reader, Firefox and Aruba checks not performed"
+  ],
+  "mergePerformed": false,
+  "deploymentPerformed": false,
+  "publicationPerformed": false
+}

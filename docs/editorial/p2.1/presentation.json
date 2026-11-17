@@ -1,0 +1,540 @@
+{
+  "gatto-di-patate": {
+    "seo": {
+      "title": "Gattò di patate",
+      "description": "Sformato di patate con fiordilatte e due salumi, secondo la versione Ruggiero; dosi e tempi attribuiti a una sola formula.",
+      "canonical": "https://ricettepatata.it/ricette/gatto-di-patate/",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Gattò di patate",
+        "alternateName": [
+          "Gateau di patate"
+        ],
+        "description": "Sformato di patate con fiordilatte e due salumi, secondo la versione Ruggiero; dosi e tempi attribuiti a una sola formula.",
+        "inLanguage": "it-IT",
+        "url": "https://ricettepatata.it/ricette/gatto-di-patate/",
+        "author": {
+          "@type": "Organization",
+          "name": "RicettePatata.it — lavorazione P1.4 assistita"
+        },
+        "recipeCuisine": [
+          "Cucina napoletana"
+        ],
+        "recipeCategory": [
+          "piatto-unico"
+        ],
+        "recipeYield": "6 porzioni",
+        "prepTime": "PT30M",
+        "cookTime": "PT70M",
+        "recipeIngredient": [
+          "500 g patate",
+          "100 g fiordilatte, da scolare",
+          "50 g salame napoletano",
+          "50 g prosciutto cotto",
+          "2 cucchiai Parmigiano per il composto",
+          "2 uova",
+          "q.b. olio extravergine",
+          "q.b. pepe nero",
+          "q.b. sale",
+          "20 g pangrattato per la superficie",
+          "30 g Parmigiano per la superficie",
+          "q.b. pangrattato per rivestire la pirofila, Uso richiesto dal procedimento; quantità separata non numerica nella fonte. I 20 g elencati restano per la superficie."
+        ],
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "text": "Lavare le patate e metterle in acqua fredda. Dal bollore cuocere circa 30–40 minuti, finché la forchetta raggiunge facilmente il centro; scolare, pelare con cautela e schiacciare ancora calde."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "text": "Tagliare e scolare il fiordilatte; ridurre i salumi a cubetti. Unire alle patate uova, Parmigiano del composto, olio, sale e pepe, poi formaggio e salumi."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "text": "Ungere la pirofila 20×20 cm e rivestirla con pangrattato quanto basta. Versare e livellare il composto; distribuire i 20 g di pangrattato della superficie, i 30 g di Parmigiano e un filo d’olio."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "text": "Infornare a 180 °C in forno statico preriscaldato per circa 30 minuti. Verificare che il composto sia cotto e ben caldo anche al centro prima del servizio."
+          }
+        ],
+        "citation": [
+          "https://www.antonioruggiero.com/ricette/gateau-di-patate/",
+          "https://www.cucchiaio.it/ricetta/gateau-di-patate/",
+          "https://ricette.giallozafferano.it/Gateau-di-patate.html",
+          "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+          "https://www.gov.uk/understanding-food-labelling/allergen-labelling"
+        ]
+      },
+      "breadcrumb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ricettepatata.it/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ricette",
+            "item": "https://ricettepatata.it/ricette/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Gattò di patate",
+            "item": "https://ricettepatata.it/ricette/gatto-di-patate/"
+          }
+        ]
+      }
+    },
+    "presentation": {
+      "intro": "Un composto di patate lega fiordilatte e salumi in una teglia quadrata.",
+      "ingredients": [
+        {
+          "id": "patata",
+          "amount": "500 g",
+          "name": "patate",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "fiordilatte",
+          "amount": "100 g",
+          "name": "fiordilatte",
+          "detail": "da scolare",
+          "optional": false
+        },
+        {
+          "id": "salame",
+          "amount": "50 g",
+          "name": "salame napoletano",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "prosciutto",
+          "amount": "50 g",
+          "name": "prosciutto cotto",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "parmigiano-composto",
+          "amount": "2 cucchiai",
+          "name": "Parmigiano per il composto",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "uovo",
+          "amount": "2",
+          "name": "uova",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "olio",
+          "amount": "q.b.",
+          "name": "olio extravergine",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "pepe",
+          "amount": "q.b.",
+          "name": "pepe nero",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "sale",
+          "amount": "q.b.",
+          "name": "sale",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "pangrattato",
+          "amount": "20 g",
+          "name": "pangrattato per la superficie",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "parmigiano-superficie",
+          "amount": "30 g",
+          "name": "Parmigiano per la superficie",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "pangrattato-pirofila",
+          "amount": "q.b.",
+          "name": "pangrattato per rivestire la pirofila",
+          "detail": "",
+          "optional": false
+        }
+      ],
+      "cookingNotes": [
+        "I 20 g elencati restano per la superficie."
+      ],
+      "supplements": [
+        {
+          "id": "equipment",
+          "title": "Attrezzatura",
+          "paragraphs": [
+            "- Pirofila quadrata 20×20 cm\n- Pentola, scolapasta, schiacciapatate, ciotola e spatola\n- Forno statico preriscaldato"
+          ]
+        },
+        {
+          "id": "timing",
+          "title": "Tempi e limiti",
+          "paragraphs": [
+            "I 70 minuti di cottura sono il budget dichiarato dalla fonte: lessatura 30–40 più forno circa 30. Riscaldamento dell’acqua e scolatura non sono quantificati; non è un tempo totale garantito. Nessun riposo numerico è prescritto."
+          ]
+        },
+        {
+          "id": "allergens",
+          "title": "Allergeni",
+          "paragraphs": [
+            "Uova e latte sono presenti; il pangrattato ordinario implica cereali con glutine. Verificare anche etichette dei salumi e contaminazioni: nessuna dichiarazione di assenza di allergeni."
+          ]
+        },
+        {
+          "id": "variants",
+          "title": "Varianti documentate",
+          "paragraphs": [
+            "Il Cucchiaio documenta ripieni con salame oppure prosciutto e una formula diversa con provola. Sono confronti separati: qui fiordilatte, salame e prosciutto restano tutti obbligatori, senza scambiarli automaticamente."
+          ]
+        },
+        {
+          "id": "storage",
+          "title": "Conservazione e riscaldamento",
+          "paragraphs": [
+            "Refrigerare gli avanzi entro due ore e consumarli entro 48 ore; riscaldarli una sola volta, ben caldi anche al centro. Indicazioni generali FSA, non una conservabilità sperimentata per questa ricetta."
+          ]
+        }
+      ],
+      "trace": [
+        {
+          "destination": "article.intro",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "Un composto di patate lega fiordilatte e salumi in una teglia quadrata."
+        },
+        {
+          "destination": "article.ingredients.patata",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/patata",
+          "text": "500 g patate"
+        },
+        {
+          "destination": "article.ingredients.fiordilatte",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/fiordilatte",
+          "text": "100 g fiordilatte, da scolare"
+        },
+        {
+          "destination": "article.ingredients.salame",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/salame",
+          "text": "50 g salame napoletano"
+        },
+        {
+          "destination": "article.ingredients.prosciutto",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/prosciutto",
+          "text": "50 g prosciutto cotto"
+        },
+        {
+          "destination": "article.ingredients.parmigiano-composto",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/parmigiano-composto",
+          "text": "2 cucchiai Parmigiano per il composto"
+        },
+        {
+          "destination": "article.ingredients.uovo",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/uovo",
+          "text": "2 uova"
+        },
+        {
+          "destination": "article.ingredients.olio",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/olio",
+          "text": "q.b. olio extravergine"
+        },
+        {
+          "destination": "article.ingredients.pepe",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/pepe",
+          "text": "q.b. pepe nero"
+        },
+        {
+          "destination": "article.ingredients.sale",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/sale",
+          "text": "q.b. sale"
+        },
+        {
+          "destination": "article.ingredients.pangrattato",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/pangrattato",
+          "text": "20 g pangrattato per la superficie"
+        },
+        {
+          "destination": "article.ingredients.parmigiano-superficie",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/parmigiano-superficie",
+          "text": "30 g Parmigiano per la superficie"
+        },
+        {
+          "destination": "article.ingredients.pangrattato-pirofila",
+          "source": "src/content/ricette/gatto-di-patate.md#/ingredients/pangrattato-pirofila",
+          "text": "q.b. pangrattato per rivestire la pirofila, Uso richiesto dal procedimento; quantità separata non numerica nella fonte. I 20 g elencati restano per la superficie."
+        },
+        {
+          "destination": "article.cookingNotes",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "I 20 g elencati restano per la superficie."
+        },
+        {
+          "destination": "article.equipment",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "- Pirofila quadrata 20×20 cm\n- Pentola, scolapasta, schiacciapatate, ciotola e spatola\n- Forno statico preriscaldato"
+        },
+        {
+          "destination": "article.timing",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "I 70 minuti di cottura sono il budget dichiarato dalla fonte: lessatura 30–40 più forno circa 30. Riscaldamento dell’acqua e scolatura non sono quantificati; non è un tempo totale garantito. Nessun riposo numerico è prescritto."
+        },
+        {
+          "destination": "article.allergens",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "Uova e latte sono presenti; il pangrattato ordinario implica cereali con glutine. Verificare anche etichette dei salumi e contaminazioni: nessuna dichiarazione di assenza di allergeni."
+        },
+        {
+          "destination": "article.variants",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "Il Cucchiaio documenta ripieni con salame oppure prosciutto e una formula diversa con provola. Sono confronti separati: qui fiordilatte, salame e prosciutto restano tutti obbligatori, senza scambiarli automaticamente."
+        },
+        {
+          "destination": "article.storage",
+          "source": "src/content/ricette/gatto-di-patate.md",
+          "text": "Refrigerare gli avanzi entro due ore e consumarli entro 48 ore; riscaldarli una sola volta, ben caldi anche al centro. Indicazioni generali FSA, non una conservabilità sperimentata per questa ricetta."
+        }
+      ]
+    }
+  },
+  "papas-arrugadas-con-mojo": {
+    "seo": {
+      "title": "Papas arrugadas con mojo",
+      "description": "Patate con la buccia, lessate in acqua salata e asciugate sul fuoco; qui servite con mojo già preparato.",
+      "canonical": "https://ricettepatata.it/ricette/papas-arrugadas-con-mojo/",
+      "schema": {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Papas arrugadas con mojo",
+        "alternateName": [
+          "Papas arrugadas"
+        ],
+        "description": "Patate con la buccia, lessate in acqua salata e asciugate sul fuoco; qui servite con mojo già preparato.",
+        "inLanguage": "it-IT",
+        "url": "https://ricettepatata.it/ricette/papas-arrugadas-con-mojo/",
+        "author": {
+          "@type": "Organization",
+          "name": "RicettePatata.it — lavorazione editoriale assistita"
+        },
+        "recipeCuisine": [
+          "Cucina canaria"
+        ],
+        "recipeCategory": [
+          "contorno"
+        ],
+        "recipeYield": "4 porzioni",
+        "prepTime": "PT5M",
+        "cookTime": "PT30M",
+        "recipeIngredient": [
+          "500 g patate piccole da contorno",
+          "75 g sale grosso per la cottura",
+          "circa 2 l acqua di cottura, Quantità approssimativa: coprire le patate.",
+          "q.b. mojo già preparato, Accompagnamento di servizio non quantificato dalla fonte; la produzione della salsa è esclusa dai tempi."
+        ],
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "text": "Lavare bene le patate senza pelarle. Metterle in una pentola abbastanza larga da non ammassarle e aggiungere il sale grosso."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "text": "Coprire con acqua fredda: circa 2 litri nella formula, regolando la copertura alla pentola. Cuocere a fuoco medio-alto per circa 20 minuti; verificare con un coltello che siano tenere ma ancora intere."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "text": "Scolare l’acqua di cottura. Rimettere la pentola sul fuoco basso e muoverla con cautela in senso circolare per circa 10 minuti: l’umidità residua evapora e il sale rimasto sulla buccia forma il velo biancastro. Non tentare di evaporare tutti i due litri."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "text": "Servire appena pronte con mojo già preparato. La sua dose resta q.b.; preparazione e conservazione della salsa non fanno parte della formula delle patate."
+          }
+        ],
+        "citation": [
+          "https://bonviveur.com/es/recetas/papas-arrugadas",
+          "https://www.holaislascanarias.com/gastronomia-canaria/",
+          "https://www.hogarmania.com/cocina/recetas/salsas/mojo-verde-2793.html",
+          "https://www.gobiernodecanarias.org/transparencia/temas/institucional-organizativa/instituciones/informacion-sobre-las-islas-canarias/geografia-canarias/",
+          "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+          "https://www.gov.uk/understanding-food-labelling/allergen-labelling"
+        ]
+      },
+      "breadcrumb": {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ricettepatata.it/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ricette",
+            "item": "https://ricettepatata.it/ricette/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Papas arrugadas con mojo",
+            "item": "https://ricettepatata.it/ricette/papas-arrugadas-con-mojo/"
+          }
+        ]
+      }
+    },
+    "presentation": {
+      "intro": "Le patate restano intere e con la buccia: dopo la lessatura salata vengono asciugate sul fuoco.",
+      "ingredients": [
+        {
+          "id": "patata",
+          "amount": "500 g",
+          "name": "patate piccole da contorno",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "sale",
+          "amount": "75 g",
+          "name": "sale grosso per la cottura",
+          "detail": "",
+          "optional": false
+        },
+        {
+          "id": "acqua",
+          "amount": "circa 2 l",
+          "name": "acqua di cottura",
+          "detail": "Quantità approssimativa: coprire le patate.",
+          "optional": false
+        },
+        {
+          "id": "mojo",
+          "amount": "q.b.",
+          "name": "mojo già preparato",
+          "detail": "",
+          "optional": false
+        }
+      ],
+      "cookingNotes": [],
+      "supplements": [
+        {
+          "id": "equipment",
+          "title": "Attrezzatura",
+          "paragraphs": [
+            "- Pentola larga per patate non ammassate\n- Scolapasta e coltello per controllare la tenerezza"
+          ]
+        },
+        {
+          "id": "timing",
+          "title": "Tempi e limiti",
+          "paragraphs": [
+            "5 minuti di preparazione e 30 di cottura sono i valori Bonviveur: circa 20 di lessatura e 10 di asciugatura. Il mojo deve essere pronto; la sua preparazione e l’eventuale attesa non sono conteggiate."
+          ]
+        },
+        {
+          "id": "allergens",
+          "title": "Allergeni",
+          "paragraphs": [
+            "La salsa non ha una composizione fissata in questa scheda: verificare ingredienti ed etichetta del mojo effettivo. Non estendere alle patate con qualsiasi salsa le etichette “senza glutine” o “vegano” della pagina di riferimento."
+          ]
+        },
+        {
+          "id": "variants",
+          "title": "Varianti documentate",
+          "paragraphs": [
+            "La fonte ammette mojo rosso o verde e documenta l’uso di piccole patate da contorno in luogo delle varietà canarie. Karlos descrive un’altra gestione dell’acqua: qui resta la scolatura completa Bonviveur, senza mescolare metodi o formule del mojo."
+          ]
+        },
+        {
+          "id": "storage",
+          "title": "Conservazione e riscaldamento",
+          "paragraphs": [
+            "Refrigerare gli avanzi entro due ore e consumarli entro 48 ore; riscaldarli una sola volta, ben caldi anche al centro. Indicazioni generali FSA, non una conservabilità sperimentata per questa ricetta. Per il mojo seguire le sue istruzioni, anche se più restrittive."
+          ]
+        }
+      ],
+      "trace": [
+        {
+          "destination": "article.intro",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md",
+          "text": "Le patate restano intere e con la buccia: dopo la lessatura salata vengono asciugate sul fuoco."
+        },
+        {
+          "destination": "article.ingredients.patata",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md#/ingredients/patata",
+          "text": "500 g patate piccole da contorno"
+        },
+        {
+          "destination": "article.ingredients.sale",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md#/ingredients/sale",
+          "text": "75 g sale grosso per la cottura"
+        },
+        {
+          "destination": "article.ingredients.acqua",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md#/ingredients/acqua",
+          "text": "circa 2 l acqua di cottura, Quantità approssimativa: coprire le patate."
+        },
+        {
+          "destination": "article.ingredients.mojo",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md#/ingredients/mojo",
+          "text": "q.b. mojo già preparato, Accompagnamento di servizio non quantificato dalla fonte; la produzione della salsa è esclusa dai tempi."
+        },
+        {
+          "destination": "article.equipment",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md",
+          "text": "- Pentola larga per patate non ammassate\n- Scolapasta e coltello per controllare la tenerezza"
+        },
+        {
+          "destination": "article.timing",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md",
+          "text": "5 minuti di preparazione e 30 di cottura sono i valori Bonviveur: circa 20 di lessatura e 10 di asciugatura. Il mojo deve essere pronto; la sua preparazione e l’eventuale attesa non sono conteggiate."
+        },
+        {
+          "destination": "article.allergens",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md",
+          "text": "La salsa non ha una composizione fissata in questa scheda: verificare ingredienti ed etichetta del mojo effettivo. Non estendere alle patate con qualsiasi salsa le etichette “senza glutine” o “vegano” della pagina di riferimento."
+        },
+        {
+          "destination": "article.variants",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md",
+          "text": "La fonte ammette mojo rosso o verde e documenta l’uso di piccole patate da contorno in luogo delle varietà canarie. Karlos descrive un’altra gestione dell’acqua: qui resta la scolatura completa Bonviveur, senza mescolare metodi o formule del mojo."
+        },
+        {
+          "destination": "article.storage",
+          "source": "src/content/ricette/papas-arrugadas-con-mojo.md",
+          "text": "Refrigerare gli avanzi entro due ore e consumarli entro 48 ore; riscaldarli una sola volta, ben caldi anche al centro. Indicazioni generali FSA, non una conservabilità sperimentata per questa ricetta. Per il mojo seguire le sue istruzioni, anche se più restrittive."
+        }
+      ]
+    }
+  }
+}

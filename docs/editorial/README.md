@@ -15,3 +15,5 @@ Il [consolidamento P1.4](p1.4/README.md) mantiene gli artefatti P1.3 immutabili 
 [P1.9 — Risoluzione documentale e decisione sulla formula](p1.9/README.md): checklist riesaminate, criticità del gratin esplicite e alternativa non applicata.
 
 [P2.0 — pagine magazine locali, checklist e piano manuale](p2.0/README.md).
+
+[P2.1 — UX articolo, dossier separato e verifiche responsive](p2.1/README.md).

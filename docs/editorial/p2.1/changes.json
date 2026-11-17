@@ -1,0 +1,150 @@
+{
+  "baseCommit": "19507b4eabede713ca74f019372c38643945adab",
+  "files": [
+    {
+      "file": ".github/workflows/ci.yml",
+      "kind": "modified",
+      "beforeSha256": "ec2c6145029af3695bc959082bee7d7423f88f4339493a9fe98db1b1a490503b",
+      "afterSha256": "18aa10af7c5156286a73de178fdd5b51ea48b49babcdf41e4002de0a642617a4"
+    },
+    {
+      "file": "README.md",
+      "kind": "modified",
+      "beforeSha256": "c274d489b90ff473fa811177f9a8d2112324fc670a7bd2e3f07910f17532a4c6",
+      "afterSha256": "b3b7046be902e04ab3db0a26daf32057509df274ecaab0b03693deda712e66fc"
+    },
+    {
+      "file": "docs/editorial/README.md",
+      "kind": "modified",
+      "beforeSha256": "c327b28086e1eff656409aa5211b8e0ecef1e804d76c3512c71f0ead893dc205",
+      "afterSha256": "68a466700b360e71cb5e676c340c68ee92aaea43c23845294e7fc6dd3b6df3e5"
+    },
+    {
+      "file": "docs/editorial/p2.1/README.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "3ea161025b98c52ca54c91b5813eae69fabc6857302dc46bb074f0ec0c7ade81"
+    },
+    {
+      "file": "docs/editorial/p2.1/baseline.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "b56b1e087969b6f4e0b99e710bdc3c6ccc2b784a6ccb7d408a50e27d4c4d4f9c"
+    },
+    {
+      "file": "docs/editorial/p2.1/changes.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": null
+    },
+    {
+      "file": "docs/editorial/p2.1/isolation.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "5626799199bc52a7c4787b79104bcd854652c54cf0eae03bbfd6f929b2737224"
+    },
+    {
+      "file": "docs/editorial/p2.1/presentation.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "243d81645d4883dd00bce505a7c2a0dd6b62394844b859782e4e94e127d6c052"
+    },
+    {
+      "file": "docs/editorial/p2.1/report.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "6af84f9f6443448b82cd185d6e22b47822ffe54cf65bf134c296b2f5a7b0acb9"
+    },
+    {
+      "file": "docs/editorial/p2.1/responsive-accessibility.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "954023c771416d8e06cb66d608fc353fdca137368deccfc0e4a3cf1dca416117"
+    },
+    {
+      "file": "docs/editorial/p2.1/screenshot-review.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "98fb0d16be1e57c1e544ed4c57065b514d0f09c967c92edf787200bb003a2393"
+    },
+    {
+      "file": "docs/editorial/p2.1/ux-decisions.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "58edb174c1cc4a0edcd8a6ba0d0cce91612d9b730149dfb19788ab8347381d33"
+    },
+    {
+      "file": "docs/editorial/p2.1/validation-evidence.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "a4a08895a4cfd57e6290bd7843e63eeb60ac85b8469b1c23494a216249225242"
+    },
+    {
+      "file": "editorial/presentation.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "1b61bf5e7a11225ff67a55d15fd3654f448dabf1019ac45f25e96727e50e3730"
+    },
+    {
+      "file": "editorial/src/pages/release/[slug].astro",
+      "kind": "modified",
+      "beforeSha256": "53c4db781b0b212da853b1aae25b25c3bbbfc95b8112b82c16dfd6afa9eab6c0",
+      "afterSha256": "ba3199de8552416b1379b27fab4fcdf001c6bef7eb96254e49d4a9e20604768c"
+    },
+    {
+      "file": "package.json",
+      "kind": "modified",
+      "beforeSha256": "d4d192620b539baa26b5612786fca6902f1db8e6a68f0cbcb23995424fb16678",
+      "afterSha256": "874038b186f697a6087f8e6d52f8d89f2cc321d5627fa4dda0f95b1a0227b746"
+    },
+    {
+      "file": "playwright.editorial.config.ts",
+      "kind": "modified",
+      "beforeSha256": "42af432e93499e2d16bd1fceeb5d89ce1b826c4244c4a73a8c73e7953187f4c3",
+      "afterSha256": "a86a70665cd39ff4d39eea435d385187c584be146840411b266aa12bb04aa700"
+    },
+    {
+      "file": "scripts/editorial-ux-screenshots.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "8d946a8d041e76c41886c42a1735bee1f8d13fcb6894c47ba544bd24b1b31a47"
+    },
+    {
+      "file": "scripts/test-editorial.mjs",
+      "kind": "modified",
+      "beforeSha256": "fbe43c807cca1529d26b61defc56e0d86605cfe1846d37cd4542da3a587d1e1d",
+      "afterSha256": "ecc678e04861ca0897e1e71d950709a3f8f932b5720fc2ef69dd603bc4da7eee"
+    },
+    {
+      "file": "scripts/ux-check.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "e429e3af2aa8fcf65aa73c30e50c178fce18dab1be0585ce5ef1319cfcbea6d4"
+    },
+    {
+      "file": "src/components/RecipeArticle.astro",
+      "kind": "modified",
+      "beforeSha256": "b6b5c629f6dfbea7cccaf023e276372690ef3d2216a35700c67eefda46639f5a",
+      "afterSha256": "37b3f0d41cef1de572fc1203e62022e83a9f597ca9f88bb4902700355a90540c"
+    },
+    {
+      "file": "tests/editorial-browser/ux.spec.ts",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "dd18564b80e3a454b51796668061ee8640778ebe5694ceca731f3547fc120185"
+    },
+    {
+      "file": "tests/editorial-ux-output.test.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "4d6040ae4773332c71504d54069b2c333c9e9fc479f0a7163b198a562d241b62"
+    },
+    {
+      "file": "tests/editorial-ux.test.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "484a56124e3596c6cbfbd196da0075ac98ade885c6d7eacd50b5cf1e07501f6f"
+    }
+  ],
+  "note": "Self hash omitted to avoid recursion. Final complete Git SHA is supplied in the PR. Catalog and snapshots protected separately in baseline.json."
+}

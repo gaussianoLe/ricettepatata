@@ -16,7 +16,7 @@ try{
  child=spawn(process.execPath,[fileURLToPath(new URL('../node_modules/@playwright/test/cli.js',import.meta.url)),'test','--config','playwright.editorial.config.ts'],{stdio:'ignore',env:{...process.env,EDITORIAL_TEST_OUTPUT:path.join(session.directory,'test-results'),EDITORIAL_TEST_URL:`http://127.0.0.1:${session.address.port}`}});
  const code=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',resolve);});
  if(code!==0)throw new Error('Test browser editoriali falliti; payload privati non conservati nei log o negli artefatti CI');
- console.log('Browser editoriali: 24 test Chromium desktop/tablet/mobile superati. Nessun trace, screenshot, video o report HTML.');
+ console.log('Browser editoriali: 36 test Chromium desktop/tablet/mobile e sei viewport UX superati. Nessun trace, screenshot, video o report HTML.');
 } catch(error){failed=true;console.error(error.message);}
 finally{
  if(session){await session.stop();if(existsSync(session.directory))throw new Error('Sessione temporanea non rimossa');}

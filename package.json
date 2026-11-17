@@ -30,7 +30,9 @@
     "editorial:resolution": "node scripts/editorial-resolution.mjs",
     "editorial:resolution:output": "node scripts/editorial-resolution.mjs --output",
     "release:check": "node scripts/release-check.mjs",
-    "release:output": "node scripts/release-check.mjs --output"
+    "release:output": "node scripts/release-check.mjs --output",
+    "ux:check": "node scripts/ux-check.mjs",
+    "ux:output": "node scripts/ux-check.mjs --output"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",

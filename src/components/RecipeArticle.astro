@@ -1,0 +1,50 @@
+---
+import {formatIngredient} from '../catalog/view.mjs';
+import Sources from './Sources.astro';
+import EditorialNotes from './EditorialNotes.astro';
+interface Props {
+ record:import('astro/zod').z.infer<typeof import('../catalog/schema.mjs').recipeSchema>;
+ sections:Record<string,string[]>;
+ catalogHref:string;
+ related:{title:string;href:string}[];
+}
+const {record,sections,catalogHref,related}=Astro.props;
+const supplements=['Formula e attrezzatura','Tempi e limiti','Allergeni','Varianti documentate','Conservazione e riscaldamento'].filter(title=>sections[title]?.length);
+const origin=[record.provenance.region,record.provenance.country?.name].filter(Boolean).join(' · ');
+---
+<article class="recipe-article" data-recipe-article>
+ <nav aria-label="Percorso della ricetta"><a href={catalogHref}>Ricette</a><span aria-hidden="true"> / </span><span aria-current="page">{record.names.italian}</span></nav>
+ <header class="recipe-hero">
+  <div><p class="eyebrow">Il mondo, una patata alla volta</p><h1>{record.names.italian}</h1><p class="original">Nome originale: <span lang={record.names.original.language}>{record.names.original.text}</span></p>
+  <p class="intro">{record.description}</p>{origin && <p class="origin">{origin}</p>}
+  {sections.Introduzione?.map(text=><p>{text}</p>)}
+  <dl class="facts">{record.servings!==null && <div><dt>Porzioni</dt><dd>{record.servings}</dd></div>}{record.timing && <><div><dt>Preparazione</dt><dd>{record.timing.prepMinutes} min</dd></div><div><dt>Cottura</dt><dd>{record.timing.cookMinutes} min</dd></div></>}</dl>
+  {!record.timing && <p>Tempi non quantificati.</p>}
+  </div>
+  <aside class="image-placeholder" aria-label="Stato della fotografia"><span class="placeholder-mark" aria-hidden="true">✳</span><p>La ricetta, per ora, si racconta con le parole.</p><small>Fotografia non disponibile.<br/>Nessuna immagine del piatto è stata utilizzata.</small></aside>
+ </header>
+ <nav class="recipe-jumps" aria-label="Consulta la ricetta"><a href="#ingredienti">Ingredienti</a><a href="#procedimento">Procedimento</a><a href="#approfondimenti">Note e fonti</a><button type="button" data-cooking-toggle aria-pressed="false" hidden>Modalità cucina</button></nav>
+ <p class="cooking-help" data-cooking-help hidden>Spunta gli ingredienti mentre cucini. Le spunte restano solo in questa pagina e si azzerano ricaricandola. Lo schermo non viene mantenuto acceso.</p>
+ <div class="cooking-grid">
+  <section class="ingredient-panel" aria-labelledby="ingredienti"><p class="eyebrow">Sul piano di lavoro</p><h2 id="ingredienti" tabindex="-1">Ingredienti</h2><ul class="ingredient-list">{record.ingredients.map(ingredient=><li><label><input type="checkbox" data-ingredient-check/><span>{formatIngredient(ingredient)}</span></label></li>)}</ul></section>
+  <section class="steps-panel" aria-labelledby="procedimento"><p class="eyebrow">Un passo alla volta</p><h2 id="procedimento" tabindex="-1">Procedimento</h2><ol class="steps-list">{record.steps.map((step,i)=><li><span class="step-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><p>{step.text}</p></li>)}</ol></section>
+ </div>
+ <div id="approfondimenti" class="supplements" tabindex="-1">{supplements.map(title=><section><h2>{title}</h2>{sections[title].map(text=>text.startsWith('- ')?<ul>{text.split('\n').map(line=><li>{line.replace(/^- /,'')}</li>)}</ul>:<p>{text}</p>)}</section>)}<EditorialNotes notes={record.notes}/><Sources sources={record.sources}/></div>
+ <nav class="related" aria-label="Altre ricette"><h2>Continua il viaggio</h2><a href={catalogHref}>← Torna al catalogo locale</a>{related.map(item=><a href={item.href}>{item.title} →</a>)}</nav>
+</article>
+<script is:inline>
+for(const article of document.querySelectorAll('[data-recipe-article]')){
+ const button=article.querySelector('[data-cooking-toggle]');
+ const help=article.querySelector('[data-cooking-help]');
+ if(button){button.hidden=false;button.addEventListener('click',()=>{
+  const active=button.getAttribute('aria-pressed')!=='true';
+  button.setAttribute('aria-pressed',String(active));article.classList.toggle('cooking',active);if(help)help.hidden=!active;
+ });}
+}
+</script>
+<style is:inline>
+.recipe-article{--ink:#25392e;--leaf:#28583b;--paper:#fffdf7;--line:#d8d8c4;--accent:#8f351b;color:var(--ink);font:1rem/1.75 system-ui,sans-serif;max-width:1160px;margin:auto;padding:1.2rem;overflow-wrap:anywhere}
+.recipe-article a{color:var(--leaf);text-underline-offset:.2em}.recipe-article a:focus-visible,.recipe-article :focus-visible{outline:3px solid var(--accent);outline-offset:4px}.recipe-article h1,.recipe-article h2{font-family:Georgia,serif;line-height:1.15;letter-spacing:-.025em}.recipe-article h1{font-size:clamp(2.4rem,6vw,4.8rem);margin:.6rem 0 1rem}.recipe-article h2{font-size:1.85rem}.recipe-hero{display:grid;gap:2rem;padding:2rem 0}.eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}.intro{font-size:1.22rem;line-height:1.65}.original{font-style:italic}.origin{font-weight:700}.facts{display:flex;flex-wrap:wrap;gap:1.5rem;border-top:1px solid var(--line);padding-top:1rem}.facts dt{font-size:.8rem}.facts dd{margin:0;font-weight:800;font-size:1.25rem}.image-placeholder{background:#ece8d1;border-radius:8rem 8rem 1.5rem 1.5rem;padding:2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:220px}.placeholder-mark{font-size:5rem;line-height:1;color:var(--leaf)}.image-placeholder p{font-family:Georgia,serif;font-size:1.4rem;max-width:18ch}.image-placeholder small{font-size:.85rem}.recipe-jumps{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;padding:1rem 0;border-block:1px solid var(--line)}.recipe-jumps a,.recipe-jumps button{padding:.65rem .9rem;font:inherit;font-weight:700}.recipe-jumps button{color:var(--paper);background:var(--leaf);border:2px solid var(--leaf);border-radius:2rem;cursor:pointer}.recipe-jumps button[aria-pressed=true]{background:var(--ink)}.cooking-grid{display:grid;gap:2rem;margin-top:2rem}.ingredient-panel{background:#eeefdf;border-radius:1.25rem;padding:1.3rem;align-self:start}.ingredient-list{list-style:none;padding:0}.ingredient-list li{border-bottom:1px solid #c7ccba;padding:.7rem 0}.ingredient-list label{display:flex;gap:.8rem;align-items:flex-start;cursor:pointer;min-height:44px}.ingredient-list input{flex-shrink:0;margin:.45rem 0 0;width:1.25rem;height:1.25rem;accent-color:var(--leaf)}.ingredient-list input:checked+span{text-decoration:line-through;color:#4b554d}.steps-list{list-style:decimal;padding-left:1.4rem}.steps-list li{position:relative;padding:0 0 1.8rem .5rem;min-height:3rem}.steps-list li::marker{font-weight:800;color:var(--accent)}.step-number{display:none}.steps-list p{margin:0}.supplements{max-width:75ch;margin:2rem auto}.supplements section{border-top:1px solid var(--line);padding-top:1rem;margin-top:1rem}.supplements li{margin-bottom:.6rem}.supplements a{overflow-wrap:anywhere}.related{display:flex;flex-wrap:wrap;gap:1rem;border-top:2px solid var(--leaf);padding:1rem 0 2rem}.related h2{flex-basis:100%}.cooking .cooking-grid{font-size:1.2rem;line-height:1.9}.cooking-help{padding:1rem;background:#eeefdf;border-left:4px solid var(--leaf)}[hidden]{display:none!important}
+@media(min-width:760px){.recipe-hero{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);align-items:center}.cooking-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:3rem}.recipe-article{padding:2rem}.image-placeholder{min-height:340px}}
+@media print{.recipe-jumps button,.ingredient-list input,.related{display:none}.recipe-article{font-size:11pt}.image-placeholder{display:none}.recipe-hero,.cooking-grid{display:block}.steps-list li{break-inside:avoid}}
+</style>

@@ -13,3 +13,5 @@ Il [consolidamento P1.4](p1.4/README.md) mantiene gli artefatti P1.3 immutabili 
 [P1.8 — Validazione documentale dei tre draft](p1.8/README.md): esiti individuali, fonti ricontrollate, diff e criticità; nessuna promozione editoriale.
 
 [P1.9 — Risoluzione documentale e decisione sulla formula](p1.9/README.md): checklist riesaminate, criticità del gratin esplicite e alternativa non applicata.
+
+[P2.0 — pagine magazine locali, checklist e piano manuale](p2.0/README.md).

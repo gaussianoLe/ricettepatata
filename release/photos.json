@@ -1,0 +1,32 @@
+{
+  "consultedOn": "2026-11-17",
+  "papas-arrugadas-con-mojo": {
+    "status": "licensed",
+    "file": "release/assets/papasarrugadas.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Papasarrugadas.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/87/Papasarrugadas.jpg",
+    "author": "Fer..",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "commercial": true,
+    "adaptation": true,
+    "verification": "Commons description and FlickreviewR review dated 2007-04-07; Creative Commons deed consulted. Original Flickr URL not accessible via research tool, not claimed consulted.",
+    "flickr": "https://www.flickr.com/photos/66034504@N00/255212758",
+    "alt": "Patate intere con la buccia e salsa mojo rossa su un piatto bianco",
+    "caption": "Immagine illustrativa delle papas con mojo; non \u00e8 una prova in cucina della redazione.",
+    "changes": "Ridimensionamento e conversione WebP/AVIF/JPEG; ritaglio della variante social e inquadratura responsive nelle anteprime.",
+    "sha256": "e1baf6e8ed35cbd846cc503fde8a746b79bbab07a8dffc592b16d3d259a2766e",
+    "width": 1280,
+    "height": 960
+  },
+  "gatto-di-patate": {
+    "status": "blocked",
+    "sourcePages": [
+      "https://commons.wikimedia.org/wiki/File:Gatt%C3%B2_di_patate.jpg",
+      "https://commons.wikimedia.org/wiki/File:Gatt%C3%B2_di_patate_2.jpg"
+    ],
+    "declaredAuthor": "Stefania Curci",
+    "declaredLicense": "CC BY-SA 4.0",
+    "reason": "Fonte indicata WhatsApp, caricamento da terzo; catena di titolarit\u00e0 non sufficientemente chiara per questa selezione. Nessuna immagine scaricata. Richiesta foto originale autorizzata o conferma dei diritti."
+  }
+}

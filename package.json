@@ -32,7 +32,9 @@
     "release:check": "node scripts/release-check.mjs",
     "release:output": "node scripts/release-check.mjs --output",
     "ux:check": "node scripts/ux-check.mjs",
-    "ux:output": "node scripts/ux-check.mjs --output"
+    "ux:output": "node scripts/ux-check.mjs --output",
+    "release:build": "node scripts/release-build.mjs",
+    "test:release": "node scripts/test-release.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
@@ -42,6 +44,7 @@
     "@tailwindcss/vite": "^4.3.5",
     "astro": "^7.4.7",
     "csv-parse": "^7.0.3",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.3.5",
     "typescript": "^5.9.3",
     "yaml": "^2.9.1"

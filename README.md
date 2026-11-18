@@ -121,3 +121,5 @@ P1.9: [seconda revisione e proposta separata del gratin](docs/editorial/p1.9/REA
 P2.0: [preparazione locale delle prime due pagine editoriali](docs/editorial/p2.0/README.md), senza pubblicazione o promozioni.
 
 P2.1: [rifinitura UX editoriale locale e confronto tracciabile](docs/editorial/p2.1/README.md), senza modifiche alle ricette o pubblicazione.
+
+P2.2: [MVP pubblico e release candidate statica isolata](docs/release/p2.2/README.md). Pubblicazione ancora bloccata in attesa di approvazione esplicita.

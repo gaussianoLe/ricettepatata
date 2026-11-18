@@ -1,0 +1,288 @@
+{
+  "baseCommit": "36bd1f3c7a53f1ff8b40fd28b66c0bf367555ff9",
+  "files": [
+    {
+      "file": ".github/workflows/ci.yml",
+      "kind": "modified",
+      "beforeSha256": "18aa10af7c5156286a73de178fdd5b51ea48b49babcdf41e4002de0a642617a4",
+      "afterSha256": "d43b4860d90f939844a9ebe1fcec657bba04714d574ed821033bdaaaa5601de6"
+    },
+    {
+      "file": "README.md",
+      "kind": "modified",
+      "beforeSha256": "b3b7046be902e04ab3db0a26daf32057509df274ecaab0b03693deda712e66fc",
+      "afterSha256": "3adb3ce767d40d3995e8f1c42952b7640957cc7023b1a3fe59dd75ef1cb13e63"
+    },
+    {
+      "file": "docs/release/p2.2/README.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "c800e5e9a9d5c9f1d7f904c6731a186e333cab5ec7e55126155530dc3fb356e5"
+    },
+    {
+      "file": "docs/release/p2.2/before/src/layouts/Layout.astro.txt",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "0ba889f8819dc2c23cd7bf3856ef0b21c4967a29e47e9fd3d93bfa4cf020328d"
+    },
+    {
+      "file": "docs/release/p2.2/before/src/pages/ricette/[id].astro.txt",
+      "kind": "modified",
+      "beforeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterSha256": "9fe2b870c584e843dbd854a24a67679c509ae313d05df1828ae6e816c5722cb5"
+    },
+    {
+      "file": "docs/release/p2.2/changes.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": null
+    },
+    {
+      "file": "docs/release/p2.2/dependency-audit.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "a01c8c6623f104481f7bc633f4418b2068859f95f402679d812e31113d5490df"
+    },
+    {
+      "file": "docs/release/p2.2/deployment.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "82dd447e9eba637da75987ee8e4cd069a798013694232617e30202722a78d232"
+    },
+    {
+      "file": "docs/release/p2.2/interfaces.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "0b6e89af40890a28a66cef273188013014ac56e496007b3a802ae8f364308687"
+    },
+    {
+      "file": "docs/release/p2.2/isolation.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "30441a0e7adb6c72388ac7b26654dee3411e2b9773eba20b40c467ce12f0ca28"
+    },
+    {
+      "file": "docs/release/p2.2/output-differences.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "3eb5cdb5dd5c7bdc374b6e147ace255a8b6ae8c66e830c50f399df2ba5c964d9"
+    },
+    {
+      "file": "docs/release/p2.2/photos.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "da7e6955196c6cab9a2e0a651149c4e86e52ebf676ad8ef1ebbffbf1d99448b0"
+    },
+    {
+      "file": "docs/release/p2.2/report.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "02f471a026b49da92700e31e8f74a49b7c7d8d22699c08674704de6f585c7a08"
+    },
+    {
+      "file": "docs/release/p2.2/screenshots.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "828972a38573a5016082044e9141968fcf9f5a8ead1aebe16b2a88338a40a924"
+    },
+    {
+      "file": "docs/release/p2.2/validation-evidence.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "7ddeea800ab7f124ba0c5373bb38c65882585657e7bc43908fd640f69b2b09e5"
+    },
+    {
+      "file": "package-lock.json",
+      "kind": "modified",
+      "beforeSha256": "b8d9ef26d4d5607937693aa15a0975a52b9e25e7b483b8a620ef040aa8104495",
+      "afterSha256": "1e0bb8edb90fe3fe0f60f6e95e6327b7d497ebf98c15abb17556e905376837a3"
+    },
+    {
+      "file": "package.json",
+      "kind": "modified",
+      "beforeSha256": "874038b186f697a6087f8e6d52f8d89f2cc321d5627fa4dda0f95b1a0227b746",
+      "afterSha256": "9f12d169aec4d35c1546e50694836d7d6c4705a7d6c010e1148e0827b6f9c437"
+    },
+    {
+      "file": "playwright.release.config.ts",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "8fae087f22854a3058af5f5ae120669718c72e7931cccc9621e22f6ae0b02cc8"
+    },
+    {
+      "file": "release/approved-records.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "09d52bc779f7a76ef2778c3212411f302c2328d43359413e759152f21b0bad0f"
+    },
+    {
+      "file": "release/assets/ATTRIBUTION.md",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "bf7ac77825ffedbd3145bc6ce145442aea4fa9473224315afc84e69201c67bf7"
+    },
+    {
+      "file": "release/assets/papasarrugadas.jpg",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "e1baf6e8ed35cbd846cc503fde8a746b79bbab07a8dffc592b16d3d259a2766e"
+    },
+    {
+      "file": "release/authorization.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "2c3af24b37584e410b6aeeded16f7cb4fdd729db34d9e9532ea63c6d513a727c"
+    },
+    {
+      "file": "release/compatibility.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "ac7abc83a05a5193ad17fb506f167846a4063a9125279330b7d12deb10afe195"
+    },
+    {
+      "file": "release/context.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "9ddaf538f4fdbe42f1f0c4510d07e00c3845e552bfa224166379f7ff6724da2b"
+    },
+    {
+      "file": "release/photos.json",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "cf61baf66707436d3accb61b407fafd72181f613f596752415f791687a6b7a55"
+    },
+    {
+      "file": "release/photos.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "8fdba62edb413b7970bad4f784c5c5803bb6e0aeec5ee3a949138e41e390646b"
+    },
+    {
+      "file": "release/reader.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "ce14d2ff82731389d167d79243cfbefec5ec2b1b15d65aced508129a978446f4"
+    },
+    {
+      "file": "release/runtime.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "2bf10db705985f7c50044fc8347516b984b1f00c2ec56012e5000804d9c841df"
+    },
+    {
+      "file": "release/selection.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "c97ba635fc4b16d93658a75f92517ab080c8dc4b65f8d9394cd96192bbbaee87"
+    },
+    {
+      "file": "release/server.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "75f2468e5dc4c35fcef11e102e334d6a158d8a2f18d208f216e6e642664af12a"
+    },
+    {
+      "file": "release/test-session.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "f305d05539eb63bd3aaf7ae43f871be1978b14a72a8133d176fdcc3d5a91274e"
+    },
+    {
+      "file": "scripts/release-build.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "ae1eeb9fc10b01c93730fb277a45cd5fc29e2f343a2c41a40d4d0766f170af96"
+    },
+    {
+      "file": "scripts/release-check.mjs",
+      "kind": "modified",
+      "beforeSha256": "e2565a5109e4a31fb16163c1f0aded40464308b846057104fc8f379f001eebb8",
+      "afterSha256": "ab5bdf3cbb45a97cda621f96be5a0d8907c13f70b3eee4a6b7686b7b2f1b2bab"
+    },
+    {
+      "file": "scripts/test-release.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "df7aef12d9d2b277d10f581340376024f04ad237b92e7026a7a06e8457bdcd01"
+    },
+    {
+      "file": "scripts/ux-check.mjs",
+      "kind": "modified",
+      "beforeSha256": "e429e3af2aa8fcf65aa73c30e50c178fce18dab1be0585ce5ef1319cfcbea6d4",
+      "afterSha256": "0d26b3739cffec6c5a787d49b254d403cac2f78ae68214aab491e24441b1cf00"
+    },
+    {
+      "file": "src/components/RecipeArticle.astro",
+      "kind": "modified",
+      "beforeSha256": "37b3f0d41cef1de572fc1203e62022e83a9f597ca9f88bb4902700355a90540c",
+      "afterSha256": "f95776b96e38823e8a4500c5efd0ee961695f382b8a1ff5fcd0aa6a17d1a6bb8"
+    },
+    {
+      "file": "src/components/RecipeCard.astro",
+      "kind": "modified",
+      "beforeSha256": "74387b27db135d13563cf7b1c94f1f95e7a73171d48ed1f75bfd4c75fec2cb90",
+      "afterSha256": "4abe2c759435d5daf52c7d5b21ad7f5f7a0b44ae23ec31196d4c2ae2d5c50b5e"
+    },
+    {
+      "file": "src/components/RecipeExplorer.astro",
+      "kind": "modified",
+      "beforeSha256": "b1b8dd34bbf48df4f35d69e5b8cc11bb5757b92f239eb098220e35219816cd2d",
+      "afterSha256": "fde10fb34229ca88317af6d18c284d8898013a248e4c775fbc795b93c9b3d3aa"
+    },
+    {
+      "file": "src/components/RecipePhoto.astro",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "0f28b66e5c8919608ac2ab99cc5f53407c9c69841ce89d32dd7d6fa5317838d4"
+    },
+    {
+      "file": "src/layouts/Layout.astro",
+      "kind": "modified",
+      "beforeSha256": "0ba889f8819dc2c23cd7bf3856ef0b21c4967a29e47e9fd3d93bfa4cf020328d",
+      "afterSha256": "03974c44493f4e326ca5e2f736fddd8d951d722e8e501c48f38853fdcd1ce2b6"
+    },
+    {
+      "file": "src/pages/index.astro",
+      "kind": "modified",
+      "beforeSha256": "4f5a35d00dcbc336b6c95d52728b5d93e58647cc1cb65115539ebf8c491c9653",
+      "afterSha256": "ac1e884ae2c1a41673238c83a56b343f56169489ca607d33a81418e76c9b8036"
+    },
+    {
+      "file": "src/pages/ricette/[id].astro",
+      "kind": "modified",
+      "beforeSha256": "9fe2b870c584e843dbd854a24a67679c509ae313d05df1828ae6e816c5722cb5",
+      "afterSha256": "86c30869c896e09e5db629b78f96f0f0074c9fa61f80b82e7f69a1fadaa13bb3"
+    },
+    {
+      "file": "src/pages/robots.txt.ts",
+      "kind": "modified",
+      "beforeSha256": "542caeea127fc03b15a77c6934d1ad863169a750c78ef09888992e216f498bec",
+      "afterSha256": "b863ed2dc8df0ac6b2ea49d49bce207859ecc6b04c6f44cebc05a7ecf6ab9cfd"
+    },
+    {
+      "file": "tests/helpers/release-approval-fixture.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "3dff1ccda7c3d04c12abfb6c48dda360d62ed3d5e31c84c7e20f4cb52abbf182"
+    },
+    {
+      "file": "tests/public-release-output.test.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "89ddb1374a49d5d59a9ee47d723ac07b31931b8526c0fe3938949be46f81f9f4"
+    },
+    {
+      "file": "tests/public-release.test.mjs",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "a560a71dcbd96dcaf400d4d2228e2d5a84c0773f5f88eed3be7c945408b6dbe1"
+    },
+    {
+      "file": "tests/release-browser/site.spec.ts",
+      "kind": "created",
+      "beforeSha256": null,
+      "afterSha256": "d3c8d5a16f0729901e3e40053597b0d80cda8f68709ec0bf20bcc9e76f8bdfd3"
+    }
+  ],
+  "note": "Self hash omitted; complete Git SHA provided in PR. Original photo is the sole binary licensed source asset."
+}

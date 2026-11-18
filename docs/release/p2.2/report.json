@@ -1,0 +1,59 @@
+{
+  "phase": "P2.2",
+  "baseCommit": "36bd1f3c7a53f1ff8b40fd28b66c0bf367555ff9",
+  "branch": "feat/p2.2-public-mvp",
+  "included": [
+    "RP-0011",
+    "RP-0080"
+  ],
+  "excluded": [
+    "RP-0062",
+    "all other drafts/candidates/demos"
+  ],
+  "ordinaryBuildRealDrafts": 0,
+  "rcRecipeCount": 2,
+  "currentStates": "draft, demo false",
+  "realPromotions": 0,
+  "recipeFormulaChanges": 0,
+  "identityChanges": 0,
+  "publicationApproved": false,
+  "staticProductionBuilder": "Implemented and checked with synthetic committed publication inputs; real invocation BLOCKED",
+  "candidateUrls": [
+    "http://127.0.0.1:4323/ricette/gatto-di-patate/",
+    "http://127.0.0.1:4323/ricette/papas-arrugadas-con-mojo/"
+  ],
+  "canonicalOrigin": "https://ricettepatata.it",
+  "images": {
+    "licensedIntegrated": [
+      "RP-0080 \u2014 Fer.., CC BY 2.0"
+    ],
+    "blocked": [
+      "RP-0011 \u2014 placeholder pending photo or explicit acceptance"
+    ],
+    "generatedFormats": [
+      "AVIF",
+      "WebP",
+      "JPEG"
+    ],
+    "variantsPerLicensedPhoto": 10
+  },
+  "localChecks": {
+    "configurations": 4,
+    "nodeExecutions": 580,
+    "publicBrowserCases": 56,
+    "editorialBrowserCases": 144,
+    "releaseBrowserCases": 32,
+    "axeViolations": 0,
+    "rcAndApprovedFixtureReproducible": true
+  },
+  "openFindings": [
+    "User editorial approval absent",
+    "Gatt\u00f2 photo pending or fallback acceptance",
+    "11 high npm findings from one unpatched picomatch advisory in build toolchain; risk review pending",
+    "Remote hosting inventory, backup and WordPress cutover not inspected/authorized"
+  ],
+  "serverChanges": 0,
+  "deployments": 0,
+  "merges": 0,
+  "successCriterion": "Application can generate the final root static package after explicit reviewed publication inputs and asset decisions; no further application milestone designed. Remote transfer remains separately authorized."
+}

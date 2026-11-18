@@ -1,0 +1,17 @@
+{
+  "baseCommit": "36bd1f3c7a53f1ff8b40fd28b66c0bf367555ff9",
+  "files": [
+    {
+      "file": "src/layouts/Layout.astro",
+      "beforeFile": "docs/release/p2.2/before/src/layouts/Layout.astro.txt",
+      "beforeSha256": "0ba889f8819dc2c23cd7bf3856ef0b21c4967a29e47e9fd3d93bfa4cf020328d",
+      "afterSha256": "03974c44493f4e326ca5e2f736fddd8d951d722e8e501c48f38853fdcd1ce2b6"
+    },
+    {
+      "file": "src/pages/ricette/[id].astro",
+      "beforeFile": "docs/release/p2.2/before/src/pages/ricette/[id].astro.txt",
+      "beforeSha256": "9fe2b870c584e843dbd854a24a67679c509ae313d05df1828ae6e816c5722cb5",
+      "afterSha256": "86c30869c896e09e5db629b78f96f0f0074c9fa61f80b82e7f69a1fadaa13bb3"
+    }
+  ]
+}

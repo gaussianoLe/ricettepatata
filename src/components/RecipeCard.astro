@@ -1,10 +1,17 @@
 ---
+import RecipePhoto from './RecipePhoto.astro';
+import {photoFor} from '../../release/photos.mjs';
+import {selected} from '../../release/selection.mjs';
+import {reader} from '../../release/reader.mjs';
 import type {CollectionEntry} from 'astro:content';
 import PotatoArt from './PotatoArt.astro';
 import {href} from '../lib/urls';
 import {recipeView,recipeSearchText} from '../catalog/view.mjs';
 interface Props {recipe: CollectionEntry<'ricette'>}
 const {recipe} = Astro.props; const d = recipeView(recipe.data);
+const real=selected(recipe.data);const photo=real?photoFor(recipe.id):null;const description=real?reader({file:recipe.id,body:recipe.body??'',data:recipe.data}).presentation.intro:d.description;
 ---
 <article class="recipe-card" data-recipe data-region={d.region} data-search={recipeSearchText(recipe.data)}>
-<a href={href(`ricette/${recipe.id}/`)}><div class:list={['card-art',d.color]}><PotatoArt color={d.color}/><span class="time">◷ {d.total} min</span></div><div class="card-copy"><p class="eyebrow">{d.country}</p><h3>{d.title} <span aria-hidden="true">↗</span></h3><p>{d.description}</p><span class="card-bottom">In cucina con noi <span aria-hidden="true">→</span></span></div></a></article>
+<a href={href(`ricette/${recipe.id}/`)}><div class:list={['card-art',d.color]}>{photo?<RecipePhoto slug={recipe.id} variant="card"/>:real?<span class="release-card-placeholder">{d.title}</span>:<PotatoArt color={d.color}/>}<span class="time">{real?`Prep. ${d.prep} · cott. ${d.cook} min`:`◷ ${d.total} min`}</span></div><div class="card-copy"><p class="eyebrow">{d.country}</p><h3>{d.title} <span aria-hidden="true">↗</span></h3><p>{description}</p><span class="card-bottom">{real?'Scopri la ricetta e le fonti':'In cucina con noi'} <span aria-hidden="true">→</span></span></div></a>{photo && <p class="card-photo-credit">Foto: <a href={photo.sourcePage}>{photo.author}</a> · <a href={photo.licenseUrl}>{photo.license}</a> · immagine illustrativa</p>}</article>
+
+{real && <style is:inline>.card-photo-credit{padding:.5rem 1rem;font-size:.75rem}.card-photo-credit a{text-decoration:underline}.release-card-placeholder{font:700 1.5rem/1.3 Georgia,serif;text-align:center;padding:2rem;max-width:20ch}</style>}

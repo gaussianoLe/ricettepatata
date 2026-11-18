@@ -1,3 +1,4 @@
+import {historicalInterface} from '../release/compatibility.mjs';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
@@ -11,7 +12,7 @@ export function uxSnapshot(){return Object.fromEntries(slugs.map(slug=>{const re
 export function verifyUX(read=file=>readFileSync(file)){
  const baseline=JSON.parse(read('docs/editorial/p2.1/baseline.json'));
  if(baseline.baseCommit!=='19507b4eabede713ca74f019372c38643945adab')throw new Error('Baseline UX inattesa');
- for(const [file,hash] of Object.entries(baseline.files))if(createHash('sha256').update(read(file)).digest('hex')!==hash)throw new Error('Baseline UX alterata: '+file);
+ for(const [file,hash] of Object.entries(baseline.files))if(createHash('sha256').update(historicalInterface(file,read)).digest('hex')!==hash)throw new Error('Baseline UX alterata: '+file);
  if(JSON.stringify(uxSnapshot())!==JSON.stringify(JSON.parse(read('docs/editorial/p2.1/presentation.json'))))throw new Error('Presentazione o SEO discordante dal manifest UX');
  return {prepared:2,protectedFiles:Object.keys(baseline.files).length,operationalChanges:0,published:0,gratin:'excluded'};
 }

@@ -1,4 +1,5 @@
 ---
+import {releaseArtifact} from '../../release/context.mjs';
 import type {CollectionEntry} from 'astro:content';
 import RecipeCard from './RecipeCard.astro';
 interface Props {recipes: CollectionEntry<'ricette'>[]}
@@ -8,7 +9,7 @@ const {recipes} = Astro.props;
 <form class="search-form" id="cerca" role="search"><label class="sr-only" for="query">Cerca ricette</label><input id="query" name="q" type="search" placeholder="Una ricetta, un Paese, un ingrediente…"/><button class="button" type="submit">Cerca <span aria-hidden="true">↗</span></button></form>
 <div class="filter-row"><div class="filters" role="group" aria-label="Filtra per provenienza">{['Tutte','Italia','Europa','Mondo'].map((region)=><button type="button" data-filter={region} aria-pressed={region==='Tutte'}>{region==='Mondo'?'Resto del mondo':region}</button>)}</div><button class="reset" type="button" data-reset>Azzera filtri</button></div>
 <p class="result-count" aria-live="polite" aria-atomic="true" data-count>{recipes.length} ricette da scoprire</p>
-<div class="recipe-grid">{recipes.map(recipe=><RecipeCard recipe={recipe}/>)}</div><p class="empty" data-empty hidden={recipes.length>0}>Nessuna ricetta trovata. Prova un altro ingrediente o azzera i filtri.</p>
+<div class:list={['recipe-grid', {'release-pair':releaseArtifact && recipes.length===2}]}>{recipes.map(recipe=><RecipeCard recipe={recipe}/>)}</div><p class="empty" data-empty hidden={recipes.length>0}>Nessuna ricetta trovata. Prova un altro ingrediente o azzera i filtri.</p>
 <noscript><p>{recipes.length>0?'Puoi leggere tutte le ricette qui sotto. Per usare ricerca e filtri, abilita JavaScript.':'Il ricettario è in preparazione: le ricette saranno disponibili dopo la verifica editoriale.'}</p></noscript></section>
 <script>
 import {normalize, matchesRecipe} from '../lib/search.mjs';
@@ -31,3 +32,5 @@ input.addEventListener('input',update); buttons.forEach(b=>b.addEventListener('c
 explorer.querySelector('[data-reset]')?.addEventListener('click',()=>{input.value='';region='Tutte';update();input.focus();});update();
 }
 </script>
+
+{releaseArtifact && <style is:inline>.recipe-grid.release-pair{grid-template-columns:repeat(2,minmax(0,1fr))}@media(max-width:650px){.recipe-grid.release-pair{grid-template-columns:1fr}}</style>}

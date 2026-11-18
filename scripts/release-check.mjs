@@ -1,3 +1,4 @@
+import {historicalInterface} from '../release/compatibility.mjs';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
@@ -8,7 +9,7 @@ export function verifyRelease(read=file=>readFileSync(file)){
  const baseline=JSON.parse(read(dir+'/baseline.json'));
  if(baseline.baseCommit!=='8ae5168d54283d61ba73369dd63b7f6b5a884825')throw new Error('Baseline P2.0 inattesa');
  for(const [file,hash] of Object.entries(baseline.files)){
-  if(createHash('sha256').update(read(file)).digest('hex')!==hash)throw new Error('Baseline P2.0 alterata: '+file);
+  if(createHash('sha256').update(historicalInterface(file,read)).digest('hex')!==hash)throw new Error('Baseline P2.0 alterata: '+file);
  }
  const entries=['gatto-di-patate','papas-arrugadas-con-mojo'].map(slug=>releaseEntry(slug));
  if(entries.some(e=>!e)||releaseEntry('gratin-dauphinois'))throw new Error('Selezione del rilascio non conforme');

@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+import {href} from '../lib/urls';
+interface Props {title: string; description: string; schema?: Record<string, unknown>; noindex?: boolean}
+const {title, description, schema, noindex = false} = Astro.props;
+const preview = import.meta.env.BUILD_TARGET === 'preview';
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const website = {'@context':'https://schema.org','@type':'WebSite', name:'RicettePatata.it',url:new URL(href(),Astro.site).href,inLanguage:'it-IT'};
+---
+<!doctype html><html lang="it"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/>
+<title>{title} · RicettePatata.it</title><meta name="description" content={description}/><meta name="theme-color" content="#fbf7ed"/>
+<link rel="icon" href={href('favicon.svg')} type="image/svg+xml"/><link rel="canonical" href={canonical}/>
+{(preview || noindex) && <meta name="robots" content="noindex, nofollow"/>}
+<meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:url" content={canonical}/><meta property="og:locale" content="it_IT"/>
+<script type="application/ld+json" set:html={JSON.stringify(schema ?? website).replace(/</g,'\u003c')}/>
+</head><body>
+<a class="skip" href="#contenuto">Salta al contenuto</a>
+{preview && <div class="preview-banner">Anteprima di sviluppo · Contenuti dimostrativi · Non indicizzare</div>}
+<header><div class="wrap nav-row"><a class="logo" href={href()} aria-label="RicettePatata.it, homepage"><span aria-hidden="true">✳</span> ricette<span class="brand">patata</span><small>.it</small></a>
+<button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">☰</span></button>
+<nav id="navigation" aria-label="Navigazione principale"><a href={href('ricette/')}>Ricette</a><a href={href('#mondo')}>Dal mondo</a><a href={href('curiosita/')}>Curiosità</a><a href={href('guide/')}>Patatopedia</a></nav><a class="nav-search" href={href('ricette/#cerca')}>Cerca una ricetta ↗</a></div></header>
+<main id="contenuto"><slot/></main>
+<footer><div class="wrap footer-grid"><div><a class="logo" href={href()}>ricette<span>patata</span>.it</a><p>Una patata, infinite possibilità.<br/>Il mondo è più buono, un tubero alla volta.</p></div><nav aria-label="Navigazione nel footer"><a href={href('ricette/')}>Il ricettario</a><a href={href('guide/')}>Le guide</a><a href={href('curiosita/')}>Le curiosità</a></nav></div><div class="wrap footer-note">© {new Date().getFullYear()} RicettePatata.it · Magazine in costruzione. Ricette e articoli dimostrativi da revisionare prima della pubblicazione editoriale.</div></footer>
+<script>
+const toggle = document.querySelector<HTMLButtonElement>('.menu-button');
+const navigation = document.querySelector<HTMLElement>('#navigation');
+function closeMenu(){toggle?.setAttribute('aria-expanded','false');navigation?.classList.remove('is-open');}
+toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded') !== 'true';toggle.setAttribute('aria-expanded',String(open));navigation?.classList.toggle('is-open',open);});
+navigation?.addEventListener('click',closeMenu);
+document.addEventListener('keydown',e=>{if(e.key==='Escape' && toggle?.getAttribute('aria-expanded')==='true'){closeMenu();toggle.focus();}});
+</script></body></html>

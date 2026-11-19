@@ -59,6 +59,8 @@ export async function buildRelease(session){
  const {build}=await import('astro');const {default:sitemap}=await import('@astrojs/sitemap');const {default:tailwind}=await import('@tailwindcss/vite');const {default:sharp}=await import('sharp');
  try{
   process.chdir(session.workspace);process.env.BUILD_TARGET='production';process.env.BASE_PATH=session.config.base;process.env.SITE_URL=session.config.site;
+  const mediaDirectory=path.join(session.workspace,'public/media');mkdirSync(mediaDirectory,{recursive:true});
+  writeFileSync(path.join(mediaDirectory,'ATTRIBUTION.txt'),'');
   for(const p of verifiedPhotos()){
    const media=path.join(session.workspace,'public/media');mkdirSync(media,{recursive:true});
    const metadata=await sharp(p.file).metadata();if(metadata.width!==p.width||metadata.height!==p.height||p.width<1280)throw new Error('Dimensioni foto discordanti o insufficienti per gli asset previsti');

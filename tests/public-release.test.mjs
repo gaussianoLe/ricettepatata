@@ -53,7 +53,13 @@ test('public metadata distinguishes editorial author and formula sources without
   assert.ok(!JSON.stringify(seo).includes('assistita'));assert.ok(!JSON.stringify(seo).includes('Uso richiesto dal procedimento'));
  }
 });
-test('only the independently licensed original is integrated, with integrity and rights metadata',()=>{
- const photos=verifiedPhotos();assert.equal(photos.length,1);assert.equal(photos[0].slug,'papas-arrugadas-con-mojo');assert.equal(photos[0].license,'CC BY 2.0');
- assert.equal(JSON.parse(readFileSync('release/photos.json'))['gatto-di-patate'].status,'blocked');
+test('licensed Commons photo and generated Gatto illustration retain distinct provenance',()=>{
+ const photos=verifiedPhotos();assert.equal(photos.length,2);
+ const papas=photos.find(p=>p.slug==='papas-arrugadas-con-mojo');
+ assert.equal(papas.status,'licensed');assert.equal(papas.license,'CC BY 2.0');
+ assert.ok(papas.sourcePage.startsWith('https://commons.wikimedia.org/'));
+ const gatto=photos.find(p=>p.slug==='gatto-di-patate');
+ assert.equal(gatto.status,'generated');assert.equal(gatto.origin,'openai-image-generation');
+ assert.equal(gatto.license,undefined);assert.equal(gatto.sourcePage,undefined);
+ assert.equal(gatto.sha256,digest(readFileSync(gatto.file)));
 });

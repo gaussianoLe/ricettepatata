@@ -15,7 +15,17 @@ try{
  server=await serveRelease(session);
  const child=spawn(process.execPath,[fileURLToPath(new URL('../node_modules/@playwright/test/cli.js',import.meta.url)),'test','--config','playwright.release.config.ts'],{stdio:(process.env.CI||process.env.GITHUB_ACTIONS)?'ignore':process.env.RC_DEBUG_LOCAL==='1'?'inherit':'ignore',env:{...process.env,RC_TEST_URL:server.url,RC_TEST_OUTPUT:path.join(session.directory,'test-results')}});
  const code=await new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',resolve);});
- if(code!==0)throw new Error('Browser release candidate falliti; nessun payload/trace privato conservato');
+ if(code!==0){
+  const resultsPath=path.join(session.directory,'test-results','results.json');
+  if(existsSync(resultsPath)){
+   const report=JSON.parse(readFileSync(resultsPath,'utf8'));
+   const failures=[];
+   const visit=suite=>{for(const spec of suite.specs??[])for(const t of spec.tests??[])if(t.results?.some(r=>r.status!=='passed'&&r.status!=='skipped'))failures.push(spec.id??'unnamed');for(const nested of suite.suites??[])visit(nested);};
+   for(const suite of report.suites??[])visit(suite);
+   console.error('RC failing test identifiers:',JSON.stringify([...new Set(failures)].slice(0,20)));
+  }
+  throw new Error('Browser release candidate falliti; nessun payload/trace privato conservato');
+ }
  execFileSync('git',['-c','init.defaultBranch=fixture','init','-q',session.workspace]);
  const approved=spawn(process.execPath,['tests/helpers/release-approval-fixture.mjs'],{cwd:session.workspace,stdio:(process.env.CI||process.env.GITHUB_ACTIONS)?'ignore':process.env.RC_DEBUG_LOCAL==='1'?'inherit':'ignore',env:{...process.env,BASE_PATH:'/',BUILD_TARGET:'production'}});
  const approvedCode=await new Promise((resolve,reject)=>{approved.once('error',reject);approved.once('exit',resolve);});

@@ -20,7 +20,7 @@ try{
   if(existsSync(resultsPath)){
    const report=JSON.parse(readFileSync(resultsPath,'utf8'));
    const failures=[];
-   const visit=suite=>{for(const spec of suite.specs??[])for(const t of spec.tests??[])if(t.results?.some(r=>r.status!=='passed'&&r.status!=='skipped'))failures.push({id:spec.id??'unnamed',title:spec.title,errors:t.results.filter(r=>r.status!=='passed'&&r.status!=='skipped').flatMap(r=>r.errors??[]).map(e=>String(e.message??'').replace(/\x1b\[[0-9;]*m/g,'').slice(0,500))});for(const nested of suite.suites??[])visit(nested);};
+   const visit=suite=>{for(const spec of suite.specs??[])for(const t of spec.tests??[])if(t.results?.some(r=>r.status!=='passed'&&r.status!=='skipped'))failures.push({id:spec.id??'unnamed',title:spec.title,file:spec.file??suite.file??null,errors:t.results.filter(r=>r.status!=='passed'&&r.status!=='skipped').flatMap(r=>r.errors??[]).map(e=>String(e.message??'').replace(/\x1b\[[0-9;]*m/g,'').slice(0,500))});for(const nested of suite.suites??[])visit(nested);};
    for(const suite of report.suites??[])visit(suite);
    console.error('RC failing test identifiers:',JSON.stringify(failures.slice(0,20)));
   }

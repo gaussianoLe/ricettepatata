@@ -1,4 +1,4 @@
-import {mkdtempSync,mkdirSync,readFileSync,writeFileSync,realpathSync,statSync,rmSync,symlinkSync} from 'node:fs';
+import {mkdtempSync,mkdirSync,readFileSync,writeFileSync,appendFileSync,realpathSync,statSync,rmSync,symlinkSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
@@ -59,10 +59,12 @@ export async function buildRelease(session){
  const {build}=await import('astro');const {default:sitemap}=await import('@astrojs/sitemap');const {default:tailwind}=await import('@tailwindcss/vite');const {default:sharp}=await import('sharp');
  try{
   process.chdir(session.workspace);process.env.BUILD_TARGET='production';process.env.BASE_PATH=session.config.base;process.env.SITE_URL=session.config.site;
+  const mediaDirectory=path.join(session.workspace,'public/media');mkdirSync(mediaDirectory,{recursive:true});
+  writeFileSync(path.join(mediaDirectory,'ATTRIBUTION.txt'),'');
   for(const p of verifiedPhotos()){
    const media=path.join(session.workspace,'public/media');mkdirSync(media,{recursive:true});
    const metadata=await sharp(p.file).metadata();if(metadata.width!==p.width||metadata.height!==p.height||p.width<1280)throw new Error('Dimensioni foto discordanti o insufficienti per gli asset previsti');
-   writeFileSync(path.join(media,'ATTRIBUTION.txt'),`${p.author} — ${p.sourcePage} — ${p.license}: ${p.licenseUrl}. Ridimensionamento/conversione; crop della variante social.\n`);
+   appendFileSync(path.join(media,'ATTRIBUTION.txt'),`${p.status==='generated'?'Illustrazione generata con AI — nessuna fotografia reale o licenza CC attribuita':`${p.author} — ${p.sourcePage} — ${p.license}: ${p.licenseUrl}`}. Ridimensionamento/conversione; crop della variante social.\n`);
    for(const width of [480,800,1280])for(const format of ['avif','webp','jpg'])await sharp(p.file).rotate().resize({width,withoutEnlargement:true}).toFormat(format==='jpg'?'jpeg':format,{quality:format==='avif'?55:80}).toFile(path.join(media,`${p.slug}-${width}.${format}`));
    await sharp(p.file).rotate().resize(1200,630,{fit:'cover'}).jpeg({quality:82}).toFile(path.join(media,`${p.slug}-social.jpg`));
   }

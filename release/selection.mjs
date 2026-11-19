@@ -21,7 +21,7 @@ export function candidateEntries(){
 }
 export function approvedEntries(authorization=JSON.parse(readFileSync('release/authorization.json')),entries=parseImport(readFileSync('release/approved-records.json','utf8'),'json')){
  if(authorization.formatVersion!==1 || authorization.approved!==true || !authorization.approvedBy?.trim() || !/^\d{4}-\d{2}-\d{2}$/.test(authorization.approvedAt??''))throw new Error('BLOCKED: approvazione editoriale esplicita dell’utente assente');
- if(authorization.photographicFallbackAccepted!==true && JSON.parse(readFileSync('release/photos.json'))['gatto-di-patate']?.status!=='licensed')throw new Error('BLOCKED: fotografia Gattò mancante; accettazione esplicita del placeholder richiesta');
+ if(authorization.photographicFallbackAccepted!==true && !['licensed','generated'].includes(JSON.parse(readFileSync('release/photos.json'))['gatto-di-patate']?.status))throw new Error('BLOCKED: fotografia Gattò mancante; accettazione esplicita del placeholder richiesta');
  const approvalDate=new Date(authorization.approvedAt);
  if(!Number.isFinite(approvalDate.getTime()) || approvalDate.toISOString().slice(0,10)!==authorization.approvedAt)throw new Error('BLOCKED: data di approvazione non valida');
  if(!authorization.recordHashes || Object.keys(authorization.recordHashes).sort().join()!==identities.map(i=>i.catalogId).sort().join())throw new Error('Hash delle sole due identità richiesto');

@@ -19,7 +19,13 @@ test('SEO, sources, photo rights, no editorial dossiers and no unauthorized URL'
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href',new URL(`ricette/${slug}/`,`https://ricettepatata.it${new URL(baseURL!).pathname}`).href);
   const schemas=(await page.locator('script[type="application/ld+json"]').allTextContents()).map(s=>JSON.parse(s));const recipe=schemas.find(s=>s['@type']==='Recipe');expect(recipe.author.name).toBe('RicettePatata.it');expect(recipe.datePublished).toBeUndefined();expect(recipe.recipeInstructions).toHaveLength(4);expect(recipe.totalTime).toBeUndefined();expect(schemas.some(s=>s['@type']==='BreadcrumbList')).toBe(true);
   expect(JSON.stringify(schemas)).not.toContain('assistita');
-  expect(html).not.toContain('Torna al catalogo locale');if(slug==='gatto-di-patate')await expect(page.getByText('Fotografia non disponibile.',{exact:true})).toBeVisible();
+  expect(html).not.toContain('Torna al catalogo locale');if(slug==='gatto-di-patate'){
+   expect(photos[slug].status).toBe('generated');expect(photos[slug].origin).toBe('openai-image-generation');
+   await expect(page.getByText('Fotografia non disponibile.',{exact:true})).toHaveCount(0);
+   const image=page.locator('.release-photo img');await expect(image).toHaveAttribute('alt',photos[slug].alt);
+   expect(await image.evaluate((e:HTMLImageElement)=>e.complete&&e.naturalWidth>0)).toBe(true);
+   expect(recipe.image[0]).toContain('/media/gatto-di-patate-social.jpg');
+  }
   if(slug.includes('papas')){await expect(page.locator('a[href="https://creativecommons.org/licenses/by/2.0/"]')).toBeVisible();expect(recipe.image[0]).toContain('/media/');const img=page.locator('.release-photo img');await expect(img).toHaveAttribute('fetchpriority','high');expect(await img.evaluate((e:HTMLImageElement)=>e.complete&&e.naturalWidth>0)).toBe(true);}
  }
  for(const url of ['ricette/gratin-dauphinois/','ricette/patatas-bravas/','release/gatto-di-patate/','editorial/','release/authorization.json'])expect((await request.get(baseURL+url)).status()).toBe(404);

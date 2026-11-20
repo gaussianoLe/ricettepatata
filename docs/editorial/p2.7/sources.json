@@ -1,0 +1,94 @@
+{
+  "accessedAt": "2026-11-19",
+  "method": "Pagine consultate direttamente via web; nessuna copia integrale di testi o immagini scaricata in questa fase. Date storiche dei record preservate.",
+  "sources": [
+    {
+      "id": "ruggiero-gatto",
+      "url": "https://www.antonioruggiero.com/ricette/gateau-di-patate/",
+      "title": "Gateau di patate",
+      "authorOrOrganization": "Antonio Ruggiero S.p.A.; pagina derivata dalla formula GialloZafferano",
+      "independenceGroup": "ruggiero-giallozafferano",
+      "locator": "Dosi / Ingredienti / Preparazione",
+      "appliesTo": "RP-0011",
+      "supports": "Formula operativa; non una seconda fonte indipendente da GialloZafferano.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "cucchiaio-gatto",
+      "url": "https://www.cucchiaio.it/ricetta/gateau-di-patate/",
+      "title": "Gateau di patate",
+      "authorOrOrganization": "Il Cucchiaio d’Argento; firma individuale non indicata",
+      "independenceGroup": "cucchiaio",
+      "locator": "Introduzione e ingredienti",
+      "appliesTo": "RP-0011",
+      "supports": "Confronto di tradizione e variante con provola; non trasferire dosi e tempi.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "bonviveur-papas",
+      "url": "https://bonviveur.com/es/recetas/papas-arrugadas",
+      "title": "Papas arrugadas, tradicional receta canaria para hacer fácil y rápida",
+      "authorOrOrganization": "Sofía de la Torre / Bonviveur",
+      "independenceGroup": "bonviveur",
+      "locator": "Información / Ingredientes / Cómo hacer",
+      "appliesTo": "RP-0080",
+      "supports": "Formula operativa delle patate; salsa di accompagnamento non dosata.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "canarias-gastronomia",
+      "url": "https://www.holaislascanarias.com/gastronomia-canaria/",
+      "title": "Gastronomía canaria",
+      "authorOrOrganization": "Hola Islas Canarias, portale turistico regionale",
+      "independenceGroup": "canarias",
+      "locator": "Sabores con denominación de origen / Productos locales",
+      "appliesTo": "RP-0080",
+      "supports": "Tradizione e prodotti locali; non una seconda conferma di quantità o tempi.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "fsa-cooking",
+      "url": "https://www.gov.uk/government/publications/cooking-your-food/cooking-your-food",
+      "title": "Cooking your food",
+      "authorOrOrganization": "Food Standards Agency / GOV.UK",
+      "independenceGroup": "fsa",
+      "locator": "§2–3 e §7",
+      "appliesTo": "both",
+      "supports": "Cautele generali di cottura e avanzi, non validazione della durata specifica.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "govuk-allergens",
+      "url": "https://www.gov.uk/understanding-food-labelling/allergen-labelling",
+      "title": "Understanding food labelling: Allergen labelling",
+      "authorOrOrganization": "GOV.UK",
+      "independenceGroup": "govuk",
+      "locator": "Allergen labelling / Free-from labelling",
+      "appliesTo": "both",
+      "supports": "Categorie allergeni e limite delle dichiarazioni di assenza; non certificazione italiana.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "commons-papas",
+      "url": "https://commons.wikimedia.org/wiki/File:Papasarrugadas.jpg",
+      "title": "File:Papasarrugadas.jpg",
+      "authorOrOrganization": "Fer..; scheda Wikimedia Commons",
+      "independenceGroup": "commons",
+      "locator": "Summary / Licensing / FlickreviewR",
+      "appliesTo": "RP-0080",
+      "supports": "Autore, originale 1280×960, CC BY 2.0 e revisione Flickr; non una prova della nostra formula.",
+      "accessedAt": "2026-11-19"
+    },
+    {
+      "id": "cc-by-2",
+      "url": "https://creativecommons.org/licenses/by/2.0/",
+      "title": "Attribution 2.0 Generic",
+      "authorOrOrganization": "Creative Commons",
+      "independenceGroup": "creative-commons",
+      "locator": "You are free to / Under the following terms",
+      "appliesTo": "RP-0080",
+      "supports": "Uso commerciale e adattamenti con attribuzione, licenza e indicazione delle modifiche.",
+      "accessedAt": "2026-11-19"
+    }
+  ]
+}

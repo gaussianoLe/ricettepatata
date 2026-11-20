@@ -67,7 +67,7 @@ jobs:
         run: node tests/helpers/catalog-fixtures.mjs add
       - run: npm run check
       - run: npm run catalog:check
-      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs tests/integration.test.mjs tests/enrichment-review.test.mjs tests/private-editorial.test.mjs tests/recipe-validation.test.mjs tests/editorial-resolution.test.mjs tests/editorial-release.test.mjs tests/editorial-ux.test.mjs tests/public-release.test.mjs
+      - run: node --test tests/core.test.mjs tests/catalog-model.test.mjs tests/catalog-import.test.mjs tests/catalog-batch.test.mjs tests/catalog-survey.test.mjs tests/editorial.test.mjs tests/consolidation.test.mjs tests/integration.test.mjs tests/enrichment-review.test.mjs tests/private-editorial.test.mjs tests/recipe-validation.test.mjs tests/editorial-resolution.test.mjs tests/editorial-release.test.mjs tests/editorial-ux.test.mjs tests/public-release.test.mjs tests/editorial-decision.test.mjs
       - name: Build static magazine
         run: node scripts/build.mjs ${{ matrix.target }}
       - name: Verify reproducible static build

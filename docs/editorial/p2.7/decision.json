@@ -1,0 +1,63 @@
+{
+  "formatVersion": 1,
+  "preparedOn": "2026-11-19",
+  "status": "ready_for_user_decision",
+  "preparedBy": "Codex — assistente; verifica documentale e tecnica non indipendente",
+  "mainBaseline": "4e9ed99c11aaee351336cdfb1b53effb03a48668",
+  "pendingPR17": "bde9e61f680e41b471a8fbe26e0e67861143f2b5",
+  "records": [
+    {
+      "researchId": "RP-0011",
+      "catalogId": "3f5f6cf2-d990-5bcb-92e5-9c388233acbb",
+      "slug": "gatto-di-patate",
+      "file": "src/content/ricette/gatto-di-patate.md",
+      "sourceFileSha256": "b254c688010ba8eab102f33af0aa6e342c9d104ab9543601297a51fd350d2419",
+      "dossier": "docs/editorial/p2.7/RP-0011.md",
+      "catalogStatus": "draft",
+      "formulaDecision": "retain-source-formula",
+      "documentaryCheck": "completed",
+      "independentEditorialReview": "pending",
+      "kitchenTestPerformed": false,
+      "publicationApproval": null,
+      "image": {
+        "file": "release/assets/gatto-di-patate.jpg",
+        "sha256": "971696f77dd8c551af01dddbd8d7bca59b01c11666d38b2e22abec2d320fdf1f",
+        "status": "generated"
+      }
+    },
+    {
+      "researchId": "RP-0080",
+      "catalogId": "8bb84554-1db7-58df-a43a-c5bea8155ff0",
+      "slug": "papas-arrugadas-con-mojo",
+      "file": "src/content/ricette/papas-arrugadas-con-mojo.md",
+      "sourceFileSha256": "a4337e8ec67af0a73054fe9619d3da34d11b2e6d5e254f5ad4106c7ce48f888d",
+      "dossier": "docs/editorial/p2.7/RP-0080.md",
+      "catalogStatus": "draft",
+      "formulaDecision": "retain-source-formula",
+      "documentaryCheck": "completed",
+      "independentEditorialReview": "pending",
+      "kitchenTestPerformed": false,
+      "publicationApproval": null,
+      "image": {
+        "file": "release/assets/papasarrugadas.jpg",
+        "sha256": "e1baf6e8ed35cbd846cc503fde8a746b79bbab07a8dffc592b16d3d259a2766e",
+        "status": "licensed"
+      }
+    }
+  ],
+  "publicationApproval": null,
+  "independentEditorialReview": "pending",
+  "deploymentApproval": null,
+  "protectedFileSha256": {
+    "release/authorization.json": "2c3af24b37584e410b6aeeded16f7cb4fdd729db34d9e9532ea63c6d513a727c",
+    "release/approved-records.json": "09d52bc779f7a76ef2778c3212411f302c2328d43359413e759152f21b0bad0f",
+    "release/selection.mjs": "d5d679bd27d49fad834a5c79e4635d9ec9691fe4c01d25a3c649e28ac5d33f26",
+    "release/photos.json": "14b683bde9c77e0e79d4ec1df3b5f86b2222bfa723ac260125b57e0fe3b55445",
+    "src/catalog/registry.json": "911bd92e53db8ccae0d336869d86b93ec3ea02a47590ed2c6e8007c95e61309b"
+  },
+  "remoteAccessPerformed": false,
+  "preserveRemoteDirectories": [
+    "/anteprima/"
+  ],
+  "evidenceMeaning": "Hashes identify actual existing files only; they are not approval digests or new authorized records."
+}

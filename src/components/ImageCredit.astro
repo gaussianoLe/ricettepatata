@@ -1,0 +1,12 @@
+---
+interface Props {
+ photo:NonNullable<ReturnType<typeof import('../../release/photos.mjs').photoFor>>;
+ compact?:boolean;
+}
+const {photo,compact=false}=Astro.props;
+const sourceTitle=photo.sourcePage?decodeURIComponent(new URL(photo.sourcePage).pathname.split('/').pop()??'').replace(/^File:/,''):'';
+---
+{photo.status==='generated'
+ ? <>{compact?'Immagine illustrativa generata con intelligenza artificiale; non documenta una preparazione reale della redazione.':photo.caption}</>
+ : <>{!compact && <>{photo.caption} </>}Foto: <a href={photo.sourcePage}>{sourceTitle}</a> — {photo.author} · <a href={photo.licenseUrl}>{photo.license}</a>{compact && ' · immagine illustrativa'}.</>}
+ Ridimensionata e convertita; variante social ritagliata.

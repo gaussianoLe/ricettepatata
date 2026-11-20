@@ -1,0 +1,676 @@
+{
+  "formatVersion": 1,
+  "executedOn": "2026-11-20",
+  "scope": "Actually executed local matrix. Remote CI independently executes on PR head; final run links in PR.",
+  "npmCi": {
+    "passed": true,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "configurations": [
+    {
+      "configuration": "production",
+      "releaseCandidate": {
+        "base": "/",
+        "recipes": 2,
+        "browserCases": 8,
+        "reproducible": true,
+        "approvedPathSyntheticTest": true,
+        "draftSourceChanges": 0,
+        "diff": {
+          "added": [
+            "media/ATTRIBUTION.txt",
+            "media/gatto-di-patate-1280.avif",
+            "media/gatto-di-patate-1280.jpg",
+            "media/gatto-di-patate-1280.webp",
+            "media/gatto-di-patate-480.avif",
+            "media/gatto-di-patate-480.jpg",
+            "media/gatto-di-patate-480.webp",
+            "media/gatto-di-patate-800.avif",
+            "media/gatto-di-patate-800.jpg",
+            "media/gatto-di-patate-800.webp",
+            "media/gatto-di-patate-social.jpg",
+            "media/papas-arrugadas-con-mojo-1280.avif",
+            "media/papas-arrugadas-con-mojo-1280.jpg",
+            "media/papas-arrugadas-con-mojo-1280.webp",
+            "media/papas-arrugadas-con-mojo-480.avif",
+            "media/papas-arrugadas-con-mojo-480.jpg",
+            "media/papas-arrugadas-con-mojo-480.webp",
+            "media/papas-arrugadas-con-mojo-800.avif",
+            "media/papas-arrugadas-con-mojo-800.jpg",
+            "media/papas-arrugadas-con-mojo-800.webp",
+            "media/papas-arrugadas-con-mojo-social.jpg",
+            "ricette/gatto-di-patate/index.html",
+            "ricette/papas-arrugadas-con-mojo/index.html"
+          ],
+          "changed": [
+            "404.html",
+            "curiosita/index.html",
+            "guide/index.html",
+            "index.html",
+            "ricette/index.html",
+            "robots.txt",
+            "sitemap-0.xml"
+          ],
+          "removed": []
+        },
+        "files": {
+          "404.html": "a9b1b08b79439202dc0c66cd2852de702f35b799c09f7a0160b564de8444a1d5",
+          "_astro/Layout.BntjRieh.css": "802719eceb094352b24978307df95eda7b03205015692dcda54deb83d196818c",
+          "curiosita/index.html": "5d8c0d82eeb1f1d610ea9d39830884b0b22bbb2454b6c4ca36aeb4a6b030da7b",
+          "favicon.svg": "90f60fe3d43f27038e1925bd21abdf52d4cf0268503897e7280d4feeb8117a89",
+          "guide/index.html": "a5f2d27034887d2bd7b070ea07e0b95341e4c8e88d03a974e272a29515e9e2d1",
+          "index.html": "6c6ca4b4179961bf9b61bcc28c038431e165914535953ca759a1d522364d94af",
+          "media/ATTRIBUTION.txt": "512f1f6e6f56d5cae50933337ad7777b79e0268ca9aab17c1ec9355e5e618f3f",
+          "media/gatto-di-patate-1280.avif": "55ffd54ed357c77c4aab7901ed677369d742d68bdfdc445c626b890b72f93082",
+          "media/gatto-di-patate-1280.jpg": "e35349255f562aa25f1c2ccbe7cc64fdd140e285c694aefd0d50f4db241276f8",
+          "media/gatto-di-patate-1280.webp": "7b3d2d15c8bc2fb8b771f00981c1f5c488203c9db1b6b6230583aee987eb707f",
+          "media/gatto-di-patate-480.avif": "ecc44f9e3b4b9af67d68dd30f85d10a3297709432d6c74a0865f6b04b61058ec",
+          "media/gatto-di-patate-480.jpg": "ff9b0f1d692ddc2ee02421d365a981df967b5618b1b587cdc56e9992eab4c53f",
+          "media/gatto-di-patate-480.webp": "2b029d1057b5a1635185d2efed7d1f2a91493146a18958cfd9ce5a84f4f04f0b",
+          "media/gatto-di-patate-800.avif": "5506ebc109ef1275ad62addd5c3256341aaa4e2cc3b2e57e7854781f9e77436c",
+          "media/gatto-di-patate-800.jpg": "9bc0a8e1151d2995691fcf27971aba935628672f26df0960c113aebad2210355",
+          "media/gatto-di-patate-800.webp": "c6976c521a7e4f3ddd1fd6e14bcb25d66cc983c99520185ce378429a72475d4a",
+          "media/gatto-di-patate-social.jpg": "c009f210de54d331984f8165a37915367ceeb279279cbead24dd39a2040e5be8",
+          "media/papas-arrugadas-con-mojo-1280.avif": "e7d58a38737fd9379f374ea7f13699c4748fb981fad50b55b66e890f2ec20c7e",
+          "media/papas-arrugadas-con-mojo-1280.jpg": "fb75b10757ae99821f782819c4f4efed2f05e0264c45b7a6af8393befd6d8eae",
+          "media/papas-arrugadas-con-mojo-1280.webp": "3fc7e25618a8ce35a0e1442779200e110abe673130da6eb0332a4b33fde1b6d6",
+          "media/papas-arrugadas-con-mojo-480.avif": "798f49f29e3c8a2a842293426d0de0d76ffdf1bce83c7f00e05d5e9c108c6e48",
+          "media/papas-arrugadas-con-mojo-480.jpg": "d83994ceef82951585b9fd16cc063af0f3ecd85c9e6531f93d7f5dcd127a8701",
+          "media/papas-arrugadas-con-mojo-480.webp": "1fb1adac3344aca234ee37fa1a7705436feb048685058db9664c52b93bae8826",
+          "media/papas-arrugadas-con-mojo-800.avif": "8196e581e0d0db1e11ff64392ff932c3a86ca17189caa452c7a6eed5681b647f",
+          "media/papas-arrugadas-con-mojo-800.jpg": "b7151aff4dc9f249a546c2b8765f3fbcf5ced64146e165b75f6479912a4f029f",
+          "media/papas-arrugadas-con-mojo-800.webp": "324159578d3d627f94e36d3475f98ca30d90fb4a306565efe7448800278342e1",
+          "media/papas-arrugadas-con-mojo-social.jpg": "7a58acd973cc21c5df7efbcdb04ef0885a1f2b1c2d191a5fef1d8a1bea057766",
+          "ricette/gatto-di-patate/index.html": "c5290e4fbeb00399c35559af808bd8cf669f31bc0c736d36d05f74c1f4382930",
+          "ricette/index.html": "75c973e1fde5824d16d2451471c3404dced223d119af170b3b54a203ea339a9a",
+          "ricette/papas-arrugadas-con-mojo/index.html": "81e51c862a6f77875b14fd45fcb6251442403d87cfbcb69f19689290dfb3fe5b",
+          "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+          "sitemap-0.xml": "ae4f0e310e9b2330edcfc97882d77fd599e4e2eb3d8618907bf2f1e46e1932f5",
+          "sitemap-index.xml": "abaa1f80cf179e0b91c7a14d2a089ffe854d90abceabe9ea7108cd9d710cf861"
+        }
+      },
+      "target": "production",
+      "base": "/",
+      "site": "https://ricettepatata.it",
+      "growth": false,
+      "nodeTests": 148,
+      "nodeFailures": 0,
+      "publicBrowserCases": 14,
+      "editorialBrowserCases": 36,
+      "responsiveWidths": [
+        320,
+        375,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "responsiveRecipes": [
+        "RP-0011",
+        "RP-0080"
+      ],
+      "axeStates": [
+        "normal",
+        "review dossier expanded",
+        "cooking"
+      ],
+      "axeViolations": 0,
+      "typeCheck": {
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0
+      },
+      "reproducible": true,
+      "draftAndLocalUrls": "404 in public build",
+      "publicAudit": {
+        "filesScanned": 10,
+        "markersChecked": 78,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "808f7b7fdc6b0260541dbc9fb7c692c12d98606fc5cbbe22839c33568a8567a0"
+      },
+      "uxAudit": {
+        "filesScanned": 10,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "808f7b7fdc6b0260541dbc9fb7c692c12d98606fc5cbbe22839c33568a8567a0"
+      },
+      "uxAuditAfterEditorial": {
+        "filesScanned": 10,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "808f7b7fdc6b0260541dbc9fb7c692c12d98606fc5cbbe22839c33568a8567a0"
+      },
+      "privateSessionRemoved": true,
+      "protectedSourcesAndPublicDistUnchanged": true
+    },
+    {
+      "configuration": "preview",
+      "releaseCandidate": {
+        "base": "/anteprima/",
+        "recipes": 2,
+        "browserCases": 8,
+        "reproducible": true,
+        "approvedPathSyntheticTest": true,
+        "draftSourceChanges": 0,
+        "diff": {
+          "added": [
+            "media/ATTRIBUTION.txt",
+            "media/gatto-di-patate-1280.avif",
+            "media/gatto-di-patate-1280.jpg",
+            "media/gatto-di-patate-1280.webp",
+            "media/gatto-di-patate-480.avif",
+            "media/gatto-di-patate-480.jpg",
+            "media/gatto-di-patate-480.webp",
+            "media/gatto-di-patate-800.avif",
+            "media/gatto-di-patate-800.jpg",
+            "media/gatto-di-patate-800.webp",
+            "media/gatto-di-patate-social.jpg",
+            "media/papas-arrugadas-con-mojo-1280.avif",
+            "media/papas-arrugadas-con-mojo-1280.jpg",
+            "media/papas-arrugadas-con-mojo-1280.webp",
+            "media/papas-arrugadas-con-mojo-480.avif",
+            "media/papas-arrugadas-con-mojo-480.jpg",
+            "media/papas-arrugadas-con-mojo-480.webp",
+            "media/papas-arrugadas-con-mojo-800.avif",
+            "media/papas-arrugadas-con-mojo-800.jpg",
+            "media/papas-arrugadas-con-mojo-800.webp",
+            "media/papas-arrugadas-con-mojo-social.jpg",
+            "ricette/gatto-di-patate/index.html",
+            "ricette/papas-arrugadas-con-mojo/index.html",
+            "sitemap-0.xml",
+            "sitemap-index.xml"
+          ],
+          "changed": [
+            "404.html",
+            "curiosita/index.html",
+            "guide/index.html",
+            "index.html",
+            "ricette/index.html",
+            "robots.txt"
+          ],
+          "removed": [
+            "curiosita/tubero-o-radice/index.html",
+            "curiosita/un-mondo-di-colori/index.html",
+            "guide/scegliere-le-patate/index.html",
+            "guide/taglio-hasselback/index.html",
+            "ricette/aloo-gobi/index.html",
+            "ricette/gnocchi/index.html",
+            "ricette/hasselback/index.html",
+            "ricette/patatas-bravas/index.html",
+            "ricette/pitta-di-patate/index.html",
+            "ricette/rosti/index.html"
+          ]
+        },
+        "files": {
+          "404.html": "895808ad55b73cee9524a3f3a6e4add3eceafd8ea8e0ce63033db6060a2988d7",
+          "_astro/Layout.BntjRieh.css": "802719eceb094352b24978307df95eda7b03205015692dcda54deb83d196818c",
+          "curiosita/index.html": "f7fcd365a3307b6e0ad0ee8888cad0d4805c5b64a2211bc2fe232b0c862e37e7",
+          "favicon.svg": "90f60fe3d43f27038e1925bd21abdf52d4cf0268503897e7280d4feeb8117a89",
+          "guide/index.html": "a723cc546b5e99356a9b4ec9eb674ba7df869c200dc717eb7ff35361824fd917",
+          "index.html": "b4f8ad55ba2203d11bbcc9f8aabb027ffc2c1cc8a15eb5c8cc177fcb9c01a469",
+          "media/ATTRIBUTION.txt": "512f1f6e6f56d5cae50933337ad7777b79e0268ca9aab17c1ec9355e5e618f3f",
+          "media/gatto-di-patate-1280.avif": "55ffd54ed357c77c4aab7901ed677369d742d68bdfdc445c626b890b72f93082",
+          "media/gatto-di-patate-1280.jpg": "e35349255f562aa25f1c2ccbe7cc64fdd140e285c694aefd0d50f4db241276f8",
+          "media/gatto-di-patate-1280.webp": "7b3d2d15c8bc2fb8b771f00981c1f5c488203c9db1b6b6230583aee987eb707f",
+          "media/gatto-di-patate-480.avif": "ecc44f9e3b4b9af67d68dd30f85d10a3297709432d6c74a0865f6b04b61058ec",
+          "media/gatto-di-patate-480.jpg": "ff9b0f1d692ddc2ee02421d365a981df967b5618b1b587cdc56e9992eab4c53f",
+          "media/gatto-di-patate-480.webp": "2b029d1057b5a1635185d2efed7d1f2a91493146a18958cfd9ce5a84f4f04f0b",
+          "media/gatto-di-patate-800.avif": "5506ebc109ef1275ad62addd5c3256341aaa4e2cc3b2e57e7854781f9e77436c",
+          "media/gatto-di-patate-800.jpg": "9bc0a8e1151d2995691fcf27971aba935628672f26df0960c113aebad2210355",
+          "media/gatto-di-patate-800.webp": "c6976c521a7e4f3ddd1fd6e14bcb25d66cc983c99520185ce378429a72475d4a",
+          "media/gatto-di-patate-social.jpg": "c009f210de54d331984f8165a37915367ceeb279279cbead24dd39a2040e5be8",
+          "media/papas-arrugadas-con-mojo-1280.avif": "e7d58a38737fd9379f374ea7f13699c4748fb981fad50b55b66e890f2ec20c7e",
+          "media/papas-arrugadas-con-mojo-1280.jpg": "fb75b10757ae99821f782819c4f4efed2f05e0264c45b7a6af8393befd6d8eae",
+          "media/papas-arrugadas-con-mojo-1280.webp": "3fc7e25618a8ce35a0e1442779200e110abe673130da6eb0332a4b33fde1b6d6",
+          "media/papas-arrugadas-con-mojo-480.avif": "798f49f29e3c8a2a842293426d0de0d76ffdf1bce83c7f00e05d5e9c108c6e48",
+          "media/papas-arrugadas-con-mojo-480.jpg": "d83994ceef82951585b9fd16cc063af0f3ecd85c9e6531f93d7f5dcd127a8701",
+          "media/papas-arrugadas-con-mojo-480.webp": "1fb1adac3344aca234ee37fa1a7705436feb048685058db9664c52b93bae8826",
+          "media/papas-arrugadas-con-mojo-800.avif": "8196e581e0d0db1e11ff64392ff932c3a86ca17189caa452c7a6eed5681b647f",
+          "media/papas-arrugadas-con-mojo-800.jpg": "b7151aff4dc9f249a546c2b8765f3fbcf5ced64146e165b75f6479912a4f029f",
+          "media/papas-arrugadas-con-mojo-800.webp": "324159578d3d627f94e36d3475f98ca30d90fb4a306565efe7448800278342e1",
+          "media/papas-arrugadas-con-mojo-social.jpg": "7a58acd973cc21c5df7efbcdb04ef0885a1f2b1c2d191a5fef1d8a1bea057766",
+          "ricette/gatto-di-patate/index.html": "3d921c445501b79d3d997336348713214b5fc22a8040a4422ae1a48d54e749f1",
+          "ricette/index.html": "db13f0dd839010a3cb9fb80611c758d9fd90fa8a4ff93f3916ac3279dcc6db9a",
+          "ricette/papas-arrugadas-con-mojo/index.html": "5e7521710c1ac5bbdd4719ad2e0c5c9d144f5eebf8c9acc1a615d05d8bdea718",
+          "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+          "sitemap-0.xml": "4fbfa1603d7213222615fc187b7aa644c21fd9f8ca2bc34631f9eef92a7c7031",
+          "sitemap-index.xml": "0e3ba86e174016b318dcabe1387f905eb4c456ac8ebb3c728d4005a207d9146b"
+        }
+      },
+      "target": "preview",
+      "base": "/anteprima/",
+      "site": "https://ricettepatata.it",
+      "growth": false,
+      "nodeTests": 148,
+      "nodeFailures": 0,
+      "publicBrowserCases": 14,
+      "editorialBrowserCases": 36,
+      "responsiveWidths": [
+        320,
+        375,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "responsiveRecipes": [
+        "RP-0011",
+        "RP-0080"
+      ],
+      "axeStates": [
+        "normal",
+        "review dossier expanded",
+        "cooking"
+      ],
+      "axeViolations": 0,
+      "typeCheck": {
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0
+      },
+      "reproducible": true,
+      "draftAndLocalUrls": "404 in public build",
+      "publicAudit": {
+        "filesScanned": 18,
+        "markersChecked": 78,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "a20c1e3a548c6431b24673bbf46903dc030ae427c7b15024430cc70edda2e3d8"
+      },
+      "uxAudit": {
+        "filesScanned": 18,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "a20c1e3a548c6431b24673bbf46903dc030ae427c7b15024430cc70edda2e3d8"
+      },
+      "uxAuditAfterEditorial": {
+        "filesScanned": 18,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "a20c1e3a548c6431b24673bbf46903dc030ae427c7b15024430cc70edda2e3d8"
+      },
+      "privateSessionRemoved": true,
+      "protectedSourcesAndPublicDistUnchanged": true
+    },
+    {
+      "configuration": "production-custom-growth",
+      "releaseCandidate": {
+        "base": "/magazine/",
+        "recipes": 2,
+        "browserCases": 8,
+        "reproducible": true,
+        "approvedPathSyntheticTest": true,
+        "draftSourceChanges": 0,
+        "diff": {
+          "added": [
+            "media/ATTRIBUTION.txt",
+            "media/gatto-di-patate-1280.avif",
+            "media/gatto-di-patate-1280.jpg",
+            "media/gatto-di-patate-1280.webp",
+            "media/gatto-di-patate-480.avif",
+            "media/gatto-di-patate-480.jpg",
+            "media/gatto-di-patate-480.webp",
+            "media/gatto-di-patate-800.avif",
+            "media/gatto-di-patate-800.jpg",
+            "media/gatto-di-patate-800.webp",
+            "media/gatto-di-patate-social.jpg",
+            "media/papas-arrugadas-con-mojo-1280.avif",
+            "media/papas-arrugadas-con-mojo-1280.jpg",
+            "media/papas-arrugadas-con-mojo-1280.webp",
+            "media/papas-arrugadas-con-mojo-480.avif",
+            "media/papas-arrugadas-con-mojo-480.jpg",
+            "media/papas-arrugadas-con-mojo-480.webp",
+            "media/papas-arrugadas-con-mojo-800.avif",
+            "media/papas-arrugadas-con-mojo-800.jpg",
+            "media/papas-arrugadas-con-mojo-800.webp",
+            "media/papas-arrugadas-con-mojo-social.jpg",
+            "ricette/gatto-di-patate/index.html",
+            "ricette/papas-arrugadas-con-mojo/index.html"
+          ],
+          "changed": [
+            "404.html",
+            "curiosita/index.html",
+            "guide/index.html",
+            "index.html",
+            "ricette/index.html",
+            "robots.txt",
+            "sitemap-0.xml",
+            "sitemap-index.xml"
+          ],
+          "removed": [
+            "curiosita/ci-published/index.html",
+            "guide/ci-published/index.html",
+            "ricette/ci-published/index.html",
+            "ricette/ci-regional-variant/index.html"
+          ]
+        },
+        "files": {
+          "404.html": "3fe4bdb66ffa12a92829d46248610161a3ad9f58b42c19eeada1986da1549f86",
+          "_astro/Layout.BntjRieh.css": "802719eceb094352b24978307df95eda7b03205015692dcda54deb83d196818c",
+          "curiosita/index.html": "397246a662e155394309134a7d9e68278282fb21e7884852e169dc34d1069de4",
+          "favicon.svg": "90f60fe3d43f27038e1925bd21abdf52d4cf0268503897e7280d4feeb8117a89",
+          "guide/index.html": "e21c18db9df5c1281e3d45490414e72a1061d08eb9aa0691c02995aa27a831e5",
+          "index.html": "230056b944025c291345ef3bf4cad0c48ac73ffb9491132de31202d2d7e81477",
+          "media/ATTRIBUTION.txt": "512f1f6e6f56d5cae50933337ad7777b79e0268ca9aab17c1ec9355e5e618f3f",
+          "media/gatto-di-patate-1280.avif": "55ffd54ed357c77c4aab7901ed677369d742d68bdfdc445c626b890b72f93082",
+          "media/gatto-di-patate-1280.jpg": "e35349255f562aa25f1c2ccbe7cc64fdd140e285c694aefd0d50f4db241276f8",
+          "media/gatto-di-patate-1280.webp": "7b3d2d15c8bc2fb8b771f00981c1f5c488203c9db1b6b6230583aee987eb707f",
+          "media/gatto-di-patate-480.avif": "ecc44f9e3b4b9af67d68dd30f85d10a3297709432d6c74a0865f6b04b61058ec",
+          "media/gatto-di-patate-480.jpg": "ff9b0f1d692ddc2ee02421d365a981df967b5618b1b587cdc56e9992eab4c53f",
+          "media/gatto-di-patate-480.webp": "2b029d1057b5a1635185d2efed7d1f2a91493146a18958cfd9ce5a84f4f04f0b",
+          "media/gatto-di-patate-800.avif": "5506ebc109ef1275ad62addd5c3256341aaa4e2cc3b2e57e7854781f9e77436c",
+          "media/gatto-di-patate-800.jpg": "9bc0a8e1151d2995691fcf27971aba935628672f26df0960c113aebad2210355",
+          "media/gatto-di-patate-800.webp": "c6976c521a7e4f3ddd1fd6e14bcb25d66cc983c99520185ce378429a72475d4a",
+          "media/gatto-di-patate-social.jpg": "c009f210de54d331984f8165a37915367ceeb279279cbead24dd39a2040e5be8",
+          "media/papas-arrugadas-con-mojo-1280.avif": "e7d58a38737fd9379f374ea7f13699c4748fb981fad50b55b66e890f2ec20c7e",
+          "media/papas-arrugadas-con-mojo-1280.jpg": "fb75b10757ae99821f782819c4f4efed2f05e0264c45b7a6af8393befd6d8eae",
+          "media/papas-arrugadas-con-mojo-1280.webp": "3fc7e25618a8ce35a0e1442779200e110abe673130da6eb0332a4b33fde1b6d6",
+          "media/papas-arrugadas-con-mojo-480.avif": "798f49f29e3c8a2a842293426d0de0d76ffdf1bce83c7f00e05d5e9c108c6e48",
+          "media/papas-arrugadas-con-mojo-480.jpg": "d83994ceef82951585b9fd16cc063af0f3ecd85c9e6531f93d7f5dcd127a8701",
+          "media/papas-arrugadas-con-mojo-480.webp": "1fb1adac3344aca234ee37fa1a7705436feb048685058db9664c52b93bae8826",
+          "media/papas-arrugadas-con-mojo-800.avif": "8196e581e0d0db1e11ff64392ff932c3a86ca17189caa452c7a6eed5681b647f",
+          "media/papas-arrugadas-con-mojo-800.jpg": "b7151aff4dc9f249a546c2b8765f3fbcf5ced64146e165b75f6479912a4f029f",
+          "media/papas-arrugadas-con-mojo-800.webp": "324159578d3d627f94e36d3475f98ca30d90fb4a306565efe7448800278342e1",
+          "media/papas-arrugadas-con-mojo-social.jpg": "7a58acd973cc21c5df7efbcdb04ef0885a1f2b1c2d191a5fef1d8a1bea057766",
+          "ricette/gatto-di-patate/index.html": "6afa71a568f4240905ebc0622369f5d9fe061e71e300445efb2c5f7cfb1c1f29",
+          "ricette/index.html": "d5755ca39ae1ab4a2484384f355859800672117da9ad3ef4a182733ee9ed3711",
+          "ricette/papas-arrugadas-con-mojo/index.html": "0deecb020fd0a5a24fa1f761fa3ee0bfe27845ccdd71ba2d7ba50da9e33e70b2",
+          "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+          "sitemap-0.xml": "636fd07e831a22aafd25ce53b2a8199421ef115eb2e0ea4e870e4fa59d5cdcd0",
+          "sitemap-index.xml": "6d94de4182f226416f450cf836571e54a9200cd2ad2d96c797de8d86e72bb510"
+        }
+      },
+      "target": "production",
+      "base": "/magazine/",
+      "site": "https://cucina.example",
+      "growth": true,
+      "nodeTests": 148,
+      "nodeFailures": 0,
+      "publicBrowserCases": 14,
+      "editorialBrowserCases": 36,
+      "responsiveWidths": [
+        320,
+        375,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "responsiveRecipes": [
+        "RP-0011",
+        "RP-0080"
+      ],
+      "axeStates": [
+        "normal",
+        "review dossier expanded",
+        "cooking"
+      ],
+      "axeViolations": 0,
+      "typeCheck": {
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0
+      },
+      "reproducible": true,
+      "draftAndLocalUrls": "404 in public build",
+      "publicAudit": {
+        "filesScanned": 14,
+        "markersChecked": 78,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "3e51720db9db00db0898c133b87995f5ea4947c0fd41dd48dcf430f8d872e405"
+      },
+      "uxAudit": {
+        "filesScanned": 14,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "3e51720db9db00db0898c133b87995f5ea4947c0fd41dd48dcf430f8d872e405"
+      },
+      "uxAuditAfterEditorial": {
+        "filesScanned": 14,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "3e51720db9db00db0898c133b87995f5ea4947c0fd41dd48dcf430f8d872e405"
+      },
+      "privateSessionRemoved": true,
+      "protectedSourcesAndPublicDistUnchanged": true
+    },
+    {
+      "configuration": "preview-root-http",
+      "releaseCandidate": {
+        "base": "/",
+        "recipes": 2,
+        "browserCases": 8,
+        "reproducible": true,
+        "approvedPathSyntheticTest": true,
+        "draftSourceChanges": 0,
+        "diff": {
+          "added": [
+            "media/ATTRIBUTION.txt",
+            "media/gatto-di-patate-1280.avif",
+            "media/gatto-di-patate-1280.jpg",
+            "media/gatto-di-patate-1280.webp",
+            "media/gatto-di-patate-480.avif",
+            "media/gatto-di-patate-480.jpg",
+            "media/gatto-di-patate-480.webp",
+            "media/gatto-di-patate-800.avif",
+            "media/gatto-di-patate-800.jpg",
+            "media/gatto-di-patate-800.webp",
+            "media/gatto-di-patate-social.jpg",
+            "media/papas-arrugadas-con-mojo-1280.avif",
+            "media/papas-arrugadas-con-mojo-1280.jpg",
+            "media/papas-arrugadas-con-mojo-1280.webp",
+            "media/papas-arrugadas-con-mojo-480.avif",
+            "media/papas-arrugadas-con-mojo-480.jpg",
+            "media/papas-arrugadas-con-mojo-480.webp",
+            "media/papas-arrugadas-con-mojo-800.avif",
+            "media/papas-arrugadas-con-mojo-800.jpg",
+            "media/papas-arrugadas-con-mojo-800.webp",
+            "media/papas-arrugadas-con-mojo-social.jpg",
+            "ricette/gatto-di-patate/index.html",
+            "ricette/papas-arrugadas-con-mojo/index.html",
+            "sitemap-0.xml",
+            "sitemap-index.xml"
+          ],
+          "changed": [
+            "404.html",
+            "curiosita/index.html",
+            "guide/index.html",
+            "index.html",
+            "ricette/index.html"
+          ],
+          "removed": [
+            "curiosita/tubero-o-radice/index.html",
+            "curiosita/un-mondo-di-colori/index.html",
+            "guide/scegliere-le-patate/index.html",
+            "guide/taglio-hasselback/index.html",
+            "ricette/aloo-gobi/index.html",
+            "ricette/gnocchi/index.html",
+            "ricette/hasselback/index.html",
+            "ricette/patatas-bravas/index.html",
+            "ricette/pitta-di-patate/index.html",
+            "ricette/rosti/index.html"
+          ]
+        },
+        "files": {
+          "404.html": "a9b1b08b79439202dc0c66cd2852de702f35b799c09f7a0160b564de8444a1d5",
+          "_astro/Layout.BntjRieh.css": "802719eceb094352b24978307df95eda7b03205015692dcda54deb83d196818c",
+          "curiosita/index.html": "5d8c0d82eeb1f1d610ea9d39830884b0b22bbb2454b6c4ca36aeb4a6b030da7b",
+          "favicon.svg": "90f60fe3d43f27038e1925bd21abdf52d4cf0268503897e7280d4feeb8117a89",
+          "guide/index.html": "a5f2d27034887d2bd7b070ea07e0b95341e4c8e88d03a974e272a29515e9e2d1",
+          "index.html": "6c6ca4b4179961bf9b61bcc28c038431e165914535953ca759a1d522364d94af",
+          "media/ATTRIBUTION.txt": "512f1f6e6f56d5cae50933337ad7777b79e0268ca9aab17c1ec9355e5e618f3f",
+          "media/gatto-di-patate-1280.avif": "55ffd54ed357c77c4aab7901ed677369d742d68bdfdc445c626b890b72f93082",
+          "media/gatto-di-patate-1280.jpg": "e35349255f562aa25f1c2ccbe7cc64fdd140e285c694aefd0d50f4db241276f8",
+          "media/gatto-di-patate-1280.webp": "7b3d2d15c8bc2fb8b771f00981c1f5c488203c9db1b6b6230583aee987eb707f",
+          "media/gatto-di-patate-480.avif": "ecc44f9e3b4b9af67d68dd30f85d10a3297709432d6c74a0865f6b04b61058ec",
+          "media/gatto-di-patate-480.jpg": "ff9b0f1d692ddc2ee02421d365a981df967b5618b1b587cdc56e9992eab4c53f",
+          "media/gatto-di-patate-480.webp": "2b029d1057b5a1635185d2efed7d1f2a91493146a18958cfd9ce5a84f4f04f0b",
+          "media/gatto-di-patate-800.avif": "5506ebc109ef1275ad62addd5c3256341aaa4e2cc3b2e57e7854781f9e77436c",
+          "media/gatto-di-patate-800.jpg": "9bc0a8e1151d2995691fcf27971aba935628672f26df0960c113aebad2210355",
+          "media/gatto-di-patate-800.webp": "c6976c521a7e4f3ddd1fd6e14bcb25d66cc983c99520185ce378429a72475d4a",
+          "media/gatto-di-patate-social.jpg": "c009f210de54d331984f8165a37915367ceeb279279cbead24dd39a2040e5be8",
+          "media/papas-arrugadas-con-mojo-1280.avif": "e7d58a38737fd9379f374ea7f13699c4748fb981fad50b55b66e890f2ec20c7e",
+          "media/papas-arrugadas-con-mojo-1280.jpg": "fb75b10757ae99821f782819c4f4efed2f05e0264c45b7a6af8393befd6d8eae",
+          "media/papas-arrugadas-con-mojo-1280.webp": "3fc7e25618a8ce35a0e1442779200e110abe673130da6eb0332a4b33fde1b6d6",
+          "media/papas-arrugadas-con-mojo-480.avif": "798f49f29e3c8a2a842293426d0de0d76ffdf1bce83c7f00e05d5e9c108c6e48",
+          "media/papas-arrugadas-con-mojo-480.jpg": "d83994ceef82951585b9fd16cc063af0f3ecd85c9e6531f93d7f5dcd127a8701",
+          "media/papas-arrugadas-con-mojo-480.webp": "1fb1adac3344aca234ee37fa1a7705436feb048685058db9664c52b93bae8826",
+          "media/papas-arrugadas-con-mojo-800.avif": "8196e581e0d0db1e11ff64392ff932c3a86ca17189caa452c7a6eed5681b647f",
+          "media/papas-arrugadas-con-mojo-800.jpg": "b7151aff4dc9f249a546c2b8765f3fbcf5ced64146e165b75f6479912a4f029f",
+          "media/papas-arrugadas-con-mojo-800.webp": "324159578d3d627f94e36d3475f98ca30d90fb4a306565efe7448800278342e1",
+          "media/papas-arrugadas-con-mojo-social.jpg": "7a58acd973cc21c5df7efbcdb04ef0885a1f2b1c2d191a5fef1d8a1bea057766",
+          "ricette/gatto-di-patate/index.html": "c5290e4fbeb00399c35559af808bd8cf669f31bc0c736d36d05f74c1f4382930",
+          "ricette/index.html": "75c973e1fde5824d16d2451471c3404dced223d119af170b3b54a203ea339a9a",
+          "ricette/papas-arrugadas-con-mojo/index.html": "81e51c862a6f77875b14fd45fcb6251442403d87cfbcb69f19689290dfb3fe5b",
+          "robots.txt": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1",
+          "sitemap-0.xml": "ae4f0e310e9b2330edcfc97882d77fd599e4e2eb3d8618907bf2f1e46e1932f5",
+          "sitemap-index.xml": "abaa1f80cf179e0b91c7a14d2a089ffe854d90abceabe9ea7108cd9d710cf861"
+        }
+      },
+      "target": "preview",
+      "base": "/",
+      "site": "http://localhost:4321",
+      "growth": false,
+      "nodeTests": 148,
+      "nodeFailures": 0,
+      "publicBrowserCases": 14,
+      "editorialBrowserCases": 36,
+      "responsiveWidths": [
+        320,
+        375,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "responsiveRecipes": [
+        "RP-0011",
+        "RP-0080"
+      ],
+      "axeStates": [
+        "normal",
+        "review dossier expanded",
+        "cooking"
+      ],
+      "axeViolations": 0,
+      "typeCheck": {
+        "errors": 0,
+        "warnings": 0,
+        "hints": 0
+      },
+      "reproducible": true,
+      "draftAndLocalUrls": "404 in public build",
+      "publicAudit": {
+        "filesScanned": 18,
+        "markersChecked": 78,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "909c07cf1fd65fa5374be6eff199c6c4c243d6a9bfa42fef0253130776c4e5bd"
+      },
+      "uxAudit": {
+        "filesScanned": 18,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "909c07cf1fd65fa5374be6eff199c6c4c243d6a9bfa42fef0253130776c4e5bd"
+      },
+      "uxAuditAfterEditorial": {
+        "filesScanned": 18,
+        "markersChecked": 80,
+        "allFileTypes": true,
+        "compressedFilesScanned": 0,
+        "compressionFormatsSupported": [
+          "gzip",
+          "brotli"
+        ],
+        "draftLeaks": 0,
+        "fingerprint": "909c07cf1fd65fa5374be6eff199c6c4c243d6a9bfa42fef0253130776c4e5bd"
+      },
+      "privateSessionRemoved": true,
+      "protectedSourcesAndPublicDistUnchanged": true
+    }
+  ],
+  "sourceConsultationsOn": "2026-11-19",
+  "npmCiExecutedOn": "2026-11-19",
+  "finalProductionRerun": true,
+  "initialFailure": {
+    "scenario": "production-custom-growth",
+    "cause": "New test compared the synthetic extended registry with the original baseline",
+    "resolution": "Compare the original registry saved by the existing fixture; preserve historical synthetic additions and restoration tests",
+    "fullMatrixRerunPassed": true
+  },
+  "operationalChanges": 0,
+  "realApprovalsCreated": 0,
+  "deployments": 0,
+  "independentReview": "pending"
+}

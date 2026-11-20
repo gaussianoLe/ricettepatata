@@ -1,6 +1,7 @@
 import {readFileSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
 import {candidateEntries, identities, recordDigest} from '../release/selection.mjs';
+import {recipeSchema} from '../src/catalog/schema.mjs';
 
 // Produce a reviewable, deterministic proposal on stdout. Never write approval files.
 // The reviewer is an actual external reviewer, distinct from the recipe author.
@@ -19,7 +20,7 @@ export function prepareApproval({reviewer, reviewedAt, publishedAt, approvedBy, 
     if (entry.data.date>reviewedAt || entry.data.sources.some(src=>src.accessedAt>reviewedAt)) throw new Error('Review precedente a fonti o creazione');
     return {
       collection:'ricette',
-      data:{...entry.data,editorial:{...entry.data.editorial,status:'published',reviewer:reviewer.trim(),reviewedAt,publishedAt}},
+      data:recipeSchema.parse({...entry.data,editorial:{...entry.data.editorial,status:'published',reviewer:reviewer.trim(),reviewedAt,publishedAt}}),
       body:entry.body,
     };
   });

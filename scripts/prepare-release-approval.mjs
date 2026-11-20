@@ -1,4 +1,3 @@
-import {readFileSync} from 'node:fs';
 import {pathToFileURL} from 'node:url';
 import {candidateEntries, identities, recordDigest} from '../release/selection.mjs';
 import {recipeSchema} from '../src/catalog/schema.mjs';
@@ -13,7 +12,7 @@ export function prepareApproval({reviewer, reviewedAt, publishedAt, approvedBy, 
       throw new Error('Data ISO valida obbligatoria: '+key);
   }
   if (typeof approvedBy !== 'string' || !approvedBy.trim()) throw new Error('Autore consenso obbligatorio');
-  if (reviewedAt > publishedAt || publishedAt > approvedAt) throw new Error('Cronologia editoriale non valida');
+  if (reviewedAt > approvedAt || approvedAt > publishedAt) throw new Error('Cronologia editoriale non valida: review <= consenso <= pubblicazione');
   const sources = candidateEntries();
   const entries = sources.map(entry=>{
     if (reviewer.trim().toLowerCase()===entry.data.editorial.author.trim().toLowerCase()) throw new Error('Revisore deve essere indipendente');
